@@ -1,29 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
+    <title>Hexo的常用指令</title>
     <url>/post/undefined.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <content><![CDATA[<h1 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h1><p><code>hexo new page &quot;pageName&quot;</code> 新建分页</p>
+<p><code>hexo new &quot;postName&quot;</code> 新建文章</p>
 <span id="more"></span>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><code>hexo new draft &quot;draftName&quot;</code> 新建草稿</p>
+<p><code>hexo publish &quot;postName&quot;</code> 草稿生成文章</p>
+<p><code>hexo publish page &quot;pageName</code> 草稿生成分页</p>
+<h1 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h1><p><code>hexo clean</code> 清除缓存文件 (db.json) 和已生成的静态文件 (public)</p>
+<p><code>hexo genarate</code> 生成静态页面至 public 目录</p>
+<p><code>hexo server</code> 开启预览访问端口</p>
+<p><code>hexo server --drafts</code> 预览草稿</p>
+<p><code>hexo deploy</code> 部署到 GitHub</p>
+<p><code>hexo help</code> 查看帮助</p>
+<p><code>hexo version</code> 查看 Hexo 的版本</p>
+<h1 id="命令缩写"><a href="#命令缩写" class="headerlink" title="命令缩写"></a>命令缩写</h1><ul>
+<li>hexo new &#x3D;&#x3D; hexo n</li>
+<li>hexo genarate &#x3D;&#x3D; hexo g</li>
+<li>hexo server &#x3D;&#x3D; hexo s</li>
+<li>hexo deploy &#x3D;&#x3D; hexo d</li>
+</ul>
+<h1 id="组合命令"><a href="#组合命令" class="headerlink" title="组合命令"></a>组合命令</h1><p><code>hexo s -g</code> 生成并本地预览</p>
+<p><code>hexo d -g</code> 生成并上传</p>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
   <entry>
-    <title>My first article</title>
+    <title>VSCode常用快捷键</title>
     <url>/post/undefined.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <content><![CDATA[<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
+<li><p><code>Shift + Alt + ↓/↑</code></p>
+</li>
+<li><p>在某行直接<code>Ctrl + C + Ctrl + V</code></p>
+</li>
+</ul>
 <span id="more"></span>
+
+<h4 id="快速定位到某一行"><a href="#快速定位到某一行" class="headerlink" title="快速定位到某一行"></a>快速定位到某一行</h4><ul>
+<li><code>Ctrl + G</code></li>
+</ul>
+<h4 id="选中单词"><a href="#选中单词" class="headerlink" title="选中单词"></a>选中单词</h4><ul>
+<li>在单词首或尾 <code>Ctrl + Shift + ←/→</code></li>
+</ul>
+<h4 id="选定多个相同的单词"><a href="#选定多个相同的单词" class="headerlink" title="选定多个相同的单词"></a>选定多个相同的单词</h4><ul>
+<li>选定某词直接 <code>Ctrl + D</code></li>
+</ul>
+<h4 id="全局替换某个单词"><a href="#全局替换某个单词" class="headerlink" title="全局替换某个单词"></a>全局替换某个单词</h4><ul>
+<li><code>Ctrl + H</code></li>
+</ul>
+<h4 id="选择某个区块"><a href="#选择某个区块" class="headerlink" title="选择某个区块"></a>选择某个区块</h4><ul>
+<li>按住 <code>Alt + Shift</code> 选择或拖动鼠标</li>
+</ul>
+<h4 id="放大缩小整个编辑器界面"><a href="#放大缩小整个编辑器界面" class="headerlink" title="放大缩小整个编辑器界面"></a>放大缩小整个编辑器界面</h4><ul>
+<li><code>Ctrl + +/-</code></li>
+</ul>
+<h4 id="光标定位到单词首-x2F-单词尾"><a href="#光标定位到单词首-x2F-单词尾" class="headerlink" title="光标定位到单词首&#x2F;单词尾"></a>光标定位到单词首&#x2F;单词尾</h4><ul>
+<li><code>Ctrl + ←/→</code></li>
+</ul>
+<h4 id="光标定位到行首-x2F-行未"><a href="#光标定位到行首-x2F-行未" class="headerlink" title="光标定位到行首&#x2F;行未"></a>光标定位到行首&#x2F;行未</h4><ul>
+<li><code>Home / End</code></li>
+</ul>
+<h4 id="添加多个光标"><a href="#添加多个光标" class="headerlink" title="添加多个光标"></a>添加多个光标</h4><ul>
+<li><code>Ctrl + Alt + ↑/↓</code></li>
+</ul>
 ]]></content>
+      <categories>
+        <category>VSCode</category>
+      </categories>
+      <tags>
+        <tag>快捷键</tag>
+        <tag>VSCode</tag>
+      </tags>
   </entry>
 </search>
