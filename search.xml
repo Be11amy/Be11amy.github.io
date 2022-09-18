@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo的常用指令</title>
-    <url>/post/undefined.html</url>
+    <url>/posts/4a17b156/</url>
     <content><![CDATA[<h1 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h1><p><code>hexo new page &quot;pageName&quot;</code> 新建分页</p>
 <p><code>hexo new &quot;postName&quot;</code> 新建文章</p>
 <span id="more"></span>
@@ -17,12 +17,7 @@
 <p><code>hexo deploy</code> 部署到 GitHub</p>
 <p><code>hexo help</code> 查看帮助</p>
 <p><code>hexo version</code> 查看 Hexo 的版本</p>
-<h1 id="命令缩写"><a href="#命令缩写" class="headerlink" title="命令缩写"></a>命令缩写</h1><ul>
-<li>hexo new &#x3D;&#x3D; hexo n</li>
-<li>hexo genarate &#x3D;&#x3D; hexo g</li>
-<li>hexo server &#x3D;&#x3D; hexo s</li>
-<li>hexo deploy &#x3D;&#x3D; hexo d</li>
-</ul>
+<h1 id="命令缩写"><a href="#命令缩写" class="headerlink" title="命令缩写"></a>命令缩写</h1><p><code>hexo new == hexo n</code><br><code>hexo genarate == hexo g</code><br><code>hexo server == hexo s</code><br><code>hexo deploy == hexo d</code></p>
 <h1 id="组合命令"><a href="#组合命令" class="headerlink" title="组合命令"></a>组合命令</h1><p><code>hexo s -g</code> 生成并本地预览</p>
 <p><code>hexo d -g</code> 生成并上传</p>
 ]]></content>
@@ -34,8 +29,98 @@
       </tags>
   </entry>
   <entry>
+    <title>VSCode安装和配置c/c++环境</title>
+    <url>/posts/d0cf399e/</url>
+    <content><![CDATA[<h3 id="安装-VSCode"><a href="#安装-VSCode" class="headerlink" title="安装 VSCode"></a>安装 VSCode</h3><p><a href="https://code.visualstudio.com/">VSCode 官网下载</a></p>
+<span id="more"></span>
+
+<h3 id="安装-MinGW-编译器下载和配置"><a href="#安装-MinGW-编译器下载和配置" class="headerlink" title="安装 MinGW 编译器下载和配置"></a>安装 MinGW 编译器下载和配置</h3><p><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/">MinGW 官网下载</a></p>
+<ul>
+<li>在线安装——下载 MinGW-W64-install.exe（速度慢）</li>
+<li>下载压缩包——×86_64-posix-sjlj（速度快）</li>
+</ul>
+<h4 id="配置系统环境变量"><a href="#配置系统环境变量" class="headerlink" title="配置系统环境变量"></a>配置系统环境变量</h4><ul>
+<li>在 Path 中新建</li>
+<li>粘贴 MinGW 里的 bin 目录路径</li>
+</ul>
+<h4 id="检查是否配置成功"><a href="#检查是否配置成功" class="headerlink" title="检查是否配置成功"></a>检查是否配置成功</h4><ul>
+<li>在 MinGW 里的 bin 打开 cmd</li>
+<li>输入 gcc -v 或 gcc -v 或 g++ -v</li>
+<li>输出一段代码后出现 <code>gcc version</code> 说明配置成功</li>
+</ul>
+<h3 id="VSCode-配置-C-x2F-C"><a href="#VSCode-配置-C-x2F-C" class="headerlink" title="VSCode 配置 C&#x2F;C++"></a>VSCode 配置 C&#x2F;C++</h3><ul>
+<li>VSCode 安装插件 C&#x2F;C++</li>
+</ul>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><ul>
+<li>新建用于存放 C 文件的文件夹</li>
+<li>在该文件夹下创建一个 <code>.vscode</code> 文件夹并创建三个文件</li>
+<li>分别是<code>c_cpp_properties.json</code>,<code>launch.json</code>,<code>tasks.json</code></li>
+</ul>
+<ol>
+<li><code>c_cpp_properties.json</code></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">          &quot;name&quot;: &quot;Win32&quot;,</span><br><span class="line">          &quot;includePath&quot;: [&quot;$&#123;workspaceFolder&#125;/**&quot;],</span><br><span class="line">          &quot;defines&quot;: [&quot;_DEBUG&quot;, &quot;UNICODE&quot;, &quot;_UNICODE&quot;],</span><br><span class="line">          &quot;windowsSdkVersion&quot;: &quot;10.0.17763.0&quot;,</span><br><span class="line">          &quot;compilerPath&quot;: &quot;minGW\\bin\\g++.exe&quot;,   /*修改成自己bin目录下的g++.exe，要求 绝对路径 ，这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">          &quot;cStandard&quot;: &quot;c11&quot;,</span><br><span class="line">          &quot;cppStandard&quot;: &quot;c++17&quot;,</span><br><span class="line">          &quot;intelliSenseMode&quot;: &quot;$&#123;default&#125;&quot;</span><br><span class="line">        &#125;</span><br><span class="line">      ],</span><br><span class="line">      &quot;version&quot;: 4</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><code>launch.json</code></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    // 使用 IntelliSense 了解相关属性。</span><br><span class="line">    // 悬停以查看现有属性的描述。</span><br><span class="line">    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;g++.exe build and debug active file&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cppdbg&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;launch&quot;,</span><br><span class="line">            &quot;program&quot;: &quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;,</span><br><span class="line">            &quot;args&quot;: [],</span><br><span class="line">            &quot;stopAtEntry&quot;: false,</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceFolder&#125;&quot;,</span><br><span class="line">            &quot;environment&quot;: [],</span><br><span class="line">            &quot;externalConsole&quot;: false,</span><br><span class="line">            &quot;MIMode&quot;: &quot;gdb&quot;,</span><br><span class="line">            &quot;miDebuggerPath&quot;: &quot;MinGW\\bin\\gdb.exe&quot;,    /*修改成自己bin目录下的gdb.exe，要求 绝对路径 ，这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">            &quot;setupCommands&quot;: [</span><br><span class="line">                &#123;</span><br><span class="line">                    &quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,</span><br><span class="line">                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,</span><br><span class="line">                    &quot;ignoreFailures&quot;: true</span><br><span class="line">                &#125;</span><br><span class="line">            ],</span><br><span class="line">            &quot;preLaunchTask&quot;: &quot;task g++&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><code>tasks.json</code></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    // See https://go.microsoft.com/fwlink/?LinkId=733558</span><br><span class="line">    // for the documentation about the tasks.json format</span><br><span class="line">    &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">    &quot;tasks&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">        &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">        &quot;label&quot;: &quot;task g++&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;MinGW\\bin\\g++.exe&quot;, /*修改成自己bin目录下的g++.exe，要求 绝对路径 ,这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;-g&quot;,</span><br><span class="line">            &quot;$&#123;file&#125;&quot;,</span><br><span class="line">            &quot;-o&quot;,</span><br><span class="line">            &quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;,</span><br><span class="line">            &quot;-I&quot;,</span><br><span class="line">            &quot;&quot;,      /*修改成自己放c/c++项目的文件夹，要求 绝对路径 ,这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">            &quot;-std=c++17&quot;</span><br><span class="line">        ],</span><br><span class="line">        &quot;options&quot;: &#123;</span><br><span class="line">            &quot;cwd&quot;: &quot;MinGW\\bin&quot; /*修改成自己bin目录，要求 绝对路径 ,这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;problemMatcher&quot;:[</span><br><span class="line">            &quot;$gcc&quot;</span><br><span class="line">        ],</span><br><span class="line">        &quot;group&quot;: &quot;build&quot;,</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. c语言程序窗口执行到scanf函数出现闪退</span><br><span class="line">可在头文件加上 #include&lt;stdlib&gt; ，main函数里return上面加上 system(&quot;pause&quot;);  可防止程序窗口闪退</span><br><span class="line">2. c++直接加system(&quot;pause&quot;);</span><br><span class="line">3. 一定要先创建一个.vscode文件夹，记住前面有一个点，这个文件夹用来存放3个json配置文件，记住3个json文件要放进.vscode里面！！！</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置相关"><a href="#配置相关" class="headerlink" title="配置相关"></a>配置相关</h3><h4 id="更改代码运行控制台"><a href="#更改代码运行控制台" class="headerlink" title="更改代码运行控制台"></a>更改代码运行控制台</h4><ul>
+<li>如果你不想每次运行都弹出个小黑框(Window 继承控制台)</li>
+<li>你可以在 <code>launch.json</code> 文件中找到 <code>&quot;externalConsole&quot;: false</code> 并把 false 改为 true</li>
+</ul>
+]]></content>
+      <categories>
+        <category>VSCode</category>
+      </categories>
+      <tags>
+        <tag>环境配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于hexo-abbrlink</title>
+    <url>/posts/b13c3db0/</url>
+    <content><![CDATA[<h4 id="博客链接都变成-undefined-了？"><a href="#博客链接都变成-undefined-了？" class="headerlink" title="博客链接都变成 undefined 了？"></a>博客链接都变成 undefined 了？</h4><ul>
+<li>首先，检查博客文件下的 <code>_config.yml</code> 文件，找到 <code>permalink:</code> 在下面查看语句</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">permalink: post/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32</span><br><span class="line">  rep: hex</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>我今天遇到的问题是把 abbrlink 误删了一个 k，这直接修改了地址，hexo 在这种情况下会跳转到你的第一篇文章，不过网址是 &#x2F;undefined</p>
+</li>
+<li><p>这也是开启了 VSCode 修改自动保存的风险所在，博客运行并无报错，这是最难受的，所以我只能一点一点排查问题。</p>
+</li>
+</ul>
+<h4 id="点击文章变成了下载？"><a href="#点击文章变成了下载？" class="headerlink" title="点击文章变成了下载？"></a>点击文章变成了下载？</h4><ul>
+<li><p><code>permalink</code> 是可以修改的</p>
+</li>
+<li><p>比如 <code>permalink: Be11amy/:abbrlink/</code> ，看起来更加有个性和简洁</p>
+</li>
+<li><p>但是，<code>abbrlink</code> 后面的 <code>/</code> 不能省略，否则就会出现点不开文章变成下载的情况</p>
+</li>
+<li><p>这里是 <code>hexo-abbrlink</code> 的 <a href="https://github.com/Rozbo/hexo-abbrlink">项目地址</a></p>
+</li>
+</ul>
+<h4 id="新建文章的时候没有同时新建-abbrlink"><a href="#新建文章的时候没有同时新建-abbrlink" class="headerlink" title="新建文章的时候没有同时新建 abbrlink"></a>新建文章的时候没有同时新建 abbrlink</h4><ul>
+<li>别着急，在 new 了一篇新文章后，<code>hexo d</code> 命令行执行后就自动生成了，别忘了在前面先执行 <code>hexo cl</code></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VSCode常用快捷键</title>
-    <url>/post/undefined.html</url>
+    <url>/posts/1d77edc9/</url>
     <content><![CDATA[<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
 <li><p><code>Shift + Alt + ↓/↑</code></p>
 </li>
