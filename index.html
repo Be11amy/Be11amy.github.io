@@ -353,9 +353,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-09-18 00:37:40 / 修改时间：11:08:26" itemprop="dateCreated datePublished" datetime="2022-09-18T00:37:40+08:00">2022-09-18</time>
+      <time title="创建时间：2022-09-18 00:37:40" itemprop="dateCreated datePublished" datetime="2022-09-18T00:37:40+08:00">2022-09-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-09-19 19:23:16" itemprop="dateModified" datetime="2022-09-19T19:23:16+08:00">2022-09-19</time>
     </span>
 
   
@@ -368,15 +374,31 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>今天用abbrlink一直出bug，看了一晚上，发现了几个问题，希望对你有帮助</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/b13c3db0/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h4 id="博客链接都变成-undefined-了？"><a href="#博客链接都变成-undefined-了？" class="headerlink" title="博客链接都变成 undefined 了？"></a>博客链接都变成 undefined 了？</h4><ul>
+<li>首先，检查博客文件下的 <code>_config.yml</code> 文件，找到 <code>permalink:</code> 在下面查看语句</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">permalink: post/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32</span><br><span class="line">  rep: hex</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>我今天遇到的问题是把 abbrlink 误删了一个 k，这直接修改了地址，hexo 在这种情况下会跳转到你的第一篇文章，不过网址是 &#x2F;undefined</p>
+</li>
+<li><p>这也是开启了 VSCode 修改自动保存的风险所在，博客运行并无报错，这是最难受的，所以我只能一点一点排查问题。</p>
+</li>
+</ul>
+<h4 id="点击文章变成了下载？"><a href="#点击文章变成了下载？" class="headerlink" title="点击文章变成了下载？"></a>点击文章变成了下载？</h4><ul>
+<li><p><code>permalink</code> 是可以修改的</p>
+</li>
+<li><p>比如 <code>permalink: Be11amy/:abbrlink/</code> ，看起来更加有个性和简洁</p>
+</li>
+<li><p>但是，<code>abbrlink</code> 后面的 <code>/</code> 不能省略，否则就会出现点不开文章变成下载的情况</p>
+</li>
+<li><p>这里是 <code>hexo-abbrlink</code> 的 <a target="_blank" rel="noopener" href="https://github.com/Rozbo/hexo-abbrlink">项目地址</a></p>
+</li>
+</ul>
+<h4 id="新建文章的时候没有同时新建-abbrlink"><a href="#新建文章的时候没有同时新建-abbrlink" class="headerlink" title="新建文章的时候没有同时新建 abbrlink"></a>新建文章的时候没有同时新建 abbrlink</h4><ul>
+<li>别着急，在 new 了一篇新文章后，<code>hexo d</code> 命令行执行后就自动生成了，别忘了在前面先执行 <code>hexo cl</code></li>
+</ul>
+
       
     </div>
 
@@ -621,7 +643,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-09-17 23:58:33" itemprop="dateModified" datetime="2022-09-17T23:58:33+08:00">2022-09-17</time>
+      <time title="修改时间：2022-09-19 15:17:58" itemprop="dateModified" datetime="2022-09-19T15:17:58+08:00">2022-09-19</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -643,7 +665,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h1><p><code>hexo new page &quot;pageName&quot;</code> 新建分页</p>
+          <h4 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h4><p><code>hexo new page &quot;pageName&quot;</code> 新建分页</p>
 <p><code>hexo new &quot;postName&quot;</code> 新建文章</p>
           <!--noindex-->
             <div class="post-button">
