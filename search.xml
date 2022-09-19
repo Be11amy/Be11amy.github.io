@@ -94,6 +94,41 @@
       </tags>
   </entry>
   <entry>
+    <title>npm修改默认安装路径</title>
+    <url>/posts/c0f58d3c/</url>
+    <content><![CDATA[<h4 id="修改默认安装路径"><a href="#修改默认安装路径" class="headerlink" title="修改默认安装路径"></a>修改默认安装路径</h4><ol>
+<li><p>使用 <code>npm config ls</code> 查看 npm 相关配置</p>
+</li>
+<li><p>在 Node 根目录(含 node.exe)新建两个文件夹 <code>node_global</code> 和 <code>node_cache</code></p>
+</li>
+</ol>
+<ul>
+<li><p><code>node_global</code> 用于存放全局安装的包</p>
+</li>
+<li><p><code>node_cache</code> 用于存放缓存</p>
+</li>
+</ul>
+<ol start="3">
+<li>cmd 设置路径地址(绝对地址)</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;node\node_global&quot;</span><br><span class="line">npm config set cache &quot;node\node_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这两行命令执行后默认没有提示则说明成功</p>
+<ol start="4">
+<li>配置环境变量<br>在系统变量 Path 中添加三行</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%NODE_HOME%</span><br><span class="line">%NODE_HOME%/node_global</span><br><span class="line">%NODE_HOME%/node_modules</span><br></pre></td></tr></table></figure>
+
+<p>前提是在系统变量中存在 <code>NODE_HOME</code> ,值为有 node.exe 的地址<br>例如我的 <code>NODE_HOME</code> 值为 <code>D:\apps\nvs\node\16.17.0\x64</code></p>
+]]></content>
+      <categories>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>环境配置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VSCode常用快捷键</title>
     <url>/posts/1d77edc9/</url>
     <content><![CDATA[<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
@@ -138,41 +173,6 @@
       <tags>
         <tag>快捷键</tag>
         <tag>VSCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>npm修改默认安装路径</title>
-    <url>/posts/c0f58d3c/</url>
-    <content><![CDATA[<h4 id="修改默认安装路径"><a href="#修改默认安装路径" class="headerlink" title="修改默认安装路径"></a>修改默认安装路径</h4><ol>
-<li><p>使用 <code>npm config ls</code> 查看 npm 相关配置</p>
-</li>
-<li><p>在 Node 根目录(含 node.exe)新建两个文件夹 <code>node_global</code> 和 <code>node_cache</code></p>
-</li>
-</ol>
-<ul>
-<li><p><code>node_global</code> 用于存放全局安装的包</p>
-</li>
-<li><p><code>node_cache</code> 用于存放缓存</p>
-</li>
-</ul>
-<ol start="3">
-<li>cmd 设置路径地址(绝对地址)</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;node\node_global&quot;</span><br><span class="line">npm config set cache &quot;node\node_cache&quot;</span><br></pre></td></tr></table></figure>
-
-<p>这两行命令执行后默认没有提示则说明成功</p>
-<ol start="4">
-<li>配置环境变量<br>在系统变量 Path 中添加三行</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%NODE_HOME%</span><br><span class="line">%NODE_HOME%/node_global</span><br><span class="line">%NODE_HOME%/node_modules</span><br></pre></td></tr></table></figure>
-
-<p>前提是在系统变量中存在 <code>NODE_HOME</code> ,值为有 node.exe 的地址<br>例如我的 <code>NODE_HOME</code> 值为 <code>D:\apps\nvs\node\16.17.0\x64</code></p>
-]]></content>
-      <categories>
-        <category>npm</category>
-      </categories>
-      <tags>
-        <tag>环境配置</tag>
       </tags>
   </entry>
   <entry>
