@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>VSCode常用快捷键</title>
+    <url>/posts/1d77edc9/</url>
+    <content><![CDATA[<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
+<li><p><code>Shift + Alt + ↓/↑</code></p>
+</li>
+<li><p>在某行直接<code>Ctrl + C + Ctrl + V</code></p>
+</li>
+</ul>
+<span id="more"></span>
+
+<h4 id="快速定位到某一行"><a href="#快速定位到某一行" class="headerlink" title="快速定位到某一行"></a>快速定位到某一行</h4><ul>
+<li><code>Ctrl + G</code></li>
+</ul>
+<h4 id="选中单词"><a href="#选中单词" class="headerlink" title="选中单词"></a>选中单词</h4><ul>
+<li>在单词首或尾 <code>Ctrl + Shift + ←/→</code></li>
+</ul>
+<h4 id="选定多个相同的单词"><a href="#选定多个相同的单词" class="headerlink" title="选定多个相同的单词"></a>选定多个相同的单词</h4><ul>
+<li>选定某词直接 <code>Ctrl + D</code></li>
+</ul>
+<h4 id="全局替换某个单词"><a href="#全局替换某个单词" class="headerlink" title="全局替换某个单词"></a>全局替换某个单词</h4><ul>
+<li><code>Ctrl + H</code></li>
+</ul>
+<h4 id="选择某个区块"><a href="#选择某个区块" class="headerlink" title="选择某个区块"></a>选择某个区块</h4><ul>
+<li>按住 <code>Alt + Shift</code> 选择或拖动鼠标</li>
+</ul>
+<h4 id="放大缩小整个编辑器界面"><a href="#放大缩小整个编辑器界面" class="headerlink" title="放大缩小整个编辑器界面"></a>放大缩小整个编辑器界面</h4><ul>
+<li><code>Ctrl + +/-</code></li>
+</ul>
+<h4 id="光标定位到单词首-x2F-单词尾"><a href="#光标定位到单词首-x2F-单词尾" class="headerlink" title="光标定位到单词首&#x2F;单词尾"></a>光标定位到单词首&#x2F;单词尾</h4><ul>
+<li><code>Ctrl + ←/→</code></li>
+</ul>
+<h4 id="光标定位到行首-x2F-行未"><a href="#光标定位到行首-x2F-行未" class="headerlink" title="光标定位到行首&#x2F;行未"></a>光标定位到行首&#x2F;行未</h4><ul>
+<li><code>Home / End</code></li>
+</ul>
+<h4 id="添加多个光标"><a href="#添加多个光标" class="headerlink" title="添加多个光标"></a>添加多个光标</h4><ul>
+<li><code>Ctrl + Alt + ↑/↓</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>VSCode</category>
+      </categories>
+      <tags>
+        <tag>快捷键</tag>
+        <tag>VSCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo的常用指令</title>
     <url>/posts/4a17b156/</url>
     <content><![CDATA[<h1 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h1><p><code>hexo new page &quot;pageName&quot;</code> 新建分页</p>
@@ -86,53 +133,6 @@
       </tags>
   </entry>
   <entry>
-    <title>VSCode常用快捷键</title>
-    <url>/posts/1d77edc9/</url>
-    <content><![CDATA[<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
-<li><p><code>Shift + Alt + ↓/↑</code></p>
-</li>
-<li><p>在某行直接<code>Ctrl + C + Ctrl + V</code></p>
-</li>
-</ul>
-<span id="more"></span>
-
-<h4 id="快速定位到某一行"><a href="#快速定位到某一行" class="headerlink" title="快速定位到某一行"></a>快速定位到某一行</h4><ul>
-<li><code>Ctrl + G</code></li>
-</ul>
-<h4 id="选中单词"><a href="#选中单词" class="headerlink" title="选中单词"></a>选中单词</h4><ul>
-<li>在单词首或尾 <code>Ctrl + Shift + ←/→</code></li>
-</ul>
-<h4 id="选定多个相同的单词"><a href="#选定多个相同的单词" class="headerlink" title="选定多个相同的单词"></a>选定多个相同的单词</h4><ul>
-<li>选定某词直接 <code>Ctrl + D</code></li>
-</ul>
-<h4 id="全局替换某个单词"><a href="#全局替换某个单词" class="headerlink" title="全局替换某个单词"></a>全局替换某个单词</h4><ul>
-<li><code>Ctrl + H</code></li>
-</ul>
-<h4 id="选择某个区块"><a href="#选择某个区块" class="headerlink" title="选择某个区块"></a>选择某个区块</h4><ul>
-<li>按住 <code>Alt + Shift</code> 选择或拖动鼠标</li>
-</ul>
-<h4 id="放大缩小整个编辑器界面"><a href="#放大缩小整个编辑器界面" class="headerlink" title="放大缩小整个编辑器界面"></a>放大缩小整个编辑器界面</h4><ul>
-<li><code>Ctrl + +/-</code></li>
-</ul>
-<h4 id="光标定位到单词首-x2F-单词尾"><a href="#光标定位到单词首-x2F-单词尾" class="headerlink" title="光标定位到单词首&#x2F;单词尾"></a>光标定位到单词首&#x2F;单词尾</h4><ul>
-<li><code>Ctrl + ←/→</code></li>
-</ul>
-<h4 id="光标定位到行首-x2F-行未"><a href="#光标定位到行首-x2F-行未" class="headerlink" title="光标定位到行首&#x2F;行未"></a>光标定位到行首&#x2F;行未</h4><ul>
-<li><code>Home / End</code></li>
-</ul>
-<h4 id="添加多个光标"><a href="#添加多个光标" class="headerlink" title="添加多个光标"></a>添加多个光标</h4><ul>
-<li><code>Ctrl + Alt + ↑/↓</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>VSCode</category>
-      </categories>
-      <tags>
-        <tag>快捷键</tag>
-        <tag>VSCode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于hexo-abbrlink</title>
     <url>/posts/b13c3db0/</url>
     <content><![CDATA[<h4 id="博客链接都变成-undefined-了？"><a href="#博客链接都变成-undefined-了？" class="headerlink" title="博客链接都变成 undefined 了？"></a>博客链接都变成 undefined 了？</h4><ul>
@@ -163,6 +163,41 @@
       <tags>
         <tag>Hexo</tag>
         <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm修改默认安装路径</title>
+    <url>/posts/c0f58d3c/</url>
+    <content><![CDATA[<h4 id="修改默认安装路径"><a href="#修改默认安装路径" class="headerlink" title="修改默认安装路径"></a>修改默认安装路径</h4><ol>
+<li><p>使用 <code>npm config ls</code> 查看 npm 相关配置</p>
+</li>
+<li><p>在 Node 根目录(含 node.exe)新建两个文件夹 <code>node_global</code> 和 <code>node_cache</code></p>
+</li>
+</ol>
+<ul>
+<li><p><code>node_global</code> 用于存放全局安装的包</p>
+</li>
+<li><p><code>node_cache</code> 用于存放缓存</p>
+</li>
+</ul>
+<ol start="3">
+<li>cmd 设置路径地址(绝对地址)</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;node\node_global&quot;</span><br><span class="line">npm config set cache &quot;node\node_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这两行命令执行后默认没有提示则说明成功</p>
+<ol start="4">
+<li>配置环境变量<br>在系统变量 Path 中添加三行</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%NODE_HOME%</span><br><span class="line">%NODE_HOME%/node_global</span><br><span class="line">%NODE_HOME%/node_modules</span><br></pre></td></tr></table></figure>
+
+<p>前提是在系统变量中存在 <code>NODE_HOME</code> ,值为有 node.exe 的地址<br>例如我的 <code>NODE_HOME</code> 值为 <code>D:\apps\nvs\node\16.17.0\x64</code></p>
+]]></content>
+      <categories>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>环境配置</tag>
       </tags>
   </entry>
 </search>
