@@ -181,6 +181,8 @@
     <content><![CDATA[<h4 id="博客链接都变成-undefined-了？"><a href="#博客链接都变成-undefined-了？" class="headerlink" title="博客链接都变成 undefined 了？"></a>博客链接都变成 undefined 了？</h4><ul>
 <li>首先，检查博客文件下的 <code>_config.yml</code> 文件，找到 <code>permalink:</code> 在下面查看语句</li>
 </ul>
+<span id="more"></span>
+
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">permalink: post/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32</span><br><span class="line">  rep: hex</span><br></pre></td></tr></table></figure>
 
 <ul>
