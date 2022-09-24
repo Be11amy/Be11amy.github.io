@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo的常用指令</title>
+    <title>Hexo 的常用指令</title>
     <url>/posts/4a17b156/</url>
     <content><![CDATA[<h4 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h4><p><code>hexo new page &quot;pageName&quot;</code> 新建分页</p>
 <p><code>hexo new &quot;postName&quot;</code> 新建文章</p>
@@ -23,7 +23,7 @@
 </li>
 <li><p>值得注意的是，并不是每次更改了本地信息就需要关闭当前 4000 端口然后重新 <code>hexo g</code> 和 <code>hexo s</code> 查看更改，事实上除了修改站点配置文件 <code>\_config.yml</code> 外其它时候都可以实时更新到当前监听的端口。</p>
 </li>
-<li><p>所以建议让本地 4000 端口处于后台开启状态，完成你的更改，实时在浏览器刷新，确认无误后即可愉快地推送到 GitHub 远端仓库啦，嘿嘿。</p>
+<li><p>所以建议让本地 4000 端口处于后台开启状态，完成你的更改，实时在浏览器刷新，确认无误后即可愉快地推送到 GitHub 远端仓库啦。</p>
 </li>
 </ul>
 ]]></content>
@@ -35,7 +35,7 @@
       </tags>
   </entry>
   <entry>
-    <title>VSCode安装和配置c/c++环境</title>
+    <title>VSCode 安装和配置 c/c++ 环境</title>
     <url>/posts/d0cf399e/</url>
     <content><![CDATA[<h3 id="安装-VSCode"><a href="#安装-VSCode" class="headerlink" title="安装 VSCode"></a>安装 VSCode</h3><p><a href="https://code.visualstudio.com/">VSCode 官网下载</a></p>
 <h3 id="安装-MinGW-编译器下载和配置"><a href="#安装-MinGW-编译器下载和配置" class="headerlink" title="安装 MinGW 编译器下载和配置"></a>安装 MinGW 编译器下载和配置</h3><p><a href="https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/">MinGW 官网下载</a></p>
@@ -63,17 +63,17 @@
 <ol>
 <li><code>c_cpp_properties.json</code></li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">          &quot;name&quot;: &quot;Win32&quot;,</span><br><span class="line">          &quot;includePath&quot;: [&quot;$&#123;workspaceFolder&#125;/**&quot;],</span><br><span class="line">          &quot;defines&quot;: [&quot;_DEBUG&quot;, &quot;UNICODE&quot;, &quot;_UNICODE&quot;],</span><br><span class="line">          &quot;windowsSdkVersion&quot;: &quot;10.0.17763.0&quot;,</span><br><span class="line">          &quot;compilerPath&quot;: &quot;minGW\\bin\\g++.exe&quot;,   /*修改成自己bin目录下的g++.exe，要求 绝对路径 ，这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">          &quot;cStandard&quot;: &quot;c11&quot;,</span><br><span class="line">          &quot;cppStandard&quot;: &quot;c++17&quot;,</span><br><span class="line">          &quot;intelliSenseMode&quot;: &quot;$&#123;default&#125;&quot;</span><br><span class="line">        &#125;</span><br><span class="line">      ],</span><br><span class="line">      &quot;version&quot;: 4</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;configurations&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Win32&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;includePath&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;$&#123;workspaceFolder&#125;/**&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;defines&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;_DEBUG&quot;</span><span class="punctuation">,</span> <span class="string">&quot;UNICODE&quot;</span><span class="punctuation">,</span> <span class="string">&quot;_UNICODE&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;windowsSdkVersion&quot;</span><span class="punctuation">:</span> <span class="string">&quot;10.0.17763.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;compilerPath&quot;</span><span class="punctuation">:</span> <span class="string">&quot;minGW\\bin\\g++.exe&quot;</span> <span class="comment">/*修改成自己bin目录下的g++.exe，要求 绝对路径 ，这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cStandard&quot;</span><span class="punctuation">:</span> <span class="string">&quot;c11&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cppStandard&quot;</span><span class="punctuation">:</span> <span class="string">&quot;c++17&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;intelliSenseMode&quot;</span><span class="punctuation">:</span> <span class="string">&quot;$&#123;default&#125;&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="number">4</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 
 <ol start="2">
 <li><code>launch.json</code></li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    // 使用 IntelliSense 了解相关属性。</span><br><span class="line">    // 悬停以查看现有属性的描述。</span><br><span class="line">    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387</span><br><span class="line">    &quot;version&quot;: &quot;0.2.0&quot;,</span><br><span class="line">    &quot;configurations&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;name&quot;: &quot;g++.exe build and debug active file&quot;,</span><br><span class="line">            &quot;type&quot;: &quot;cppdbg&quot;,</span><br><span class="line">            &quot;request&quot;: &quot;launch&quot;,</span><br><span class="line">            &quot;program&quot;: &quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;,</span><br><span class="line">            &quot;args&quot;: [],</span><br><span class="line">            &quot;stopAtEntry&quot;: false,</span><br><span class="line">            &quot;cwd&quot;: &quot;$&#123;workspaceFolder&#125;&quot;,</span><br><span class="line">            &quot;environment&quot;: [],</span><br><span class="line">            &quot;externalConsole&quot;: false,</span><br><span class="line">            &quot;MIMode&quot;: &quot;gdb&quot;,</span><br><span class="line">            &quot;miDebuggerPath&quot;: &quot;MinGW\\bin\\gdb.exe&quot;,    /*修改成自己bin目录下的gdb.exe，要求 绝对路径 ，这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">            &quot;setupCommands&quot;: [</span><br><span class="line">                &#123;</span><br><span class="line">                    &quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,</span><br><span class="line">                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,</span><br><span class="line">                    &quot;ignoreFailures&quot;: true</span><br><span class="line">                &#125;</span><br><span class="line">            ],</span><br><span class="line">            &quot;preLaunchTask&quot;: &quot;task g++&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="comment">// 使用 IntelliSense 了解相关属性。</span></span><br><span class="line">  <span class="comment">// 悬停以查看现有属性的描述。</span></span><br><span class="line">  <span class="comment">// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;configurations&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;g++.exe build and debug active file&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;cppdbg&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;request&quot;</span><span class="punctuation">:</span> <span class="string">&quot;launch&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;program&quot;</span><span class="punctuation">:</span> <span class="string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;stopAtEntry&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;cwd&quot;</span><span class="punctuation">:</span> <span class="string">&quot;$&#123;workspaceFolder&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;environment&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;externalConsole&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;MIMode&quot;</span><span class="punctuation">:</span> <span class="string">&quot;gdb&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;miDebuggerPath&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MinGW\\bin\\gdb.exe&quot;</span> <span class="comment">/*修改成自己bin目录下的gdb.exe，要求 绝对路径 ，这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;setupCommands&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;为 gdb 启用整齐打印&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;-enable-pretty-printing&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="attr">&quot;ignoreFailures&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;preLaunchTask&quot;</span><span class="punctuation">:</span> <span class="string">&quot;task g++&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 
 <ol start="3">
 <li><code>tasks.json</code></li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    // See https://go.microsoft.com/fwlink/?LinkId=733558</span><br><span class="line">    // for the documentation about the tasks.json format</span><br><span class="line">    &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">    &quot;tasks&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">        &quot;type&quot;: &quot;shell&quot;,</span><br><span class="line">        &quot;label&quot;: &quot;task g++&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;MinGW\\bin\\g++.exe&quot;, /*修改成自己bin目录下的g++.exe，要求 绝对路径 ,这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;-g&quot;,</span><br><span class="line">            &quot;$&#123;file&#125;&quot;,</span><br><span class="line">            &quot;-o&quot;,</span><br><span class="line">            &quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;,</span><br><span class="line">            &quot;-I&quot;,</span><br><span class="line">            &quot;&quot;,      /*修改成自己放c/c++项目的文件夹，要求 绝对路径 ,这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">            &quot;-std=c++17&quot;</span><br><span class="line">        ],</span><br><span class="line">        &quot;options&quot;: &#123;</span><br><span class="line">            &quot;cwd&quot;: &quot;MinGW\\bin&quot; /*修改成自己bin目录，要求 绝对路径 ,这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;problemMatcher&quot;:[</span><br><span class="line">            &quot;$gcc&quot;</span><br><span class="line">        ],</span><br><span class="line">        &quot;group&quot;: &quot;build&quot;,</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="comment">// See https://go.microsoft.com/fwlink/?LinkId=733558</span></span><br><span class="line">  <span class="comment">// for the documentation about the tasks.json format</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;tasks&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;shell&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;label&quot;</span><span class="punctuation">:</span> <span class="string">&quot;task g++&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MinGW\\bin\\g++.exe&quot;</span> <span class="comment">/*修改成自己bin目录下的g++.exe，要求 绝对路径 ,这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;-g&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;$&#123;file&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;-o&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;-I&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;&quot;</span> <span class="comment">/*修改成自己放c/c++项目的文件夹，要求 绝对路径 ,这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;-std=c++17&quot;</span></span><br><span class="line">      <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;options&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;cwd&quot;</span><span class="punctuation">:</span> <span class="string">&quot;MinGW\\bin&quot;</span> <span class="comment">/*修改成自己bin目录，要求 绝对路径 ,这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;problemMatcher&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;$gcc&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;group&quot;</span><span class="punctuation">:</span> <span class="string">&quot;build&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. c语言程序窗口执行到scanf函数出现闪退</span><br><span class="line">可在头文件加上 #include&lt;stdlib&gt; ，main函数里return上面加上 system(&quot;pause&quot;);  可防止程序窗口闪退</span><br><span class="line">2. c++直接加system(&quot;pause&quot;);</span><br><span class="line">3. 一定要先创建一个.vscode文件夹，记住前面有一个点，这个文件夹用来存放3个json配置文件，记住3个json文件要放进.vscode里面！！！</span><br></pre></td></tr></table></figure>
 
@@ -90,11 +90,14 @@
       </tags>
   </entry>
   <entry>
-    <title>VSCode常用快捷键</title>
+    <title>VSCode 常用快捷键</title>
     <url>/posts/1d77edc9/</url>
-    <content><![CDATA[<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><span id="more"></span>
+    <content><![CDATA[<h4 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h4><span id="more"></span>
 
 <ul>
+<li><code>shift + alt +f</code></li>
+</ul>
+<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
 <li><p><code>Shift + Alt + ↓/↑</code></p>
 </li>
 <li><p>在某行直接<code>Ctrl + C + Ctrl + V</code></p>
@@ -137,29 +140,70 @@
       </tags>
   </entry>
   <entry>
-    <title>npm修改默认安装路径</title>
+    <title>git 配置 https 和 ssh 免密码登录</title>
+    <url>/posts/8a44e1d6/</url>
+    <content><![CDATA[<h4 id="区分-https-clone-和-ssh-clone"><a href="#区分-https-clone-和-ssh-clone" class="headerlink" title="区分 https clone 和 ssh clone"></a>区分 https clone 和 ssh clone</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">不同的克隆方式导致校验方式不同，对应的免秘方式也不一样。</span><br><span class="line">https通过记住账号密码免登，ssh通过校验生成的密钥免登。</span><br><span class="line">通常都用ssh校验。</span><br></pre></td></tr></table></figure>
+
+<h4 id="https-免密配置方法"><a href="#https-免密配置方法" class="headerlink" title="https 免密配置方法"></a>https 免密配置方法</h4><h5 id="设置配置-git-x2F-config"><a href="#设置配置-git-x2F-config" class="headerlink" title="设置配置 .git &#x2F; config"></a>设置配置 .git &#x2F; config</h5><p><code>git config --global credential.helper store</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">    helper = store</span><br></pre></td></tr></table></figure>
+
+<h5 id="输入一次账号密码后第二次就会记住账号密码。"><a href="#输入一次账号密码后第二次就会记住账号密码。" class="headerlink" title="输入一次账号密码后第二次就会记住账号密码。"></a>输入一次账号密码后第二次就会记住账号密码。</h5><h4 id="ssh-免密配置方法"><a href="#ssh-免密配置方法" class="headerlink" title="ssh 免密配置方法"></a>ssh 免密配置方法</h4><h5 id="配置信息"><a href="#配置信息" class="headerlink" title="配置信息"></a>配置信息</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line"></span><br><span class="line">git config --global user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line"></span><br><span class="line">git config --global user.email <span class="string">&#x27;用户邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>注意 <code>git config</code> 命令的 <code>--global</code> 参数，用了这个参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和 Email 地址</p>
+<h5 id="执行生成公钥和私钥的命令"><a href="#执行生成公钥和私钥的命令" class="headerlink" title="执行生成公钥和私钥的命令"></a>执行生成公钥和私钥的命令</h5><p><code>ssh-keygen -t rsa</code><br>按回车 3 下 一般都是直接不写为空 直接回车</p>
+<h5 id="执行查看公钥的命令"><a href="#执行查看公钥的命令" class="headerlink" title="执行查看公钥的命令"></a>执行查看公钥的命令</h5><p><code>cat ~/.ssh/id_rsa.pub</code></p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git创建版本库</title>
+    <url>/posts/ff01f13c/</url>
+    <content><![CDATA[<h4 id="初始化一个-Git-仓库，使用-git-init-命令"><a href="#初始化一个-Git-仓库，使用-git-init-命令" class="headerlink" title="初始化一个 Git 仓库，使用 git init 命令"></a>初始化一个 Git 仓库，使用 <code>git init</code> 命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p>当前目录下多了一个 <code>.git</code> 的目录，这个目录是 <code>Git</code> 来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 <code>Git</code> 仓库给破坏了</p>
+<p>如果没有看到 <code>.git</code> 目录，那是因为这个目录默认是隐藏的，用 <code>ls -ah</code> 命令就可以看见</p>
+<h4 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h4><h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>用命令 <code>git add</code> 告诉 git，把文件添加到仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add <span class="string">&#x27;文件名&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>执行上面的命令，没有任何显示就对了</p>
+<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>用命令 <code>git commit</code> 告诉 git，把文件提交到仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;本次提交的说明&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
+<p>执行上面的命令成功之后会返回文件改动的信息</p>
+<h5 id="为什么-Git-添加文件需要-add，commit-一共两步"><a href="#为什么-Git-添加文件需要-add，commit-一共两步" class="headerlink" title="为什么 Git 添加文件需要 add，commit 一共两步"></a>为什么 Git 添加文件需要 <code>add</code>，<code>commit</code> 一共两步</h5><p>因为 <code>commit</code> 可以一次提交很多文件，所以你可以多次 <code>add</code> 不同的文件，比如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add file1.txt</span><br><span class="line">git add file2.txt file3.txt</span><br><span class="line">git commit -m <span class="string">&quot;add 3 files.&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="疑难解答"><a href="#疑难解答" class="headerlink" title="疑难解答"></a>疑难解答</h4><p>Q：输入 <code>git add readme.txt</code>，得到错误：<code>fatal: not a git repository (or any of the parent directories)</code></p>
+<p>A：<code>Git</code> 命令必须在 <code>Git</code> 仓库目录内执行（<code>git init</code> 除外），在仓库目录外执行是没有意义的。</p>
+<p>Q：输入 <code>git add readme.txt</code>，得到错误 <code>fatal: pathspec &#39;readme.txt&#39; did not match any files</code></p>
+<p>A：添加某个文件时，该文件必须在当前目录下存在，用 <code>ls</code> 或者 <code>dir</code> 命令查看当前目录的文件，看看文件是否存在，或者是否写错了文件名。</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm 修改默认安装路径</title>
     <url>/posts/c0f58d3c/</url>
-    <content><![CDATA[<h4 id="修改默认安装路径"><a href="#修改默认安装路径" class="headerlink" title="修改默认安装路径"></a>修改默认安装路径</h4><ol>
-<li><p>使用 <code>npm config ls</code> 查看 npm 相关配置</p>
-</li>
-<li><p>在 Node 根目录(含 node.exe)新建两个文件夹 <code>node_global</code> 和 <code>node_cache</code></p>
-</li>
-</ol>
-<ul>
+    <content><![CDATA[<h5 id="使用-npm-config-ls-查看-npm-相关配置"><a href="#使用-npm-config-ls-查看-npm-相关配置" class="headerlink" title="使用 npm config ls 查看 npm 相关配置"></a>使用 <code>npm config ls</code> 查看 npm 相关配置</h5><h5 id="在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache"><a href="#在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache" class="headerlink" title="在 Node 根目录(含 node.exe)新建两个文件夹 node_global 和 node_cache"></a>在 Node 根目录(含 node.exe)新建两个文件夹 <code>node_global</code> 和 <code>node_cache</code></h5><ul>
 <li><p><code>node_global</code> 用于存放全局安装的包</p>
 </li>
 <li><p><code>node_cache</code> 用于存放缓存</p>
 </li>
 </ul>
-<ol start="3">
-<li>cmd 设置路径地址(绝对地址)</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;node\node_global&quot;</span><br><span class="line">npm config set cache &quot;node\node_cache&quot;</span><br></pre></td></tr></table></figure>
+<h5 id="cmd-设置路径地址-绝对地址"><a href="#cmd-设置路径地址-绝对地址" class="headerlink" title="cmd 设置路径地址(绝对地址)"></a>cmd 设置路径地址(绝对地址)</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;node\node_global&quot;</span><br><span class="line">npm config set cache &quot;node\node_cache&quot;</span><br></pre></td></tr></table></figure>
 
 <p>这两行命令执行后默认没有提示则说明成功</p>
-<ol start="4">
-<li>配置环境变量<br>在系统变量 Path 中添加三行</li>
-</ol>
+<h5 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h5><p>在系统变量 Path 中添加三行</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%NODE_HOME%</span><br><span class="line">%NODE_HOME%/node_global</span><br><span class="line">%NODE_HOME%/node_modules</span><br></pre></td></tr></table></figure>
 
 <p>前提是在系统变量中存在 <code>NODE_HOME</code> ,值为有 node.exe 的地址<br>例如我的 <code>NODE_HOME</code> 值为 <code>D:\apps\nvs\node\16.17.0\x64</code></p>
@@ -172,12 +216,12 @@
       </tags>
   </entry>
   <entry>
-    <title>关于hexo-abbrlink</title>
+    <title>关于 hexo-abbrlink</title>
     <url>/posts/b13c3db0/</url>
     <content><![CDATA[<h4 id="博客链接都变成-undefined-了？"><a href="#博客链接都变成-undefined-了？" class="headerlink" title="博客链接都变成 undefined 了？"></a>博客链接都变成 undefined 了？</h4><ul>
 <li>首先，检查博客文件下的 <code>_config.yml</code> 文件，找到 <code>permalink:</code> 在下面查看语句</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">permalink: post/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32</span><br><span class="line">  rep: hex</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">permalink: post/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">alg: crc32</span><br><span class="line">rep: hex</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>我今天遇到的问题是把 abbrlink 误删了一个 k，这直接修改了地址，hexo 在这种情况下会跳转到你的第一篇文章，不过网址是 &#x2F;undefined</p>
@@ -205,6 +249,17 @@
       <tags>
         <tag>Hexo</tag>
         <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>csgo-cfg优化以及按键绑定</title>
+    <url>/posts/18db92a5/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>CSGO</category>
+      </categories>
+      <tags>
+        <tag>CSGO</tag>
       </tags>
   </entry>
 </search>

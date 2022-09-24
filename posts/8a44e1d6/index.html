@@ -20,29 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"be11amy.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null,"show_result":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://be11amy.github.io/categories/index.html">
+    <meta name="description" content="git 配置 https 和 ssh 免密码登录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git 配置 https 和 ssh 免密码登录">
+<meta property="og:url" content="https://be11amy.github.io/posts/8a44e1d6/index.html">
 <meta property="og:site_name" content="Be11amy&#39;s Blog">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="git 配置 https 和 ssh 免密码登录">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-16T03:30:07.000Z">
-<meta property="article:modified_time" content="2022-09-16T07:47:46.483Z">
+<meta property="article:published_time" content="2022-09-22T10:16:08.000Z">
+<meta property="article:modified_time" content="2022-09-24T07:26:42.930Z">
 <meta property="article:author" content="Be11amy">
-<meta property="article:tag" content="个人博客">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://be11amy.github.io/categories/">
+<link rel="canonical" href="https://be11amy.github.io/posts/8a44e1d6/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://be11amy.github.io/categories/index.html","path":"categories/index.html","title":"categories"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://be11amy.github.io/posts/8a44e1d6/","path":"posts/8a44e1d6/","title":"git 配置 https 和 ssh 免密码登录"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>categories | Be11amy's Blog
-</title>
+<title>git 配置 https 和 ssh 免密码登录 | Be11amy's Blog</title>
   
 
 
@@ -133,7 +132,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -146,6 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8C%BA%E5%88%86-https-clone-%E5%92%8C-ssh-clone"><span class="nav-number">1.</span> <span class="nav-text">区分 https clone 和 ssh clone</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#https-%E5%85%8D%E5%AF%86%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">https 免密配置方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E9%85%8D%E7%BD%AE-git-x2F-config"><span class="nav-number">2.1.</span> <span class="nav-text">设置配置 .git &#x2F; config</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E4%B8%80%E6%AC%A1%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81%E5%90%8E%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%B0%B1%E4%BC%9A%E8%AE%B0%E4%BD%8F%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81%E3%80%82"><span class="nav-number">2.2.</span> <span class="nav-text">输入一次账号密码后第二次就会记住账号密码。</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ssh-%E5%85%8D%E5%AF%86%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">ssh 免密配置方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="nav-number">3.1.</span> <span class="nav-text">配置信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E7%94%9F%E6%88%90%E5%85%AC%E9%92%A5%E5%92%8C%E7%A7%81%E9%92%A5%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">3.2.</span> <span class="nav-text">执行生成公钥和私钥的命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E6%9F%A5%E7%9C%8B%E5%85%AC%E9%92%A5%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">3.3.</span> <span class="nav-text">执行查看公钥的命令</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -223,41 +223,126 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
 
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
+  
 
-<h1 class="post-title" itemprop="name headline">categories
-</h1>
 
-<div class="post-meta-container">
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://be11amy.github.io/posts/8a44e1d6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/assets/avatar.jpg">
+      <meta itemprop="name" content="Be11amy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Be11amy's Blog">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="git 配置 https 和 ssh 免密码登录 | Be11amy's Blog">
+      <meta itemprop="description" content="git 配置 https 和 ssh 免密码登录">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          git 配置 https 和 ssh 免密码登录
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-09-22 18:16:08" itemprop="dateCreated datePublished" datetime="2022-09-22T18:16:08+08:00">2022-09-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-09-24 15:26:42" itemprop="dateModified" datetime="2022-09-24T15:26:42+08:00">2022-09-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
-</header>
+            <div class="post-description">git 配置 https 和 ssh 免密码登录</div>
+        </div>
+      </header>
 
-      
-      
-      <div class="post-body"><div class="category-all-page">
-  <div class="category-all-title">
-    目前共计 5 个分类
-  </div>
-  <div class="category-all">
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSGO/">CSGO</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/VSCode/">VSCode</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/npm/">npm</a><span class="category-list-count">1</span></li></ul>
-  </div>
-</div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h4 id="区分-https-clone-和-ssh-clone"><a href="#区分-https-clone-和-ssh-clone" class="headerlink" title="区分 https clone 和 ssh clone"></a>区分 https clone 和 ssh clone</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">不同的克隆方式导致校验方式不同，对应的免秘方式也不一样。</span><br><span class="line">https通过记住账号密码免登，ssh通过校验生成的密钥免登。</span><br><span class="line">通常都用ssh校验。</span><br></pre></td></tr></table></figure>
 
-      </div>
-      
-      
-      
+<h4 id="https-免密配置方法"><a href="#https-免密配置方法" class="headerlink" title="https 免密配置方法"></a>https 免密配置方法</h4><h5 id="设置配置-git-x2F-config"><a href="#设置配置-git-x2F-config" class="headerlink" title="设置配置 .git &#x2F; config"></a>设置配置 .git &#x2F; config</h5><p><code>git config --global credential.helper store</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[credential]</span><br><span class="line">    helper = store</span><br></pre></td></tr></table></figure>
+
+<h5 id="输入一次账号密码后第二次就会记住账号密码。"><a href="#输入一次账号密码后第二次就会记住账号密码。" class="headerlink" title="输入一次账号密码后第二次就会记住账号密码。"></a>输入一次账号密码后第二次就会记住账号密码。</h5><h4 id="ssh-免密配置方法"><a href="#ssh-免密配置方法" class="headerlink" title="ssh 免密配置方法"></a>ssh 免密配置方法</h4><h5 id="配置信息"><a href="#配置信息" class="headerlink" title="配置信息"></a>配置信息</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line"></span><br><span class="line">git config --global user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line"></span><br><span class="line">git config --global user.email <span class="string">&#x27;用户邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>注意 <code>git config</code> 命令的 <code>--global</code> 参数，用了这个参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和 Email 地址</p>
+<h5 id="执行生成公钥和私钥的命令"><a href="#执行生成公钥和私钥的命令" class="headerlink" title="执行生成公钥和私钥的命令"></a>执行生成公钥和私钥的命令</h5><p><code>ssh-keygen -t rsa</code><br>按回车 3 下 一般都是直接不写为空 直接回车</p>
+<h5 id="执行查看公钥的命令"><a href="#执行查看公钥的命令" class="headerlink" title="执行查看公钥的命令"></a>执行查看公钥的命令</h5><p><code>cat ~/.ssh/id_rsa.pub</code></p>
+
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/git/" rel="tag"># git</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/c0f58d3c/" rel="prev" title="npm 修改默认安装路径">
+                  <i class="fa fa-chevron-left"></i> npm 修改默认安装路径
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/ff01f13c/" rel="next" title="git创建版本库">
+                  git创建版本库 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
 </div>
