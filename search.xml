@@ -35,6 +35,56 @@
       </tags>
   </entry>
   <entry>
+    <title>VSCode 常用快捷键</title>
+    <url>/posts/1d77edc9/</url>
+    <content><![CDATA[<h4 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h4><span id="more"></span>
+
+<ul>
+<li><code>shift + alt +f</code></li>
+</ul>
+<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
+<li><p><code>Shift + Alt + ↓/↑</code></p>
+</li>
+<li><p>在某行直接<code>Ctrl + C + Ctrl + V</code></p>
+</li>
+</ul>
+<h4 id="快速定位到某一行"><a href="#快速定位到某一行" class="headerlink" title="快速定位到某一行"></a>快速定位到某一行</h4><ul>
+<li><code>Ctrl + G</code></li>
+</ul>
+<h4 id="选中单词"><a href="#选中单词" class="headerlink" title="选中单词"></a>选中单词</h4><ul>
+<li>在单词首或尾 <code>Ctrl + Shift + ←/→</code></li>
+</ul>
+<h4 id="选定多个相同的单词"><a href="#选定多个相同的单词" class="headerlink" title="选定多个相同的单词"></a>选定多个相同的单词</h4><ul>
+<li>选定某词直接 <code>Ctrl + D</code></li>
+</ul>
+<h4 id="全局替换某个单词"><a href="#全局替换某个单词" class="headerlink" title="全局替换某个单词"></a>全局替换某个单词</h4><ul>
+<li><code>Ctrl + H</code></li>
+</ul>
+<h4 id="选择某个区块"><a href="#选择某个区块" class="headerlink" title="选择某个区块"></a>选择某个区块</h4><ul>
+<li>按住 <code>Alt + Shift</code> 选择或拖动鼠标</li>
+</ul>
+<h4 id="放大缩小整个编辑器界面"><a href="#放大缩小整个编辑器界面" class="headerlink" title="放大缩小整个编辑器界面"></a>放大缩小整个编辑器界面</h4><ul>
+<li><code>Ctrl + +/-</code></li>
+</ul>
+<h4 id="光标定位到单词首-x2F-单词尾"><a href="#光标定位到单词首-x2F-单词尾" class="headerlink" title="光标定位到单词首&#x2F;单词尾"></a>光标定位到单词首&#x2F;单词尾</h4><ul>
+<li><code>Ctrl + ←/→</code></li>
+</ul>
+<h4 id="光标定位到行首-x2F-行未"><a href="#光标定位到行首-x2F-行未" class="headerlink" title="光标定位到行首&#x2F;行未"></a>光标定位到行首&#x2F;行未</h4><ul>
+<li><code>Home / End</code></li>
+</ul>
+<h4 id="添加多个光标"><a href="#添加多个光标" class="headerlink" title="添加多个光标"></a>添加多个光标</h4><ul>
+<li><code>Ctrl + Alt + ↑/↓</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>VSCode</category>
+      </categories>
+      <tags>
+        <tag>快捷键</tag>
+        <tag>VSCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VSCode 安装和配置 c/c++ 环境</title>
     <url>/posts/d0cf399e/</url>
     <content><![CDATA[<h3 id="安装-VSCode"><a href="#安装-VSCode" class="headerlink" title="安装 VSCode"></a>安装 VSCode</h3><p><a href="https://code.visualstudio.com/">VSCode 官网下载</a></p>
@@ -90,74 +140,48 @@
       </tags>
   </entry>
   <entry>
-    <title>VSCode 常用快捷键</title>
-    <url>/posts/1d77edc9/</url>
-    <content><![CDATA[<h4 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h4><span id="more"></span>
+    <title>csgo启动项、常用指令以及按键绑定</title>
+    <url>/posts/18db92a5/</url>
+    <content><![CDATA[<h4 id="启动项"><a href="#启动项" class="headerlink" title="启动项"></a>启动项</h4><p>steam 界面右键 CSGO 点击属性配置启动项</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-perfectworld -novid -console -useforcedmparms -noforcemaccel -noforcemspd -freq 144 -tickrate 128</span><br></pre></td></tr></table></figure>
 
+<p>说明：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-perfectworld //是国服的命令（-worldwide 是国际服的命令）</span><br><span class="line">-novid //跳过开场动画</span><br><span class="line">-console //进入游戏默认启用控制台</span><br><span class="line">-useforcedmparms -noforcemaccel -noforcemspd //三条指令一起，去除系统鼠标加速</span><br><span class="line">-freq 144 //启动游戏时同时设置你的屏幕的刷新率为144赫兹，该启动项后数字应对应你的屏幕本身最高刷新率</span><br><span class="line">-tickrate 128 //将服务器刷新率设为128（并非强制设置）</span><br></pre></td></tr></table></figure>
+
+<h4 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h4><p>注意：<br>以下指令都在 <code>console</code> 控制台中输入，<code>console</code> 在启动项中加入 <code>-console</code> 在游戏中按下 <code>~</code> 键即可打开</p>
+<h5 id="设置最大-FPS"><a href="#设置最大-FPS" class="headerlink" title="设置最大 FPS"></a>设置最大 FPS</h5><p>以 <code>200</code> 为例</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fps_max 200</span><br></pre></td></tr></table></figure>
+
+<h5 id="显示-FPS-信息"><a href="#显示-FPS-信息" class="headerlink" title="显示 FPS 信息"></a>显示 FPS 信息</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cl_showfps 0 //左上角显示FPS</span><br><span class="line">net_graph 0 //网络状态、帧数显示</span><br><span class="line">net_graphpos 0 //0-2参数显示在界面左边、右边、中键</span><br><span class="line">net_graphheight 0//修改参数显示位置高度(像素)</span><br><span class="line">net_graphproportionalfont 1 //参数显示字体大小(默认1)</span><br></pre></td></tr></table></figure>
+
+<h4 id="按键绑定"><a href="#按键绑定" class="headerlink" title="按键绑定"></a>按键绑定</h4><h5 id="绑定跳投"><a href="#绑定跳投" class="headerlink" title="绑定跳投"></a>绑定跳投</h5><p>以 <code>mouse5</code> 为例</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alias +jumpthrow”+jump;-attack;-attack2″;</span><br><span class="line"></span><br><span class="line">alias -jumpthrow -jump;</span><br><span class="line"></span><br><span class="line">bind mouse5 +jumpthrow;</span><br></pre></td></tr></table></figure>
+
+<p>注意：<br>按下跳投键之前要按住鼠标左键</p>
+<h5 id="绑定清除血迹"><a href="#绑定清除血迹" class="headerlink" title="绑定清除血迹"></a>绑定清除血迹</h5><p>以下选 <code>一个</code> 想要的按键就行，原理就是加上 <code>r_cleardecals</code><br>打开 <code>console</code> 控制台输入以下指令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bind shift &quot;+speed; r_cleardecals&quot;//绑定WASD行走+去除血迹</span><br><span class="line">bind a &quot;+moveleft; r_cleardecals&quot;</span><br><span class="line">bind w &quot;+forward; r_cleardecals&quot;</span><br><span class="line">bind s &quot;+back; r_cleardecals&quot;</span><br><span class="line">bind d &quot;+moveright; r_cleardecals&quot;</span><br><span class="line">bind &quot;f&quot; &quot;+lookatweapon;r_cleardecals&quot; //检视武器 + 去除血迹</span><br><span class="line">bind &quot;SHIFT&quot; &quot;+speed;r_cleardecals&quot; //静步 + 去除血迹</span><br><span class="line">bind &quot;ctrl&quot; &quot;+duck;r_cleardecals&quot; //蹲下 + 去除血迹</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>也可以绑其他按键，不过清除血迹是为了方便按，所以选择和默认按键冲突（冲突也可以一起实现功能）</p>
+<h5 id="绑定切换左右手"><a href="#绑定切换左右手" class="headerlink" title="绑定切换左右手"></a>绑定切换左右手</h5><p>以 <code>mouse4</code> 为例</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bindtoggle mouse4 &quot;cl_righthand&quot;</span><br></pre></td></tr></table></figure>
+
+<h5 id="想要解绑某个按键"><a href="#想要解绑某个按键" class="headerlink" title="想要解绑某个按键"></a>想要解绑某个按键</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">unbind &#x27;按键名&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
 <ul>
-<li><code>shift + alt +f</code></li>
+<li>比如你绑定了 <code>shift</code> 清除血迹，使用了 <code>unbind</code> 命令后静步也会失效</li>
+<li>这时候 steam 界面右键 CSGO 选择 ‘管理’ -&gt; ‘浏览本地文件’，依次点击文件夹 ‘csgo’ -&gt; ‘cfg’</li>
+<li>找到名为<code>config_default</code> 的文件</li>
+<li>以记事本方式打开， <code>Ctrl + F</code> 查询 <code>SHIFT</code> 发现命令行 <code>bind &quot;SHIFT&quot; &quot;+speed&quot;</code></li>
+<li>复制该行回到游戏打开 <code>console</code> 输入该命令行<br><code>shift</code> 静步指令又可以生效</li>
 </ul>
-<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
-<li><p><code>Shift + Alt + ↓/↑</code></p>
-</li>
-<li><p>在某行直接<code>Ctrl + C + Ctrl + V</code></p>
-</li>
-</ul>
-<h4 id="快速定位到某一行"><a href="#快速定位到某一行" class="headerlink" title="快速定位到某一行"></a>快速定位到某一行</h4><ul>
-<li><code>Ctrl + G</code></li>
-</ul>
-<h4 id="选中单词"><a href="#选中单词" class="headerlink" title="选中单词"></a>选中单词</h4><ul>
-<li>在单词首或尾 <code>Ctrl + Shift + ←/→</code></li>
-</ul>
-<h4 id="选定多个相同的单词"><a href="#选定多个相同的单词" class="headerlink" title="选定多个相同的单词"></a>选定多个相同的单词</h4><ul>
-<li>选定某词直接 <code>Ctrl + D</code></li>
-</ul>
-<h4 id="全局替换某个单词"><a href="#全局替换某个单词" class="headerlink" title="全局替换某个单词"></a>全局替换某个单词</h4><ul>
-<li><code>Ctrl + H</code></li>
-</ul>
-<h4 id="选择某个区块"><a href="#选择某个区块" class="headerlink" title="选择某个区块"></a>选择某个区块</h4><ul>
-<li>按住 <code>Alt + Shift</code> 选择或拖动鼠标</li>
-</ul>
-<h4 id="放大缩小整个编辑器界面"><a href="#放大缩小整个编辑器界面" class="headerlink" title="放大缩小整个编辑器界面"></a>放大缩小整个编辑器界面</h4><ul>
-<li><code>Ctrl + +/-</code></li>
-</ul>
-<h4 id="光标定位到单词首-x2F-单词尾"><a href="#光标定位到单词首-x2F-单词尾" class="headerlink" title="光标定位到单词首&#x2F;单词尾"></a>光标定位到单词首&#x2F;单词尾</h4><ul>
-<li><code>Ctrl + ←/→</code></li>
-</ul>
-<h4 id="光标定位到行首-x2F-行未"><a href="#光标定位到行首-x2F-行未" class="headerlink" title="光标定位到行首&#x2F;行未"></a>光标定位到行首&#x2F;行未</h4><ul>
-<li><code>Home / End</code></li>
-</ul>
-<h4 id="添加多个光标"><a href="#添加多个光标" class="headerlink" title="添加多个光标"></a>添加多个光标</h4><ul>
-<li><code>Ctrl + Alt + ↑/↓</code></li>
-</ul>
+<p>这个方法适用于其他默认按键被占用，想要解绑的情况</p>
 ]]></content>
       <categories>
-        <category>VSCode</category>
+        <category>CSGO</category>
       </categories>
       <tags>
-        <tag>快捷键</tag>
-        <tag>VSCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git 配置 https 和 ssh 免密码登录</title>
-    <url>/posts/8a44e1d6/</url>
-    <content><![CDATA[<h4 id="区分-https-clone-和-ssh-clone"><a href="#区分-https-clone-和-ssh-clone" class="headerlink" title="区分 https clone 和 ssh clone"></a>区分 https clone 和 ssh clone</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">不同的克隆方式导致校验方式不同，对应的免秘方式也不一样。</span><br><span class="line">https通过记住账号密码免登，ssh通过校验生成的密钥免登。</span><br><span class="line">通常都用ssh校验。</span><br></pre></td></tr></table></figure>
-
-<h4 id="https-免密配置方法"><a href="#https-免密配置方法" class="headerlink" title="https 免密配置方法"></a>https 免密配置方法</h4><h5 id="设置配置-git-x2F-config"><a href="#设置配置-git-x2F-config" class="headerlink" title="设置配置 .git &#x2F; config"></a>设置配置 .git &#x2F; config</h5><p><code>git config --global credential.helper store</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">    helper = store</span><br></pre></td></tr></table></figure>
-
-<h5 id="输入一次账号密码后第二次就会记住账号密码。"><a href="#输入一次账号密码后第二次就会记住账号密码。" class="headerlink" title="输入一次账号密码后第二次就会记住账号密码。"></a>输入一次账号密码后第二次就会记住账号密码。</h5><h4 id="ssh-免密配置方法"><a href="#ssh-免密配置方法" class="headerlink" title="ssh 免密配置方法"></a>ssh 免密配置方法</h4><h5 id="配置信息"><a href="#配置信息" class="headerlink" title="配置信息"></a>配置信息</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line"></span><br><span class="line">git config --global user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line"></span><br><span class="line">git config --global user.email <span class="string">&#x27;用户邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>注意 <code>git config</code> 命令的 <code>--global</code> 参数，用了这个参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和 Email 地址</p>
-<h5 id="执行生成公钥和私钥的命令"><a href="#执行生成公钥和私钥的命令" class="headerlink" title="执行生成公钥和私钥的命令"></a>执行生成公钥和私钥的命令</h5><p><code>ssh-keygen -t rsa</code><br>按回车 3 下 一般都是直接不写为空 直接回车</p>
-<h5 id="执行查看公钥的命令"><a href="#执行查看公钥的命令" class="headerlink" title="执行查看公钥的命令"></a>执行查看公钥的命令</h5><p><code>cat ~/.ssh/id_rsa.pub</code></p>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
+        <tag>CSGO</tag>
       </tags>
   </entry>
   <entry>
@@ -192,27 +216,24 @@
       </tags>
   </entry>
   <entry>
-    <title>npm 修改默认安装路径</title>
-    <url>/posts/c0f58d3c/</url>
-    <content><![CDATA[<h5 id="使用-npm-config-ls-查看-npm-相关配置"><a href="#使用-npm-config-ls-查看-npm-相关配置" class="headerlink" title="使用 npm config ls 查看 npm 相关配置"></a>使用 <code>npm config ls</code> 查看 npm 相关配置</h5><h5 id="在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache"><a href="#在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache" class="headerlink" title="在 Node 根目录(含 node.exe)新建两个文件夹 node_global 和 node_cache"></a>在 Node 根目录(含 node.exe)新建两个文件夹 <code>node_global</code> 和 <code>node_cache</code></h5><ul>
-<li><p><code>node_global</code> 用于存放全局安装的包</p>
-</li>
-<li><p><code>node_cache</code> 用于存放缓存</p>
-</li>
-</ul>
-<h5 id="cmd-设置路径地址-绝对地址"><a href="#cmd-设置路径地址-绝对地址" class="headerlink" title="cmd 设置路径地址(绝对地址)"></a>cmd 设置路径地址(绝对地址)</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;node\node_global&quot;</span><br><span class="line">npm config set cache &quot;node\node_cache&quot;</span><br></pre></td></tr></table></figure>
+    <title>git 配置 https 和 ssh 免密码登录</title>
+    <url>/posts/8a44e1d6/</url>
+    <content><![CDATA[<h4 id="区分-https-clone-和-ssh-clone"><a href="#区分-https-clone-和-ssh-clone" class="headerlink" title="区分 https clone 和 ssh clone"></a>区分 https clone 和 ssh clone</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">不同的克隆方式导致校验方式不同，对应的免秘方式也不一样。</span><br><span class="line">https通过记住账号密码免登，ssh通过校验生成的密钥免登。</span><br><span class="line">通常都用ssh校验。</span><br></pre></td></tr></table></figure>
 
-<p>这两行命令执行后默认没有提示则说明成功</p>
-<h5 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h5><p>在系统变量 Path 中添加三行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%NODE_HOME%</span><br><span class="line">%NODE_HOME%/node_global</span><br><span class="line">%NODE_HOME%/node_modules</span><br></pre></td></tr></table></figure>
+<h4 id="https-免密配置方法"><a href="#https-免密配置方法" class="headerlink" title="https 免密配置方法"></a>https 免密配置方法</h4><h5 id="设置配置-git-x2F-config"><a href="#设置配置-git-x2F-config" class="headerlink" title="设置配置 .git &#x2F; config"></a>设置配置 .git &#x2F; config</h5><p><code>git config --global credential.helper store</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[credential]</span><br><span class="line">    helper = store</span><br></pre></td></tr></table></figure>
 
-<p>前提是在系统变量中存在 <code>NODE_HOME</code> ,值为有 node.exe 的地址<br>例如我的 <code>NODE_HOME</code> 值为 <code>D:\apps\nvs\node\16.17.0\x64</code></p>
+<h5 id="输入一次账号密码后第二次就会记住账号密码。"><a href="#输入一次账号密码后第二次就会记住账号密码。" class="headerlink" title="输入一次账号密码后第二次就会记住账号密码。"></a>输入一次账号密码后第二次就会记住账号密码。</h5><h4 id="ssh-免密配置方法"><a href="#ssh-免密配置方法" class="headerlink" title="ssh 免密配置方法"></a>ssh 免密配置方法</h4><h5 id="配置信息"><a href="#配置信息" class="headerlink" title="配置信息"></a>配置信息</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line"></span><br><span class="line">git config --global user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line"></span><br><span class="line">git config --global user.email <span class="string">&#x27;用户邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>注意 <code>git config</code> 命令的 <code>--global</code> 参数，用了这个参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和 Email 地址</p>
+<h5 id="执行生成公钥和私钥的命令"><a href="#执行生成公钥和私钥的命令" class="headerlink" title="执行生成公钥和私钥的命令"></a>执行生成公钥和私钥的命令</h5><p><code>ssh-keygen -t rsa</code><br>按回车 3 下 一般都是直接不写为空 直接回车</p>
+<h5 id="执行查看公钥的命令"><a href="#执行查看公钥的命令" class="headerlink" title="执行查看公钥的命令"></a>执行查看公钥的命令</h5><p><code>cat ~/.ssh/id_rsa.pub</code></p>
 ]]></content>
       <categories>
-        <category>npm</category>
+        <category>git</category>
       </categories>
       <tags>
-        <tag>环境配置</tag>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -252,14 +273,27 @@
       </tags>
   </entry>
   <entry>
-    <title>csgo-cfg优化以及按键绑定</title>
-    <url>/posts/18db92a5/</url>
-    <content><![CDATA[]]></content>
+    <title>npm 修改默认安装路径</title>
+    <url>/posts/c0f58d3c/</url>
+    <content><![CDATA[<h5 id="使用-npm-config-ls-查看-npm-相关配置"><a href="#使用-npm-config-ls-查看-npm-相关配置" class="headerlink" title="使用 npm config ls 查看 npm 相关配置"></a>使用 <code>npm config ls</code> 查看 npm 相关配置</h5><h5 id="在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache"><a href="#在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache" class="headerlink" title="在 Node 根目录(含 node.exe)新建两个文件夹 node_global 和 node_cache"></a>在 Node 根目录(含 node.exe)新建两个文件夹 <code>node_global</code> 和 <code>node_cache</code></h5><ul>
+<li><p><code>node_global</code> 用于存放全局安装的包</p>
+</li>
+<li><p><code>node_cache</code> 用于存放缓存</p>
+</li>
+</ul>
+<h5 id="cmd-设置路径地址-绝对地址"><a href="#cmd-设置路径地址-绝对地址" class="headerlink" title="cmd 设置路径地址(绝对地址)"></a>cmd 设置路径地址(绝对地址)</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;node\node_global&quot;</span><br><span class="line">npm config set cache &quot;node\node_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这两行命令执行后默认没有提示则说明成功</p>
+<h5 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h5><p>在系统变量 Path 中添加三行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%NODE_HOME%</span><br><span class="line">%NODE_HOME%/node_global</span><br><span class="line">%NODE_HOME%/node_modules</span><br></pre></td></tr></table></figure>
+
+<p>前提是在系统变量中存在 <code>NODE_HOME</code> ,值为有 node.exe 的地址<br>例如我的 <code>NODE_HOME</code> 值为 <code>D:\apps\nvs\node\16.17.0\x64</code></p>
+]]></content>
       <categories>
-        <category>CSGO</category>
+        <category>npm</category>
       </categories>
       <tags>
-        <tag>CSGO</tag>
+        <tag>环境配置</tag>
       </tags>
   </entry>
 </search>
