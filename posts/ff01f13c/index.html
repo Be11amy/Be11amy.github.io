@@ -28,7 +28,7 @@
 <meta property="og:description" content="git创建版本库">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-22T13:50:52.000Z">
-<meta property="article:modified_time" content="2022-09-24T07:26:34.310Z">
+<meta property="article:modified_time" content="2022-09-29T12:06:02.431Z">
 <meta property="article:author" content="Be11amy">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
@@ -160,13 +160,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -270,7 +270,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-09-24 15:26:34" itemprop="dateModified" datetime="2022-09-24T15:26:34+08:00">2022-09-24</time>
+      <time title="修改时间：2022-09-29 20:06:02" itemprop="dateModified" datetime="2022-09-29T20:06:02+08:00">2022-09-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -300,22 +300,28 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h4 id="初始化一个-Git-仓库，使用-git-init-命令"><a href="#初始化一个-Git-仓库，使用-git-init-命令" class="headerlink" title="初始化一个 Git 仓库，使用 git init 命令"></a>初始化一个 Git 仓库，使用 <code>git init</code> 命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+        <h4 id="初始化一个-Git-仓库，使用-git-init-命令"><a href="#初始化一个-Git-仓库，使用-git-init-命令" class="headerlink" title="初始化一个 Git 仓库，使用 git init 命令"></a>初始化一个 Git 仓库，使用 <code>git init</code> 命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
 
 <p>当前目录下多了一个 <code>.git</code> 的目录，这个目录是 <code>Git</code> 来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 <code>Git</code> 仓库给破坏了</p>
 <p>如果没有看到 <code>.git</code> 目录，那是因为这个目录默认是隐藏的，用 <code>ls -ah</code> 命令就可以看见</p>
-<h4 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h4><h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>用命令 <code>git add</code> 告诉 git，把文件添加到仓库</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add <span class="string">&#x27;文件名&#x27;</span></span><br></pre></td></tr></table></figure>
+<h4 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h4><p>以一个 <code>readme.txt</code> 为例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Git is a version control system.</span><br><span class="line">Git is free software.</span><br></pre></td></tr></table></figure>
+
+<p>注意：<br>一定要把该文件放在有 <code>.git</code> 文件夹的同一文件夹内</p>
+<p>建议：<br>Windows 用户用 <code>VSCode</code> 代替 <code>Windows</code> 自带记事本</p>
+<h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>用命令 <code>git add</code> 告诉 git，把文件 <code>添加</code> 到仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add <span class="string">&#x27;文件名&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>执行上面的命令，没有任何显示就对了</p>
-<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>用命令 <code>git commit</code> 告诉 git，把文件提交到仓库</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;本次提交的说明&quot;</span></span><br></pre></td></tr></table></figure>
+<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>用命令 <code>git commit</code> 告诉 git，把文件 <code>提交</code> 到仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;本次提交的说明&quot;</span></span><br><span class="line">[master (root-commit) eaadf4e] wrote a readme file</span><br><span class="line"> 1 file changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br></pre></td></tr></table></figure>
 
 <p>本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
 <p>执行上面的命令成功之后会返回文件改动的信息</p>
 <h5 id="为什么-Git-添加文件需要-add，commit-一共两步"><a href="#为什么-Git-添加文件需要-add，commit-一共两步" class="headerlink" title="为什么 Git 添加文件需要 add，commit 一共两步"></a>为什么 Git 添加文件需要 <code>add</code>，<code>commit</code> 一共两步</h5><p>因为 <code>commit</code> 可以一次提交很多文件，所以你可以多次 <code>add</code> 不同的文件，比如：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add file1.txt</span><br><span class="line">git add file2.txt file3.txt</span><br><span class="line">git commit -m <span class="string">&quot;add 3 files.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add file1.txt</span><br><span class="line">$ git add file2.txt file3.txt</span><br><span class="line">$ git commit -m <span class="string">&quot;add 3 files.&quot;</span></span><br></pre></td></tr></table></figure>
 
+<p><code>-m</code> 表示 message，是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
 <h4 id="疑难解答"><a href="#疑难解答" class="headerlink" title="疑难解答"></a>疑难解答</h4><p>Q：输入 <code>git add readme.txt</code>，得到错误：<code>fatal: not a git repository (or any of the parent directories)</code></p>
 <p>A：<code>Git</code> 命令必须在 <code>Git</code> 仓库目录内执行（<code>git init</code> 除外），在仓库目录外执行是没有意义的。</p>
 <p>Q：输入 <code>git add readme.txt</code>，得到错误 <code>fatal: pathspec &#39;readme.txt&#39; did not match any files</code></p>
