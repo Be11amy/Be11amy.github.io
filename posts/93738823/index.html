@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon16.jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"be11amy.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null,"show_result":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="常见的激活函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="神经网络中的激活函数">
+<meta property="og:url" content="https://be11amy.github.io/posts/93738823/index.html">
+<meta property="og:site_name" content="Be11amy&#39;s Blog">
+<meta property="og:description" content="常见的激活函数">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-06-28T01:06:47.000Z">
+<meta property="article:modified_time" content="2024-06-28T01:38:40.590Z">
+<meta property="article:author" content="Be11amy">
+<meta property="article:tag" content="神经网络">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://be11amy.github.io/posts/93738823/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://be11amy.github.io/posts/93738823/","path":"posts/93738823/","title":"神经网络中的激活函数"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>神经网络中的激活函数 | Be11amy's Blog</title>
+  
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/injector/main.css" /><link rel="preload" as="style" href="/css/injector/light.css" /><link rel="preload" as="style" href="/css/injector/dark.css" />
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Be11amy's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">小烦恼没什么大不了</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0"><span class="nav-number">2.</span> <span class="nav-text">为什么要使用激活函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-number">3.</span> <span class="nav-text">激活函数的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8D%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">常见的几种激活函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Sigmoid"><span class="nav-number">4.1.</span> <span class="nav-text">Sigmoid</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E9%80%82%E5%90%88%E4%BD%BF%E7%94%A8Sigmoid"><span class="nav-number">4.1.1.</span> <span class="nav-text">什么情况下适合使用Sigmoid</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Sigmoid%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="nav-number">4.1.2.</span> <span class="nav-text">Sigmoid的缺点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Tanh"><span class="nav-number">4.2.</span> <span class="nav-text">Tanh</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E9%80%82%E5%90%88%E7%94%A8Tanh"><span class="nav-number">4.2.1.</span> <span class="nav-text">什么情况下适合用Tanh</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#tanh%E6%9C%89%E5%93%AA%E4%BA%9B%E7%BC%BA%E7%82%B9"><span class="nav-number">4.2.2.</span> <span class="nav-text">tanh有哪些缺点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RELU"><span class="nav-number">4.3.</span> <span class="nav-text">RELU</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E9%80%82%E5%90%88%E7%94%A8RELU"><span class="nav-number">4.3.1.</span> <span class="nav-text">什么情况下适合用RELU</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RELU%E6%9C%89%E5%93%AA%E4%BA%9B%E7%BC%BA%E7%82%B9"><span class="nav-number">4.3.2.</span> <span class="nav-text">RELU有哪些缺点</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Leaky-RELU"><span class="nav-number">4.4.</span> <span class="nav-text">Leaky RELU</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PRELU"><span class="nav-number">4.5.</span> <span class="nav-text">PRELU</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ELU"><span class="nav-number">4.6.</span> <span class="nav-text">ELU</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SELU"><span class="nav-number">4.7.</span> <span class="nav-text">SELU</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Swish"><span class="nav-number">4.8.</span> <span class="nav-text">Swish</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mish"><span class="nav-number">4.9.</span> <span class="nav-text">Mish</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Softmax"><span class="nav-number">4.10.</span> <span class="nav-text">Softmax</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Be11amy"
+      src="/assets/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Be11amy</p>
+  <div class="site-description" itemprop="description">个人博客</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">42</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Be11amy" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Be11amy" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/5508367437" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5508367437" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i></a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.csdn.net/m0_51187040" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;m0_51187040" rel="noopener" target="_blank">CSDN</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://hexo.io/" title="https:&#x2F;&#x2F;hexo.io" rel="noopener" target="_blank">Hexo</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://theme-next.js.org/" title="https:&#x2F;&#x2F;theme-next.js.org" rel="noopener" target="_blank">NexT</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://be11amy.github.io/posts/93738823/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/assets/avatar.jpg">
+      <meta itemprop="name" content="Be11amy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Be11amy's Blog">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="神经网络中的激活函数 | Be11amy's Blog">
+      <meta itemprop="description" content="常见的激活函数">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          神经网络中的激活函数
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-06-28 09:06:47 / 修改时间：09:38:40" itemprop="dateCreated datePublished" datetime="2024-06-28T09:06:47+08:00">2024-06-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">深度学习</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description">常见的激活函数</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>激活函数（Activation Function），就是在人工神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端，旨在帮助网络学习数据中的复杂模式。</p>
+<h3 id="为什么要使用激活函数"><a href="#为什么要使用激活函数" class="headerlink" title="为什么要使用激活函数"></a>为什么要使用激活函数</h3><p>如果不用激活函数，每一层输出都是上层输入的线性函数，无论神经网络有多少层，输出都是输入的线性组合，这种情况就是最原始的感知机（Perceptron）。<br>使用激活函数能够给神经元引入非线性因素，使得神经网络可以任意逼近任何非线性函数，使深层神经网络表达能力更加强大，这样神经网络就可以应用到众多的非线性模型中。  </p>
+<h3 id="激活函数的分类"><a href="#激活函数的分类" class="headerlink" title="激活函数的分类"></a>激活函数的分类</h3><ul>
+<li>饱和激活函数： sigmoid、tanh…</li>
+<li>非饱和激活函数:  ReLU、Leaky Relu、ELU、PReLU、RReLU…</li>
+</ul>
+<p>Sigmoid函数需要一个实值输入压缩至[0,1]的范围<br>tanh函数需要讲一个实值输入压缩至[-1,1]的范围</p>
+<p>相对于饱和激活函数，使用非饱和激活函数的优势在于两点：</p>
+<ol>
+<li>非饱和激活函数能解决深度神经网络（层数非常多）带来的梯度消失问题</li>
+<li>使用非饱和激活函数能加快收敛速度。</li>
+</ol>
+<h3 id="常见的几种激活函数"><a href="#常见的几种激活函数" class="headerlink" title="常见的几种激活函数"></a>常见的几种激活函数</h3><h4 id="Sigmoid"><a href="#Sigmoid" class="headerlink" title="Sigmoid"></a>Sigmoid</h4><p>数学表达式：<br>$$<br>f(x)&#x3D;\dfrac{1}{1+e^{-x}}<br>$$<br>导数表达式：<br>$$<br>f’(x)&#x3D;f(x)(1-f(x))<br>$$<br>Sigmoid函数在历史上曾非常常用，输出值范围为[0,1]之间的实数。但是现在它已经不太受欢迎，实际中很少使用。</p>
+<h5 id="什么情况下适合使用Sigmoid"><a href="#什么情况下适合使用Sigmoid" class="headerlink" title="什么情况下适合使用Sigmoid"></a>什么情况下适合使用Sigmoid</h5><ul>
+<li>Sigmoid 函数的输出范围是 0 到 1。非常适合作为模型的输出函数用于输出一个0~1范围内的概率值，比如用于表示二分类的类别或者用于表示置信度。</li>
+<li>梯度平滑，便于求导，也防止模型训练过程中出现突变的梯度</li>
+</ul>
+<h5 id="Sigmoid的缺点"><a href="#Sigmoid的缺点" class="headerlink" title="Sigmoid的缺点"></a>Sigmoid的缺点</h5><ul>
+<li>容易造成梯度消失。我们从导函数图像中了解到sigmoid的导数都是小于0.25的，那么在进行反向传播的时候，梯度相乘结果会慢慢的趋向于0。这样几乎就没有梯度信号通过神经元传递到前面层的梯度更新中，因此这时前面层的权值几乎没有更新，这就叫梯度消失。除此之外，为了防止饱和，必须对于权重矩阵的初始化特别留意。如果初始化权重过大，可能很多神经元得到一个比较小的梯度，致使神经元不能很好的更新权重提前饱和，神经网络就几乎不学习。</li>
+<li>函数输出不是以 0 为中心的，梯度可能就会向特定方向移动，从而降低权重更新的效率</li>
+<li>Sigmoid 函数执行指数运算，计算机运行得较慢，比较消耗计算资源。</li>
+</ul>
+<h4 id="Tanh"><a href="#Tanh" class="headerlink" title="Tanh"></a>Tanh</h4><p>实际上，Tanh函数是 sigmoid 的变形：<br>$$<br>tanh(x)&#x3D;2sigmoid(2x)-1<br>$$<br>与sigmoid不同的是，tanh是“零为中心”的。因此在实际应用中，tanh会比sigmoid更好一些。但是在饱和神经元的情况下，tanh还是没有解决梯度消失问题。</p>
+<h5 id="什么情况下适合用Tanh"><a href="#什么情况下适合用Tanh" class="headerlink" title="什么情况下适合用Tanh"></a>什么情况下适合用Tanh</h5><ul>
+<li>tanh 的输出间隔为 1，并且整个函数以 0 为中心，比 sigmoid 函数更好；</li>
+<li>在 tanh 图中，负输入将被强映射为负，而零输入被映射为接近零。</li>
+</ul>
+<h5 id="tanh有哪些缺点"><a href="#tanh有哪些缺点" class="headerlink" title="tanh有哪些缺点"></a>tanh有哪些缺点</h5><ul>
+<li>仍然存在梯度饱和的问题</li>
+<li>依然进行的是指数运算</li>
+</ul>
+<h4 id="RELU"><a href="#RELU" class="headerlink" title="RELU"></a>RELU</h4><p>数学表达式：<br>$$<br>f(x)&#x3D;max(0,x)<br>$$</p>
+<h5 id="什么情况下适合用RELU"><a href="#什么情况下适合用RELU" class="headerlink" title="什么情况下适合用RELU"></a>什么情况下适合用RELU</h5><ul>
+<li>ReLU解决了梯度消失的问题，当输入值为正时，神经元不会饱和</li>
+<li>由于ReLU线性、非饱和的性质，在SGD中能够快速收敛</li>
+<li>计算复杂度低，不需要进行指数运算</li>
+</ul>
+<h5 id="RELU有哪些缺点"><a href="#RELU有哪些缺点" class="headerlink" title="RELU有哪些缺点"></a>RELU有哪些缺点</h5><ul>
+<li>与Sigmoid一样，其输出不是以0为中心的</li>
+<li>Dead ReLU 问题。当输入为负时，梯度为0。这个神经元及之后的神经元梯度永远为0，不再对任何数据有所响应，导致相应参数永远不会被更新<br>训练神经网络的时候，一旦学习率没有设置好，第一次更新权重的时候，输入是负值，那么这个含有ReLU的神经节点就会死亡，再也不会被激活。所以，要设置一个合适的较小的学习率，来降低这种情况的发生</li>
+</ul>
+<h4 id="Leaky-RELU"><a href="#Leaky-RELU" class="headerlink" title="Leaky RELU"></a>Leaky RELU</h4><h4 id="PRELU"><a href="#PRELU" class="headerlink" title="PRELU"></a>PRELU</h4><h4 id="ELU"><a href="#ELU" class="headerlink" title="ELU"></a>ELU</h4><h4 id="SELU"><a href="#SELU" class="headerlink" title="SELU"></a>SELU</h4><h4 id="Swish"><a href="#Swish" class="headerlink" title="Swish"></a>Swish</h4><h4 id="Mish"><a href="#Mish" class="headerlink" title="Mish"></a>Mish</h4><h4 id="Softmax"><a href="#Softmax" class="headerlink" title="Softmax"></a>Softmax</h4><p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42691298/article/details/126590726">深度学习中常见的10种激活函数（Activation Function）总结</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" rel="tag"># 神经网络</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/b9c1b045/" rel="prev" title="小层对比的划分">
+                  <i class="fa fa-chevron-left"></i> 小层对比的划分
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/c57d1942/" rel="next" title="markdown中书写数学公式">
+                  markdown中书写数学公式 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Be11amy</span>
+</div>
+<div class="busuanzi-count">
+</div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+
+    </div>
+  </footer>
+
+  
+  <script size="" alpha="" zIndex="-1" src="https://cdnjs.cloudflare.com/ajax/libs/ribbon.js/1.0.2/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+<div class="moon-menu">
+  <div class="moon-menu-items">
+    
+    <div id="moon-menu-item-back2bottom" class="moon-menu-item">
+      <i class='fas fa-chevron-down'></i>    </div>
+    
+    <div id="moon-menu-item-back2top" class="moon-menu-item">
+      <i class='fas fa-chevron-up'></i>    </div>
+    
+  </div>
+  <div class="moon-menu-button">
+    <svg class="moon-menu-bg">
+      <circle class="moon-menu-cricle" cx="50%" cy="50%" r="44%"></circle>
+      <circle class="moon-menu-border" cx="50%" cy="50%" r="48%"></circle>
+    </svg>
+    <div class="moon-menu-content">
+      <div class="moon-menu-icon"><i class='fas fa-ellipsis-v'></i></div>
+      <div class="moon-menu-text"></div>
+    </div>
+  </div>
+</div><script src="/js/injector.js"></script>
+</body>
+</html>

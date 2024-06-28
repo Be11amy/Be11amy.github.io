@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon16.jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"be11amy.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null,"show_result":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="测井中岩石的一些常见方法和储层参数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常见测井方法以及储层参数">
+<meta property="og:url" content="https://be11amy.github.io/posts/3ce6c508/index.html">
+<meta property="og:site_name" content="Be11amy&#39;s Blog">
+<meta property="og:description" content="测井中岩石的一些常见方法和储层参数">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-06-14T10:57:43.000Z">
+<meta property="article:modified_time" content="2024-06-25T07:24:38.352Z">
+<meta property="article:author" content="Be11amy">
+<meta property="article:tag" content="测井">
+<meta property="article:tag" content="地质知识">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://be11amy.github.io/posts/3ce6c508/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://be11amy.github.io/posts/3ce6c508/","path":"posts/3ce6c508/","title":"常见测井方法以及储层参数"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>常见测井方法以及储层参数 | Be11amy's Blog</title>
+  
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/injector/main.css" /><link rel="preload" as="style" href="/css/injector/light.css" /><link rel="preload" as="style" href="/css/injector/dark.css" />
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Be11amy's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">小烦恼没什么大不了</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%8B%E4%BA%95%E6%96%B9%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">测井方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A3%B0%E6%B3%A2%EF%BC%88Acoustic-Logging%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">声波（Acoustic Logging）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%AD%E5%AD%90%EF%BC%88Neutron-Logging%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">中子（Neutron Logging）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AF%86%E5%BA%A6%EF%BC%88Density-Logging%EF%BC%89"><span class="nav-number">1.3.</span> <span class="nav-text">密度（Density Logging）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BC%BD%E9%A9%AC%EF%BC%88Gamma-Ray-Logging%EF%BC%89"><span class="nav-number">1.4.</span> <span class="nav-text">伽马（Gamma Ray Logging）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%BE%84%E5%90%91%E7%94%B5%E9%98%BB%E7%8E%87%EF%BC%88Resistivity-Tool%EF%BC%89"><span class="nav-number">1.5.</span> <span class="nav-text">径向电阻率（Resistivity Tool）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BE%A7%E5%90%91%E7%94%B5%E9%98%BB%E7%8E%87%EF%BC%88%E2%80%9DRXO%E2%80%9D-Logging-Tool%EF%BC%89"><span class="nav-number">1.6.</span> <span class="nav-text">侧向电阻率（”RXO” Logging Tool）</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E4%B8%AA%E9%87%8D%E8%A6%81%E5%82%A8%E5%B1%82%E5%8F%82%E6%95%B0"><span class="nav-number">2.</span> <span class="nav-text">三个重要储层参数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AD%94%E9%9A%99%E5%BA%A6%EF%BC%88Porosity%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">孔隙度（Porosity）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%B8%97%E9%80%8F%E7%8E%87%EF%BC%88Permeability%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">渗透率（Permeability）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%90%AB%E6%B0%B4%E9%A5%B1%E5%92%8C%E5%BA%A6%EF%BC%88Water-Saturation%EF%BC%89"><span class="nav-number">2.3.</span> <span class="nav-text">含水饱和度（Water Saturation）</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Be11amy"
+      src="/assets/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Be11amy</p>
+  <div class="site-description" itemprop="description">个人博客</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">42</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Be11amy" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Be11amy" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/5508367437" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5508367437" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i></a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.csdn.net/m0_51187040" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;m0_51187040" rel="noopener" target="_blank">CSDN</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://hexo.io/" title="https:&#x2F;&#x2F;hexo.io" rel="noopener" target="_blank">Hexo</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://theme-next.js.org/" title="https:&#x2F;&#x2F;theme-next.js.org" rel="noopener" target="_blank">NexT</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://be11amy.github.io/posts/3ce6c508/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/assets/avatar.jpg">
+      <meta itemprop="name" content="Be11amy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Be11amy's Blog">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="常见测井方法以及储层参数 | Be11amy's Blog">
+      <meta itemprop="description" content="测井中岩石的一些常见方法和储层参数">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          常见测井方法以及储层参数
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-06-14 18:57:43" itemprop="dateCreated datePublished" datetime="2024-06-14T18:57:43+08:00">2024-06-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-06-25 15:24:38" itemprop="dateModified" datetime="2024-06-25T15:24:38+08:00">2024-06-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%B5%8B%E4%BA%95/" itemprop="url" rel="index"><span itemprop="name">测井</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description">测井中岩石的一些常见方法和储层参数</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h4 id="测井方法"><a href="#测井方法" class="headerlink" title="测井方法"></a>测井方法</h4><h5 id="声波（Acoustic-Logging）"><a href="#声波（Acoustic-Logging）" class="headerlink" title="声波（Acoustic Logging）"></a>声波（Acoustic Logging）</h5><p>测量岩石的声波传播速度，帮助确定岩石的密度和弹性模量，进而推断岩石的孔隙度和裂缝发育情况。</p>
+<h5 id="中子（Neutron-Logging）"><a href="#中子（Neutron-Logging）" class="headerlink" title="中子（Neutron Logging）"></a>中子（Neutron Logging）</h5><p>通过测量中子在地层中的散射和吸收情况来获取岩石的孔隙度信息。</p>
+<h5 id="密度（Density-Logging）"><a href="#密度（Density-Logging）" class="headerlink" title="密度（Density Logging）"></a>密度（Density Logging）</h5><p>通过测量地层的电子密度来推断岩石的密度，进而了解其孔隙度。</p>
+<h5 id="伽马（Gamma-Ray-Logging）"><a href="#伽马（Gamma-Ray-Logging）" class="headerlink" title="伽马（Gamma Ray Logging）"></a>伽马（Gamma Ray Logging）</h5><p>量地层岩石自然放射的伽马射线强度，帮助识别岩石的岩性和含泥量。</p>
+<h5 id="径向电阻率（Resistivity-Tool）"><a href="#径向电阻率（Resistivity-Tool）" class="headerlink" title="径向电阻率（Resistivity Tool）"></a>径向电阻率（Resistivity Tool）</h5><p>RT通常指的是电阻率测井工具，这是一种用于测量地层电阻率的工具。电阻率测井可以提供关于岩石的含水量、孔隙度和渗透性的信息，这对于评估油气藏的产能和可采性非常重要。电阻率测井工具可以测量不同的电阻率，包括径向电阻率（Rt）和侧向电阻率（Rxo）。</p>
+<h5 id="侧向电阻率（”RXO”-Logging-Tool）"><a href="#侧向电阻率（”RXO”-Logging-Tool）" class="headerlink" title="侧向电阻率（”RXO” Logging Tool）"></a>侧向电阻率（”RXO” Logging Tool）</h5><p>RXO是侧向电阻率测井的缩写，是一种电阻率测井技术，用于测量地层岩石的电阻率。侧向电阻率测井可以提供比常规电阻率测井更准确的地层电阻率图像，因为它减少了井壁附近泥浆滤液侵入的影响。RXO通常指的是侧向电阻率测井工具或测量结果。</p>
+<h4 id="三个重要储层参数"><a href="#三个重要储层参数" class="headerlink" title="三个重要储层参数"></a>三个重要储层参数</h4><h5 id="孔隙度（Porosity）"><a href="#孔隙度（Porosity）" class="headerlink" title="孔隙度（Porosity）"></a>孔隙度（Porosity）</h5><p>孔隙度表示岩石中空隙体积与总岩石体积的比例。通常是以百分比（%）或以小数形式表示<br>孔隙度的范围因岩石类型和地质环境而异，但通常在以下范围内：</p>
+<ul>
+<li>低孔隙度：0-5% 或 0.00-0.05<br>一般出现在非常致密的岩石中，例如某些致密砂岩或页岩。</li>
+<li>中等孔隙度：5-20% 或 0.05-0.20<br>常见于大部分储集层岩石，如普通砂岩、石灰岩等。</li>
+<li>高孔隙度：20-35% 或 0.20-0.35<br>通常出现在良好的储集层岩石中，如一些高孔隙度砂岩或某些含气岩层。</li>
+<li>非常高孔隙度：35%以上 或 0.35以上<br>一般不常见，可能出现在非常特殊的地质环境中。</li>
+</ul>
+<h5 id="渗透率（Permeability）"><a href="#渗透率（Permeability）" class="headerlink" title="渗透率（Permeability）"></a>渗透率（Permeability）</h5><p>渗透率反映了岩石中流体流动的能力，渗透率越高，表示岩石越容易让流体通过，反之则越难。渗透率的单位通常是达西（Darcy，符号为D），由于地层的渗透率往往较低，实际应用中更多使用毫达西（mD）。<br>渗透率的范围可以有很大的变化，具体数值取决于岩石的类型和结构：</p>
+<ul>
+<li>极低渗透率 (&lt; 0.1 mD)：致密砂岩、页岩等</li>
+<li>低渗透率 (0.1 mD - 10 mD)：一般砂岩、泥岩</li>
+<li>中等渗透率 (10 mD - 100 mD)：优质储层</li>
+<li>高渗透率 (100 mD - 1000 mD)：非常优质的储层</li>
+<li>极高渗透率 (&gt; 1000 mD)：如裂缝性储层或高度可渗透的砂岩</li>
+</ul>
+<h5 id="含水饱和度（Water-Saturation）"><a href="#含水饱和度（Water-Saturation）" class="headerlink" title="含水饱和度（Water Saturation）"></a>含水饱和度（Water Saturation）</h5><p>水饱和度表示岩石孔隙中被水填充的比例。通常是以百分比（%）或以小数形式表示<br>水饱和度的正常范围可以根据储层和流体性质有所变化，但一般来说：</p>
+<ul>
+<li>0% - 30%：低水饱和度，通常表示油气含量较高的储层。</li>
+<li>30% - 60%：中等水饱和度，储层中可能含有油气和水。</li>
+<li>60% - 100%：高水饱和度，表示储层中水含量较高，可能是含水层或油气层的含水部分。</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B5%8B%E4%BA%95/" rel="tag"># 测井</a>
+              <a href="/tags/%E5%9C%B0%E8%B4%A8%E7%9F%A5%E8%AF%86/" rel="tag"># 地质知识</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/6199195b/" rel="prev" title="深度学习的超参数">
+                  <i class="fa fa-chevron-left"></i> 深度学习的超参数
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/604b675f/" rel="next" title="如何把Notion安装到其他盘">
+                  如何把Notion安装到其他盘 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Be11amy</span>
+</div>
+<div class="busuanzi-count">
+</div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+
+    </div>
+  </footer>
+
+  
+  <script size="" alpha="" zIndex="-1" src="https://cdnjs.cloudflare.com/ajax/libs/ribbon.js/1.0.2/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+<div class="moon-menu">
+  <div class="moon-menu-items">
+    
+    <div id="moon-menu-item-back2bottom" class="moon-menu-item">
+      <i class='fas fa-chevron-down'></i>    </div>
+    
+    <div id="moon-menu-item-back2top" class="moon-menu-item">
+      <i class='fas fa-chevron-up'></i>    </div>
+    
+  </div>
+  <div class="moon-menu-button">
+    <svg class="moon-menu-bg">
+      <circle class="moon-menu-cricle" cx="50%" cy="50%" r="44%"></circle>
+      <circle class="moon-menu-border" cx="50%" cy="50%" r="48%"></circle>
+    </svg>
+    <div class="moon-menu-content">
+      <div class="moon-menu-icon"><i class='fas fa-ellipsis-v'></i></div>
+      <div class="moon-menu-text"></div>
+    </div>
+  </div>
+</div><script src="/js/injector.js"></script>
+</body>
+</html>
