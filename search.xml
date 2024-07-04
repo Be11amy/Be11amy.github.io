@@ -188,6 +188,21 @@
       </tags>
   </entry>
   <entry>
+    <title>使用rimfaf删除依赖</title>
+    <url>/posts/ec5cb3a2/</url>
+    <content><![CDATA[<h4 id="安装rimraf"><a href="#安装rimraf" class="headerlink" title="安装rimraf"></a>安装rimraf</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install rimraf -g</span><br></pre></td></tr></table></figure>
+<h4 id="使用rimraf-进行删除"><a href="#使用rimraf-进行删除" class="headerlink" title="使用rimraf 进行删除"></a>使用rimraf 进行删除</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rimraf node_modules</span><br></pre></td></tr></table></figure>
+<p>如果安装依赖时报错，可以先删除依赖，然后清理缓存，最后再安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rimraf node_modules</span><br><span class="line">npm cache clean --force</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>工具包</category>
+      </categories>
+      <tags>
+        <tag>环境配置</tag>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用nvm管理node.js</title>
     <url>/posts/c89d12c6/</url>
     <content><![CDATA[<h4 id="nvm常用命令"><a href="#nvm常用命令" class="headerlink" title="nvm常用命令"></a>nvm常用命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nvm v                               // 显示nvm版本</span><br><span class="line">nvm <span class="built_in">ls</span>                              // 显示所有安装的node.js版本</span><br><span class="line">nvm use &lt;version&gt;                   // 切换到使用指定的nodejs版本</span><br><span class="line">nvm list available                  // 显示可以安装的所有node.js的版本</span><br><span class="line">nvm install &lt;version&gt;               // 安装node.js的命名 version是版本号 例如：nvm install 8.12.0</span><br><span class="line">nvm uninstall &lt;version&gt;             // 卸载node.js是的命令，卸载指定版本的nodejs，当安装失败时卸载使用</span><br><span class="line">nvm install stable                  // 安装最新稳定版</span><br><span class="line">nvm reinstall-packages &lt;version&gt;    // 重新安装指定版本的Node.js，并将全局包重新安装到新版本中</span><br><span class="line">nvm off                             // 禁用node.js版本管理(不卸载任何东西)</span><br><span class="line">nvm on                              // 启用node.js版本管理</span><br></pre></td></tr></table></figure>]]></content>
@@ -200,12 +215,15 @@
       </tags>
   </entry>
   <entry>
-    <title>使用rimfaf删除依赖</title>
-    <url>/posts/ec5cb3a2/</url>
-    <content><![CDATA[<h4 id="安装rimraf"><a href="#安装rimraf" class="headerlink" title="安装rimraf"></a>安装rimraf</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install rimraf -g</span><br></pre></td></tr></table></figure>
-<h4 id="使用rimraf-进行删除"><a href="#使用rimraf-进行删除" class="headerlink" title="使用rimraf 进行删除"></a>使用rimraf 进行删除</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rimraf node_modules</span><br></pre></td></tr></table></figure>
-<p>如果安装依赖时报错，可以先删除依赖，然后清理缓存，最后再安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rimraf node_modules</span><br><span class="line">npm cache clean --force</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>]]></content>
+    <title>使用xmzs包管理npm源</title>
+    <url>/posts/3f8cf88c/</url>
+    <content><![CDATA[<h4 id="xmzs的安装"><a href="#xmzs的安装" class="headerlink" title="xmzs的安装"></a>xmzs的安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install xmzs -g</span><br></pre></td></tr></table></figure>
+<h4 id="mmp命令"><a href="#mmp命令" class="headerlink" title="mmp命令"></a>mmp命令</h4><p>通过以下命令查看可用的npm源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp <span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
+<p>通过以下命令更改npm源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp use</span><br></pre></td></tr></table></figure>
+<h4 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h4><p>使用以下命令获取帮助</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp -h</span><br><span class="line">mmp <span class="built_in">help</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>工具包</category>
       </categories>
@@ -233,21 +251,19 @@
       </tags>
   </entry>
   <entry>
-    <title>使用xmzs包管理npm源</title>
-    <url>/posts/3f8cf88c/</url>
-    <content><![CDATA[<h4 id="xmzs的安装"><a href="#xmzs的安装" class="headerlink" title="xmzs的安装"></a>xmzs的安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install xmzs -g</span><br></pre></td></tr></table></figure>
-<h4 id="mmp命令"><a href="#mmp命令" class="headerlink" title="mmp命令"></a>mmp命令</h4><p>通过以下命令查看可用的npm源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp <span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
-<p>通过以下命令更改npm源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp use</span><br></pre></td></tr></table></figure>
-<h4 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h4><p>使用以下命令获取帮助</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp -h</span><br><span class="line">mmp <span class="built_in">help</span></span><br></pre></td></tr></table></figure>]]></content>
+    <title>如何对数据的某列取对数</title>
+    <url>/posts/4f2cf0a6/</url>
+    <content><![CDATA[<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>首先，处理数据之前要清除数据的类型，以测井曲线的代码片段为例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">log_transform_columns</span>(<span class="params">data, cols_indices</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    对指定列进行对数变换。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (np.ndarray): 输入数据，numpy数组。</span></span><br><span class="line"><span class="string">    cols_indices (list of int): 需要进行对数变换的列索引列表。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    np.ndarray: 经过对数变换处理后的数据。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    data_copy = data.copy() <span class="comment"># 避免对原始数据进行修改</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> col_idx <span class="keyword">in</span> cols_indices:</span><br><span class="line">        <span class="comment"># 确保列中的所有值都大于0，避免对数变换出现负无穷大的问题</span></span><br><span class="line">        data_copy[:, col_idx] = np.where(data_copy[:, col_idx] &lt;= <span class="number">0</span>, <span class="number">1e-9</span>, data_copy[:, col_idx])</span><br><span class="line">        data_copy[:, col_idx] = np.log10(data_copy[:, col_idx].astype(<span class="built_in">float</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> data_copy</span><br></pre></td></tr></table></figure>
+<p>这个函数输入的数据类型是numpy数组，输出也是numpy数组，而<code>np.log10()</code>函数也是numpy自带的处理方法，所以这个方法对于numpy数组取对数很方便，但是有时输入数据并不是numpy数组，也有可能是pandas DataFrame类型，这时候又有另一种方法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">log_transform_columns</span>(<span class="params">data, cols</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    对指定列进行对数变换。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (pd.DataFrame): 输入数据。</span></span><br><span class="line"><span class="string">    cols (list of str): 需要进行对数变换的列名列表。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    pd.DataFrame: 经过对数变换处理后的数据。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    data_copy = data.copy()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> cols:</span><br><span class="line">        <span class="comment"># 确保列中的所有值都大于0，避免对数变换出现负无穷大的问题</span></span><br><span class="line">        data_copy[col] = np.where(data_copy[col] &lt;= <span class="number">0</span>, <span class="number">1e-9</span>, data_copy[col])</span><br><span class="line">        <span class="comment"># 对列进行log10变换</span></span><br><span class="line">        data_copy[col] = np.log10(data_copy[col].astype(<span class="built_in">float</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> data_copy</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
-        <category>工具包</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>环境配置</tag>
-        <tag>前端</tag>
+        <tag>Python</tag>
+        <tag>数据处理</tag>
       </tags>
   </entry>
   <entry>
@@ -281,96 +297,93 @@
       </tags>
   </entry>
   <entry>
-    <title>如何对数据的某列取对数</title>
-    <url>/posts/4f2cf0a6/</url>
-    <content><![CDATA[<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>首先，处理数据之前要清除数据的类型，以测井曲线的代码片段为例：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">log_transform_columns</span>(<span class="params">data, cols_indices</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    对指定列进行对数变换。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (np.ndarray): 输入数据，numpy数组。</span></span><br><span class="line"><span class="string">    cols_indices (list of int): 需要进行对数变换的列索引列表。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    np.ndarray: 经过对数变换处理后的数据。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    data_copy = data.copy() <span class="comment"># 避免对原始数据进行修改</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> col_idx <span class="keyword">in</span> cols_indices:</span><br><span class="line">        <span class="comment"># 确保列中的所有值都大于0，避免对数变换出现负无穷大的问题</span></span><br><span class="line">        data_copy[:, col_idx] = np.where(data_copy[:, col_idx] &lt;= <span class="number">0</span>, <span class="number">1e-9</span>, data_copy[:, col_idx])</span><br><span class="line">        data_copy[:, col_idx] = np.log10(data_copy[:, col_idx].astype(<span class="built_in">float</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> data_copy</span><br></pre></td></tr></table></figure>
-<p>这个函数输入的数据类型是numpy数组，输出也是numpy数组，而<code>np.log10()</code>函数也是numpy自带的处理方法，所以这个方法对于numpy数组取对数很方便，但是有时输入数据并不是numpy数组，也有可能是pandas DataFrame类型，这时候又有另一种方法。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">log_transform_columns</span>(<span class="params">data, cols</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    对指定列进行对数变换。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (pd.DataFrame): 输入数据。</span></span><br><span class="line"><span class="string">    cols (list of str): 需要进行对数变换的列名列表。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    pd.DataFrame: 经过对数变换处理后的数据。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    data_copy = data.copy()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> cols:</span><br><span class="line">        <span class="comment"># 确保列中的所有值都大于0，避免对数变换出现负无穷大的问题</span></span><br><span class="line">        data_copy[col] = np.where(data_copy[col] &lt;= <span class="number">0</span>, <span class="number">1e-9</span>, data_copy[col])</span><br><span class="line">        <span class="comment"># 对列进行log10变换</span></span><br><span class="line">        data_copy[col] = np.log10(data_copy[col].astype(<span class="built_in">float</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> data_copy</span><br></pre></td></tr></table></figure>
+    <title>Epoch, Batch, Iteration</title>
+    <url>/posts/d0538df1/</url>
+    <content><![CDATA[<ol>
+<li>名词解释</li>
+</ol>
+<ul>
+<li>EPOCH：使用训练集的全部数据对模型进行一次完整的训练，被称之为“一代训练”</li>
+<li>BATCH：使用训练集中的一小部分样本对模型权重进行一次反向传播的参数更新，这一小部分样本被称为“一批数据”</li>
+<li>Iteration：使用一个Batch数据对模型进行一次参数更新的过程，被称之为“一次训练”</li>
+</ul>
+<ol start="2">
+<li>换算关系<br>$$<br>NumberofBatchs &#x3D; \dfrac{TrainingSetSize}{BatchSize}<br>$$</li>
+<li>示例<br>CIFAR10 数据集有 50000 张训练图片，10000 张测试图片。现在选择 Batch Size &#x3D; 256 对模型进行训练。</li>
+</ol>
+<ul>
+<li>每个 Epoch 要训练的图片数量：50000</li>
+<li>训练集具有的 Batch 个数：50000 &#x2F; 256 &#x3D; 195 + 1 &#x3D; 196</li>
+<li>每个 Epoch 需要完成的 Batch 个数：196</li>
+<li>每个 Epoch 具有的 Iteration 个数：196</li>
+<li>每个 Epoch 中发生模型权重更新的次数：196</li>
+<li>训练 10 代后，模型权重更新的次数：196 * 10 &#x3D; 1960</li>
+<li>不同代的训练，其实用的是同一个训练集的数据。第 1 代和第 10 代虽然用的都是训练集的五万张图片，但是对模型的权重更新值却是完全不同的。因为不同代的模型处于代价函数空间上的不同位置，模型的训练代越靠后，越接近谷底，其代价越小。</li>
+<li>不同代之间数据要shuffle</li>
+</ul>
+]]></content>
+      <categories>
+        <category>神经网络</category>
+      </categories>
+      <tags>
+        <tag>神经网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python的lambda表达式</title>
+    <url>/posts/61bd1ab6/</url>
+    <content><![CDATA[<p>与普通函数不同的是，Lambda函数通常不需要使用def关键字去定义，而是在需要时直接使用lambda关键字来创建。Lambda函数可以接受任意数量的参数，但只能返回一个表达式的结果。Lambda表达式的语法形式如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">lambda</span> arguments: expression</span><br></pre></td></tr></table></figure>
+<p>其中，arguments为函数的参数列表，expression为函数的返回值表达式。当参数列表为多个参数时，使用逗号分隔即可。Lambda函数返回一个函数对象，这个函数对象可以被调用，也可以被赋值给变量，甚至可以作为其他函数的参数。</p>
+<p>下面是一个简单的Lambda表达式示例，它接受两个参数，并返回它们的和：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">add = <span class="keyword">lambda</span> x, y: x + y</span><br><span class="line"><span class="built_in">print</span>(add(<span class="number">1</span>, <span class="number">2</span>)) <span class="comment"># 输出3</span></span><br></pre></td></tr></table></figure>
+<p>从这个例子中，可以看出Lambda表达式具有非常简洁的语法，可以在一行代码中完成函数的定义和调用。</p>
+<h4 id="Python-Lambda表达式的优势"><a href="#Python-Lambda表达式的优势" class="headerlink" title="Python Lambda表达式的优势"></a>Python Lambda表达式的优势</h4><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>在Python中，Lambda表达式是一个重要的特性，可以使代码更加简洁、易读。通过Lambda表达式可以实现一些简单的表达式和函数，例如在数学计算、列表过滤、参数传递、返回值等场景中使用。尽管Lambda表达式具有简洁的语法和灵活的使用方法，但是在编写复杂函数时应该慎重使用，考虑到函数的可读性、可维护性等方面。</p>
+<p>参考：<a href="https://blog.csdn.net/naer_chongya/article/details/130770037">python lambda表达式表达式详解及应用</a></p>
 ]]></content>
       <categories>
         <category>Python</category>
       </categories>
       <tags>
         <tag>Python</tag>
-        <tag>数据处理</tag>
       </tags>
   </entry>
   <entry>
-    <title>快速搭建Vite+Vue项目</title>
-    <url>/posts/a63b7ddc/</url>
-    <content><![CDATA[<h4 id="安装pnpm"><a href="#安装pnpm" class="headerlink" title="安装pnpm"></a>安装pnpm</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
-<p>验证<code>pnpm -v</code></p>
-<h4 id="使用Vite自带命令行"><a href="#使用Vite自带命令行" class="headerlink" title="使用Vite自带命令行"></a>使用Vite自带命令行</h4><p>使用如下命令，按照提示操作即可</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite</span><br></pre></td></tr></table></figure>
-<p>接下来，安装所需包以及运行项目</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install</span><br><span class="line">pnpm run dev</span><br></pre></td></tr></table></figure>
-<p>即可打开默认Vite+Vue界面</p>
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>Vite运行时默认不自动打开浏览器，可以找到项目根目录下的<code>package.json</code>文件修改<code>script</code>中的<code>&quot;dev&quot;: &quot;vite&quot;</code>更改为<code>&quot;dev&quot;: &quot;vite --open&quot;</code>，更改后项目启动自动打开浏览器。</p>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://cn.vitejs.dev/guide/">Vite官网中文文档</a></p>
+    <title>卷积神经网络（CNN）</title>
+    <url>/posts/c9b25c16/</url>
+    <content><![CDATA[<h4 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h4><h5 id="conv1d"><a href="#conv1d" class="headerlink" title="conv1d"></a>conv1d</h5><p><code>conv1d</code>卷积运算的输出公式为：</p>
 ]]></content>
       <categories>
-        <category>Vue</category>
+        <category>深度学习</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>Vite</tag>
-        <tag>Vue</tag>
+        <tag>深度学习</tag>
+        <tag>CNN</tag>
       </tags>
   </entry>
   <entry>
-    <title>markdown中书写数学公式</title>
-    <url>/posts/c57d1942/</url>
-    <content><![CDATA[<p>参考：<a href="https://www.jianshu.com/p/a04775fde077">Markdown与数学公式</a></p>
+    <title>Python的类和实例</title>
+    <url>/posts/38105504/</url>
+    <content><![CDATA[<p>参考：<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017496031185408">面向对象编程-类和实例</a></p>
 ]]></content>
       <categories>
-        <category>markdown</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>markdown</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
-    <title>markdown基础语法</title>
-    <url>/posts/4664ae19/</url>
-    <content><![CDATA[<p>参考：<a href="https://www.jianshu.com/p/65fa2c72c124">Markdown基础语法</a></p>
+    <title>学习率调度器</title>
+    <url>/posts/175df8fb/</url>
+    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/qq_40206371/article/details/119910592">pytorch笔记：调整学习率（torch.optim.lr_scheduler）</a></p>
 ]]></content>
       <categories>
-        <category>markdown</category>
+        <category>深度学习</category>
       </categories>
       <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vi/vim的使用</title>
-    <url>/posts/5c57039f/</url>
-    <content><![CDATA[<p>基本上 vi&#x2F;vim 共分为三种模式，命令模式（Command Mode）、输入模式（Insert Mode）和命令行模式（Command-Line Mode）。</p>
-<h5 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h5><p>用户刚刚启动 vi&#x2F;vim，便进入了命令模式。<br>此状态下敲击键盘动作会被 Vim 识别为命令，而非输入字符，比如我们此时按下 i，并不会输入一个字符，i 被当作了一个命令。<br>以下是普通模式常用的几个命令：<br><code>i</code> – 切换到输入模式，在光标当前位置开始输入文本。<br><code>x</code> – 删除当前光标所在处的字符。<br><code>:</code> – 切换到底线命令模式，以在最底一行输入命令。<br><code>a</code> – 进入插入模式，在光标下一个位置开始输入文本。<br><code>o</code> – 在当前行的下方插入一个新行，并进入插入模式。<br><code>O</code> – 在当前行的上方插入一个新行，并进入插入模式。<br><code>dd</code> – 剪切当前行。<br><code>yy</code> – 复制当前行。<br><code>p</code>（小写） – 粘贴剪贴板内容到光标下方。<br><code>P</code>（大写）– 粘贴剪贴板内容到光标上方。<br><code>u</code> – 撤销上一次操作。<br><strong>Ctrl + r</strong> – 重做上一次撤销的操作。<br><code>:w</code> – 保存文件。<br><code>:q</code> – 退出 Vim 编辑器。<br><code>:q!</code> – 强制退出Vim 编辑器，不保存修改。<br>若想要编辑文本，只需要启动 Vim，进入了命令模式，按下 i 切换到输入模式即可。<br>命令模式只有一些最基本的命令，因此仍要依靠底线命令行模式输入更多命令。</p>
-<h5 id="输入模式"><a href="#输入模式" class="headerlink" title="输入模式"></a>输入模式</h5><p>在命令模式下按下 i 就进入了输入模式，使用 Esc 键可以返回到普通模式。<br>在输入模式中，可以使用以下按键：<br>字符按键以及Shift组合，输入字符<br><strong>ENTER</strong>，回车键，换行<br><strong>BACK SPACE</strong>，退格键，删除光标前一个字符<br><strong>DEL</strong>，删除键，删除光标后一个字符<br><strong>方向键</strong>，在文本中移动光标<br><strong>HOME&#x2F;END</strong>，移动光标到行首&#x2F;行尾<br><strong>Page Up&#x2F;Page Down</strong>，上&#x2F;下翻页<br><strong>Insert</strong>，切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线<br><strong>ESC</strong>，退出输入模式，切换到命令模式</p>
-<h5 id="底线命令模式"><a href="#底线命令模式" class="headerlink" title="底线命令模式"></a>底线命令模式</h5><p>在命令模式下按下 :（英文冒号）就进入了底线命令模式。<br>底线命令模式可以输入单个或多个字符的命令，可用的命令非常多。<br>在底线命令模式中，基本的命令有（已经省略了冒号）：<br><code>:w</code>：保存文件。<br><code>:q</code>：退出 Vim 编辑器。<br><code>:wq</code>：保存文件并退出 Vim 编辑器。<br><code>:q!</code>：强制退出Vim编辑器，不保存修改。<br>按 ESC 键可随时退出底线命令模式。<br>参考：<a href="https://www.runoob.com/linux/linux-vim.html">Linux vi&#x2F;vim</a></p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何利用ssh命令访问远程服务器</title>
-    <url>/posts/59ee5c4/</url>
-    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C:\xxx\&gt;ssh -p 22 user@host</span><br></pre></td></tr></table></figure>
-<p>参数:<br>-p：指定端口号。<br>user：登录的用户名。<br>host：登录的主机。<br>默认端口号是22，所以可以省略，直接使用以下方式：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh user@host</span><br></pre></td></tr></table></figure>
-<p>成功后需要输入密码，然后即可使用远程服务器。<br>要想退出，直接输入exit即可。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">(base)root@xxx:~<span class="comment"># exit</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>网络协议</category>
-      </categories>
-      <tags>
-        <tag>网络协议</tag>
-        <tag>ssh</tag>
+        <tag>深度学习</tag>
+        <tag>PyTorch</tag>
       </tags>
   </entry>
   <entry>
@@ -407,21 +420,84 @@
       </tags>
   </entry>
   <entry>
-    <title>如何把Notion安装到其他盘</title>
-    <url>/posts/604b675f/</url>
-    <content><![CDATA[<ol>
-<li><a href="https://www.notion.so/desktop">官网下载Notion最新版</a></li>
-<li>找到你下载的.exe安装包</li>
-<li>在地址栏输入cmd后回车</li>
-<li>（英文输入状态下）输入 “安装包名” &#x2F;D&#x3D;”你想要安装的路径”<br>比如我想安装到 D:\ImageText\Notion<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;Notion Setup 3.7.0.exe&quot;</span> /D=<span class="string">&quot;D:\Application\notion&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li>安装完成</li>
-</ol>
+    <title>快速开始PyTorch</title>
+    <url>/posts/4b503ff2/</url>
+    <content><![CDATA[<p>教程：<a href="https://bohrium.dp.tech/notebooks/4914094074?utm_source=bilibili001">快速开始 PyTorch｜使用 Python 建立深度学习模型</a></p>
 ]]></content>
       <categories>
-        <category>软件</category>
+        <category>PyTorch</category>
       </categories>
       <tags>
-        <tag>软件</tag>
+        <tag>深度学习</tag>
+        <tag>PyTorch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>损失和损失函数</title>
+    <url>/posts/2c8ab6f2/</url>
+    <content><![CDATA[<p>参考：<a href="https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/">Loss and Loss Functions for Training Deep Learning Neural Networks</a><br><a href="https://www.zhihu.com/question/264189719/answer/932262940">如何理解随机梯度下降（stochastic gradient descent，SGD）？</a></p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>神经网络</tag>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习的优化器</title>
+    <url>/posts/3520d892/</url>
+    <content><![CDATA[<p>参考：</p>
+<ul>
+<li>优化器公式<a href="https://blog.csdn.net/weixin_42045968/article/details/132917401">常见优化器总结</a></li>
+<li><a href="https://blog.csdn.net/xian0710830114/article/details/126551268">Pytorch优化器全总结（一）SGD、ASGD、Rprop、Adagrad</a></li>
+<li><a href="https://blog.csdn.net/xian0710830114/article/details/126882921">Pytorch优化器全总结（二）Adadelta、RMSprop、Adam、Adamax、AdamW、NAdam、SparseAdam（重置版）</a></li>
+<li><a href="https://blog.csdn.net/xian0710830114/article/details/128419401">Pytorch优化器全总结（三）牛顿法、BFGS、L-BFGS 含代码</a></li>
+<li><a href="https://blog.csdn.net/xian0710830114/article/details/128658682">Pytorch优化器全总结（四）常用优化器性能对比 含代码</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>PyTorch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过cuda查看显卡信息</title>
+    <url>/posts/dc74b75c/</url>
+    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/qq_50001789/article/details/136219629">PyTorch学习笔记：cuda方法——查看显卡信息</a><br>提示：最好用管理员下的cmd（或Anaconda Prompt），直接使用Python命令行，不会担心权限问题。</p>
+]]></content>
+      <categories>
+        <category>硬件</category>
+      </categories>
+      <tags>
+        <tag>PyTorch</tag>
+        <tag>CUDA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快速搭建Vite+Vue项目</title>
+    <url>/posts/a63b7ddc/</url>
+    <content><![CDATA[<h4 id="安装pnpm"><a href="#安装pnpm" class="headerlink" title="安装pnpm"></a>安装pnpm</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
+<p>验证<code>pnpm -v</code></p>
+<h4 id="使用Vite自带命令行"><a href="#使用Vite自带命令行" class="headerlink" title="使用Vite自带命令行"></a>使用Vite自带命令行</h4><p>使用如下命令，按照提示操作即可</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite</span><br></pre></td></tr></table></figure>
+<p>接下来，安装所需包以及运行项目</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install</span><br><span class="line">pnpm run dev</span><br></pre></td></tr></table></figure>
+<p>即可打开默认Vite+Vue界面</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>Vite运行时默认不自动打开浏览器，可以找到项目根目录下的<code>package.json</code>文件修改<code>script</code>中的<code>&quot;dev&quot;: &quot;vite&quot;</code>更改为<code>&quot;dev&quot;: &quot;vite --open&quot;</code>，更改后项目启动自动打开浏览器。</p>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://cn.vitejs.dev/guide/">Vite官网中文文档</a></p>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vite</tag>
+        <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
@@ -444,6 +520,79 @@
       </tags>
   </entry>
   <entry>
+    <title>markdown中书写数学公式</title>
+    <url>/posts/c57d1942/</url>
+    <content><![CDATA[<p>参考：<a href="https://www.jianshu.com/p/a04775fde077">Markdown与数学公式</a></p>
+]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vi/vim的使用</title>
+    <url>/posts/5c57039f/</url>
+    <content><![CDATA[<p>基本上 vi&#x2F;vim 共分为三种模式，命令模式（Command Mode）、输入模式（Insert Mode）和命令行模式（Command-Line Mode）。</p>
+<h5 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h5><p>用户刚刚启动 vi&#x2F;vim，便进入了命令模式。<br>此状态下敲击键盘动作会被 Vim 识别为命令，而非输入字符，比如我们此时按下 i，并不会输入一个字符，i 被当作了一个命令。<br>以下是普通模式常用的几个命令：<br><code>i</code> – 切换到输入模式，在光标当前位置开始输入文本。<br><code>x</code> – 删除当前光标所在处的字符。<br><code>:</code> – 切换到底线命令模式，以在最底一行输入命令。<br><code>a</code> – 进入插入模式，在光标下一个位置开始输入文本。<br><code>o</code> – 在当前行的下方插入一个新行，并进入插入模式。<br><code>O</code> – 在当前行的上方插入一个新行，并进入插入模式。<br><code>dd</code> – 剪切当前行。<br><code>yy</code> – 复制当前行。<br><code>p</code>（小写） – 粘贴剪贴板内容到光标下方。<br><code>P</code>（大写）– 粘贴剪贴板内容到光标上方。<br><code>u</code> – 撤销上一次操作。<br><strong>Ctrl + r</strong> – 重做上一次撤销的操作。<br><code>:w</code> – 保存文件。<br><code>:q</code> – 退出 Vim 编辑器。<br><code>:q!</code> – 强制退出Vim 编辑器，不保存修改。<br>若想要编辑文本，只需要启动 Vim，进入了命令模式，按下 i 切换到输入模式即可。<br>命令模式只有一些最基本的命令，因此仍要依靠底线命令行模式输入更多命令。</p>
+<h5 id="输入模式"><a href="#输入模式" class="headerlink" title="输入模式"></a>输入模式</h5><p>在命令模式下按下 i 就进入了输入模式，使用 Esc 键可以返回到普通模式。<br>在输入模式中，可以使用以下按键：<br>字符按键以及Shift组合，输入字符<br><strong>ENTER</strong>，回车键，换行<br><strong>BACK SPACE</strong>，退格键，删除光标前一个字符<br><strong>DEL</strong>，删除键，删除光标后一个字符<br><strong>方向键</strong>，在文本中移动光标<br><strong>HOME&#x2F;END</strong>，移动光标到行首&#x2F;行尾<br><strong>Page Up&#x2F;Page Down</strong>，上&#x2F;下翻页<br><strong>Insert</strong>，切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线<br><strong>ESC</strong>，退出输入模式，切换到命令模式</p>
+<h5 id="底线命令模式"><a href="#底线命令模式" class="headerlink" title="底线命令模式"></a>底线命令模式</h5><p>在命令模式下按下 :（英文冒号）就进入了底线命令模式。<br>底线命令模式可以输入单个或多个字符的命令，可用的命令非常多。<br>在底线命令模式中，基本的命令有（已经省略了冒号）：<br><code>:w</code>：保存文件。<br><code>:q</code>：退出 Vim 编辑器。<br><code>:wq</code>：保存文件并退出 Vim 编辑器。<br><code>:q!</code>：强制退出Vim编辑器，不保存修改。<br>按 ESC 键可随时退出底线命令模式。<br>参考：<a href="https://www.runoob.com/linux/linux-vim.html">Linux vi&#x2F;vim</a></p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>markdown基础语法</title>
+    <url>/posts/4664ae19/</url>
+    <content><![CDATA[<p>参考：<a href="https://www.jianshu.com/p/65fa2c72c124">Markdown基础语法</a></p>
+]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何利用ssh命令访问远程服务器</title>
+    <url>/posts/59ee5c4/</url>
+    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C:\xxx\&gt;ssh -p 22 user@host</span><br></pre></td></tr></table></figure>
+<p>参数:<br>-p：指定端口号。<br>user：登录的用户名。<br>host：登录的主机。<br>默认端口号是22，所以可以省略，直接使用以下方式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh user@host</span><br></pre></td></tr></table></figure>
+<p>成功后需要输入密码，然后即可使用远程服务器。<br>要想退出，直接输入exit即可。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">(base)root@xxx:~<span class="comment"># exit</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>网络协议</category>
+      </categories>
+      <tags>
+        <tag>网络协议</tag>
+        <tag>ssh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何把Notion安装到其他盘</title>
+    <url>/posts/604b675f/</url>
+    <content><![CDATA[<ol>
+<li><a href="https://www.notion.so/desktop">官网下载Notion最新版</a></li>
+<li>找到你下载的.exe安装包</li>
+<li>在地址栏输入cmd后回车</li>
+<li>（英文输入状态下）输入 “安装包名” &#x2F;D&#x3D;”你想要安装的路径”<br>比如我想安装到 D:\ImageText\Notion<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;Notion Setup 3.7.0.exe&quot;</span> /D=<span class="string">&quot;D:\Application\notion&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>安装完成</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何运行Linux操作系统的.sh文件</title>
     <url>/posts/9c0df2b2/</url>
     <content><![CDATA[<p>运行以下命令：</p>
@@ -453,6 +602,31 @@
       </categories>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小层对比的划分</title>
+    <url>/posts/b9c1b045/</url>
+    <content><![CDATA[<p>使用测井曲线中的自然伽马(Gamma-ray, GR)和电阻率(Resistivity)来划分小层时，通常依据以下标准：</p>
+<ol>
+<li>自然伽马(GR)：自然伽马测井可以反映岩石的放射性含量，通常泥岩和粘土具有较高的放射性，而砂岩和碳酸盐岩等储集岩放射性较低。因此，自然伽马曲线可以用来识别泥岩夹层或页岩层，这些通常作为非储集层。自然伽马的突然增加往往标志着一个新的地层的开始。</li>
+<li>电阻率：电阻率测井可以反映岩石的导电性，通常用来区分含水的泥岩或砂岩（低电阻率）和含油的砂岩（高电阻率）。电阻率的突然变化可能指示着岩性的变化或流体含量的变化，从而可能是一个新的小层的开始。<br>划分小层的具体标准可能包括：</li>
+</ol>
+<ul>
+<li>GR和电阻率曲线的异常变化：如果GR和电阻率曲线在某个深度发生显著变化，这可能指示着岩性或流体性质的变化，从而可能是小层的边界。</li>
+<li>曲线的形态和趋势：曲线的形态和趋势（如平滑、突增、突减）可以提供有关小层连续性和变化的信息。</li>
+<li>交会图分析：使用GR和电阻率数据制作交会图，可以帮助识别不同的岩性或流体区域，从而辅助小层划分。</li>
+<li>与岩心和地震资料的对比：将测井曲线与岩心资料和地震资料进行对比，可以帮助确定小层的地质特征和空间分布。</li>
+<li>区域地质知识：了解区域地质背景和地层序列，可以帮助解释测井曲线的变化，并指导小层的划分。</li>
+<li>生产数据：生产数据（如产油、产气、产水情况）可以提供小层流体性质的实际信息，验证和调整小层划分。<br>在实际应用中，小层的划分通常需要综合考虑多种测井曲线和其他地质数据，结合地质学家的经验和专业知识。这个过程可能需要不断地迭代和修正，以确保小层划分的准确性和可靠性。<br>总结：重点考察GR和RT、RXO突变的点。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>测井</category>
+      </categories>
+      <tags>
+        <tag>测井</tag>
+        <tag>地质知识</tag>
       </tags>
   </entry>
   <entry>
@@ -495,28 +669,32 @@
       </tags>
   </entry>
   <entry>
-    <title>小层对比的划分</title>
-    <url>/posts/b9c1b045/</url>
-    <content><![CDATA[<p>使用测井曲线中的自然伽马(Gamma-ray, GR)和电阻率(Resistivity)来划分小层时，通常依据以下标准：</p>
-<ol>
-<li>自然伽马(GR)：自然伽马测井可以反映岩石的放射性含量，通常泥岩和粘土具有较高的放射性，而砂岩和碳酸盐岩等储集岩放射性较低。因此，自然伽马曲线可以用来识别泥岩夹层或页岩层，这些通常作为非储集层。自然伽马的突然增加往往标志着一个新的地层的开始。</li>
-<li>电阻率：电阻率测井可以反映岩石的导电性，通常用来区分含水的泥岩或砂岩（低电阻率）和含油的砂岩（高电阻率）。电阻率的突然变化可能指示着岩性的变化或流体含量的变化，从而可能是一个新的小层的开始。<br>划分小层的具体标准可能包括：</li>
-</ol>
-<ul>
-<li>GR和电阻率曲线的异常变化：如果GR和电阻率曲线在某个深度发生显著变化，这可能指示着岩性或流体性质的变化，从而可能是小层的边界。</li>
-<li>曲线的形态和趋势：曲线的形态和趋势（如平滑、突增、突减）可以提供有关小层连续性和变化的信息。</li>
-<li>交会图分析：使用GR和电阻率数据制作交会图，可以帮助识别不同的岩性或流体区域，从而辅助小层划分。</li>
-<li>与岩心和地震资料的对比：将测井曲线与岩心资料和地震资料进行对比，可以帮助确定小层的地质特征和空间分布。</li>
-<li>区域地质知识：了解区域地质背景和地层序列，可以帮助解释测井曲线的变化，并指导小层的划分。</li>
-<li>生产数据：生产数据（如产油、产气、产水情况）可以提供小层流体性质的实际信息，验证和调整小层划分。<br>在实际应用中，小层的划分通常需要综合考虑多种测井曲线和其他地质数据，结合地质学家的经验和专业知识。这个过程可能需要不断地迭代和修正，以确保小层划分的准确性和可靠性。<br>总结：重点考察GR和RT、RXO突变的点。</li>
+    <title>深度学习的缩写和名词</title>
+    <url>/posts/40c8e92c/</url>
+    <content><![CDATA[<h4 id="深度学习的分支"><a href="#深度学习的分支" class="headerlink" title="深度学习的分支"></a>深度学习的分支</h4><h5 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h5><ul>
+<li><code>卷积神经网络（CNN）Convolutional Neural Network</code><br>主要用于图像和视频识别，也用于其他类型的数据，如文本和声音。</li>
+<li><code>循环神经网络（RNN）Recurrent Neural Network</code><br>特别是长短期记忆网络（LSTM:Long Short-Term Memory）和门控循环单元（GRU:Gate Recurrent Unit），用于处理序列数据，如文本、时间序列和语音。<br>是循环神经网络（RNN）的一种，可以解决RNN中不能长期记忆和反向传播中的梯度等问题，与LSTM的作用类似，不过比LSTM简单，容易进行训练。</li>
+<li><code>自编码器（Autoencoder）</code><br>用于无监督学习，尤其是特征学习和降维。</li>
+<li><code>生成对抗网络（GAN）Generative Adversarial Network</code><br>用于生成数据，如图像、音乐和文本，也可以用于图像修复和增强。</li>
+<li><code>变分自编码器（VAE）Variational Autoencoder</code><br>类似于自编码器，用于生成数据和无监督学习，特别擅长生成复杂的概率分布。</li>
+<li><code>图神经网络（GNN）Graph Neural Network</code><br>用于处理图数据，如社交网络、知识图谱和推荐系统。</li>
+<li><code>注意力机制（Attention Mechanisms）</code><br>用于提高模型的性能，特别是在处理长序列数据时，如机器翻译和文本摘要。</li>
+<li><code>强化学习（Reinforcement Learning）</code><br>涉及与环境的交互，用于决策制定和优化策略，如游戏、自动驾驶和机器人控制。</li>
+<li><code>Transformer模型</code><br>一种基于自注意力机制的深度神经网络架构，用于自然语言处理（NLP），如机器翻译和文本生成。</li>
+</ul>
+<h5 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h5><ul>
+<li>训练损失（Loss）<br>定义：训练损失是模型在训练数据集上的损失值。<br>计算方式：每个 epoch 后，通过模型在训练集上的预测结果和真实标签计算损失函数（如均方误差、交叉熵等）。<br>意义：训练损失反映了模型在训练数据上的拟合程度。如果训练损失下降，说明模型在训练数据上的性能在提升。</li>
+<li>验证损失（Validation Loss）<br>定义：验证损失是模型在验证数据集上的损失值。<br>计算方式：每个 epoch 后，通过模型在验证集上的预测结果和真实标签计算损失函数。<br>意义：验证损失反映了模型在未见过的数据（验证集）上的泛化能力。如果验证损失下降，说明模型在验证数据上的性能在提升，具有较好的泛化能力。</li>
+<li>梯度爆炸（Gradient Explosion）<br>梯度（Gradient）是一个数学概念，用于描述函数在某一点上的局部变化率。在神经网络的背景下，梯度通常指的是损失函数相对于其参数的偏导数。<br>参考：<a href="https://www.bilibili.com/video/BV18P4y1j7uH/?spm_id_from=333.337.search-card.all.click&vd_source=251b9f270c90a8149c74eb986759892c">【梯度下降】3D可视化讲解通俗易懂</a><br>梯度爆炸指在反向传播过程中，梯度的值变得非常大，以至于无法正常训练模型。梯度爆炸通常发生在网络层数较多或网络结构复杂的情况下，特别是在使用ReLU（Rectified Linear Unit）激活函数时。</li>
+<li>梯度消失（Gradient Vanishing）<br>梯度消失指的是在网络的反向传播过程中，用于更新网络权重的梯度变得非常小，以至于几乎不对权重产生任何显著的更新。这种现象通常发生在深层网络的较低层（靠近输入层的层）。</li>
+<li>残差（Residual Error）<br>定义：指估计值与实际值直接的差，如果存在一个映射f(x)&#x3D;b，x&#x3D;x0时，则b-f(x0)则为残差，x-x0为误差。</li>
 </ul>
 ]]></content>
       <categories>
-        <category>测井</category>
+        <category>深度学习</category>
       </categories>
       <tags>
-        <tag>测井</tag>
-        <tag>地质知识</tag>
+        <tag>深度学习</tag>
       </tags>
   </entry>
   <entry>
@@ -584,35 +762,7 @@
 <li>Shuffle可以防止过拟合，并且使得模型学到更加正确的特征<br>NN网络的学习能力很强，如果数据未经过打乱，则模型反复依次序学习数据的特征，很快就会达到过拟合状态，并且有可能学会的只是数据的次序特征。模型的缺乏泛化能力。<br>如：100条数据中前50条为A类剩余50条为B类，模型在很短的学习过程中就学会了50位分界点，且前半部分为A后半部分为B。则并没有学会真正的类别特征。</li>
 <li>为使得训练集，验证集，测试集中数据分布类似</li>
 </ul>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习的缩写和名词</title>
-    <url>/posts/40c8e92c/</url>
-    <content><![CDATA[<h4 id="深度学习的分支"><a href="#深度学习的分支" class="headerlink" title="深度学习的分支"></a>深度学习的分支</h4><h5 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h5><ul>
-<li><code>卷积神经网络（CNN）Convolutional Neural Network</code><br>主要用于图像和视频识别，也用于其他类型的数据，如文本和声音。</li>
-<li><code>循环神经网络（RNN）Recurrent Neural Network</code><br>特别是长短期记忆网络（LSTM:Long Short-Term Memory）和门控循环单元（GRU:Gate Recurrent Unit），用于处理序列数据，如文本、时间序列和语音。<br>是循环神经网络（RNN）的一种，可以解决RNN中不能长期记忆和反向传播中的梯度等问题，与LSTM的作用类似，不过比LSTM简单，容易进行训练。</li>
-<li><code>自编码器（Autoencoder）</code><br>用于无监督学习，尤其是特征学习和降维。</li>
-<li><code>生成对抗网络（GAN）Generative Adversarial Network</code><br>用于生成数据，如图像、音乐和文本，也可以用于图像修复和增强。</li>
-<li><code>变分自编码器（VAE）Variational Autoencoder</code><br>类似于自编码器，用于生成数据和无监督学习，特别擅长生成复杂的概率分布。</li>
-<li><code>图神经网络（GNN）Graph Neural Network</code><br>用于处理图数据，如社交网络、知识图谱和推荐系统。</li>
-<li><code>注意力机制（Attention Mechanisms）</code><br>用于提高模型的性能，特别是在处理长序列数据时，如机器翻译和文本摘要。</li>
-<li><code>强化学习（Reinforcement Learning）</code><br>涉及与环境的交互，用于决策制定和优化策略，如游戏、自动驾驶和机器人控制。</li>
-<li><code>Transformer模型</code><br>一种基于自注意力机制的深度神经网络架构，用于自然语言处理（NLP），如机器翻译和文本生成。</li>
-</ul>
-<h5 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h5><ul>
-<li>训练损失（Loss）<br>定义：训练损失是模型在训练数据集上的损失值。<br>计算方式：每个 epoch 后，通过模型在训练集上的预测结果和真实标签计算损失函数（如均方误差、交叉熵等）。<br>意义：训练损失反映了模型在训练数据上的拟合程度。如果训练损失下降，说明模型在训练数据上的性能在提升。</li>
-<li>验证损失（Validation Loss）<br>定义：验证损失是模型在验证数据集上的损失值。<br>计算方式：每个 epoch 后，通过模型在验证集上的预测结果和真实标签计算损失函数。<br>意义：验证损失反映了模型在未见过的数据（验证集）上的泛化能力。如果验证损失下降，说明模型在验证数据上的性能在提升，具有较好的泛化能力。</li>
-<li>梯度爆炸（Gradient Explosion）<br>梯度（Gradient）是一个数学概念，用于描述函数在某一点上的局部变化率。在神经网络的背景下，梯度通常指的是损失函数相对于其参数的偏导数。<br>参考：<a href="https://www.bilibili.com/video/BV18P4y1j7uH/?spm_id_from=333.337.search-card.all.click&vd_source=251b9f270c90a8149c74eb986759892c">【梯度下降】3D可视化讲解通俗易懂</a><br>梯度爆炸指在反向传播过程中，梯度的值变得非常大，以至于无法正常训练模型。梯度爆炸通常发生在网络层数较多或网络结构复杂的情况下，特别是在使用ReLU（Rectified Linear Unit）激活函数时。</li>
-<li>梯度消失（Gradient Vanishing）<br>梯度消失指的是在网络的反向传播过程中，用于更新网络权重的梯度变得非常小，以至于几乎不对权重产生任何显著的更新。这种现象通常发生在深层网络的较低层（靠近输入层的层）。</li>
-<li>残差（Residual Error）<br>定义：指估计值与实际值直接的差，如果存在一个映射f(x)&#x3D;b，x&#x3D;x0时，则b-f(x0)则为残差，x-x0为误差。</li>
-</ul>
+<p>参考：<a href="https://blog.csdn.net/xian0710830114/article/details/122856047?spm=1001.2014.3001.5502">深度学习调参tricks总结</a></p>
 ]]></content>
       <categories>
         <category>深度学习</category>
@@ -675,49 +825,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python的lambda表达式</title>
-    <url>/posts/61bd1ab6/</url>
-    <content><![CDATA[<p>与普通函数不同的是，Lambda函数通常不需要使用def关键字去定义，而是在需要时直接使用lambda关键字来创建。Lambda函数可以接受任意数量的参数，但只能返回一个表达式的结果。Lambda表达式的语法形式如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">lambda</span> arguments: expression</span><br></pre></td></tr></table></figure>
-<p>其中，arguments为函数的参数列表，expression为函数的返回值表达式。当参数列表为多个参数时，使用逗号分隔即可。Lambda函数返回一个函数对象，这个函数对象可以被调用，也可以被赋值给变量，甚至可以作为其他函数的参数。</p>
-<p>下面是一个简单的Lambda表达式示例，它接受两个参数，并返回它们的和：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">add = <span class="keyword">lambda</span> x, y: x + y</span><br><span class="line"><span class="built_in">print</span>(add(<span class="number">1</span>, <span class="number">2</span>)) <span class="comment"># 输出3</span></span><br></pre></td></tr></table></figure>
-<p>从这个例子中，可以看出Lambda表达式具有非常简洁的语法，可以在一行代码中完成函数的定义和调用。</p>
-<h4 id="Python-Lambda表达式的优势"><a href="#Python-Lambda表达式的优势" class="headerlink" title="Python Lambda表达式的优势"></a>Python Lambda表达式的优势</h4><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>在Python中，Lambda表达式是一个重要的特性，可以使代码更加简洁、易读。通过Lambda表达式可以实现一些简单的表达式和函数，例如在数学计算、列表过滤、参数传递、返回值等场景中使用。尽管Lambda表达式具有简洁的语法和灵活的使用方法，但是在编写复杂函数时应该慎重使用，考虑到函数的可读性、可维护性等方面。</p>
-<p>参考：<a href="https://blog.csdn.net/naer_chongya/article/details/130770037">python lambda表达式表达式详解及应用</a></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python的类和实例</title>
-    <url>/posts/38105504/</url>
-    <content><![CDATA[<p>参考：<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017496031185408">面向对象编程-类和实例</a></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>快速开始PyTorch</title>
-    <url>/posts/4b503ff2/</url>
-    <content><![CDATA[<p>教程：<a href="https://bohrium.dp.tech/notebooks/4914094074?utm_source=bilibili001">快速开始 PyTorch｜使用 Python 建立深度学习模型</a></p>
-]]></content>
-      <categories>
-        <category>PyTorch</category>
-      </categories>
-      <tags>
-        <tag>PyTorch</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>自然伽马与电阻率的关系</title>
     <url>/posts/e9c712a2/</url>
     <content><![CDATA[<p>在测井数据中，自然伽马(Gamma-ray, GR)和电阻率通常呈现一种反比关系，这是因为自然伽马测量的是岩石的放射性，而电阻率测量的是岩石的导电性。以下是一些解释这种关系的因素：</p>
@@ -734,52 +841,6 @@
       <tags>
         <tag>测井</tag>
         <tag>地质知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>神经网络中最基本的三个概念：Epoch, Batch, Iteration</title>
-    <url>/posts/d0538df1/</url>
-    <content><![CDATA[<ol>
-<li>名词解释</li>
-</ol>
-<ul>
-<li>EPOCH：使用训练集的全部数据对模型进行一次完整的训练，被称之为“一代训练”</li>
-<li>BATCH：使用训练集中的一小部分样本对模型权重进行一次反向传播的参数更新，这一小部分样本被称为“一批数据”</li>
-<li>Iteration：使用一个Batch数据对模型进行一次参数更新的过程，被称之为“一次训练”</li>
-</ul>
-<ol start="2">
-<li>换算关系<br>$$<br>NumberofBatchs &#x3D; \dfrac{TrainingSetSize}{BatchSize}<br>$$</li>
-<li>示例<br>CIFAR10 数据集有 50000 张训练图片，10000 张测试图片。现在选择 Batch Size &#x3D; 256 对模型进行训练。</li>
-</ol>
-<ul>
-<li>每个 Epoch 要训练的图片数量：50000</li>
-<li>训练集具有的 Batch 个数：50000 &#x2F; 256 &#x3D; 195 + 1 &#x3D; 196</li>
-<li>每个 Epoch 需要完成的 Batch 个数：196</li>
-<li>每个 Epoch 具有的 Iteration 个数：196</li>
-<li>每个 Epoch 中发生模型权重更新的次数：196</li>
-<li>训练 10 代后，模型权重更新的次数：196 * 10 &#x3D; 1960</li>
-<li>不同代的训练，其实用的是同一个训练集的数据。第 1 代和第 10 代虽然用的都是训练集的五万张图片，但是对模型的权重更新值却是完全不同的。因为不同代的模型处于代价函数空间上的不同位置，模型的训练代越靠后，越接近谷底，其代价越小。</li>
-<li>不同代之间数据要shuffle</li>
-</ul>
-]]></content>
-      <categories>
-        <category>神经网络</category>
-      </categories>
-      <tags>
-        <tag>神经网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用于训练深度学习神经网络的损失和损失函数</title>
-    <url>/posts/2c8ab6f2/</url>
-    <content><![CDATA[<p>参考：<a href="https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/">Loss and Loss Functions for Training Deep Learning Neural Networks</a><br><a href="https://www.zhihu.com/question/264189719/answer/932262940">如何理解随机梯度下降（stochastic gradient descent，SGD）？</a></p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-        <tag>神经网络</tag>
       </tags>
   </entry>
   <entry>
@@ -801,56 +862,6 @@
       <tags>
         <tag>命令行</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VSCode 常用快捷键</title>
-    <url>/posts/1d77edc9/</url>
-    <content><![CDATA[<h4 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h4><span id="more"></span>
-
-<ul>
-<li><code>shift + alt +f</code></li>
-</ul>
-<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
-<li><p><code>Shift + Alt + ↓/↑</code></p>
-</li>
-<li><p>在某行直接<code>Ctrl + C + Ctrl + V</code></p>
-</li>
-</ul>
-<h4 id="快速定位到某一行"><a href="#快速定位到某一行" class="headerlink" title="快速定位到某一行"></a>快速定位到某一行</h4><ul>
-<li><code>Ctrl + G</code></li>
-</ul>
-<h4 id="选中单词"><a href="#选中单词" class="headerlink" title="选中单词"></a>选中单词</h4><ul>
-<li>在单词首或尾 <code>Ctrl + Shift + ←/→</code></li>
-</ul>
-<h4 id="选定多个相同的单词"><a href="#选定多个相同的单词" class="headerlink" title="选定多个相同的单词"></a>选定多个相同的单词</h4><ul>
-<li>选定某词直接 <code>Ctrl + D</code></li>
-</ul>
-<h4 id="全局替换某个单词"><a href="#全局替换某个单词" class="headerlink" title="全局替换某个单词"></a>全局替换某个单词</h4><ul>
-<li><code>Ctrl + H</code></li>
-</ul>
-<h4 id="选择某个区块"><a href="#选择某个区块" class="headerlink" title="选择某个区块"></a>选择某个区块</h4><ul>
-<li>按住 <code>Alt + Shift</code> 选择或拖动鼠标</li>
-</ul>
-<h4 id="放大缩小整个编辑器界面"><a href="#放大缩小整个编辑器界面" class="headerlink" title="放大缩小整个编辑器界面"></a>放大缩小整个编辑器界面</h4><ul>
-<li><code>Ctrl + +/-</code></li>
-</ul>
-<h4 id="光标定位到单词首-x2F-单词尾"><a href="#光标定位到单词首-x2F-单词尾" class="headerlink" title="光标定位到单词首&#x2F;单词尾"></a>光标定位到单词首&#x2F;单词尾</h4><ul>
-<li><code>Ctrl + ←/→</code></li>
-</ul>
-<h4 id="光标定位到行首-x2F-行未"><a href="#光标定位到行首-x2F-行未" class="headerlink" title="光标定位到行首&#x2F;行未"></a>光标定位到行首&#x2F;行未</h4><ul>
-<li><code>Home / End</code></li>
-</ul>
-<h4 id="添加多个光标"><a href="#添加多个光标" class="headerlink" title="添加多个光标"></a>添加多个光标</h4><ul>
-<li><code>Ctrl + Alt + ↑/↓</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>VSCode</category>
-      </categories>
-      <tags>
-        <tag>快捷键</tag>
-        <tag>VSCode</tag>
       </tags>
   </entry>
   <entry>
@@ -906,6 +917,56 @@
       </categories>
       <tags>
         <tag>环境配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VSCode 常用快捷键</title>
+    <url>/posts/1d77edc9/</url>
+    <content><![CDATA[<h4 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h4><span id="more"></span>
+
+<ul>
+<li><code>shift + alt +f</code></li>
+</ul>
+<h4 id="快速复制一行"><a href="#快速复制一行" class="headerlink" title="快速复制一行"></a>快速复制一行</h4><ul>
+<li><p><code>Shift + Alt + ↓/↑</code></p>
+</li>
+<li><p>在某行直接<code>Ctrl + C + Ctrl + V</code></p>
+</li>
+</ul>
+<h4 id="快速定位到某一行"><a href="#快速定位到某一行" class="headerlink" title="快速定位到某一行"></a>快速定位到某一行</h4><ul>
+<li><code>Ctrl + G</code></li>
+</ul>
+<h4 id="选中单词"><a href="#选中单词" class="headerlink" title="选中单词"></a>选中单词</h4><ul>
+<li>在单词首或尾 <code>Ctrl + Shift + ←/→</code></li>
+</ul>
+<h4 id="选定多个相同的单词"><a href="#选定多个相同的单词" class="headerlink" title="选定多个相同的单词"></a>选定多个相同的单词</h4><ul>
+<li>选定某词直接 <code>Ctrl + D</code></li>
+</ul>
+<h4 id="全局替换某个单词"><a href="#全局替换某个单词" class="headerlink" title="全局替换某个单词"></a>全局替换某个单词</h4><ul>
+<li><code>Ctrl + H</code></li>
+</ul>
+<h4 id="选择某个区块"><a href="#选择某个区块" class="headerlink" title="选择某个区块"></a>选择某个区块</h4><ul>
+<li>按住 <code>Alt + Shift</code> 选择或拖动鼠标</li>
+</ul>
+<h4 id="放大缩小整个编辑器界面"><a href="#放大缩小整个编辑器界面" class="headerlink" title="放大缩小整个编辑器界面"></a>放大缩小整个编辑器界面</h4><ul>
+<li><code>Ctrl + +/-</code></li>
+</ul>
+<h4 id="光标定位到单词首-x2F-单词尾"><a href="#光标定位到单词首-x2F-单词尾" class="headerlink" title="光标定位到单词首&#x2F;单词尾"></a>光标定位到单词首&#x2F;单词尾</h4><ul>
+<li><code>Ctrl + ←/→</code></li>
+</ul>
+<h4 id="光标定位到行首-x2F-行未"><a href="#光标定位到行首-x2F-行未" class="headerlink" title="光标定位到行首&#x2F;行未"></a>光标定位到行首&#x2F;行未</h4><ul>
+<li><code>Home / End</code></li>
+</ul>
+<h4 id="添加多个光标"><a href="#添加多个光标" class="headerlink" title="添加多个光标"></a>添加多个光标</h4><ul>
+<li><code>Ctrl + Alt + ↑/↓</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>VSCode</category>
+      </categories>
+      <tags>
+        <tag>快捷键</tag>
+        <tag>VSCode</tag>
       </tags>
   </entry>
   <entry>
@@ -992,6 +1053,43 @@
       </tags>
   </entry>
   <entry>
+    <title>git创建版本库</title>
+    <url>/posts/ff01f13c/</url>
+    <content><![CDATA[<h4 id="初始化一个-Git-仓库，使用-git-init-命令"><a href="#初始化一个-Git-仓库，使用-git-init-命令" class="headerlink" title="初始化一个 Git 仓库，使用 git init 命令"></a>初始化一个 Git 仓库，使用 <code>git init</code> 命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+
+<p>当前目录下多了一个 <code>.git</code> 的目录，这个目录是 <code>Git</code> 来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 <code>Git</code> 仓库给破坏了</p>
+<p>如果没有看到 <code>.git</code> 目录，那是因为这个目录默认是隐藏的，用 <code>ls -ah</code> 命令就可以看见</p>
+<h4 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h4><p>以一个 <code>readme.txt</code> 为例</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Git is a version control system.</span><br><span class="line">Git is free software.</span><br></pre></td></tr></table></figure>
+
+<p>注意：<br>一定要把该文件放在有 <code>.git</code> 文件夹的同一文件夹内</p>
+<p>建议：<br>Windows 用户用 <code>VSCode</code> 代替 <code>Windows</code> 自带记事本</p>
+<h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>用命令 <code>git add</code> 告诉 git，把文件 <code>添加</code> 到仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add <span class="string">&#x27;文件名&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>执行上面的命令，没有任何显示就对了</p>
+<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>用命令 <code>git commit</code> 告诉 git，把文件 <code>提交</code> 到仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;本次提交的说明&quot;</span></span><br><span class="line">[master (root-commit) eaadf4e] wrote a readme file</span><br><span class="line"> 1 file changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br></pre></td></tr></table></figure>
+
+<p>本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
+<p>执行上面的命令成功之后会返回文件改动的信息</p>
+<h5 id="为什么-Git-添加文件需要-add，commit-一共两步"><a href="#为什么-Git-添加文件需要-add，commit-一共两步" class="headerlink" title="为什么 Git 添加文件需要 add，commit 一共两步"></a>为什么 Git 添加文件需要 <code>add</code>，<code>commit</code> 一共两步</h5><p>因为 <code>commit</code> 可以一次提交很多文件，所以你可以多次 <code>add</code> 不同的文件，比如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add file1.txt</span><br><span class="line">$ git add file2.txt file3.txt</span><br><span class="line">$ git commit -m <span class="string">&quot;add 3 files.&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>-m</code> 表示 message，是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
+<h4 id="疑难解答"><a href="#疑难解答" class="headerlink" title="疑难解答"></a>疑难解答</h4><p>Q：输入 <code>git add readme.txt</code>，得到错误：<code>fatal: not a git repository (or any of the parent directories)</code></p>
+<p>A：<code>Git</code> 命令必须在 <code>Git</code> 仓库目录内执行（<code>git init</code> 除外），在仓库目录外执行是没有意义的。</p>
+<p>Q：输入 <code>git add readme.txt</code>，得到错误 <code>fatal: pathspec &#39;readme.txt&#39; did not match any files</code></p>
+<p>A：添加某个文件时，该文件必须在当前目录下存在，用 <code>ls</code> 或者 <code>dir</code> 命令查看当前目录的文件，看看文件是否存在，或者是否写错了文件名。</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git提交文件到远程仓库</title>
     <url>/posts/da9248d7/</url>
     <content><![CDATA[<p>现在的情景是，你已经在本地创建了一个 <code>Git</code> 仓库后，又想在 <code>GitHub</code> 创建一个 <code>Git</code> 仓库，并且让这两个仓库进行远程同步</p>
@@ -1022,43 +1120,6 @@
 <p>关联一个远程库时必须给远程库指定一个名字，<code>origin</code> 是默认习惯命名；</p>
 <p>关联后，使用命令 <code>git push -u origin main</code> 第一次推送 <code>main</code> 分支的所有内容；</p>
 <p>此后，每次本地提交后，只要有必要，就可以使用命令 <code>git push origin main</code> 推送最新修改</p>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git创建版本库</title>
-    <url>/posts/ff01f13c/</url>
-    <content><![CDATA[<h4 id="初始化一个-Git-仓库，使用-git-init-命令"><a href="#初始化一个-Git-仓库，使用-git-init-命令" class="headerlink" title="初始化一个 Git 仓库，使用 git init 命令"></a>初始化一个 Git 仓库，使用 <code>git init</code> 命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-
-<p>当前目录下多了一个 <code>.git</code> 的目录，这个目录是 <code>Git</code> 来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 <code>Git</code> 仓库给破坏了</p>
-<p>如果没有看到 <code>.git</code> 目录，那是因为这个目录默认是隐藏的，用 <code>ls -ah</code> 命令就可以看见</p>
-<h4 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h4><p>以一个 <code>readme.txt</code> 为例</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Git is a version control system.</span><br><span class="line">Git is free software.</span><br></pre></td></tr></table></figure>
-
-<p>注意：<br>一定要把该文件放在有 <code>.git</code> 文件夹的同一文件夹内</p>
-<p>建议：<br>Windows 用户用 <code>VSCode</code> 代替 <code>Windows</code> 自带记事本</p>
-<h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>用命令 <code>git add</code> 告诉 git，把文件 <code>添加</code> 到仓库</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add <span class="string">&#x27;文件名&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>执行上面的命令，没有任何显示就对了</p>
-<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>用命令 <code>git commit</code> 告诉 git，把文件 <code>提交</code> 到仓库</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;本次提交的说明&quot;</span></span><br><span class="line">[master (root-commit) eaadf4e] wrote a readme file</span><br><span class="line"> 1 file changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br></pre></td></tr></table></figure>
-
-<p>本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
-<p>执行上面的命令成功之后会返回文件改动的信息</p>
-<h5 id="为什么-Git-添加文件需要-add，commit-一共两步"><a href="#为什么-Git-添加文件需要-add，commit-一共两步" class="headerlink" title="为什么 Git 添加文件需要 add，commit 一共两步"></a>为什么 Git 添加文件需要 <code>add</code>，<code>commit</code> 一共两步</h5><p>因为 <code>commit</code> 可以一次提交很多文件，所以你可以多次 <code>add</code> 不同的文件，比如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add file1.txt</span><br><span class="line">$ git add file2.txt file3.txt</span><br><span class="line">$ git commit -m <span class="string">&quot;add 3 files.&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>-m</code> 表示 message，是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
-<h4 id="疑难解答"><a href="#疑难解答" class="headerlink" title="疑难解答"></a>疑难解答</h4><p>Q：输入 <code>git add readme.txt</code>，得到错误：<code>fatal: not a git repository (or any of the parent directories)</code></p>
-<p>A：<code>Git</code> 命令必须在 <code>Git</code> 仓库目录内执行（<code>git init</code> 除外），在仓库目录外执行是没有意义的。</p>
-<p>Q：输入 <code>git add readme.txt</code>，得到错误 <code>fatal: pathspec &#39;readme.txt&#39; did not match any files</code></p>
-<p>A：添加某个文件时，该文件必须在当前目录下存在，用 <code>ls</code> 或者 <code>dir</code> 命令查看当前目录的文件，看看文件是否存在，或者是否写错了文件名。</p>
 ]]></content>
       <categories>
         <category>git</category>
