@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>小层对比和划分的介绍</title>
-    <url>/posts/17c37c0b/</url>
-    <content><![CDATA[<h2 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h2><p>所谓“小层”，通常是指单砂体或单砂层，属于油田最低级别的储层单元，为油气开发的基本单元。只有建立正确的等时对比，才能在油田范围内统一层组的划分，才能将砂体确定在同一个时间单元之内。其划分与对比的可靠程度直接关系到油藏描述的成败。小层对比和划分是石油地质学中一项非常基础且普遍的地质建模工作。</p>
-<p>小层对比是我国油田地质工作者在开发大庆油田时提出的术语。指对碎屑岩储层以单砂层为基本单元的对比技术。曾有人采用 “单层对比” 的术语，但由子碎屑岩沉积砂体的侧向相变剧烈，经常表现为频繁分叉合并，实际上很难绝对地按每个单砂体进行 分层对比，因此本文仍采用“小层对比” 这一术语。从词义上讲与国外文献中所用的‘详细对比’（Detailed Correlation）这一术语相似（调研发现Stratigraphic Correlation被更多地使用），但我国实际工作中的“小层” 对比单元比西方文献中的“Subzone”、“Package” 更小，一般都尽可能地近于单砂层。——《河流砂体储层的小层对比问题》，1987，裘亦楠</p>
-<h2 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h2><ol>
-<li>对于河流砂体储层小层对比，难点是缺乏标准层和侧向相变剧烈</li>
-</ol>
-<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="传统方法"><a href="#传统方法" class="headerlink" title="传统方法"></a>传统方法</h3><p>传统方法与计算机相关知识没有联系，都是基于地质学、沉积学等相关理论为指导，综合地质资料进行细致对比。</p>
-<ol>
-<li>裘亦楠等人 (1988) 提出了根据地质沉积事件寻找标准层和综合多种测井信息识别标准层的方法，并参照地震反射层“切片”对比小段和“等高程”对比单砂体的方法。这些方法在实际应用中取得了一定效果，但也存在一些不足之处：<br>(a) 标准层寻找难度大：河流沉积环境中，化石层等传统标准层往往分布范围小、难以保存，且测井响应不明显。虽然可以利用地质历史演化中的“事件性”寻找标准层，但需要结合多种沉积现象进行综合分析，过程较为复杂。<br>(b) “切片”对比法主观性强：“切片”对比法需要根据区域厚度变化趋势人为划分切片，切片厚度和界线的确定具有一定的主观性，可能影响对比精度。<br>(c) “等高程”对比法局限性：“等高程”对比法主要依靠标准层控制，远离标准层时对比精度下降。此外，该方法需要通过岩心观察识别河道沉积全层序特征，过程繁琐且受限于岩心资料获取。</li>
-</ol>
-<h3 id="计算机方法"><a href="#计算机方法" class="headerlink" title="计算机方法"></a>计算机方法</h3><h4 id="动态时间规整"><a href="#动态时间规整" class="headerlink" title="动态时间规整"></a>动态时间规整</h4><h2 id="认识"><a href="#认识" class="headerlink" title="认识"></a>认识</h2><ol>
-<li>在只有少量井的情况下，使用计算机技术进行小层对比可能意义有限，因为标准井的选取是否合适对结果影响很大，而且对比后仍需地质专家进行细致的人工检验和校正。然而，在面对大量的井（例如10000口）时，人工进行小层对比的工作量极其庞大，此时利用计算机技术进行初步的快速对比是非常有价值的。这种快速对比可以作为一个预处理步骤，帮助识别潜在的对应关系，但最终的精确分析和验证仍需依靠地质学家的专业知识和经验。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>测井</category>
-      </categories>
-      <tags>
-        <tag>测井</tag>
-        <tag>地质知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>卷积神经网络（CNN）</title>
     <url>/posts/c9b25c16/</url>
     <content><![CDATA[<h4 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h4><h5 id="conv1d"><a href="#conv1d" class="headerlink" title="conv1d"></a>conv1d</h5><p><code>conv1d</code>卷积运算的输出公式为：</p>
@@ -38,72 +14,17 @@
       </tags>
   </entry>
   <entry>
-    <title>MySQL中的主键</title>
-    <url>/posts/d8f53a2/</url>
-    <content><![CDATA[<h4 id="创建表时设置主键"><a href="#创建表时设置主键" class="headerlink" title="创建表时设置主键"></a>创建表时设置主键</h4><p>在创建表时设置主键：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> users (</span><br><span class="line">    user_id <span class="type">INT</span> AUTO_INCREMENT,</span><br><span class="line">    username <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    email <span class="type">VARCHAR</span>(<span class="number">100</span>),</span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (user_id)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<h4 id="向表中添加主键"><a href="#向表中添加主键" class="headerlink" title="向表中添加主键"></a>向表中添加主键</h4><p>在已经存在的表中添加主键：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users <span class="keyword">ADD</span> <span class="keyword">PRIMARY</span> KEY (user_id);</span><br></pre></td></tr></table></figure>
-<h4 id="查看主键"><a href="#查看主键" class="headerlink" title="查看主键"></a>查看主键</h4><p>在MySQL中，可以使用 SHOW KEYS 命令来查看主键信息：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> KEYS <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> Key_name <span class="operator">=</span> <span class="string">&#x27;PRIMARY&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p>或者使用 INFORMATION_SCHEMA 库查询主键：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> COLUMN_NAME</span><br><span class="line"><span class="keyword">FROM</span> INFORMATION_SCHEMA.COLUMNS</span><br><span class="line"><span class="keyword">WHERE</span> TABLE_SCHEMA <span class="operator">=</span> <span class="string">&#x27;your_database_name&#x27;</span> <span class="keyword">AND</span> TABLE_NAME <span class="operator">=</span> <span class="string">&#x27;your_table_name&#x27;</span> <span class="keyword">AND</span> COLUMN_KEY <span class="operator">=</span> <span class="string">&#x27;PRI&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
-<li>唯一性：主键列必须包含唯一值。主键不能包含重复的值。</li>
-<li>非空：主键列不能包含NULL值。创建主键时会自动设置列为NOT NULL。</li>
-<li>自增（可选）：在某些数据库（如MySQL）中，主键可以设置为自增，这样在插入新行时会自动生成一个唯一的值。</li>
-<li>复合主键：有时你可能需要设置多个列作为主键，这叫做复合主键。例如<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> enrollment (</span><br><span class="line">    student_id <span class="type">INT</span>,</span><br><span class="line">    course_id <span class="type">INT</span>,</span><br><span class="line">    enrollment_date <span class="type">DATE</span>,</span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (student_id, course_id)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-以上例子中，student_id 和 course_id 组合在一起作为主键。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>conda的常用指令</title>
-    <url>/posts/9bb6c8d3/</url>
-    <content><![CDATA[<h4 id="虚拟环境"><a href="#虚拟环境" class="headerlink" title="虚拟环境"></a>虚拟环境</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n env_name python=3.8           <span class="comment"># 创建虚拟环境</span></span><br><span class="line">conda create -n env_name package python=3.8   <span class="comment"># 创建虚拟环境的同时安装必要的包</span></span><br><span class="line">conda <span class="built_in">env</span> list</span><br><span class="line">conda info -e</span><br><span class="line">conda info --envs                             <span class="comment"># 查看有哪些虚拟环境</span></span><br><span class="line">conda activate env_name                       <span class="comment"># 激活虚拟环境</span></span><br><span class="line">conda deactivate                              <span class="comment"># 退出虚拟环境</span></span><br><span class="line">conda remove -n env_name --all                <span class="comment"># 删除虚拟环境</span></span><br><span class="line">conda remove -n env_name package              <span class="comment"># 只删除虚拟环境中的某个或者某些包</span></span><br><span class="line">conda <span class="built_in">env</span> <span class="built_in">export</span> -n <span class="built_in">env</span> &gt; env_name.yml        <span class="comment"># 导出环境为yml文件</span></span><br><span class="line">conda <span class="built_in">env</span> <span class="built_in">export</span> &gt; env_name.yml               <span class="comment"># 导出当前环境为yml文件</span></span><br><span class="line">conda <span class="built_in">env</span> create -f env_name.yml              <span class="comment"># 从yml文件导入环境</span></span><br></pre></td></tr></table></figure>
-<h4 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list                            <span class="comment"># 查询看当前环境中安装了哪些包</span></span><br><span class="line">conda search package                  <span class="comment"># 查询当前Anaconda repository中是否有你想要安装的包</span></span><br><span class="line">conda list package                    <span class="comment"># 查询是否有安装某个包</span></span><br><span class="line">conda list package*                   <span class="comment"># *通配模糊查找</span></span><br><span class="line">conda install package                 <span class="comment"># 安装包</span></span><br><span class="line">conda install package=version         <span class="comment"># 安装某个特定版本的包</span></span><br><span class="line">conda update package                  <span class="comment"># 将某个包更新到它的最新版本</span></span><br><span class="line">conda uninstall package_name          <span class="comment"># conda卸载包</span></span><br><span class="line">conda clean -p                        <span class="comment"># 删除没有用的包 --packages</span></span><br><span class="line">conda clean -t                        <span class="comment"># 删除tar打包 --tarballs</span></span><br><span class="line">conda clean -y -all                   <span class="comment"># 删除所有的安装包及cache(索引缓存、锁定文件、未使用过的包和tar包)</span></span><br></pre></td></tr></table></figure>
-<h4 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda --version                 <span class="comment"># 查看conda版本</span></span><br><span class="line">conda config --show             <span class="comment"># 查看conda的环境配置</span></span><br><span class="line">conda update conda              <span class="comment"># 检查更新conda</span></span><br><span class="line">conda install conda==version    <span class="comment"># 更新指定版本conda</span></span><br><span class="line">conda update Anaconda           <span class="comment"># 更新Anaconda</span></span><br><span class="line">conda update Anaconda-naviator  <span class="comment"># 更新navigator</span></span><br></pre></td></tr></table></figure>
-<h4 id="设置镜像"><a href="#设置镜像" class="headerlink" title="设置镜像"></a>设置镜像</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 设置清华镜像</span></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/</span><br><span class="line"><span class="comment"># 设置bioconda</span></span><br><span class="line">conda config --add channels bioconda</span><br><span class="line">conda config --add channels conda-forge</span><br><span class="line"><span class="comment"># 设置搜索时显示通道地址</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
-<p>参考：<a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">Anaconda 镜像使用帮助</a></p>
-<h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h4><ul>
-<li>注意：不建议<code>conda</code>和<code>pip</code>混用</li>
-<li>参考：<a href="https://blog.csdn.net/chenxy_bwave/article/details/119996001">Anaconda conda常用命令：从入门到精通</a></li>
-<li>我的<code>.condarc</code>配置文件：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">channels:</span><br><span class="line">  - defaults</span><br><span class="line">show_channel_urls: true</span><br><span class="line">default_channels:</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line">custom_channels:</span><br><span class="line">  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  deepmodeling: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/</span><br></pre></td></tr></table></figure>
-如果没有<code>.condarc</code>文件，在<code>Anaconda Prompt</code>中键入以下命令行：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
-会自动在当前用户文件夹下生成<code>.condarc</code>文件</li>
-</ul>
-]]></content>
-      <categories>
-        <category>conda</category>
-      </categories>
-      <tags>
-        <tag>conda</tag>
-        <tag>命令行</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git升级到最新版本</title>
-    <url>/posts/15d0aa15/</url>
-    <content><![CDATA[<h4 id="Windows下的升级方法"><a href="#Windows下的升级方法" class="headerlink" title="Windows下的升级方法"></a>Windows下的升级方法</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git update-git-for-windows</span><br></pre></td></tr></table></figure>
+    <title>git向远程仓库上传文件</title>
+    <url>/posts/8e59f4b4/</url>
+    <content><![CDATA[<h4 id="确保本地仓库是最新的"><a href="#确保本地仓库是最新的" class="headerlink" title="确保本地仓库是最新的"></a>确保本地仓库是最新的</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;repository&gt;</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
 
-<h4 id="Linux下升级方法"><a href="#Linux下升级方法" class="headerlink" title="Linux下升级方法"></a>Linux下升级方法</h4><ul>
-<li><p>首先查看一下自己的版本是不是低于最新版</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果不是最新版，则添加Git官方的软件源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> add-apt-repository ppa:git-core/ppa</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>接着更新一下软件列表，就可以直接升级安装了</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install -f</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
+<h4 id="添加文件到暂存区"><a href="#添加文件到暂存区" class="headerlink" title="添加文件到暂存区"></a>添加文件到暂存区</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<p>或者指定文件路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;file_path&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="提交更改"><a href="#提交更改" class="headerlink" title="提交更改"></a>提交更改</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息：描述你所做的更改&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="推送更改到远程仓库"><a href="#推送更改到远程仓库" class="headerlink" title="推送更改到远程仓库"></a>推送更改到远程仓库</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin main</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>git</category>
       </categories>
@@ -112,262 +33,37 @@
       </tags>
   </entry>
   <entry>
-    <title>git取消与远程仓库的连接</title>
-    <url>/posts/125274a0/</url>
-    <content><![CDATA[<h4 id="git取消与远程仓库的连接"><a href="#git取消与远程仓库的连接" class="headerlink" title="git取消与远程仓库的连接"></a>git取消与远程仓库的连接</h4><h5 id="连接远程仓库"><a href="#连接远程仓库" class="headerlink" title="连接远程仓库"></a>连接远程仓库</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin 仓库地址</span><br></pre></td></tr></table></figure>
-<h5 id="查看远程连接"><a href="#查看远程连接" class="headerlink" title="查看远程连接"></a>查看远程连接</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
-<h5 id="git取消与远程仓库的连接-1"><a href="#git取消与远程仓库的连接-1" class="headerlink" title="git取消与远程仓库的连接"></a>git取消与远程仓库的连接</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>
-<h4 id="安全删除Git仓库中的-git文件夹"><a href="#安全删除Git仓库中的-git文件夹" class="headerlink" title="安全删除Git仓库中的.git文件夹"></a>安全删除Git仓库中的.git文件夹</h4><h5 id="备份项目数据"><a href="#备份项目数据" class="headerlink" title="备份项目数据"></a>备份项目数据</h5><p>在删除<code>.git</code>文件夹之前，始终首先备份整个项目。这确保了在出现意外情况时，项目仍然拥有完整的本。可以选择将整个目录压缩为ZIP文件或复制到其他位置作为备份。</p>
-<h5 id="确保工作目录是干净的"><a href="#确保工作目录是干净的" class="headerlink" title="确保工作目录是干净的"></a>确保工作目录是干净的</h5><p>在删除前，确保工作目录中没有挂起的更改。可以使用<code>git status</code>命令来检查。这确保不会失去任何未提交的工作。</p>
-<h5 id="直接删除-git文件夹"><a href="#直接删除-git文件夹" class="headerlink" title="直接删除.git文件夹"></a>直接删除.git文件夹</h5><p>进入项目的根目录，然后删除<code>.git</code>文件夹。在命令行中，可以使用<code>rm -rf .git</code>（Linux或Mac）或<code>rmdir /s /q .git</code>（Windows）来完成。</p>
-<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>在删除<code>.git</code>文件夹后，所有以前的提交历史和版本控制信息都将丢失。确保始终保持备份。</p>
+    <title>解决使用GraphViz报错问题</title>
+    <url>/posts/9e8bf13/</url>
+    <content><![CDATA[<p>一开始我并没有使用<code>import graphviz</code>，<code>jupyter</code>报错错误二，这并不奇怪，因为我的代码块如下：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pydotplus</span><br><span class="line"><span class="keyword">from</span> IPython.display <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将获得的决策树结构可视化</span></span><br><span class="line">dot_data = StringIO()</span><br><span class="line">export_graphviz(dtc1, out_file=dot_data,</span><br><span class="line">                feature_names=X_train.columns,</span><br><span class="line">                filled=<span class="literal">True</span>, rounded=<span class="literal">True</span>, special_characters=<span class="literal">True</span>)</span><br><span class="line">graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  </span><br><span class="line">Image(graph.create_png())</span><br></pre></td></tr></table></figure>
+<p>如上所见，并没有直接使用到graphviz，所以导入也没用，但是看到错误二，根据查询的资料，我加上了<code>import graphviz</code>，于是报错了错误一</p>
+<h3 id="错误一：No-module-named-‘graphviz‘"><a href="#错误一：No-module-named-‘graphviz‘" class="headerlink" title="错误一：No module named ‘graphviz‘"></a>错误一：No module named ‘graphviz‘</h3><p>解决方法，根据参考信息得知，该博主安装了几个有关于graphviz的包，分别是<code>graphviz</code>、<code>pygraphviz</code>、<code>python-graphviz</code>、<code>pydot</code>、<code>pydotplus</code>，在检查了我自己当前的包后，我发现我并没有安装<code>pygraphviz</code>、<code>python-graphviz</code>、<code>pydot</code>，但是我仔细看了下<code>pydot</code>，并没有选择安装这个包</p>
+<h3 id="错误二：InvocationException-GraphViz‘s-executables-not-found"><a href="#错误二：InvocationException-GraphViz‘s-executables-not-found" class="headerlink" title="错误二：InvocationException: GraphViz‘s executables not found"></a>错误二：InvocationException: GraphViz‘s executables not found</h3><p>此外，我进入了<a href="https://www.graphviz.org/download/">graphviz官网下载页面</a>下载了与<code>conda</code>安装同版本的<code>graphviz-2.50.0</code>，至于为什么是这个版本，因为我使用<code>conda search graphviz</code>命令出来的列表只有这一个版本，下面是我几个相关包的版本</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Name                    Version                   Build  Channel</span></span><br><span class="line">graphite2                 1.3.14               hd77b12b_1    defaults</span><br><span class="line">graphviz                  2.50.0               h7eca76f_1    defaults</span><br><span class="line">pygraphviz                1.9              py38h2bbff1b_1    defaults</span><br><span class="line">python-graphviz           0.20.1           py38haa95532_0    defaults</span><br><span class="line">pydotplus                 2.0.2                      py_3    defaults</span><br></pre></td></tr></table></figure>
+<p>在安装完成后，<code>2.50.0</code>版本的<code>graphviz</code>采用的是<code>.exe</code>文件安装，此前我还下载了最新版的<code>graphviz-12.1.0</code>，但是并没有生效（也有可能是当时并没有重启IDE导致的，这是我从几处都见过的说法）<br>最后重启IDE，代码分别在<code>PyCharm</code>和<code>VSCode</code>均可成功运行并生成图片<br>参考：<a href="https://blog.csdn.net/csdnypp/article/details/126420715?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-126420715-blog-139224511.235%5Ev43%5Epc_blog_bottom_relevance_base8&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-126420715-blog-139224511.235%5Ev43%5Epc_blog_bottom_relevance_base8">No module named ‘graphviz‘（解决）</a></p>
 ]]></content>
       <categories>
-        <category>git</category>
+        <category>bug</category>
       </categories>
       <tags>
-        <tag>git</tag>
+        <tag>bug</tag>
       </tags>
   </entry>
   <entry>
-    <title>npm的常用指令</title>
-    <url>/posts/98bd404c/</url>
-    <content><![CDATA[<h4 id="设置npm路径"><a href="#设置npm路径" class="headerlink" title="设置npm路径"></a>设置npm路径</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#全局安装路径</span></span><br><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;D:\Program Files\nodejs\node_global&quot;</span></span><br><span class="line"><span class="comment">#缓存路径</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;D:\Program Files\nodejs\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
-<h4 id="设置镜像"><a href="#设置镜像" class="headerlink" title="设置镜像"></a>设置镜像</h4><p>见<a href="https://be11amy.github.io/posts/3f8cf88c/">使用xmzs包管理npm源</a></p>
-<h4 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm init          <span class="comment"># npm 初始化当前目录</span></span><br><span class="line">npm i             <span class="comment"># 安装所有依赖</span></span><br><span class="line">npm install       <span class="comment"># 安装所有依赖</span></span><br><span class="line">npm i package     <span class="comment"># 安装模块到默认dependencies</span></span><br><span class="line">npm i package -g  <span class="comment"># 会安装到配置的全局目录下</span></span><br><span class="line">npm i package -S  <span class="comment"># 安装包信息将加入到dependencies生产依赖</span></span><br><span class="line">npm i package -D  <span class="comment"># 安装包信息将加入到devDependencies开发依赖</span></span><br><span class="line">npm uninstall package             <span class="comment"># 卸载模块，但不卸载模块留在package.json中的对应信息</span></span><br><span class="line">npm uninstall package -g          <span class="comment"># 卸载全局模块</span></span><br><span class="line">npm uninstall package --save      <span class="comment"># 卸载模块，同时卸载留在package.json中dependencies下的信息</span></span><br><span class="line">npm uninstall package --save-dev  <span class="comment"># 卸载模块，同时卸载留在package.json中devDependencies下的信息</span></span><br><span class="line">npm update package          <span class="comment"># 更新最新版本的包</span></span><br><span class="line">npm update package@version  <span class="comment"># 更新到指定版本号的包</span></span><br><span class="line">npm update package@latest   <span class="comment"># 更新到最后的新版本</span></span><br></pre></td></tr></table></figure>
-<h4 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm -v                          <span class="comment">#查看版本号</span></span><br><span class="line">npm root                        <span class="comment"># 查看项目中模块所在的目录</span></span><br><span class="line">npm root -g                     <span class="comment"># 查看全局安装的模块所在目录</span></span><br><span class="line">npm list 或者 npm <span class="built_in">ls</span>             <span class="comment"># 查看本地已安装模块的清单列表</span></span><br><span class="line">npm view package dependencies   <span class="comment"># 查看某个包对于各种包的依赖关系</span></span><br><span class="line">npm view package version        <span class="comment"># 查看包最新的版本号</span></span><br><span class="line">npm view package versions       <span class="comment"># 查看所有包历史版本号（很实用）</span></span><br><span class="line">npm view package                <span class="comment"># 查看最新的包版本的信息</span></span><br><span class="line">npm info package                <span class="comment"># 查看包的详细信息，等同于上面的npm view package</span></span><br><span class="line">npm list package 或 npm <span class="built_in">ls</span> package  <span class="comment"># 查看本地已安装的express的详细信息</span></span><br><span class="line">npm view package repository.url     <span class="comment"># 查看express包的来源地址</span></span><br></pre></td></tr></table></figure>
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm cache clean           <span class="comment"># 清除npm的缓存</span></span><br><span class="line">npm prune                 <span class="comment"># 清除项目中没有被使用的包</span></span><br><span class="line">npm outdated              <span class="comment"># 检查模块是否已经过时</span></span><br><span class="line">npm repo package          <span class="comment"># 会打开默认浏览器跳转到github中package的页面</span></span><br><span class="line">npm docs package          <span class="comment"># 会打开默认浏览器跳转到github中package的README.MD文件信息</span></span><br><span class="line">npm home package          <span class="comment"># 会打开默认浏览器跳转到github中package的主页</span></span><br><span class="line">npm install -g npm        <span class="comment"># 升级npm</span></span><br></pre></td></tr></table></figure>
-<p>参考：<a href="https://blog.csdn.net/penngo/article/details/127845211">npm常用命令大全</a></p>
-]]></content>
-      <categories>
-        <category>包管理工具</category>
-      </categories>
-      <tags>
-        <tag>命令行</tag>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>pnpm的常用指令</title>
-    <url>/posts/5d60e758/</url>
-    <content><![CDATA[<h4 id="pnpm常用指令"><a href="#pnpm常用指令" class="headerlink" title="pnpm常用指令"></a>pnpm常用指令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm -v                       // 查看已安装的pnpm的版本</span><br><span class="line">pnpm install xxx/pnpm i xxx   // 安装依赖</span><br><span class="line">pnpm add &lt;package&gt;            // 安装依赖包到 dependencies</span><br><span class="line">pnpm add -D xxx               // 安装依赖包到devDependencies</span><br><span class="line">pnpm update xxx/pnpm up xxx   // 更新依赖包</span><br><span class="line">pnpm remove xxx               // 删除依赖包</span><br><span class="line">pnpm run xxx                  // 运行package.json中scripts脚本</span><br></pre></td></tr></table></figure>
-<h4 id="pnpm显示"><a href="#pnpm显示" class="headerlink" title="pnpm显示"></a>pnpm显示</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm list      // 以树形结构输出已安装的软件包的所有版本及其依赖</span><br></pre></td></tr></table></figure>
-<p>选项：<br><code>--global, -g</code>：列出全局安装目录中的包，而不是当前项目中的包<br><code>--depth &lt;number&gt;</code>：依赖树的最大显示深度<br><code>--json</code>：JSON 格式的日志输出<br><code>--dev, -D</code>：仅显示 devDependencies 中包的依赖图<br>参考：<a href="https://juejin.cn/post/7143215573378269198">快速掌握pnpm使用命令和实现原理</a></p>
-]]></content>
-      <categories>
-        <category>包管理工具</category>
-      </categories>
-      <tags>
-        <tag>命令行</tag>
-        <tag>pnpm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>pnpm的安装与配置</title>
-    <url>/posts/456ef5aa/</url>
-    <content><![CDATA[<h4 id="pnpm的安装"><a href="#pnpm的安装" class="headerlink" title="pnpm的安装"></a>pnpm的安装</h4><p>通过npm全局安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
-<p>获取当前配置的镜像地址</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm get registry</span><br></pre></td></tr></table></figure>
-<p>(可选)修改默认安装包的仓库位置</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config <span class="built_in">set</span> store-dir <span class="string">&quot;D:\CodeApps\node version manager\.pnpm-store&quot;</span></span><br></pre></td></tr></table></figure>
-<p>查看默认安装包的仓库位置</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config get store-dir </span><br></pre></td></tr></table></figure>
-<h4 id="配置PNPM环境变量（这一步我后来没有使用了）"><a href="#配置PNPM环境变量（这一步我后来没有使用了）" class="headerlink" title="配置PNPM环境变量（这一步我后来没有使用了）"></a>配置PNPM环境变量（这一步我后来没有使用了）</h4><p>举例，在系统PATH中配置环境变量<br><code>NAME</code>:<code>PNPM_HOME</code><br><code>VALUE</code>:<code>D:\CodeApps\nvs\pnpm</code><br>再在<code>Path</code>中添加<code>%PNPM_HOME%</code></p>
-<h4 id="pnpm全局包安装路径"><a href="#pnpm全局包安装路径" class="headerlink" title="pnpm全局包安装路径"></a>pnpm全局包安装路径</h4><p>查看pnpm全局包安装路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config get store-dir</span><br></pre></td></tr></table></figure>
-<p>配置pnpm全局包安装路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config <span class="built_in">set</span> store-dir <span class="string">&quot;D:\CodeApps\node version manager\.pnpm-store&quot;</span></span><br></pre></td></tr></table></figure>
-<h4 id="pnpm全局缓存路径"><a href="#pnpm全局缓存路径" class="headerlink" title="pnpm全局缓存路径"></a>pnpm全局缓存路径</h4><p>查看pnpm全局包缓存路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config get cache-dir</span><br></pre></td></tr></table></figure>
-<p>配置pnpm全局包缓存路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config <span class="built_in">set</span> cache-dir <span class="string">&quot;D:\CodeApps\node version manager\.pnpm-cache&quot;</span></span><br></pre></td></tr></table></figure>
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>运行下面的命令</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config list</span><br></pre></td></tr></table></figure>
-<p>得到如下路径</p>
-<blockquote>
-<p>cache&#x3D;D:\CodeApps\node version manager\node_cache</p>
-<p>cache-dir&#x3D;D:\CodeApps\node version manager.pnpm-cache</p>
-<p>global-bin-dir&#x3D;D:\CodeApps\node version manager\node_global\bin</p>
-<p>global-dir&#x3D;D:\CodeApps\node version manager.pnpm-global</p>
-<p>home&#x3D;<a href="https://npmmirror.com/">https://npmmirror.com</a></p>
-<p>prefix&#x3D;D:\CodeApps\node version manager\node_global    </p>
-<p>registry&#x3D;<a href="https://registry.npmmirror.com/">https://registry.npmmirror.com/</a></p>
-<p>state-dir&#x3D;D:\CodeApps\node version manager.pnpm-state</p>
-<p>store-dir&#x3D;D:\CodeApps\node version manager.pnpm-store</p>
-<p>user-agent&#x3D;pnpm&#x2F;9.9.0 npm&#x2F;? node&#x2F;v20.17.0 win32 x64</p>
-</blockquote>
-<p>参考：<br><a href="https://blog.csdn.net/qq_27971677/article/details/130652057">pnpm的使用</a><br><a href="https://blog.csdn.net/m0_56416743/article/details/136122153">pnpm 基本详细使用教程（安装、卸载、使用、可能遇到的问题及解决办法）</a><br><a href="https://blog.csdn.net/weixin_46243213/article/details/133384481?ops_request_misc=&request_id=&biz_id=102&utm_term=npm%20cache-dir&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-133384481.142%5Ev100%5Epc_search_result_base1&spm=1018.2226.3001.4187">node、npm、pnpm下载安装、卸载、踩坑</a></p>
-]]></content>
-      <categories>
-        <category>包管理工具</category>
-      </categories>
-      <tags>
-        <tag>pnpm</tag>
-        <tag>环境配置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>yarn的常用指令</title>
-    <url>/posts/88a8fad8/</url>
-    <content><![CDATA[<h4 id="yarn常用指令"><a href="#yarn常用指令" class="headerlink" title="yarn常用指令"></a>yarn常用指令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn --version      // 查看版本</span><br><span class="line">yarn init           // 同npm init，执行输入信息后，会生成package.json文件</span><br><span class="line">yarn config list    // 显示所有配置项</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="yarn的配置项"><a href="#yarn的配置项" class="headerlink" title="yarn的配置项"></a>yarn的配置项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn config get &lt;key&gt;     <span class="comment"># 显示某配置项</span></span><br><span class="line">yarn config delete &lt;key&gt;  <span class="comment"># 删除某配置项</span></span><br><span class="line">yarn config <span class="built_in">set</span> &lt;key&gt; &lt;value&gt; [-g| --global]  <span class="comment"># 设置配置项</span></span><br></pre></td></tr></table></figure>
-<h4 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn install                  <span class="comment"># 安装package.json里所有包，并将包及它的所有依赖项保存进yarn.lock</span></span><br><span class="line">yarn install --flat           <span class="comment"># 安装一个包的单一版本</span></span><br><span class="line">yarn install --force          <span class="comment"># 强制重新下载所有包</span></span><br><span class="line">yarn install --production     <span class="comment"># 只安装dependencies里的包</span></span><br><span class="line">yarn install --no-lockfile    <span class="comment"># 不读取或生成yarn.lock</span></span><br><span class="line">yarn install --pure-lockfile  <span class="comment"># 不生成yarn.lock</span></span><br></pre></td></tr></table></figure>
-<h4 id="更改包（会更新package-json和yarn-lock）"><a href="#更改包（会更新package-json和yarn-lock）" class="headerlink" title="更改包（会更新package.json和yarn.lock）"></a>更改包（会更新package.json和yarn.lock）</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add [package]            <span class="comment"># 在当前的项目中添加一个依赖包，会自动更新到package.json和yarn.lock文件中</span></span><br><span class="line">yarn add [package]@[version]  <span class="comment"># 安装指定版本，这里指的是主要版本，如果需要精确到小版本，使用-E参数</span></span><br><span class="line">yarn add [package]@[tag]      <span class="comment"># 安装某个tag（比如beta,next或者latest）</span></span><br><span class="line">yarn add --dev/-D             <span class="comment"># 加到 devDependencies</span></span><br><span class="line">yarn add --peer/-P            <span class="comment"># 加到 peerDependencies</span></span><br><span class="line">yarn add --optional/-O        <span class="comment"># 加到 optionalDependencies</span></span><br><span class="line">yarn remove &lt;packageName&gt;     <span class="comment"># 移除一个包，会自动更新package.json和yarn.lock</span></span><br><span class="line">yarn upgrade                  <span class="comment"># 用于更新包到基于规范范围的最新版本</span></span><br></pre></td></tr></table></figure>
-<h4 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn cache list       <span class="comment"># 列出已缓存的每个包</span></span><br><span class="line">yarn cache <span class="built_in">dir</span>        <span class="comment"># 返回 全局缓存位置</span></span><br><span class="line">yarn cache clean      <span class="comment"># 清除缓存</span></span><br></pre></td></tr></table></figure>
-<p>参考：<a href="https://blog.csdn.net/yw00yw/article/details/81354533">yarn的安装和使用</a></p>
-]]></content>
-      <categories>
-        <category>包管理工具</category>
-      </categories>
-      <tags>
-        <tag>命令行</tag>
-        <tag>yarn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用nvm管理node.js</title>
-    <url>/posts/c89d12c6/</url>
-    <content><![CDATA[<h4 id="nvm常用命令"><a href="#nvm常用命令" class="headerlink" title="nvm常用命令"></a>nvm常用命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nvm v                               // 显示nvm版本</span><br><span class="line">nvm <span class="built_in">ls</span>                              // 显示所有安装的node.js版本</span><br><span class="line">nvm use &lt;version&gt;                   // 切换到使用指定的nodejs版本</span><br><span class="line">nvm list available                  // 显示可以安装的所有node.js的版本</span><br><span class="line">nvm install &lt;version&gt;               // 安装node.js的命名 version是版本号 例如：nvm install 8.12.0</span><br><span class="line">nvm uninstall &lt;version&gt;             // 卸载node.js是的命令，卸载指定版本的nodejs，当安装失败时卸载使用</span><br><span class="line">nvm install stable                  // 安装最新稳定版</span><br><span class="line">nvm reinstall-packages &lt;version&gt;    // 重新安装指定版本的Node.js，并将全局包重新安装到新版本中</span><br><span class="line">nvm off                             // 禁用node.js版本管理(不卸载任何东西)</span><br><span class="line">nvm on                              // 启用node.js版本管理</span><br></pre></td></tr></table></figure>
+    <title>解决启动前端项目报错errno:-4058</title>
+    <url>/posts/75d528db/</url>
+    <content><![CDATA[<h4 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">events.js:292</span><br><span class="line">      throw er; // Unhandled <span class="string">&#x27;error&#x27;</span> event</span><br><span class="line">      ^</span><br><span class="line"></span><br><span class="line">Error: spawn cmd ENOENT</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)</span><br><span class="line">    at onErrorNT (internal/child_process.js:465:16)</span><br><span class="line">    at processTicksAndRejections (internal/process/task_queues.js:80:21)</span><br><span class="line">Emitted <span class="string">&#x27;error&#x27;</span> event on ChildProcess instance at:</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:275:12)</span><br><span class="line">    at onErrorNT (internal/child_process.js:465:16)</span><br><span class="line">    at processTicksAndRejections (internal/process/task_queues.js:80:21) &#123;</span><br><span class="line">  errno: -4058,</span><br><span class="line">  code: <span class="string">&#x27;ENOENT&#x27;</span>,</span><br><span class="line">  syscall: <span class="string">&#x27;spawn cmd&#x27;</span>,</span><br><span class="line">  path: <span class="string">&#x27;cmd&#x27;</span>,</span><br><span class="line">  spawnargs: <span class="string">&#x27;/c&#x27;</span>, <span class="string">&#x27;start&#x27;</span>, <span class="string">&#x27;&quot;&quot;&#x27;</span>, <span class="string">&#x27;/b&#x27;</span>, <span class="string">&#x27;http://localhost:8080/&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h4><p>墙裂建议使用<code>nvm install</code>来安装<code>node.js</code>，它会把所有版本都放在一个文件夹里。</p>
+<h4 id="报错原因"><a href="#报错原因" class="headerlink" title="报错原因"></a>报错原因</h4><p>电脑缺少cmd运行程序的环境变量</p>
+<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>环境变量配置在系统变量<code>path</code>中添加<code>C:\windows\system32</code>，spawn xxx ENOENT 其实就是缺少，对应的运行程序的环境变量。</p>
 ]]></content>
       <categories>
-        <category>工具包</category>
+        <category>bug</category>
       </categories>
       <tags>
-        <tag>nvm</tag>
-        <tag>nodejs</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用rimraf删除依赖</title>
-    <url>/posts/ec5cb3a2/</url>
-    <content><![CDATA[<h4 id="安装rimraf"><a href="#安装rimraf" class="headerlink" title="安装rimraf"></a>安装rimraf</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install rimraf -g</span><br></pre></td></tr></table></figure>
-<h4 id="使用rimraf-进行删除"><a href="#使用rimraf-进行删除" class="headerlink" title="使用rimraf 进行删除"></a>使用rimraf 进行删除</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rimraf node_modules</span><br></pre></td></tr></table></figure>
-<p>如果安装依赖时报错，可以先删除依赖，然后清理缓存，最后再安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rimraf node_modules</span><br><span class="line">npm cache clean --force</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>工具包</category>
-      </categories>
-      <tags>
-        <tag>环境配置</tag>
+        <tag>bug</tag>
         <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用xmzs包管理npm源</title>
-    <url>/posts/3f8cf88c/</url>
-    <content><![CDATA[<h4 id="xmzs的安装"><a href="#xmzs的安装" class="headerlink" title="xmzs的安装"></a>xmzs的安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install xmzs -g</span><br></pre></td></tr></table></figure>
-<h4 id="mmp命令"><a href="#mmp命令" class="headerlink" title="mmp命令"></a>mmp命令</h4><p>通过以下命令查看可用的npm源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp <span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
-<p>通过以下命令更改npm源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp use</span><br></pre></td></tr></table></figure>
-<h4 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h4><p>使用以下命令获取帮助</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp -h</span><br><span class="line">mmp <span class="built_in">help</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>工具包</category>
-      </categories>
-      <tags>
-        <tag>环境配置</tag>
-        <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>元组和numpy数组的关系</title>
-    <url>/posts/b7ef5578/</url>
-    <content><![CDATA[<h4 id="什么是numpy数组"><a href="#什么是numpy数组" class="headerlink" title="什么是numpy数组"></a>什么是numpy数组</h4><p>定义：NumPy 数组是用于存储同类型数据的多维集合，它提供了丰富的操作和数学函数来处理这些数据。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">arr = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="built_in">print</span>(arr[<span class="number">2</span>])  <span class="comment"># 输出3</span></span><br><span class="line"><span class="built_in">print</span>(arr[<span class="number">1</span>:<span class="number">4</span>])  <span class="comment"># 输出[2 3 4]</span></span><br></pre></td></tr></table></figure>
-<h4 id="什么是元组"><a href="#什么是元组" class="headerlink" title="什么是元组"></a>什么是元组</h4><p>定义：Python 的内置数据类型，用于存储不可变的有序元素集合。</p>
-<h4 id="二者的关系"><a href="#二者的关系" class="headerlink" title="二者的关系"></a>二者的关系</h4><p>在以下代码中，可以看出它们存在的其中一种关系：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 从数据集中提取特征和标签</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_features_and_labels</span>(<span class="params">data</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (pd.DataFrame): 输入数据。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    tuple: 包含特征和标签的元组 (features, labels)。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 检查所需列是否存在</span></span><br><span class="line">    required_features = [<span class="string">&quot;AC&quot;</span>, <span class="string">&quot;CAL&quot;</span>, <span class="string">&quot;GR&quot;</span>, <span class="string">&quot;RT&quot;</span>, <span class="string">&quot;RXO&quot;</span>]</span><br><span class="line">    required_label = [<span class="string">&quot;CNL&quot;</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 提取特征</span></span><br><span class="line">    features = data[required_features].values</span><br><span class="line">    <span class="comment"># 提取标签</span></span><br><span class="line">    labels = data[required_label].values</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> features, labels</span><br><span class="line"></span><br><span class="line"><span class="comment"># 示例用法</span></span><br><span class="line"><span class="comment"># data = pd.read_csv(&#x27;your_data.csv&#x27;)  # 假设你已经读取了数据</span></span><br><span class="line"><span class="comment"># features, labels = get_features_and_labels(data)</span></span><br></pre></td></tr></table></figure>
-<p>其中，<code>get_features_and_labels()</code>方法返回了features和labels，这两者分别都是numpy数组，而两者结合就构成了一个元组。</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何对数据的某列取对数</title>
-    <url>/posts/4f2cf0a6/</url>
-    <content><![CDATA[<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>首先，处理数据之前要清除数据的类型，以测井曲线的代码片段为例：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">log_transform_columns</span>(<span class="params">data, cols_indices</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    对指定列进行对数变换。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (np.ndarray): 输入数据，numpy数组。</span></span><br><span class="line"><span class="string">    cols_indices (list of int): 需要进行对数变换的列索引列表。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    np.ndarray: 经过对数变换处理后的数据。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    data_copy = data.copy() <span class="comment"># 避免对原始数据进行修改</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> col_idx <span class="keyword">in</span> cols_indices:</span><br><span class="line">        <span class="comment"># 确保列中的所有值都大于0，避免对数变换出现负无穷大的问题</span></span><br><span class="line">        data_copy[:, col_idx] = np.where(data_copy[:, col_idx] &lt;= <span class="number">0</span>, <span class="number">1e-9</span>, data_copy[:, col_idx])</span><br><span class="line">        data_copy[:, col_idx] = np.log10(data_copy[:, col_idx].astype(<span class="built_in">float</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> data_copy</span><br></pre></td></tr></table></figure>
-<p>这个函数输入的数据类型是numpy数组，输出也是numpy数组，而<code>np.log10()</code>函数也是numpy自带的处理方法，所以这个方法对于numpy数组取对数很方便，但是有时输入数据并不是numpy数组，也有可能是pandas DataFrame类型，这时候又有另一种方法。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">log_transform_columns</span>(<span class="params">data, cols</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    对指定列进行对数变换。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (pd.DataFrame): 输入数据。</span></span><br><span class="line"><span class="string">    cols (list of str): 需要进行对数变换的列名列表。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    pd.DataFrame: 经过对数变换处理后的数据。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    data_copy = data.copy()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> cols:</span><br><span class="line">        <span class="comment"># 确保列中的所有值都大于0，避免对数变换出现负无穷大的问题</span></span><br><span class="line">        data_copy[col] = np.where(data_copy[col] &lt;= <span class="number">0</span>, <span class="number">1e-9</span>, data_copy[col])</span><br><span class="line">        <span class="comment"># 对列进行log10变换</span></span><br><span class="line">        data_copy[col] = np.log10(data_copy[col].astype(<span class="built_in">float</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> data_copy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>数据处理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何开始编写TypeScript</title>
-    <url>/posts/2cdbb915/</url>
-    <content><![CDATA[<h4 id="安装TypeScripit"><a href="#安装TypeScripit" class="headerlink" title="安装TypeScripit"></a>安装TypeScripit</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install -g typescript</span><br></pre></td></tr></table></figure>
-<p>使用以下命令行验证</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc -v</span><br></pre></td></tr></table></figure>
-<h4 id="运行TypeScript"><a href="#运行TypeScript" class="headerlink" title="运行TypeScript"></a>运行TypeScript</h4><p>首先初始化，生成<code>tsconfig.json</code>文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc --init</span><br></pre></td></tr></table></figure>
-<ul>
-<li>由于ts文件本身无法直接运行，所以需要先编译为js文件</li>
-<li>创建<code>&lt;filename&gt;.ts</code>文件，使用以下命令行生成随<code>&lt;filename&gt;.ts</code>文件改变而改变的<code>&lt;filename&gt;.js</code>文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc -w</span><br></pre></td></tr></table></figure>
-终端输出如下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[10:49:49] Starting compilation in watch mode...</span><br><span class="line">[10:49:50] Found 0 errors. Watching for file changes.</span><br></pre></td></tr></table></figure></li>
-<li>在<code>.js</code>文件所在文件夹下使用以下命令运行<code>node &lt;filename&gt;.js</code></li>
-<li>可以安装<code>nodemon</code>同时监听<code>.js</code>文件，这样就不用反复使用<code>node &lt;filename&gt;.js</code>命令运行<code>.js</code>文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i -g nodemon</span><br></pre></td></tr></table></figure>
-运行<code>.js</code>文件时不要关闭<code>tsc</code>的终端，同时再打开一个新的终端，使用<code>nodemon &lt;filename&gt;.js</code>运行<code>js</code>文件，运行时保持两个终端的运行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nodemon &lt;filename&gt;.js</span><br></pre></td></tr></table></figure>
-终端输出如下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[nodemon] 3.1.1</span><br><span class="line">[nodemon] to restart at any time, enter `rs`  </span><br><span class="line">[nodemon] watching path(s): *.*</span><br><span class="line">[nodemon] watching extensions: js,mjs,cjs,json</span><br><span class="line">[nodemon] starting `node index.js`</span><br><span class="line">[nodemon] clean exit - waiting for changes before restart</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="使用ts-node运行ts文件"><a href="#使用ts-node运行ts文件" class="headerlink" title="使用ts-node运行ts文件"></a>使用ts-node运行ts文件</h4><p>使用pnpm安装ts-node</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i -g ts-node</span><br></pre></td></tr></table></figure>
-<p>使用<code>ts-node &lt;filename&gt;.ts</code>可以直接运行ts文件</p>
-<h4 id="使用-types-x2F-node提供类型检查"><a href="#使用-types-x2F-node提供类型检查" class="headerlink" title="使用@types&#x2F;node提供类型检查"></a>使用@types&#x2F;node提供类型检查</h4><p>TypeScript编译器将能够识别并使用@types&#x2F;node中提供的类型定义文件，从而为Node.js的API提供类型检查和代码补全功能</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i @types/node -D</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>TypeScript</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>TypeScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>快速搭建Springboot项目</title>
-    <url>/posts/1890d97b/</url>
-    <content><![CDATA[<p>本文以InrelliJ IDEA为例创建Springboot项目</p>
-<h4 id="更改Server-URL"><a href="#更改Server-URL" class="headerlink" title="更改Server URL"></a>更改Server URL</h4><ul>
-<li>将Server URL更改为<code>https://start.aliyun.com/</code></li>
-<li>Language选择<code>Java</code></li>
-<li>Type选择<code>Maven</code></li>
-<li>JDK版本与Java版本匹配</li>
-</ul>
-<h4 id="依赖选择"><a href="#依赖选择" class="headerlink" title="依赖选择"></a>依赖选择</h4><ul>
-<li>Developer选择<code>Lombok</code></li>
-<li>Web选择Spring Web</li>
-<li>SQL选择MySQL Driver<br>注意：如果使用MybatisPlus则不选择<code>Mybatis Framework</code></li>
-<li>进入<a href="https://baomidou.com/getting-started/">Mybatisplus官网找到最新版的Maven依赖</a><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="配置pom"><a href="#配置pom" class="headerlink" title="配置pom"></a>配置pom</h4><p>在<code>pom.xml</code>中的第一个dependencie中加入上文提到的MybatisPlus的dependency配置<br>若遇到<code>Unresolved plugin</code>的问题，可以再加入以下dependency配置</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-install-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">type</span>&gt;</span>maven-plugin<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-deploy-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.7<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">type</span>&gt;</span>maven-plugin<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.12.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">type</span>&gt;</span>maven-plugin<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-site-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">type</span>&gt;</span>maven-plugin<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>然后等待Maven进行同步，当Maven同步显示成功时可选择删除以上代码<br>参考：<a href="https://blog.csdn.net/biaoguaqie7838/article/details/106179663">解决：Unresolved plugin: org.apache.maven.plugins:maven-jar-plugin:2.4 等四个插件的问题</a></p>
-<h4 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h4><p>在<code>src/main/resource/application.yml</code>配置如下</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8081</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">*</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://localhost:3306/*?serverTimezone=UTC</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">&#x27;*&#x27;</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">&#x27;*&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>查看<code>src/main/java/../DemoApplication</code><br>点击<code>public class DemoApplication</code>旁的绿色箭头即可运行程序</p>
-]]></content>
-      <categories>
-        <category>Springboot</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>springboot</tag>
-        <tag>后端</tag>
       </tags>
   </entry>
   <entry>
@@ -402,48 +98,6 @@
       </tags>
   </entry>
   <entry>
-    <title>快速搭建Vite+Vue项目</title>
-    <url>/posts/a63b7ddc/</url>
-    <content><![CDATA[<h4 id="安装pnpm"><a href="#安装pnpm" class="headerlink" title="安装pnpm"></a>安装pnpm</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
-<p>验证<code>pnpm -v</code></p>
-<h4 id="使用Vite自带命令行"><a href="#使用Vite自带命令行" class="headerlink" title="使用Vite自带命令行"></a>使用Vite自带命令行</h4><p>使用如下命令，按照提示操作即可</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite</span><br></pre></td></tr></table></figure>
-<p>接下来，安装所需包以及运行项目</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install</span><br><span class="line">pnpm run dev</span><br></pre></td></tr></table></figure>
-<p>即可打开默认Vite+Vue界面</p>
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>Vite运行时默认不自动打开浏览器，可以找到项目根目录下的<code>package.json</code>文件修改<code>script</code>中的<code>&quot;dev&quot;: &quot;vite&quot;</code>更改为<code>&quot;dev&quot;: &quot;vite --open&quot;</code>，更改后项目启动自动打开浏览器。</p>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://cn.vitejs.dev/guide/">Vite官网中文文档</a></p>
-]]></content>
-      <categories>
-        <category>Vue</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Vite</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决pnpm(ERR_PNPM_META_FETCH_FAIL)异常</title>
-    <url>/posts/9f72484f/</url>
-    <content><![CDATA[<h4 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h4><p>运行pnpm命令下的vite创建vue命令行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite my-vue-app --template vue</span><br></pre></td></tr></table></figure>
-<p>错误信息如下所示，</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">WARN  GET https://registry.npmmirror.com/create-vite error (ERR_INVALID_THIS). Will retry in 10 seconds. 2 retries left.</span><br><span class="line"> WARN  GET https://registry.npmmirror.com/create-vite error (ERR_INVALID_THIS). Will retry in 1 minute. 1 retries left.</span><br><span class="line">D:\CodeApps\nvs\pnpm\pnpm-store\v3\tmp\dlx-61520:</span><br><span class="line"> ERR_PNPM_META_FETCH_FAIL  GET https://registry.npmmirror.com/create-vite: Value of &quot;this&quot; must be of type URLSearchParams</span><br><span class="line"></span><br><span class="line">This error happened while installing a direct dependency of D:\CodeApps\nvs\pnpm\pnpm-store\v3\tmp\dlx-61520</span><br></pre></td></tr></table></figure>
-
-<h4 id="报错原因"><a href="#报错原因" class="headerlink" title="报错原因"></a>报错原因</h4><p>参考：<a href="https://www.wyr.me/post/746">解决pnpm (ERR_INVALID_THIS)异常 Node.js 20</a> <a href="https://www.wyr.me/">作者:轶哥</a></p>
-<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>重装pnpm</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall -g pnpm</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>bug</category>
-      </categories>
-      <tags>
-        <tag>pnpm</tag>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vi/vim的使用</title>
     <url>/posts/5c57039f/</url>
     <content><![CDATA[<p>基本上 vi&#x2F;vim 共分为三种模式，命令模式（Command Mode）、输入模式（Insert Mode）和命令行模式（Command-Line Mode）。</p>
@@ -475,6 +129,36 @@
       </tags>
   </entry>
   <entry>
+    <title>如何把Notion安装到其他盘</title>
+    <url>/posts/604b675f/</url>
+    <content><![CDATA[<ol>
+<li><a href="https://www.notion.so/desktop">官网下载Notion最新版</a></li>
+<li>找到你下载的.exe安装包</li>
+<li>在地址栏输入cmd后回车</li>
+<li>（英文输入状态下）输入 “安装包名” &#x2F;D&#x3D;”你想要安装的路径”<br>比如我想安装到 D:\ImageText\Notion<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;Notion Setup 3.7.0.exe&quot;</span> /D=<span class="string">&quot;D:\Application\notion&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>安装完成</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何运行Linux操作系统的.sh文件</title>
+    <url>/posts/9c0df2b2/</url>
+    <content><![CDATA[<p>运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sh filename.sh</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小层对比的划分</title>
     <url>/posts/b9c1b045/</url>
     <content><![CDATA[<p>使用测井曲线中的自然伽马(Gamma-ray, GR)和电阻率(Resistivity)来划分小层时，通常依据以下标准：</p>
@@ -497,36 +181,6 @@
       <tags>
         <tag>测井</tag>
         <tag>地质知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何运行Linux操作系统的.sh文件</title>
-    <url>/posts/9c0df2b2/</url>
-    <content><![CDATA[<p>运行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sh filename.sh</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何把Notion安装到其他盘</title>
-    <url>/posts/604b675f/</url>
-    <content><![CDATA[<ol>
-<li><a href="https://www.notion.so/desktop">官网下载Notion最新版</a></li>
-<li>找到你下载的.exe安装包</li>
-<li>在地址栏输入cmd后回车</li>
-<li>（英文输入状态下）输入 “安装包名” &#x2F;D&#x3D;”你想要安装的路径”<br>比如我想安装到 D:\ImageText\Notion<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;Notion Setup 3.7.0.exe&quot;</span> /D=<span class="string">&quot;D:\Application\notion&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li>安装完成</li>
-</ol>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
       </tags>
   </entry>
   <entry>
@@ -761,8 +415,8 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>命令行</tag>
         <tag>Hexo</tag>
+        <tag>命令行</tag>
       </tags>
   </entry>
   <entry>
@@ -916,43 +570,6 @@
       </tags>
   </entry>
   <entry>
-    <title>git创建版本库</title>
-    <url>/posts/ff01f13c/</url>
-    <content><![CDATA[<h4 id="初始化一个-Git-仓库，使用-git-init-命令"><a href="#初始化一个-Git-仓库，使用-git-init-命令" class="headerlink" title="初始化一个 Git 仓库，使用 git init 命令"></a>初始化一个 Git 仓库，使用 <code>git init</code> 命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-
-<p>当前目录下多了一个 <code>.git</code> 的目录，这个目录是 <code>Git</code> 来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 <code>Git</code> 仓库给破坏了</p>
-<p>如果没有看到 <code>.git</code> 目录，那是因为这个目录默认是隐藏的，用 <code>ls -ah</code> 命令就可以看见</p>
-<h4 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h4><p>以一个 <code>readme.txt</code> 为例</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Git is a version control system.</span><br><span class="line">Git is free software.</span><br></pre></td></tr></table></figure>
-
-<p>注意：<br>一定要把该文件放在有 <code>.git</code> 文件夹的同一文件夹内</p>
-<p>建议：<br>Windows 用户用 <code>VSCode</code> 代替 <code>Windows</code> 自带记事本</p>
-<h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>用命令 <code>git add</code> 告诉 git，把文件 <code>添加</code> 到仓库</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add <span class="string">&#x27;文件名&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>执行上面的命令，没有任何显示就对了</p>
-<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>用命令 <code>git commit</code> 告诉 git，把文件 <code>提交</code> 到仓库</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;本次提交的说明&quot;</span></span><br><span class="line">[master (root-commit) eaadf4e] wrote a readme file</span><br><span class="line"> 1 file changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br></pre></td></tr></table></figure>
-
-<p>本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
-<p>执行上面的命令成功之后会返回文件改动的信息</p>
-<h5 id="为什么-Git-添加文件需要-add，commit-一共两步"><a href="#为什么-Git-添加文件需要-add，commit-一共两步" class="headerlink" title="为什么 Git 添加文件需要 add，commit 一共两步"></a>为什么 Git 添加文件需要 <code>add</code>，<code>commit</code> 一共两步</h5><p>因为 <code>commit</code> 可以一次提交很多文件，所以你可以多次 <code>add</code> 不同的文件，比如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add file1.txt</span><br><span class="line">$ git add file2.txt file3.txt</span><br><span class="line">$ git commit -m <span class="string">&quot;add 3 files.&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>-m</code> 表示 message，是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
-<h4 id="疑难解答"><a href="#疑难解答" class="headerlink" title="疑难解答"></a>疑难解答</h4><p>Q：输入 <code>git add readme.txt</code>，得到错误：<code>fatal: not a git repository (or any of the parent directories)</code></p>
-<p>A：<code>Git</code> 命令必须在 <code>Git</code> 仓库目录内执行（<code>git init</code> 除外），在仓库目录外执行是没有意义的。</p>
-<p>Q：输入 <code>git add readme.txt</code>，得到错误 <code>fatal: pathspec &#39;readme.txt&#39; did not match any files</code></p>
-<p>A：添加某个文件时，该文件必须在当前目录下存在，用 <code>ls</code> 或者 <code>dir</code> 命令查看当前目录的文件，看看文件是否存在，或者是否写错了文件名。</p>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git从远程仓库克隆</title>
     <url>/posts/9af15ac6/</url>
     <content><![CDATA[<h4 id="在-GitHub-创建或找到一个库用-git-clone-命令"><a href="#在-GitHub-创建或找到一个库用-git-clone-命令" class="headerlink" title="在 GitHub 创建或找到一个库用 git clone 命令"></a>在 GitHub 创建或找到一个库用 git clone 命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> 完整地址</span><br></pre></td></tr></table></figure>
@@ -1006,49 +623,40 @@
       </tags>
   </entry>
   <entry>
-    <title>npm修改默认安装路径</title>
-    <url>/posts/c0f58d3c/</url>
-    <content><![CDATA[<h4 id="使用-npm-config-ls-查看-npm-相关配置"><a href="#使用-npm-config-ls-查看-npm-相关配置" class="headerlink" title="使用 npm config ls 查看 npm 相关配置"></a>使用 <code>npm config ls</code> 查看 npm 相关配置</h4><h4 id="在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache"><a href="#在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache" class="headerlink" title="在 Node 根目录(含 node.exe)新建两个文件夹 node_global 和 node_cache"></a>在 Node 根目录(含 node.exe)新建两个文件夹 <code>node_global</code> 和 <code>node_cache</code></h4><ul>
-<li><code>node_global</code> 用于存放全局安装的包</li>
-<li><code>node_cache</code> 用于存放缓存</li>
-</ul>
-<h4 id="cmd-设置路径地址-绝对地址"><a href="#cmd-设置路径地址-绝对地址" class="headerlink" title="cmd 设置路径地址(绝对地址)"></a>cmd 设置路径地址(绝对地址)</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;node\node_global&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;node\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
-<p>这两行命令执行后默认没有提示则说明成功</p>
-<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p>在系统变量 Path 中添加三行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%NODE_HOME%</span><br><span class="line">%NODE_HOME%/node_global</span><br><span class="line">%NODE_HOME%/node_modules</span><br></pre></td></tr></table></figure>
-<p>前提是在系统变量中存在 <code>NODE_HOME</code> ,值为有 node.exe 的地址<br>例如我的 <code>NODE_HOME</code> 值为 <code>D:\apps\nvs\node\16.17.0\x64</code></p>
+    <title>git创建版本库</title>
+    <url>/posts/ff01f13c/</url>
+    <content><![CDATA[<h4 id="初始化一个-Git-仓库，使用-git-init-命令"><a href="#初始化一个-Git-仓库，使用-git-init-命令" class="headerlink" title="初始化一个 Git 仓库，使用 git init 命令"></a>初始化一个 Git 仓库，使用 <code>git init</code> 命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+
+<p>当前目录下多了一个 <code>.git</code> 的目录，这个目录是 <code>Git</code> 来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 <code>Git</code> 仓库给破坏了</p>
+<p>如果没有看到 <code>.git</code> 目录，那是因为这个目录默认是隐藏的，用 <code>ls -ah</code> 命令就可以看见</p>
+<h4 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h4><p>以一个 <code>readme.txt</code> 为例</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Git is a version control system.</span><br><span class="line">Git is free software.</span><br></pre></td></tr></table></figure>
+
+<p>注意：<br>一定要把该文件放在有 <code>.git</code> 文件夹的同一文件夹内</p>
+<p>建议：<br>Windows 用户用 <code>VSCode</code> 代替 <code>Windows</code> 自带记事本</p>
+<h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>用命令 <code>git add</code> 告诉 git，把文件 <code>添加</code> 到仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add <span class="string">&#x27;文件名&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>执行上面的命令，没有任何显示就对了</p>
+<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>用命令 <code>git commit</code> 告诉 git，把文件 <code>提交</code> 到仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;本次提交的说明&quot;</span></span><br><span class="line">[master (root-commit) eaadf4e] wrote a readme file</span><br><span class="line"> 1 file changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br></pre></td></tr></table></figure>
+
+<p>本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
+<p>执行上面的命令成功之后会返回文件改动的信息</p>
+<h5 id="为什么-Git-添加文件需要-add，commit-一共两步"><a href="#为什么-Git-添加文件需要-add，commit-一共两步" class="headerlink" title="为什么 Git 添加文件需要 add，commit 一共两步"></a>为什么 Git 添加文件需要 <code>add</code>，<code>commit</code> 一共两步</h5><p>因为 <code>commit</code> 可以一次提交很多文件，所以你可以多次 <code>add</code> 不同的文件，比如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add file1.txt</span><br><span class="line">$ git add file2.txt file3.txt</span><br><span class="line">$ git commit -m <span class="string">&quot;add 3 files.&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>-m</code> 表示 message，是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</p>
+<h4 id="疑难解答"><a href="#疑难解答" class="headerlink" title="疑难解答"></a>疑难解答</h4><p>Q：输入 <code>git add readme.txt</code>，得到错误：<code>fatal: not a git repository (or any of the parent directories)</code></p>
+<p>A：<code>Git</code> 命令必须在 <code>Git</code> 仓库目录内执行（<code>git init</code> 除外），在仓库目录外执行是没有意义的。</p>
+<p>Q：输入 <code>git add readme.txt</code>，得到错误 <code>fatal: pathspec &#39;readme.txt&#39; did not match any files</code></p>
+<p>A：添加某个文件时，该文件必须在当前目录下存在，用 <code>ls</code> 或者 <code>dir</code> 命令查看当前目录的文件，看看文件是否存在，或者是否写错了文件名。</p>
 ]]></content>
       <categories>
-        <category>包管理工具</category>
+        <category>git</category>
       </categories>
       <tags>
-        <tag>npm</tag>
-        <tag>环境配置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Steam根目录下userdata文件夹命名规则</title>
-    <url>/posts/18fdbd3b/</url>
-    <content><![CDATA[<h4 id="查询网址"><a href="#查询网址" class="headerlink" title="查询网址"></a>查询网址</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://steamid.io/</span><br></pre></td></tr></table></figure>
-
-<p>在搜索框中输入完整个人资料 url -&gt; lookup</p>
-<p>返回的结果之中，数字 id 是第二个</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">steamID3 [U:1:数字id]</span><br></pre></td></tr></table></figure>
-
-<h4 id="userdata-文件夹命名规则"><a href="#userdata-文件夹命名规则" class="headerlink" title="userdata 文件夹命名规则"></a>userdata 文件夹命名规则</h4><p>userdata 文件夹以 steamID3 中的一串数字命名</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">steamID    STEAM_0:0:55xxxx736</span><br><span class="line">steamID3   [U:1:111xxxx472]</span><br><span class="line">steamID64  7656119907xxxx200</span><br></pre></td></tr></table></figure>
-
-<h4 id="查询个人资料完整-url"><a href="#查询个人资料完整-url" class="headerlink" title="查询个人资料完整 url"></a>查询个人资料完整 url</h4><p>在 steam 首页左上角点击 <code>Steam</code> -&gt; <code>设置</code> -&gt; <code>界面</code><br>将 <code>当可用时显示网站地址栏</code> 勾选 -&gt; <code>确定</code><br>此时点进自己的个人资料可以看到界面出现绿色的完整的个人资料 url</p>
-<h4 id="id-换算"><a href="#id-换算" class="headerlink" title="id 换算"></a>id 换算</h4><p>以下面的 64 位 ID 为例</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">76561198017505237</span><br></pre></td></tr></table></figure>
-
-<p>需要去掉前面的 <code>7656</code> 减去常数 <code>1197960265728</code> 然后&#x2F;2<br>去掉前面的 <code>7656</code> 得 <code>1198017505237</code>，<br>减去 <code>1197960265728</code> 得 <code>57239509</code><br>然后 userdata&lt;通过以上方法算出的数字&gt;\内的就是以 steamappid（Steam Application IDs）命名的文件夹<br>例如：Steam 客户端所安装的盘符:\Steam\userdata\你的 Steam 32 位 ID</p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>Steam</tag>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -1071,48 +679,6 @@
       </categories>
       <tags>
         <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于hexo-abbrlink</title>
-    <url>/posts/b13c3db0/</url>
-    <content><![CDATA[<h4 id="博客链接都变成-undefined-了？"><a href="#博客链接都变成-undefined-了？" class="headerlink" title="博客链接都变成 undefined 了？"></a>博客链接都变成 undefined 了？</h4><ul>
-<li><p>首先，检查博客文件下的 <code>_config.yml</code> 文件，找到 <code>permalink:</code> 在下面查看语句</p>
-<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">permalink: post/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">alg: crc32</span><br><span class="line">rep: hex</span><br></pre></td></tr></table></figure></li>
-<li><p>我今天遇到的问题是把 abbrlink 误删了一个 k，这直接修改了地址，hexo 在这种情况下会跳转到你的第一篇文章，不过网址是 &#x2F;undefined</p>
-</li>
-<li><p>这也是开启了 VSCode 修改自动保存的风险所在，博客运行并无报错，这是最难受的，所以我只能一点一点排查问题。</p>
-</li>
-</ul>
-<h4 id="点击文章变成了下载？"><a href="#点击文章变成了下载？" class="headerlink" title="点击文章变成了下载？"></a>点击文章变成了下载？</h4><ul>
-<li><code>permalink</code> 是可以修改的</li>
-<li>比如 <code>permalink: Be11amy/:abbrlink/</code> ，看起来更加有个性和简洁</li>
-<li>但是，<code>abbrlink</code> 后面的 <code>/</code> 不能省略，否则就会出现点不开文章变成下载的情况</li>
-<li>这里是 <code>hexo-abbrlink</code> 的 <a href="https://github.com/Rozbo/hexo-abbrlink">项目地址</a></li>
-</ul>
-<h4 id="新建文章的时候没有同时新建-abbrlink"><a href="#新建文章的时候没有同时新建-abbrlink" class="headerlink" title="新建文章的时候没有同时新建 abbrlink"></a>新建文章的时候没有同时新建 abbrlink</h4><ul>
-<li>别着急，在 new 了一篇新文章后，<code>hexo d</code> 命令行执行后就自动生成了，别忘了在前面先执行 <code>hexo cl</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>bug</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决PyCharm出现sdk is not defined for run configuration报错</title>
-    <url>/posts/8a90b461/</url>
-    <content><![CDATA[<p>选择<code>Edit Configurations</code>，找到<code>Python interpreter</code>，把<code>Project Default</code>更改为本地有的虚拟环境。</p>
-]]></content>
-      <categories>
-        <category>BUG</category>
-      </categories>
-      <tags>
-        <tag>BUG</tag>
-        <tag>PyCharm</tag>
       </tags>
   </entry>
   <entry>
@@ -1173,84 +739,91 @@
       </tags>
   </entry>
   <entry>
-    <title>sklearn——MinMaxScaler</title>
-    <url>/posts/280699d4/</url>
-    <content><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><code>MinMaxScaler</code>是<code>Scikit-learn</code>库中的一个重要工具，主要用于数据的归一化处理。归一化是将数据按比例缩放，使之落入一个小的特定区间，如[0,1]或[-1,1]。<code>MinMaxScaler</code>通过计算特征列的最小值和最大值来实现归一化，它对于稳定模型的训练过程和提高模型的性能非常重要。</p>
-<p>归一化的主要好处包括但不限于：</p>
-<ol>
-<li>提高模型的收敛速度，因为特征都在相近的尺度上。</li>
-<li>提高模型的精度，因为一些算法在特征尺度相近时表现更好。</li>
-<li>使得不同单位的特征之间可以进行比较和加权。</li>
-</ol>
-<h4 id="MinMaxScaler的参数"><a href="#MinMaxScaler的参数" class="headerlink" title="MinMaxScaler的参数"></a>MinMaxScaler的参数</h4><p><code>feature_range</code>:</p>
-<ul>
-<li>这是一个元组参数，表示期望的数据转换范围。<br>默认值是 (0, 1)，意味着如果没有指定其他范围，数据将被缩放到0到1之间。</li>
-<li>如果用户希望将数据缩放到其他范围，可以提供一个元组，其中第一个元素是新的最小值，第二个元素是新的最大值。</li>
+    <title>npm修改默认安装路径</title>
+    <url>/posts/c0f58d3c/</url>
+    <content><![CDATA[<h4 id="使用-npm-config-ls-查看-npm-相关配置"><a href="#使用-npm-config-ls-查看-npm-相关配置" class="headerlink" title="使用 npm config ls 查看 npm 相关配置"></a>使用 <code>npm config ls</code> 查看 npm 相关配置</h4><h4 id="在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache"><a href="#在-Node-根目录-含-node-exe-新建两个文件夹-node-global-和-node-cache" class="headerlink" title="在 Node 根目录(含 node.exe)新建两个文件夹 node_global 和 node_cache"></a>在 Node 根目录(含 node.exe)新建两个文件夹 <code>node_global</code> 和 <code>node_cache</code></h4><ul>
+<li><code>node_global</code> 用于存放全局安装的包</li>
+<li><code>node_cache</code> 用于存放缓存</li>
 </ul>
-<p><code>copy</code>:</p>
-<ul>
-<li>这是一个布尔参数，用于控制是否对输入数据进行复制。</li>
-<li>默认值是 True，意味着在转换数据时，原始数据将被复制，转换后的数据存储在新的数组中，原始数据保持不变。<br>如果设置为 False，则转换将直接在原始数组上进行，前提是输入数据已经是一个 NumPy 数组。这样可以节省内存，但会覆盖原始数据。</li>
-</ul>
-<p><code>clip</code>:</p>
-<ul>
-<li>这是一个布尔参数，用于控制是否将转换后的数据裁剪到指定的 feature_range 内。</li>
-<li>默认值是 False，意味着在转换过程中，即使转换后的数据超出了指定的范围，也不会进行裁剪。</li>
-<li>如果设置为 True，则在转换过程中，如果转换后的数据值超出了用户指定的 feature_range，这些值将被裁剪到这个范围内。</li>
-</ul>
-<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>在使用MinMaxScaler时，需要注意以下几点：</p>
-<ol>
-<li>数据的分布：MinMaxScaler对数据的分布没有假设，但如果数据集中存在异常值，它们会对最小值和最大值的计算产生很大影响，进而影响到归一化的效果。</li>
-<li>新数据的处理：当使用fit方法计算了训练数据的最小值和最大值后，如果有新的数据需要归一化，应使用相同的最小值和最大值。如果直接使用新数据再次调用fit方法，会导致归一化结果的不一致。</li>
-<li>特征重要性：归一化可能会改变特征之间的相对重要性。因为MinMaxScaler仅仅是将数据缩放到指定的范围，而不考虑特征的分布或其他属性，所以它不会保留任何关于原始特征重要性的信息。在需要特征重要性的场景中，可能需要结合其他方法，如使用特征选择算法或考虑特征的统计属性。</li>
-<li>数据泄露问题：在机器学习的实践中，尤其是在构建预测模型时，需要特别注意避免数据泄露。如果在训练过程中，测试集或验证集的数据被用于MinMaxScaler的fit方法，那么模型可能会因为“看到”了测试集的信息而表现出过高的性能，这会导致对模型泛化能力的错误估计。因此，应该始终确保只使用训练集数据来fit MinMaxScaler。</li>
-<li>数据类型和缺失值：MinMaxScaler默认处理数值型数据。如果数据集中包含非数值型特征或缺失值，需要预先进行处理。例如，可以将非数值型特征进行编码，或者用适当的方法填充或删除含有缺失值的样本。</li>
-<li>保留原始数据：在进行归一化或其他预处理操作后，建议保留原始数据。这是因为某些情况下，可能需要重新访问或分析原始数据，或者将归一化后的数据与其他未归一化的数据合并。</li>
-<li>与深度学习框架的集成：当使用深度学习框架（如TensorFlow或PyTorch）时，可能需要自定义归一化层或操作，以便在模型训练过程中直接应用归一化。虽然Scikit-learn的MinMaxScaler可以与这些框架一起使用，但了解如何在框架内部实现归一化也是很重要的。</li>
-</ol>
-<h4 id="与其他放缩方法的比较"><a href="#与其他放缩方法的比较" class="headerlink" title="与其他放缩方法的比较"></a>与其他放缩方法的比较</h4><p>MinMaxScaler和StandardScaler都是Scikit-learn中常用的特征缩放方法，但它们的工作原理和适用场景有所不同：</p>
-<ul>
-<li><p>MinMaxScaler通过线性变换将特征值缩放到给定的范围（通常是[0, 1]），它直接依赖于数据的最大值和最小值。这种方法对于有界特征或需要保持特征之间相对大小关系的场景特别有用。然而，由于MinMaxScaler对异常值敏感，因此如果数据集中包含极端值，可能会导致缩放后的数据不稳定或失去有意义的结构。</p>
-</li>
-<li><p>StandardScaler使用均值和标准差来缩放特征，使其具有零均值和单位方差。这种方法更适合于那些假设特征服从正态分布或近似正态分布的场景。StandardScaler对异常值的鲁棒性更好，因为它基于整个数据集的统计属性进行缩放，而不是仅仅依赖于最大值和最小值。</p>
-</li>
-</ul>
-<p>  在选择使用MinMaxScaler还是StandardScaler时，需要考虑数据的特性、模型的假设以及具体的应用场景。例如，在处理像素值或百分比等具有明确边界的数据时，MinMaxScaler可能更合适；而在处理连续型特征且假设它们服从正态分布时，StandardScaler可能更合适。</p>
-<p>  此外，值得注意的是，除了MinMaxScaler和StandardScaler之外，还有其他一些特征缩放方法可供选择，如MaxAbsScaler、RobustScaler等。每种方法都有其特定的应用场景和优缺点，因此在实际应用中需要根据具体情况进行选择。</p>
-<p>参考：<a href="https://blog.csdn.net/qq_41813454/article/details/136599197?ops_request_misc=%257B%2522request%255Fid%2522%253A%252211EBEEF6-7EBF-4780-8176-6BFDCE585403%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=11EBEEF6-7EBF-4780-8176-6BFDCE585403&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-136599197-null-null.142%5Ev100%5Epc_search_result_base1&utm_term=minmaxscaler&spm=1018.2226.3001.4187">【机器学习】进阶学习：详细解析Sklearn中的MinMaxScaler—原理、应用、源码与注意事项</a></p>
+<h4 id="cmd-设置路径地址-绝对地址"><a href="#cmd-设置路径地址-绝对地址" class="headerlink" title="cmd 设置路径地址(绝对地址)"></a>cmd 设置路径地址(绝对地址)</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;node\node_global&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;node\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
+<p>这两行命令执行后默认没有提示则说明成功</p>
+<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p>在系统变量 Path 中添加三行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%NODE_HOME%</span><br><span class="line">%NODE_HOME%/node_global</span><br><span class="line">%NODE_HOME%/node_modules</span><br></pre></td></tr></table></figure>
+<p>前提是在系统变量中存在 <code>NODE_HOME</code> ,值为有 node.exe 的地址<br>例如我的 <code>NODE_HOME</code> 值为 <code>D:\apps\nvs\node\16.17.0\x64</code></p>
 ]]></content>
       <categories>
-        <category>机器学习</category>
+        <category>包管理工具</category>
       </categories>
       <tags>
-        <tag>机器学习</tag>
-        <tag>scikit-learn</tag>
+        <tag>环境配置</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于hexo-abbrlink</title>
+    <url>/posts/b13c3db0/</url>
+    <content><![CDATA[<h4 id="博客链接都变成-undefined-了？"><a href="#博客链接都变成-undefined-了？" class="headerlink" title="博客链接都变成 undefined 了？"></a>博客链接都变成 undefined 了？</h4><ul>
+<li><p>首先，检查博客文件下的 <code>_config.yml</code> 文件，找到 <code>permalink:</code> 在下面查看语句</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">permalink: post/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">alg: crc32</span><br><span class="line">rep: hex</span><br></pre></td></tr></table></figure></li>
+<li><p>我今天遇到的问题是把 abbrlink 误删了一个 k，这直接修改了地址，hexo 在这种情况下会跳转到你的第一篇文章，不过网址是 &#x2F;undefined</p>
+</li>
+<li><p>这也是开启了 VSCode 修改自动保存的风险所在，博客运行并无报错，这是最难受的，所以我只能一点一点排查问题。</p>
+</li>
+</ul>
+<h4 id="点击文章变成了下载？"><a href="#点击文章变成了下载？" class="headerlink" title="点击文章变成了下载？"></a>点击文章变成了下载？</h4><ul>
+<li><code>permalink</code> 是可以修改的</li>
+<li>比如 <code>permalink: Be11amy/:abbrlink/</code> ，看起来更加有个性和简洁</li>
+<li>但是，<code>abbrlink</code> 后面的 <code>/</code> 不能省略，否则就会出现点不开文章变成下载的情况</li>
+<li>这里是 <code>hexo-abbrlink</code> 的 <a href="https://github.com/Rozbo/hexo-abbrlink">项目地址</a></li>
+</ul>
+<h4 id="新建文章的时候没有同时新建-abbrlink"><a href="#新建文章的时候没有同时新建-abbrlink" class="headerlink" title="新建文章的时候没有同时新建 abbrlink"></a>新建文章的时候没有同时新建 abbrlink</h4><ul>
+<li>别着急，在 new 了一篇新文章后，<code>hexo d</code> 命令行执行后就自动生成了，别忘了在前面先执行 <code>hexo cl</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>bug</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Steam根目录下userdata文件夹命名规则</title>
+    <url>/posts/18fdbd3b/</url>
+    <content><![CDATA[<h4 id="查询网址"><a href="#查询网址" class="headerlink" title="查询网址"></a>查询网址</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://steamid.io/</span><br></pre></td></tr></table></figure>
+
+<p>在搜索框中输入完整个人资料 url -&gt; lookup</p>
+<p>返回的结果之中，数字 id 是第二个</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">steamID3 [U:1:数字id]</span><br></pre></td></tr></table></figure>
+
+<h4 id="userdata-文件夹命名规则"><a href="#userdata-文件夹命名规则" class="headerlink" title="userdata 文件夹命名规则"></a>userdata 文件夹命名规则</h4><p>userdata 文件夹以 steamID3 中的一串数字命名</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">steamID    STEAM_0:0:55xxxx736</span><br><span class="line">steamID3   [U:1:111xxxx472]</span><br><span class="line">steamID64  7656119907xxxx200</span><br></pre></td></tr></table></figure>
+
+<h4 id="查询个人资料完整-url"><a href="#查询个人资料完整-url" class="headerlink" title="查询个人资料完整 url"></a>查询个人资料完整 url</h4><p>在 steam 首页左上角点击 <code>Steam</code> -&gt; <code>设置</code> -&gt; <code>界面</code><br>将 <code>当可用时显示网站地址栏</code> 勾选 -&gt; <code>确定</code><br>此时点进自己的个人资料可以看到界面出现绿色的完整的个人资料 url</p>
+<h4 id="id-换算"><a href="#id-换算" class="headerlink" title="id 换算"></a>id 换算</h4><p>以下面的 64 位 ID 为例</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">76561198017505237</span><br></pre></td></tr></table></figure>
+
+<p>需要去掉前面的 <code>7656</code> 减去常数 <code>1197960265728</code> 然后&#x2F;2<br>去掉前面的 <code>7656</code> 得 <code>1198017505237</code>，<br>减去 <code>1197960265728</code> 得 <code>57239509</code><br>然后 userdata&lt;通过以上方法算出的数字&gt;\内的就是以 steamappid（Steam Application IDs）命名的文件夹<br>例如：Steam 客户端所安装的盘符:\Steam\userdata\你的 Steam 32 位 ID</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>Steam</tag>
       </tags>
   </entry>
   <entry>
     <title>Python常见特殊注释标记</title>
     <url>/posts/ed0c79e/</url>
     <content><![CDATA[<ol>
-<li><code># FIXEME</code>：用于标记需要修复的代码。</li>
-<li><code># XXX</code>：用于标记代码中的疑难点或者特别需要注意的地方。</li>
-<li><code># HACK</code>：用于标记代码中的“黑客”手段，可能不是最优或者最安全的解决方案。</li>
+<li><code># TODO</code>（明天再说）：标识处有功能代码待编写，待实现的功能在说明中会简略说明。</li>
+<li><code># FIXEME</code>（下次一定）：标识处代码需要修正，甚至代码是错误的，不能工作，需要修复，如何修正会在说明中简略说明。</li>
+<li><code># XXX</code>（莫挨老子）：标识处代码虽然实现了功能，但是实现的方法有待商榷，希望将来能改进，要改进的地方会在说明中简略说明。</li>
 <li><code># NOTE</code>：用于添加额外的说明或注释。</li>
-<li><code># REVIEW</code>：用于标记代码需要复查或评审。</li>
-<li><code># OPTIMIZE</code>：用于标记代码可以优化的地方。</li>
-<li><code># WARNING</code>：用于标记潜在的危险或需要注意的问题。</li>
+<li><code># HACK</code>：用于标记代码中的“黑客”手段，可能不是最优或者最安全的解决方案。</li>
+<li><code># BUG</code>（丢锅埋雷挖坑）：标记有问题的代码。</li>
 </ol>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python的类和实例</title>
-    <url>/posts/38105504/</url>
-    <content><![CDATA[<p>参考：<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017496031185408">面向对象编程-类和实例</a></p>
 ]]></content>
       <categories>
         <category>Python</category>
@@ -1275,6 +848,18 @@
       <tags>
         <tag>Python</tag>
         <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python的类和实例</title>
+    <url>/posts/38105504/</url>
+    <content><![CDATA[<p>参考：<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017496031185408">面向对象编程-类和实例</a></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1313,21 +898,15 @@
       </tags>
   </entry>
   <entry>
-    <title>huggingface_pub换源</title>
-    <url>/posts/a23ca50e/</url>
-    <content><![CDATA[<h4 id="更改python文件（以conda为例）"><a href="#更改python文件（以conda为例）" class="headerlink" title="更改python文件（以conda为例）"></a>更改python文件（以conda为例）</h4><p>在放环境的<code>envs</code>中找到使用huggingface的环境，在<code>\Lib\site-packages\huggingface_hub</code>文件夹中找到<code>constants.py</code>。<strong>备份</strong>后做如下修改：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment"># HUGGINGFACE_CO_URL_HOME = &quot;https://huggingface.co/&quot;</span></span><br><span class="line">HUGGINGFACE_CO_URL_HOME = <span class="string">&quot;https://hf-mirror.com/&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># _HF_DEFAULT_ENDPOINT = &quot;https://huggingface.co&quot;</span></span><br><span class="line">_HF_DEFAULT_ENDPOINT = <span class="string">&quot;https://hf-mirror.com&quot;</span></span><br></pre></td></tr></table></figure>
-<h4 id="设置系统环境变量"><a href="#设置系统环境变量" class="headerlink" title="设置系统环境变量"></a>设置系统环境变量</h4><p>在使用huggingface时，使用以下命令修改系统环境</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">os.environ[<span class="string">&quot;HF_ENDPOINT&quot;</span>] = <span class="string">&quot;https://hf-mirror.com&quot;</span></span><br></pre></td></tr></table></figure>
-<p><code>os.environ</code>是一个表示环境变量的字典。</p>
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>保证有一个副本在<code>\Lib\site-packages\huggingface_hub</code>文件夹中，以便出错时可以恢复。</p>
+    <title>python中glob.glob()的用法</title>
+    <url>/posts/5757d1a1/</url>
+    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/liulanba/article/details/121802892?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172007720916800225544348%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=172007720916800225544348&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-5-121802892-null-null.142%5Ev100%5Epc_search_result_base1&utm_term=python%E7%9A%84glob.glob&spm=1018.2226.3001.4187">python glob.glob()</a></p>
 ]]></content>
       <categories>
-        <category>环境配置</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>环境配置</tag>
-        <tag>huggingface</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1349,15 +928,21 @@
       </tags>
   </entry>
   <entry>
-    <title>python中glob.glob()的用法</title>
-    <url>/posts/5757d1a1/</url>
-    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/liulanba/article/details/121802892?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172007720916800225544348%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=172007720916800225544348&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-5-121802892-null-null.142%5Ev100%5Epc_search_result_base1&utm_term=python%E7%9A%84glob.glob&spm=1018.2226.3001.4187">python glob.glob()</a></p>
+    <title>huggingface_pub换源</title>
+    <url>/posts/a23ca50e/</url>
+    <content><![CDATA[<h4 id="更改python文件（以conda为例）"><a href="#更改python文件（以conda为例）" class="headerlink" title="更改python文件（以conda为例）"></a>更改python文件（以conda为例）</h4><p>在放环境的<code>envs</code>中找到使用huggingface的环境，在<code>\Lib\site-packages\huggingface_hub</code>文件夹中找到<code>constants.py</code>。<strong>备份</strong>后做如下修改：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment"># HUGGINGFACE_CO_URL_HOME = &quot;https://huggingface.co/&quot;</span></span><br><span class="line">HUGGINGFACE_CO_URL_HOME = <span class="string">&quot;https://hf-mirror.com/&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># _HF_DEFAULT_ENDPOINT = &quot;https://huggingface.co&quot;</span></span><br><span class="line">_HF_DEFAULT_ENDPOINT = <span class="string">&quot;https://hf-mirror.com&quot;</span></span><br></pre></td></tr></table></figure>
+<h4 id="设置系统环境变量"><a href="#设置系统环境变量" class="headerlink" title="设置系统环境变量"></a>设置系统环境变量</h4><p>在使用huggingface时，使用以下命令修改系统环境</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">os.environ[<span class="string">&quot;HF_ENDPOINT&quot;</span>] = <span class="string">&quot;https://hf-mirror.com&quot;</span></span><br></pre></td></tr></table></figure>
+<p><code>os.environ</code>是一个表示环境变量的字典。</p>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>保证有一个副本在<code>\Lib\site-packages\huggingface_hub</code>文件夹中，以便出错时可以恢复。</p>
 ]]></content>
       <categories>
-        <category>Python</category>
+        <category>环境配置</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>环境配置</tag>
+        <tag>huggingface</tag>
       </tags>
   </entry>
   <entry>
@@ -1402,6 +987,19 @@
       </tags>
   </entry>
   <entry>
+    <title>快速开始PyTorch</title>
+    <url>/posts/4b503ff2/</url>
+    <content><![CDATA[<p>教程：<a href="https://bohrium.dp.tech/notebooks/4914094074?utm_source=bilibili001">快速开始 PyTorch｜使用 Python 建立深度学习模型</a></p>
+]]></content>
+      <categories>
+        <category>PyTorch</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>PyTorch</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习率调度器</title>
     <url>/posts/175df8fb/</url>
     <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/qq_40206371/article/details/119910592">pytorch笔记：调整学习率（torch.optim.lr_scheduler）</a></p>
@@ -1415,16 +1013,16 @@
       </tags>
   </entry>
   <entry>
-    <title>快速开始PyTorch</title>
-    <url>/posts/4b503ff2/</url>
-    <content><![CDATA[<p>教程：<a href="https://bohrium.dp.tech/notebooks/4914094074?utm_source=bilibili001">快速开始 PyTorch｜使用 Python 建立深度学习模型</a></p>
+    <title>早停机制和正则化</title>
+    <url>/posts/3664336/</url>
+    <content><![CDATA[<p>参考：<a href="https://zhuanlan.zhihu.com/p/471721396">线性代数及其应用——“早停止”与“L2正则”的关系</a></p>
 ]]></content>
       <categories>
-        <category>PyTorch</category>
+        <category>机器学习</category>
       </categories>
       <tags>
-        <tag>深度学习</tag>
-        <tag>PyTorch</tag>
+        <tag>机器学习</tag>
+        <tag>正则化</tag>
       </tags>
   </entry>
   <entry>
@@ -1451,19 +1049,6 @@
       </categories>
       <tags>
         <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>早停机制和正则化</title>
-    <url>/posts/3664336/</url>
-    <content><![CDATA[<p>参考：<a href="https://zhuanlan.zhihu.com/p/471721396">线性代数及其应用——“早停止”与“L2正则”的关系</a></p>
-]]></content>
-      <categories>
-        <category>机器学习</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>正则化</tag>
       </tags>
   </entry>
   <entry>
@@ -1544,8 +1129,8 @@
         <category>bug</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>bug</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1565,8 +1150,8 @@
         <category>bug</category>
       </categories>
       <tags>
-        <tag>Python</tag>
         <tag>bug</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1591,25 +1176,6 @@
       </tags>
   </entry>
   <entry>
-    <title>git向远程仓库上传文件</title>
-    <url>/posts/8e59f4b4/</url>
-    <content><![CDATA[<h4 id="确保本地仓库是最新的"><a href="#确保本地仓库是最新的" class="headerlink" title="确保本地仓库是最新的"></a>确保本地仓库是最新的</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;repository&gt;</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
-
-<h4 id="添加文件到暂存区"><a href="#添加文件到暂存区" class="headerlink" title="添加文件到暂存区"></a>添加文件到暂存区</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-<p>或者指定文件路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;file_path&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="提交更改"><a href="#提交更改" class="headerlink" title="提交更改"></a>提交更改</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息：描述你所做的更改&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="推送更改到远程仓库"><a href="#推送更改到远程仓库" class="headerlink" title="推送更改到远程仓库"></a>推送更改到远程仓库</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin main</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>通过cuda查看显卡信息</title>
     <url>/posts/dc74b75c/</url>
     <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/qq_50001789/article/details/136219629">PyTorch学习笔记：cuda方法——查看显卡信息</a><br>提示：最好用管理员下的cmd（或Anaconda Prompt），直接使用Python命令行，不会担心权限问题。</p>
@@ -1623,37 +1189,446 @@
       </tags>
   </entry>
   <entry>
-    <title>解决启动前端项目报错errno:-4058</title>
-    <url>/posts/75d528db/</url>
-    <content><![CDATA[<h4 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">events.js:292</span><br><span class="line">      throw er; // Unhandled <span class="string">&#x27;error&#x27;</span> event</span><br><span class="line">      ^</span><br><span class="line"></span><br><span class="line">Error: spawn cmd ENOENT</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)</span><br><span class="line">    at onErrorNT (internal/child_process.js:465:16)</span><br><span class="line">    at processTicksAndRejections (internal/process/task_queues.js:80:21)</span><br><span class="line">Emitted <span class="string">&#x27;error&#x27;</span> event on ChildProcess instance at:</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:275:12)</span><br><span class="line">    at onErrorNT (internal/child_process.js:465:16)</span><br><span class="line">    at processTicksAndRejections (internal/process/task_queues.js:80:21) &#123;</span><br><span class="line">  errno: -4058,</span><br><span class="line">  code: <span class="string">&#x27;ENOENT&#x27;</span>,</span><br><span class="line">  syscall: <span class="string">&#x27;spawn cmd&#x27;</span>,</span><br><span class="line">  path: <span class="string">&#x27;cmd&#x27;</span>,</span><br><span class="line">  spawnargs: <span class="string">&#x27;/c&#x27;</span>, <span class="string">&#x27;start&#x27;</span>, <span class="string">&#x27;&quot;&quot;&#x27;</span>, <span class="string">&#x27;/b&#x27;</span>, <span class="string">&#x27;http://localhost:8080/&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="报错原因"><a href="#报错原因" class="headerlink" title="报错原因"></a>报错原因</h4><p>电脑缺少cmd运行程序的环境变量</p>
-<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>环境变量配置在系统变量<code>path</code>中添加<code>C:\windows\system32</code>，spawn xxx ENOENT 其实就是缺少，对应的运行程序的环境变量。</p>
+    <title>sklearn——MinMaxScaler</title>
+    <url>/posts/280699d4/</url>
+    <content><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><code>MinMaxScaler</code>是<code>Scikit-learn</code>库中的一个重要工具，主要用于数据的归一化处理。归一化是将数据按比例缩放，使之落入一个小的特定区间，如[0,1]或[-1,1]。<code>MinMaxScaler</code>通过计算特征列的最小值和最大值来实现归一化，它对于稳定模型的训练过程和提高模型的性能非常重要。</p>
+<p>归一化的主要好处包括但不限于：</p>
+<ol>
+<li>提高模型的收敛速度，因为特征都在相近的尺度上。</li>
+<li>提高模型的精度，因为一些算法在特征尺度相近时表现更好。</li>
+<li>使得不同单位的特征之间可以进行比较和加权。</li>
+</ol>
+<h4 id="MinMaxScaler的参数"><a href="#MinMaxScaler的参数" class="headerlink" title="MinMaxScaler的参数"></a>MinMaxScaler的参数</h4><p><code>feature_range</code>:</p>
+<ul>
+<li>这是一个元组参数，表示期望的数据转换范围。<br>默认值是 (0, 1)，意味着如果没有指定其他范围，数据将被缩放到0到1之间。</li>
+<li>如果用户希望将数据缩放到其他范围，可以提供一个元组，其中第一个元素是新的最小值，第二个元素是新的最大值。</li>
+</ul>
+<p><code>copy</code>:</p>
+<ul>
+<li>这是一个布尔参数，用于控制是否对输入数据进行复制。</li>
+<li>默认值是 True，意味着在转换数据时，原始数据将被复制，转换后的数据存储在新的数组中，原始数据保持不变。<br>如果设置为 False，则转换将直接在原始数组上进行，前提是输入数据已经是一个 NumPy 数组。这样可以节省内存，但会覆盖原始数据。</li>
+</ul>
+<p><code>clip</code>:</p>
+<ul>
+<li>这是一个布尔参数，用于控制是否将转换后的数据裁剪到指定的 feature_range 内。</li>
+<li>默认值是 False，意味着在转换过程中，即使转换后的数据超出了指定的范围，也不会进行裁剪。</li>
+<li>如果设置为 True，则在转换过程中，如果转换后的数据值超出了用户指定的 feature_range，这些值将被裁剪到这个范围内。</li>
+</ul>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>在使用MinMaxScaler时，需要注意以下几点：</p>
+<ol>
+<li>数据的分布：MinMaxScaler对数据的分布没有假设，但如果数据集中存在异常值，它们会对最小值和最大值的计算产生很大影响，进而影响到归一化的效果。</li>
+<li>新数据的处理：当使用fit方法计算了训练数据的最小值和最大值后，如果有新的数据需要归一化，应使用相同的最小值和最大值。如果直接使用新数据再次调用fit方法，会导致归一化结果的不一致。</li>
+<li>特征重要性：归一化可能会改变特征之间的相对重要性。因为MinMaxScaler仅仅是将数据缩放到指定的范围，而不考虑特征的分布或其他属性，所以它不会保留任何关于原始特征重要性的信息。在需要特征重要性的场景中，可能需要结合其他方法，如使用特征选择算法或考虑特征的统计属性。</li>
+<li>数据泄露问题：在机器学习的实践中，尤其是在构建预测模型时，需要特别注意避免数据泄露。如果在训练过程中，测试集或验证集的数据被用于MinMaxScaler的fit方法，那么模型可能会因为“看到”了测试集的信息而表现出过高的性能，这会导致对模型泛化能力的错误估计。因此，应该始终确保只使用训练集数据来fit MinMaxScaler。</li>
+<li>数据类型和缺失值：MinMaxScaler默认处理数值型数据。如果数据集中包含非数值型特征或缺失值，需要预先进行处理。例如，可以将非数值型特征进行编码，或者用适当的方法填充或删除含有缺失值的样本。</li>
+<li>保留原始数据：在进行归一化或其他预处理操作后，建议保留原始数据。这是因为某些情况下，可能需要重新访问或分析原始数据，或者将归一化后的数据与其他未归一化的数据合并。</li>
+<li>与深度学习框架的集成：当使用深度学习框架（如TensorFlow或PyTorch）时，可能需要自定义归一化层或操作，以便在模型训练过程中直接应用归一化。虽然Scikit-learn的MinMaxScaler可以与这些框架一起使用，但了解如何在框架内部实现归一化也是很重要的。</li>
+</ol>
+<h4 id="与其他放缩方法的比较"><a href="#与其他放缩方法的比较" class="headerlink" title="与其他放缩方法的比较"></a>与其他放缩方法的比较</h4><p>MinMaxScaler和StandardScaler都是Scikit-learn中常用的特征缩放方法，但它们的工作原理和适用场景有所不同：</p>
+<ul>
+<li><p>MinMaxScaler通过线性变换将特征值缩放到给定的范围（通常是[0, 1]），它直接依赖于数据的最大值和最小值。这种方法对于有界特征或需要保持特征之间相对大小关系的场景特别有用。然而，由于MinMaxScaler对异常值敏感，因此如果数据集中包含极端值，可能会导致缩放后的数据不稳定或失去有意义的结构。</p>
+</li>
+<li><p>StandardScaler使用均值和标准差来缩放特征，使其具有零均值和单位方差。这种方法更适合于那些假设特征服从正态分布或近似正态分布的场景。StandardScaler对异常值的鲁棒性更好，因为它基于整个数据集的统计属性进行缩放，而不是仅仅依赖于最大值和最小值。</p>
+</li>
+</ul>
+<p>  在选择使用MinMaxScaler还是StandardScaler时，需要考虑数据的特性、模型的假设以及具体的应用场景。例如，在处理像素值或百分比等具有明确边界的数据时，MinMaxScaler可能更合适；而在处理连续型特征且假设它们服从正态分布时，StandardScaler可能更合适。</p>
+<p>  此外，值得注意的是，除了MinMaxScaler和StandardScaler之外，还有其他一些特征缩放方法可供选择，如MaxAbsScaler、RobustScaler等。每种方法都有其特定的应用场景和优缺点，因此在实际应用中需要根据具体情况进行选择。</p>
+<p>参考：<a href="https://blog.csdn.net/qq_41813454/article/details/136599197?ops_request_misc=%257B%2522request%255Fid%2522%253A%252211EBEEF6-7EBF-4780-8176-6BFDCE585403%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=11EBEEF6-7EBF-4780-8176-6BFDCE585403&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-136599197-null-null.142%5Ev100%5Epc_search_result_base1&utm_term=minmaxscaler&spm=1018.2226.3001.4187">【机器学习】进阶学习：详细解析Sklearn中的MinMaxScaler—原理、应用、源码与注意事项</a></p>
 ]]></content>
       <categories>
-        <category>bug</category>
+        <category>机器学习</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>bug</tag>
+        <tag>机器学习</tag>
+        <tag>scikit-learn</tag>
       </tags>
   </entry>
   <entry>
-    <title>解决使用GraphViz报错问题</title>
-    <url>/posts/9e8bf13/</url>
-    <content><![CDATA[<p>一开始我并没有使用<code>import graphviz</code>，<code>jupyter</code>报错错误二，这并不奇怪，因为我的代码块如下：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pydotplus</span><br><span class="line"><span class="keyword">from</span> IPython.display <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将获得的决策树结构可视化</span></span><br><span class="line">dot_data = StringIO()</span><br><span class="line">export_graphviz(dtc1, out_file=dot_data,</span><br><span class="line">                feature_names=X_train.columns,</span><br><span class="line">                filled=<span class="literal">True</span>, rounded=<span class="literal">True</span>, special_characters=<span class="literal">True</span>)</span><br><span class="line">graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  </span><br><span class="line">Image(graph.create_png())</span><br></pre></td></tr></table></figure>
-<p>如上所见，并没有直接使用到graphviz，所以导入也没用，但是看到错误二，根据查询的资料，我加上了<code>import graphviz</code>，于是报错了错误一</p>
-<h3 id="错误一：No-module-named-‘graphviz‘"><a href="#错误一：No-module-named-‘graphviz‘" class="headerlink" title="错误一：No module named ‘graphviz‘"></a>错误一：No module named ‘graphviz‘</h3><p>解决方法，根据参考信息得知，该博主安装了几个有关于graphviz的包，分别是<code>graphviz</code>、<code>pygraphviz</code>、<code>python-graphviz</code>、<code>pydot</code>、<code>pydotplus</code>，在检查了我自己当前的包后，我发现我并没有安装<code>pygraphviz</code>、<code>python-graphviz</code>、<code>pydot</code>，但是我仔细看了下<code>pydot</code>，并没有选择安装这个包</p>
-<h3 id="错误二：InvocationException-GraphViz‘s-executables-not-found"><a href="#错误二：InvocationException-GraphViz‘s-executables-not-found" class="headerlink" title="错误二：InvocationException: GraphViz‘s executables not found"></a>错误二：InvocationException: GraphViz‘s executables not found</h3><p>此外，我进入了<a href="https://www.graphviz.org/download/">graphviz官网下载页面</a>下载了与<code>conda</code>安装同版本的<code>graphviz-2.50.0</code>，至于为什么是这个版本，因为我使用<code>conda search graphviz</code>命令出来的列表只有这一个版本，下面是我几个相关包的版本</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Name                    Version                   Build  Channel</span></span><br><span class="line">graphite2                 1.3.14               hd77b12b_1    defaults</span><br><span class="line">graphviz                  2.50.0               h7eca76f_1    defaults</span><br><span class="line">pygraphviz                1.9              py38h2bbff1b_1    defaults</span><br><span class="line">python-graphviz           0.20.1           py38haa95532_0    defaults</span><br><span class="line">pydotplus                 2.0.2                      py_3    defaults</span><br></pre></td></tr></table></figure>
-<p>在安装完成后，<code>2.50.0</code>版本的<code>graphviz</code>采用的是<code>.exe</code>文件安装，此前我还下载了最新版的<code>graphviz-12.1.0</code>，但是并没有生效（也有可能是当时并没有重启IDE导致的，这是我从几处都见过的说法）<br>最后重启IDE，代码分别在<code>PyCharm</code>和<code>VSCode</code>均可成功运行并生成图片<br>参考：<a href="https://blog.csdn.net/csdnypp/article/details/126420715?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-126420715-blog-139224511.235%5Ev43%5Epc_blog_bottom_relevance_base8&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-126420715-blog-139224511.235%5Ev43%5Epc_blog_bottom_relevance_base8">No module named ‘graphviz‘（解决）</a></p>
+    <title>MySQL中的主键</title>
+    <url>/posts/d8f53a2/</url>
+    <content><![CDATA[<h4 id="创建表时设置主键"><a href="#创建表时设置主键" class="headerlink" title="创建表时设置主键"></a>创建表时设置主键</h4><p>在创建表时设置主键：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> users (</span><br><span class="line">    user_id <span class="type">INT</span> AUTO_INCREMENT,</span><br><span class="line">    username <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    email <span class="type">VARCHAR</span>(<span class="number">100</span>),</span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (user_id)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<h4 id="向表中添加主键"><a href="#向表中添加主键" class="headerlink" title="向表中添加主键"></a>向表中添加主键</h4><p>在已经存在的表中添加主键：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users <span class="keyword">ADD</span> <span class="keyword">PRIMARY</span> KEY (user_id);</span><br></pre></td></tr></table></figure>
+<h4 id="查看主键"><a href="#查看主键" class="headerlink" title="查看主键"></a>查看主键</h4><p>在MySQL中，可以使用 SHOW KEYS 命令来查看主键信息：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> KEYS <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> Key_name <span class="operator">=</span> <span class="string">&#x27;PRIMARY&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p>或者使用 INFORMATION_SCHEMA 库查询主键：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> COLUMN_NAME</span><br><span class="line"><span class="keyword">FROM</span> INFORMATION_SCHEMA.COLUMNS</span><br><span class="line"><span class="keyword">WHERE</span> TABLE_SCHEMA <span class="operator">=</span> <span class="string">&#x27;your_database_name&#x27;</span> <span class="keyword">AND</span> TABLE_NAME <span class="operator">=</span> <span class="string">&#x27;your_table_name&#x27;</span> <span class="keyword">AND</span> COLUMN_KEY <span class="operator">=</span> <span class="string">&#x27;PRI&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>唯一性：主键列必须包含唯一值。主键不能包含重复的值。</li>
+<li>非空：主键列不能包含NULL值。创建主键时会自动设置列为NOT NULL。</li>
+<li>自增（可选）：在某些数据库（如MySQL）中，主键可以设置为自增，这样在插入新行时会自动生成一个唯一的值。</li>
+<li>复合主键：有时你可能需要设置多个列作为主键，这叫做复合主键。例如<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> enrollment (</span><br><span class="line">    student_id <span class="type">INT</span>,</span><br><span class="line">    course_id <span class="type">INT</span>,</span><br><span class="line">    enrollment_date <span class="type">DATE</span>,</span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (student_id, course_id)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+以上例子中，student_id 和 course_id 组合在一起作为主键。</li>
+</ul>
 ]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决PyCharm出现sdk is not defined for run configuration报错</title>
+    <url>/posts/8a90b461/</url>
+    <content><![CDATA[<p>选择<code>Edit Configurations</code>，找到<code>Python interpreter</code>，把<code>Project Default</code>更改为本地有的虚拟环境。</p>
+]]></content>
+      <categories>
+        <category>BUG</category>
+      </categories>
+      <tags>
+        <tag>BUG</tag>
+        <tag>PyCharm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git升级到最新版本</title>
+    <url>/posts/15d0aa15/</url>
+    <content><![CDATA[<h4 id="Windows下的升级方法"><a href="#Windows下的升级方法" class="headerlink" title="Windows下的升级方法"></a>Windows下的升级方法</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git update-git-for-windows</span><br></pre></td></tr></table></figure>
+
+<h4 id="Linux下升级方法"><a href="#Linux下升级方法" class="headerlink" title="Linux下升级方法"></a>Linux下升级方法</h4><ul>
+<li><p>首先查看一下自己的版本是不是低于最新版</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果不是最新版，则添加Git官方的软件源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> add-apt-repository ppa:git-core/ppa</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>接着更新一下软件列表，就可以直接升级安装了</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install -f</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>conda的常用指令</title>
+    <url>/posts/9bb6c8d3/</url>
+    <content><![CDATA[<h4 id="虚拟环境"><a href="#虚拟环境" class="headerlink" title="虚拟环境"></a>虚拟环境</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n env_name python=3.8           <span class="comment"># 创建虚拟环境</span></span><br><span class="line">conda create -n env_name package python=3.8   <span class="comment"># 创建虚拟环境的同时安装必要的包</span></span><br><span class="line">conda <span class="built_in">env</span> list</span><br><span class="line">conda info -e</span><br><span class="line">conda info --envs                             <span class="comment"># 查看有哪些虚拟环境</span></span><br><span class="line">conda activate env_name                       <span class="comment"># 激活虚拟环境</span></span><br><span class="line">conda deactivate                              <span class="comment"># 退出虚拟环境</span></span><br><span class="line">conda remove -n env_name --all                <span class="comment"># 删除虚拟环境</span></span><br><span class="line">conda remove -n env_name package              <span class="comment"># 只删除虚拟环境中的某个或者某些包</span></span><br><span class="line">conda <span class="built_in">env</span> <span class="built_in">export</span> -n <span class="built_in">env</span> &gt; env_name.yml        <span class="comment"># 导出环境为yml文件</span></span><br><span class="line">conda <span class="built_in">env</span> <span class="built_in">export</span> &gt; env_name.yml               <span class="comment"># 导出当前环境为yml文件</span></span><br><span class="line">conda <span class="built_in">env</span> create -f env_name.yml              <span class="comment"># 从yml文件导入环境</span></span><br></pre></td></tr></table></figure>
+<h4 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list                            <span class="comment"># 查询看当前环境中安装了哪些包</span></span><br><span class="line">conda search package                  <span class="comment"># 查询当前Anaconda repository中是否有你想要安装的包</span></span><br><span class="line">conda list package                    <span class="comment"># 查询是否有安装某个包</span></span><br><span class="line">conda list package*                   <span class="comment"># *通配模糊查找</span></span><br><span class="line">conda install package                 <span class="comment"># 安装包</span></span><br><span class="line">conda install package=version         <span class="comment"># 安装某个特定版本的包</span></span><br><span class="line">conda update package                  <span class="comment"># 将某个包更新到它的最新版本</span></span><br><span class="line">conda uninstall package_name          <span class="comment"># conda卸载包</span></span><br><span class="line">conda clean -p                        <span class="comment"># 删除没有用的包 --packages</span></span><br><span class="line">conda clean -t                        <span class="comment"># 删除tar打包 --tarballs</span></span><br><span class="line">conda clean -y -all                   <span class="comment"># 删除所有的安装包及cache(索引缓存、锁定文件、未使用过的包和tar包)</span></span><br></pre></td></tr></table></figure>
+<h4 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda --version                 <span class="comment"># 查看conda版本</span></span><br><span class="line">conda config --show             <span class="comment"># 查看conda的环境配置</span></span><br><span class="line">conda update conda              <span class="comment"># 检查更新conda</span></span><br><span class="line">conda install conda==version    <span class="comment"># 更新指定版本conda</span></span><br><span class="line">conda update Anaconda           <span class="comment"># 更新Anaconda</span></span><br><span class="line">conda update Anaconda-naviator  <span class="comment"># 更新navigator</span></span><br></pre></td></tr></table></figure>
+<h4 id="设置镜像"><a href="#设置镜像" class="headerlink" title="设置镜像"></a>设置镜像</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 设置清华镜像</span></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/</span><br><span class="line"><span class="comment"># 设置bioconda</span></span><br><span class="line">conda config --add channels bioconda</span><br><span class="line">conda config --add channels conda-forge</span><br><span class="line"><span class="comment"># 设置搜索时显示通道地址</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
+<p>参考：<a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">Anaconda 镜像使用帮助</a></p>
+<h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h4><ul>
+<li>注意：不建议<code>conda</code>和<code>pip</code>混用</li>
+<li>参考：<a href="https://blog.csdn.net/chenxy_bwave/article/details/119996001">Anaconda conda常用命令：从入门到精通</a></li>
+<li>我的<code>.condarc</code>配置文件：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">channels:</span><br><span class="line">  - defaults</span><br><span class="line">show_channel_urls: true</span><br><span class="line">default_channels:</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line">custom_channels:</span><br><span class="line">  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  deepmodeling: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/</span><br></pre></td></tr></table></figure>
+如果没有<code>.condarc</code>文件，在<code>Anaconda Prompt</code>中键入以下命令行：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
+会自动在当前用户文件夹下生成<code>.condarc</code>文件</li>
+</ul>
+]]></content>
+      <categories>
+        <category>conda</category>
+      </categories>
+      <tags>
+        <tag>命令行</tag>
+        <tag>conda</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git取消与远程仓库的连接</title>
+    <url>/posts/125274a0/</url>
+    <content><![CDATA[<h4 id="git取消与远程仓库的连接"><a href="#git取消与远程仓库的连接" class="headerlink" title="git取消与远程仓库的连接"></a>git取消与远程仓库的连接</h4><h5 id="连接远程仓库"><a href="#连接远程仓库" class="headerlink" title="连接远程仓库"></a>连接远程仓库</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin 仓库地址</span><br></pre></td></tr></table></figure>
+<h5 id="查看远程连接"><a href="#查看远程连接" class="headerlink" title="查看远程连接"></a>查看远程连接</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+<h5 id="git取消与远程仓库的连接-1"><a href="#git取消与远程仓库的连接-1" class="headerlink" title="git取消与远程仓库的连接"></a>git取消与远程仓库的连接</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>
+<h4 id="安全删除Git仓库中的-git文件夹"><a href="#安全删除Git仓库中的-git文件夹" class="headerlink" title="安全删除Git仓库中的.git文件夹"></a>安全删除Git仓库中的.git文件夹</h4><h5 id="备份项目数据"><a href="#备份项目数据" class="headerlink" title="备份项目数据"></a>备份项目数据</h5><p>在删除<code>.git</code>文件夹之前，始终首先备份整个项目。这确保了在出现意外情况时，项目仍然拥有完整的本。可以选择将整个目录压缩为ZIP文件或复制到其他位置作为备份。</p>
+<h5 id="确保工作目录是干净的"><a href="#确保工作目录是干净的" class="headerlink" title="确保工作目录是干净的"></a>确保工作目录是干净的</h5><p>在删除前，确保工作目录中没有挂起的更改。可以使用<code>git status</code>命令来检查。这确保不会失去任何未提交的工作。</p>
+<h5 id="直接删除-git文件夹"><a href="#直接删除-git文件夹" class="headerlink" title="直接删除.git文件夹"></a>直接删除.git文件夹</h5><p>进入项目的根目录，然后删除<code>.git</code>文件夹。在命令行中，可以使用<code>rm -rf .git</code>（Linux或Mac）或<code>rmdir /s /q .git</code>（Windows）来完成。</p>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>在删除<code>.git</code>文件夹后，所有以前的提交历史和版本控制信息都将丢失。确保始终保持备份。</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm的常用指令</title>
+    <url>/posts/98bd404c/</url>
+    <content><![CDATA[<h4 id="设置npm路径"><a href="#设置npm路径" class="headerlink" title="设置npm路径"></a>设置npm路径</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#全局安装路径</span></span><br><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;D:\Program Files\nodejs\node_global&quot;</span></span><br><span class="line"><span class="comment">#缓存路径</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;D:\Program Files\nodejs\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
+<h4 id="设置镜像"><a href="#设置镜像" class="headerlink" title="设置镜像"></a>设置镜像</h4><p>见<a href="https://be11amy.github.io/posts/3f8cf88c/">使用xmzs包管理npm源</a></p>
+<h4 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm init          <span class="comment"># npm 初始化当前目录</span></span><br><span class="line">npm i             <span class="comment"># 安装所有依赖</span></span><br><span class="line">npm install       <span class="comment"># 安装所有依赖</span></span><br><span class="line">npm i package     <span class="comment"># 安装模块到默认dependencies</span></span><br><span class="line">npm i package -g  <span class="comment"># 会安装到配置的全局目录下</span></span><br><span class="line">npm i package -S  <span class="comment"># 安装包信息将加入到dependencies生产依赖</span></span><br><span class="line">npm i package -D  <span class="comment"># 安装包信息将加入到devDependencies开发依赖</span></span><br><span class="line">npm uninstall package             <span class="comment"># 卸载模块，但不卸载模块留在package.json中的对应信息</span></span><br><span class="line">npm uninstall package -g          <span class="comment"># 卸载全局模块</span></span><br><span class="line">npm uninstall package --save      <span class="comment"># 卸载模块，同时卸载留在package.json中dependencies下的信息</span></span><br><span class="line">npm uninstall package --save-dev  <span class="comment"># 卸载模块，同时卸载留在package.json中devDependencies下的信息</span></span><br><span class="line">npm update package          <span class="comment"># 更新最新版本的包</span></span><br><span class="line">npm update package@version  <span class="comment"># 更新到指定版本号的包</span></span><br><span class="line">npm update package@latest   <span class="comment"># 更新到最后的新版本</span></span><br></pre></td></tr></table></figure>
+<h4 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm -v                          <span class="comment">#查看版本号</span></span><br><span class="line">npm root                        <span class="comment"># 查看项目中模块所在的目录</span></span><br><span class="line">npm root -g                     <span class="comment"># 查看全局安装的模块所在目录</span></span><br><span class="line">npm list 或者 npm <span class="built_in">ls</span>             <span class="comment"># 查看本地已安装模块的清单列表</span></span><br><span class="line">npm view package dependencies   <span class="comment"># 查看某个包对于各种包的依赖关系</span></span><br><span class="line">npm view package version        <span class="comment"># 查看包最新的版本号</span></span><br><span class="line">npm view package versions       <span class="comment"># 查看所有包历史版本号（很实用）</span></span><br><span class="line">npm view package                <span class="comment"># 查看最新的包版本的信息</span></span><br><span class="line">npm info package                <span class="comment"># 查看包的详细信息，等同于上面的npm view package</span></span><br><span class="line">npm list package 或 npm <span class="built_in">ls</span> package  <span class="comment"># 查看本地已安装的express的详细信息</span></span><br><span class="line">npm view package repository.url     <span class="comment"># 查看express包的来源地址</span></span><br></pre></td></tr></table></figure>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm cache clean           <span class="comment"># 清除npm的缓存</span></span><br><span class="line">npm prune                 <span class="comment"># 清除项目中没有被使用的包</span></span><br><span class="line">npm outdated              <span class="comment"># 检查模块是否已经过时</span></span><br><span class="line">npm repo package          <span class="comment"># 会打开默认浏览器跳转到github中package的页面</span></span><br><span class="line">npm docs package          <span class="comment"># 会打开默认浏览器跳转到github中package的README.MD文件信息</span></span><br><span class="line">npm home package          <span class="comment"># 会打开默认浏览器跳转到github中package的主页</span></span><br><span class="line">npm install -g npm        <span class="comment"># 升级npm</span></span><br></pre></td></tr></table></figure>
+<p>参考：<a href="https://blog.csdn.net/penngo/article/details/127845211">npm常用命令大全</a></p>
+]]></content>
+      <categories>
+        <category>包管理工具</category>
+      </categories>
+      <tags>
+        <tag>命令行</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pnpm的安装与配置</title>
+    <url>/posts/456ef5aa/</url>
+    <content><![CDATA[<h4 id="pnpm的安装"><a href="#pnpm的安装" class="headerlink" title="pnpm的安装"></a>pnpm的安装</h4><p>通过npm全局安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
+<p>获取当前配置的镜像地址</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm get registry</span><br></pre></td></tr></table></figure>
+<p>(可选)修改默认安装包的仓库位置</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config <span class="built_in">set</span> store-dir <span class="string">&quot;D:\CodeApps\node version manager\.pnpm-store&quot;</span></span><br></pre></td></tr></table></figure>
+<p>查看默认安装包的仓库位置</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config get store-dir </span><br></pre></td></tr></table></figure>
+<h4 id="配置PNPM环境变量（这一步我后来没有使用了）"><a href="#配置PNPM环境变量（这一步我后来没有使用了）" class="headerlink" title="配置PNPM环境变量（这一步我后来没有使用了）"></a>配置PNPM环境变量（这一步我后来没有使用了）</h4><p>举例，在系统PATH中配置环境变量<br><code>NAME</code>:<code>PNPM_HOME</code><br><code>VALUE</code>:<code>D:\CodeApps\nvs\pnpm</code><br>再在<code>Path</code>中添加<code>%PNPM_HOME%</code></p>
+<h4 id="pnpm全局包安装路径"><a href="#pnpm全局包安装路径" class="headerlink" title="pnpm全局包安装路径"></a>pnpm全局包安装路径</h4><p>查看pnpm全局包安装路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config get store-dir</span><br></pre></td></tr></table></figure>
+<p>配置pnpm全局包安装路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config <span class="built_in">set</span> store-dir <span class="string">&quot;D:\CodeApps\node version manager\.pnpm-store&quot;</span></span><br></pre></td></tr></table></figure>
+<h4 id="pnpm全局缓存路径"><a href="#pnpm全局缓存路径" class="headerlink" title="pnpm全局缓存路径"></a>pnpm全局缓存路径</h4><p>查看pnpm全局包缓存路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config get cache-dir</span><br></pre></td></tr></table></figure>
+<p>配置pnpm全局包缓存路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config <span class="built_in">set</span> cache-dir <span class="string">&quot;D:\CodeApps\node version manager\.pnpm-cache&quot;</span></span><br></pre></td></tr></table></figure>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>运行下面的命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm config list</span><br></pre></td></tr></table></figure>
+<p>得到如下路径</p>
+<blockquote>
+<p>cache&#x3D;D:\CodeApps\node version manager\node_cache</p>
+<p>cache-dir&#x3D;D:\CodeApps\node version manager.pnpm-cache</p>
+<p>global-bin-dir&#x3D;D:\CodeApps\node version manager\node_global\bin</p>
+<p>global-dir&#x3D;D:\CodeApps\node version manager.pnpm-global</p>
+<p>home&#x3D;<a href="https://npmmirror.com/">https://npmmirror.com</a></p>
+<p>prefix&#x3D;D:\CodeApps\node version manager\node_global    </p>
+<p>registry&#x3D;<a href="https://registry.npmmirror.com/">https://registry.npmmirror.com/</a></p>
+<p>state-dir&#x3D;D:\CodeApps\node version manager.pnpm-state</p>
+<p>store-dir&#x3D;D:\CodeApps\node version manager.pnpm-store</p>
+<p>user-agent&#x3D;pnpm&#x2F;9.9.0 npm&#x2F;? node&#x2F;v20.17.0 win32 x64</p>
+</blockquote>
+<p>参考：<br><a href="https://blog.csdn.net/qq_27971677/article/details/130652057">pnpm的使用</a><br><a href="https://blog.csdn.net/m0_56416743/article/details/136122153">pnpm 基本详细使用教程（安装、卸载、使用、可能遇到的问题及解决办法）</a><br><a href="https://blog.csdn.net/weixin_46243213/article/details/133384481?ops_request_misc=&request_id=&biz_id=102&utm_term=npm%20cache-dir&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-133384481.142%5Ev100%5Epc_search_result_base1&spm=1018.2226.3001.4187">node、npm、pnpm下载安装、卸载、踩坑</a></p>
+]]></content>
+      <categories>
+        <category>包管理工具</category>
+      </categories>
+      <tags>
+        <tag>环境配置</tag>
+        <tag>pnpm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>yarn的常用指令</title>
+    <url>/posts/88a8fad8/</url>
+    <content><![CDATA[<h4 id="yarn常用指令"><a href="#yarn常用指令" class="headerlink" title="yarn常用指令"></a>yarn常用指令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn --version      // 查看版本</span><br><span class="line">yarn init           // 同npm init，执行输入信息后，会生成package.json文件</span><br><span class="line">yarn config list    // 显示所有配置项</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="yarn的配置项"><a href="#yarn的配置项" class="headerlink" title="yarn的配置项"></a>yarn的配置项</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn config get &lt;key&gt;     <span class="comment"># 显示某配置项</span></span><br><span class="line">yarn config delete &lt;key&gt;  <span class="comment"># 删除某配置项</span></span><br><span class="line">yarn config <span class="built_in">set</span> &lt;key&gt; &lt;value&gt; [-g| --global]  <span class="comment"># 设置配置项</span></span><br></pre></td></tr></table></figure>
+<h4 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn install                  <span class="comment"># 安装package.json里所有包，并将包及它的所有依赖项保存进yarn.lock</span></span><br><span class="line">yarn install --flat           <span class="comment"># 安装一个包的单一版本</span></span><br><span class="line">yarn install --force          <span class="comment"># 强制重新下载所有包</span></span><br><span class="line">yarn install --production     <span class="comment"># 只安装dependencies里的包</span></span><br><span class="line">yarn install --no-lockfile    <span class="comment"># 不读取或生成yarn.lock</span></span><br><span class="line">yarn install --pure-lockfile  <span class="comment"># 不生成yarn.lock</span></span><br></pre></td></tr></table></figure>
+<h4 id="更改包（会更新package-json和yarn-lock）"><a href="#更改包（会更新package-json和yarn-lock）" class="headerlink" title="更改包（会更新package.json和yarn.lock）"></a>更改包（会更新package.json和yarn.lock）</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add [package]            <span class="comment"># 在当前的项目中添加一个依赖包，会自动更新到package.json和yarn.lock文件中</span></span><br><span class="line">yarn add [package]@[version]  <span class="comment"># 安装指定版本，这里指的是主要版本，如果需要精确到小版本，使用-E参数</span></span><br><span class="line">yarn add [package]@[tag]      <span class="comment"># 安装某个tag（比如beta,next或者latest）</span></span><br><span class="line">yarn add --dev/-D             <span class="comment"># 加到 devDependencies</span></span><br><span class="line">yarn add --peer/-P            <span class="comment"># 加到 peerDependencies</span></span><br><span class="line">yarn add --optional/-O        <span class="comment"># 加到 optionalDependencies</span></span><br><span class="line">yarn remove &lt;packageName&gt;     <span class="comment"># 移除一个包，会自动更新package.json和yarn.lock</span></span><br><span class="line">yarn upgrade                  <span class="comment"># 用于更新包到基于规范范围的最新版本</span></span><br></pre></td></tr></table></figure>
+<h4 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn cache list       <span class="comment"># 列出已缓存的每个包</span></span><br><span class="line">yarn cache <span class="built_in">dir</span>        <span class="comment"># 返回 全局缓存位置</span></span><br><span class="line">yarn cache clean      <span class="comment"># 清除缓存</span></span><br></pre></td></tr></table></figure>
+<p>参考：<a href="https://blog.csdn.net/yw00yw/article/details/81354533">yarn的安装和使用</a></p>
+]]></content>
+      <categories>
+        <category>包管理工具</category>
+      </categories>
+      <tags>
+        <tag>命令行</tag>
+        <tag>yarn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pnpm的常用指令</title>
+    <url>/posts/5d60e758/</url>
+    <content><![CDATA[<h4 id="pnpm常用指令"><a href="#pnpm常用指令" class="headerlink" title="pnpm常用指令"></a>pnpm常用指令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm -v                       // 查看已安装的pnpm的版本</span><br><span class="line">pnpm install xxx/pnpm i xxx   // 安装依赖</span><br><span class="line">pnpm add &lt;package&gt;            // 安装依赖包到 dependencies</span><br><span class="line">pnpm add -D xxx               // 安装依赖包到devDependencies</span><br><span class="line">pnpm update xxx/pnpm up xxx   // 更新依赖包</span><br><span class="line">pnpm remove xxx               // 删除依赖包</span><br><span class="line">pnpm run xxx                  // 运行package.json中scripts脚本</span><br></pre></td></tr></table></figure>
+<h4 id="pnpm显示"><a href="#pnpm显示" class="headerlink" title="pnpm显示"></a>pnpm显示</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm list      // 以树形结构输出已安装的软件包的所有版本及其依赖</span><br></pre></td></tr></table></figure>
+<p>选项：<br><code>--global, -g</code>：列出全局安装目录中的包，而不是当前项目中的包<br><code>--depth &lt;number&gt;</code>：依赖树的最大显示深度<br><code>--json</code>：JSON 格式的日志输出<br><code>--dev, -D</code>：仅显示 devDependencies 中包的依赖图<br>参考：<a href="https://juejin.cn/post/7143215573378269198">快速掌握pnpm使用命令和实现原理</a></p>
+]]></content>
+      <categories>
+        <category>包管理工具</category>
+      </categories>
+      <tags>
+        <tag>命令行</tag>
+        <tag>pnpm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用nvm管理node.js</title>
+    <url>/posts/c89d12c6/</url>
+    <content><![CDATA[<h4 id="nvm常用命令"><a href="#nvm常用命令" class="headerlink" title="nvm常用命令"></a>nvm常用命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nvm v                               // 显示nvm版本</span><br><span class="line">nvm <span class="built_in">ls</span>                              // 显示所有安装的node.js版本</span><br><span class="line">nvm use &lt;version&gt;                   // 切换到使用指定的nodejs版本</span><br><span class="line">nvm list available                  // 显示可以安装的所有node.js的版本</span><br><span class="line">nvm install &lt;version&gt;               // 安装node.js的命名 version是版本号 例如：nvm install 8.12.0</span><br><span class="line">nvm uninstall &lt;version&gt;             // 卸载node.js是的命令，卸载指定版本的nodejs，当安装失败时卸载使用</span><br><span class="line">nvm install stable                  // 安装最新稳定版</span><br><span class="line">nvm reinstall-packages &lt;version&gt;    // 重新安装指定版本的Node.js，并将全局包重新安装到新版本中</span><br><span class="line">nvm off                             // 禁用node.js版本管理(不卸载任何东西)</span><br><span class="line">nvm on                              // 启用node.js版本管理</span><br></pre></td></tr></table></figure>
+
+<h4 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h4><p>墙裂建议使用<code>nvm install</code>来安装<code>node.js</code>，它会把所有版本都放在一个文件夹里。</p>
+]]></content>
+      <categories>
+        <category>工具包</category>
+      </categories>
+      <tags>
+        <tag>nvm</tag>
+        <tag>nodejs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用rimraf删除依赖</title>
+    <url>/posts/ec5cb3a2/</url>
+    <content><![CDATA[<h4 id="安装rimraf"><a href="#安装rimraf" class="headerlink" title="安装rimraf"></a>安装rimraf</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install rimraf -g</span><br></pre></td></tr></table></figure>
+<h4 id="使用rimraf-进行删除"><a href="#使用rimraf-进行删除" class="headerlink" title="使用rimraf 进行删除"></a>使用rimraf 进行删除</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rimraf node_modules</span><br></pre></td></tr></table></figure>
+<p>如果安装依赖时报错，可以先删除依赖，然后清理缓存，最后再安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rimraf node_modules</span><br><span class="line">npm cache clean --force</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>工具包</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>环境配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用xmzs包管理npm源</title>
+    <url>/posts/3f8cf88c/</url>
+    <content><![CDATA[<h4 id="xmzs的安装"><a href="#xmzs的安装" class="headerlink" title="xmzs的安装"></a>xmzs的安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install xmzs -g</span><br></pre></td></tr></table></figure>
+<h4 id="mmp命令"><a href="#mmp命令" class="headerlink" title="mmp命令"></a>mmp命令</h4><p>通过以下命令查看可用的npm源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp <span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
+<p>通过以下命令更改npm源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp use</span><br></pre></td></tr></table></figure>
+<h4 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h4><p>使用以下命令获取帮助</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mmp -h</span><br><span class="line">mmp <span class="built_in">help</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>工具包</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>环境配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>元组和numpy数组的关系</title>
+    <url>/posts/b7ef5578/</url>
+    <content><![CDATA[<h4 id="什么是numpy数组"><a href="#什么是numpy数组" class="headerlink" title="什么是numpy数组"></a>什么是numpy数组</h4><p>定义：NumPy 数组是用于存储同类型数据的多维集合，它提供了丰富的操作和数学函数来处理这些数据。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">arr = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="built_in">print</span>(arr[<span class="number">2</span>])  <span class="comment"># 输出3</span></span><br><span class="line"><span class="built_in">print</span>(arr[<span class="number">1</span>:<span class="number">4</span>])  <span class="comment"># 输出[2 3 4]</span></span><br></pre></td></tr></table></figure>
+<h4 id="什么是元组"><a href="#什么是元组" class="headerlink" title="什么是元组"></a>什么是元组</h4><p>定义：Python 的内置数据类型，用于存储不可变的有序元素集合。</p>
+<h4 id="二者的关系"><a href="#二者的关系" class="headerlink" title="二者的关系"></a>二者的关系</h4><p>在以下代码中，可以看出它们存在的其中一种关系：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 从数据集中提取特征和标签</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_features_and_labels</span>(<span class="params">data</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (pd.DataFrame): 输入数据。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    tuple: 包含特征和标签的元组 (features, labels)。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 检查所需列是否存在</span></span><br><span class="line">    required_features = [<span class="string">&quot;AC&quot;</span>, <span class="string">&quot;CAL&quot;</span>, <span class="string">&quot;GR&quot;</span>, <span class="string">&quot;RT&quot;</span>, <span class="string">&quot;RXO&quot;</span>]</span><br><span class="line">    required_label = [<span class="string">&quot;CNL&quot;</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 提取特征</span></span><br><span class="line">    features = data[required_features].values</span><br><span class="line">    <span class="comment"># 提取标签</span></span><br><span class="line">    labels = data[required_label].values</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> features, labels</span><br><span class="line"></span><br><span class="line"><span class="comment"># 示例用法</span></span><br><span class="line"><span class="comment"># data = pd.read_csv(&#x27;your_data.csv&#x27;)  # 假设你已经读取了数据</span></span><br><span class="line"><span class="comment"># features, labels = get_features_and_labels(data)</span></span><br></pre></td></tr></table></figure>
+<p>其中，<code>get_features_and_labels()</code>方法返回了features和labels，这两者分别都是numpy数组，而两者结合就构成了一个元组。</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何对数据的某列取对数</title>
+    <url>/posts/4f2cf0a6/</url>
+    <content><![CDATA[<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>首先，处理数据之前要清除数据的类型，以测井曲线的代码片段为例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">log_transform_columns</span>(<span class="params">data, cols_indices</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    对指定列进行对数变换。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (np.ndarray): 输入数据，numpy数组。</span></span><br><span class="line"><span class="string">    cols_indices (list of int): 需要进行对数变换的列索引列表。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    np.ndarray: 经过对数变换处理后的数据。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    data_copy = data.copy() <span class="comment"># 避免对原始数据进行修改</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> col_idx <span class="keyword">in</span> cols_indices:</span><br><span class="line">        <span class="comment"># 确保列中的所有值都大于0，避免对数变换出现负无穷大的问题</span></span><br><span class="line">        data_copy[:, col_idx] = np.where(data_copy[:, col_idx] &lt;= <span class="number">0</span>, <span class="number">1e-9</span>, data_copy[:, col_idx])</span><br><span class="line">        data_copy[:, col_idx] = np.log10(data_copy[:, col_idx].astype(<span class="built_in">float</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> data_copy</span><br></pre></td></tr></table></figure>
+<p>这个函数输入的数据类型是numpy数组，输出也是numpy数组，而<code>np.log10()</code>函数也是numpy自带的处理方法，所以这个方法对于numpy数组取对数很方便，但是有时输入数据并不是numpy数组，也有可能是pandas DataFrame类型，这时候又有另一种方法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">log_transform_columns</span>(<span class="params">data, cols</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    对指定列进行对数变换。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数:</span></span><br><span class="line"><span class="string">    data (pd.DataFrame): 输入数据。</span></span><br><span class="line"><span class="string">    cols (list of str): 需要进行对数变换的列名列表。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    返回:</span></span><br><span class="line"><span class="string">    pd.DataFrame: 经过对数变换处理后的数据。</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    data_copy = data.copy()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> cols:</span><br><span class="line">        <span class="comment"># 确保列中的所有值都大于0，避免对数变换出现负无穷大的问题</span></span><br><span class="line">        data_copy[col] = np.where(data_copy[col] &lt;= <span class="number">0</span>, <span class="number">1e-9</span>, data_copy[col])</span><br><span class="line">        <span class="comment"># 对列进行log10变换</span></span><br><span class="line">        data_copy[col] = np.log10(data_copy[col].astype(<span class="built_in">float</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> data_copy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>数据处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何开始编写TypeScript</title>
+    <url>/posts/2cdbb915/</url>
+    <content><![CDATA[<h4 id="安装TypeScripit"><a href="#安装TypeScripit" class="headerlink" title="安装TypeScripit"></a>安装TypeScripit</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install -g typescript</span><br></pre></td></tr></table></figure>
+<p>使用以下命令行验证</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc -v</span><br></pre></td></tr></table></figure>
+<h4 id="运行TypeScript"><a href="#运行TypeScript" class="headerlink" title="运行TypeScript"></a>运行TypeScript</h4><p>首先初始化，生成<code>tsconfig.json</code>文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc --init</span><br></pre></td></tr></table></figure>
+<ul>
+<li>由于ts文件本身无法直接运行，所以需要先编译为js文件</li>
+<li>创建<code>&lt;filename&gt;.ts</code>文件，使用以下命令行生成随<code>&lt;filename&gt;.ts</code>文件改变而改变的<code>&lt;filename&gt;.js</code>文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc -w</span><br></pre></td></tr></table></figure>
+终端输出如下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[10:49:49] Starting compilation in watch mode...</span><br><span class="line">[10:49:50] Found 0 errors. Watching for file changes.</span><br></pre></td></tr></table></figure></li>
+<li>在<code>.js</code>文件所在文件夹下使用以下命令运行<code>node &lt;filename&gt;.js</code></li>
+<li>可以安装<code>nodemon</code>同时监听<code>.js</code>文件，这样就不用反复使用<code>node &lt;filename&gt;.js</code>命令运行<code>.js</code>文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i -g nodemon</span><br></pre></td></tr></table></figure>
+运行<code>.js</code>文件时不要关闭<code>tsc</code>的终端，同时再打开一个新的终端，使用<code>nodemon &lt;filename&gt;.js</code>运行<code>js</code>文件，运行时保持两个终端的运行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nodemon &lt;filename&gt;.js</span><br></pre></td></tr></table></figure>
+终端输出如下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[nodemon] 3.1.1</span><br><span class="line">[nodemon] to restart at any time, enter `rs`  </span><br><span class="line">[nodemon] watching path(s): *.*</span><br><span class="line">[nodemon] watching extensions: js,mjs,cjs,json</span><br><span class="line">[nodemon] starting `node index.js`</span><br><span class="line">[nodemon] clean exit - waiting for changes before restart</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="使用ts-node运行ts文件"><a href="#使用ts-node运行ts文件" class="headerlink" title="使用ts-node运行ts文件"></a>使用ts-node运行ts文件</h4><p>使用pnpm安装ts-node</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i -g ts-node</span><br></pre></td></tr></table></figure>
+<p>使用<code>ts-node &lt;filename&gt;.ts</code>可以直接运行ts文件</p>
+<h4 id="使用-types-x2F-node提供类型检查"><a href="#使用-types-x2F-node提供类型检查" class="headerlink" title="使用@types&#x2F;node提供类型检查"></a>使用@types&#x2F;node提供类型检查</h4><p>TypeScript编译器将能够识别并使用@types&#x2F;node中提供的类型定义文件，从而为Node.js的API提供类型检查和代码补全功能</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i @types/node -D</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快速搭建Springboot项目</title>
+    <url>/posts/1890d97b/</url>
+    <content><![CDATA[<p>本文以InrelliJ IDEA为例创建Springboot项目</p>
+<h4 id="更改Server-URL"><a href="#更改Server-URL" class="headerlink" title="更改Server URL"></a>更改Server URL</h4><ul>
+<li>将Server URL更改为<code>https://start.aliyun.com/</code></li>
+<li>Language选择<code>Java</code></li>
+<li>Type选择<code>Maven</code></li>
+<li>JDK版本与Java版本匹配</li>
+</ul>
+<h4 id="依赖选择"><a href="#依赖选择" class="headerlink" title="依赖选择"></a>依赖选择</h4><ul>
+<li>Developer选择<code>Lombok</code></li>
+<li>Web选择Spring Web</li>
+<li>SQL选择MySQL Driver<br>注意：如果使用MybatisPlus则不选择<code>Mybatis Framework</code></li>
+<li>进入<a href="https://baomidou.com/getting-started/">Mybatisplus官网找到最新版的Maven依赖</a><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="配置pom"><a href="#配置pom" class="headerlink" title="配置pom"></a>配置pom</h4><p>在<code>pom.xml</code>中的第一个dependencie中加入上文提到的MybatisPlus的dependency配置<br>若遇到<code>Unresolved plugin</code>的问题，可以再加入以下dependency配置</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-install-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">type</span>&gt;</span>maven-plugin<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-deploy-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.7<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">type</span>&gt;</span>maven-plugin<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.12.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">type</span>&gt;</span>maven-plugin<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-site-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">type</span>&gt;</span>maven-plugin<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>然后等待Maven进行同步，当Maven同步显示成功时可选择删除以上代码<br>参考：<a href="https://blog.csdn.net/biaoguaqie7838/article/details/106179663">解决：Unresolved plugin: org.apache.maven.plugins:maven-jar-plugin:2.4 等四个插件的问题</a></p>
+<h4 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h4><p>在<code>src/main/resource/application.yml</code>配置如下</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8081</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">*</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://localhost:3306/*?serverTimezone=UTC</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">&#x27;*&#x27;</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">&#x27;*&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>查看<code>src/main/java/../DemoApplication</code><br>点击<code>public class DemoApplication</code>旁的绿色箭头即可运行程序</p>
+]]></content>
+      <categories>
+        <category>Springboot</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>springboot</tag>
+        <tag>后端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决pnpm(ERR_PNPM_META_FETCH_FAIL)异常</title>
+    <url>/posts/9f72484f/</url>
+    <content><![CDATA[<h4 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h4><p>运行pnpm命令下的vite创建vue命令行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite my-vue-app --template vue</span><br></pre></td></tr></table></figure>
+<p>错误信息如下所示，</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">WARN  GET https://registry.npmmirror.com/create-vite error (ERR_INVALID_THIS). Will retry in 10 seconds. 2 retries left.</span><br><span class="line"> WARN  GET https://registry.npmmirror.com/create-vite error (ERR_INVALID_THIS). Will retry in 1 minute. 1 retries left.</span><br><span class="line">D:\CodeApps\nvs\pnpm\pnpm-store\v3\tmp\dlx-61520:</span><br><span class="line"> ERR_PNPM_META_FETCH_FAIL  GET https://registry.npmmirror.com/create-vite: Value of &quot;this&quot; must be of type URLSearchParams</span><br><span class="line"></span><br><span class="line">This error happened while installing a direct dependency of D:\CodeApps\nvs\pnpm\pnpm-store\v3\tmp\dlx-61520</span><br></pre></td></tr></table></figure>
+
+<h4 id="报错原因"><a href="#报错原因" class="headerlink" title="报错原因"></a>报错原因</h4><p>参考：<a href="https://www.wyr.me/post/746">解决pnpm (ERR_INVALID_THIS)异常 Node.js 20</a> <a href="https://www.wyr.me/">作者:轶哥</a></p>
+<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>重装pnpm</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall -g pnpm</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>bug</category>
       </categories>
       <tags>
         <tag>bug</tag>
+        <tag>pnpm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快速搭建Vite+Vue项目</title>
+    <url>/posts/a63b7ddc/</url>
+    <content><![CDATA[<h4 id="安装pnpm"><a href="#安装pnpm" class="headerlink" title="安装pnpm"></a>安装pnpm</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
+<p>验证<code>pnpm -v</code></p>
+<h4 id="使用Vite自带命令行"><a href="#使用Vite自带命令行" class="headerlink" title="使用Vite自带命令行"></a>使用Vite自带命令行</h4><p>使用如下命令，按照提示操作即可</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite</span><br></pre></td></tr></table></figure>
+<p>接下来，安装所需包以及运行项目</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install</span><br><span class="line">pnpm run dev</span><br></pre></td></tr></table></figure>
+<p>即可打开默认Vite+Vue界面</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>Vite运行时默认不自动打开浏览器，可以找到项目根目录下的<code>package.json</code>文件修改<code>script</code>中的<code>&quot;dev&quot;: &quot;vite&quot;</code>更改为<code>&quot;dev&quot;: &quot;vite --open&quot;</code>，更改后项目启动自动打开浏览器。</p>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://cn.vitejs.dev/guide/">Vite官网中文文档</a></p>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vite</tag>
+        <tag>Vue</tag>
       </tags>
   </entry>
 </search>
