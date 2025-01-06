@@ -14,32 +14,24 @@
       </tags>
   </entry>
   <entry>
-    <title>Windows安装wsl——Ubuntu</title>
-    <url>/posts/554c5a5f/</url>
-    <content><![CDATA[<p>可以在 <code>Windows</code> 上安装多个 <code>Windows Subsystem for Linux (WSL)</code>发行版。<br>使用 <code>wsl --list --verbose</code> 查看已安装的发行版列表</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wsl --list --verbose</span><br><span class="line">  NAME              STATE           VERSION</span><br><span class="line">* Ubuntu-22.04      Stopped         2</span><br><span class="line">  docker-desktop    Stopped         2</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>wsl --list --online</code> 命令列出所有可以从 <code>Microsoft Store</code> 下载的 <code>WSL</code> 发行版，包括不同版本的 Ubuntu。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wsl --list --online</span><br></pre></td></tr></table></figure>
-
-<p>输出如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">以下是可安装的有效分发的列表。</span><br><span class="line">使用 <span class="string">&#x27;wsl.exe --install &lt;Distro&gt;&#x27;</span> 安装。</span><br><span class="line"></span><br><span class="line">NAME                            FRIENDLY NAME</span><br><span class="line">Ubuntu                          Ubuntu</span><br><span class="line">Debian                          Debian GNU/Linux</span><br><span class="line">kali-linux                      Kali Linux Rolling</span><br><span class="line">Ubuntu-18.04                    Ubuntu 18.04 LTS</span><br><span class="line">Ubuntu-20.04                    Ubuntu 20.04 LTS</span><br><span class="line">Ubuntu-22.04                    Ubuntu 22.04 LTS</span><br><span class="line">Ubuntu-24.04                    Ubuntu 24.04 LTS</span><br><span class="line">OracleLinux_7_9                 Oracle Linux 7.9</span><br><span class="line">OracleLinux_8_7                 Oracle Linux 8.7</span><br><span class="line">OracleLinux_9_1                 Oracle Linux 9.1</span><br><span class="line">openSUSE-Leap-15.6              openSUSE Leap 15.6</span><br><span class="line">SUSE-Linux-Enterprise-15-SP5    SUSE Linux Enterprise 15 SP5</span><br><span class="line">SUSE-Linux-Enterprise-15-SP6    SUSE Linux Enterprise 15 SP6</span><br><span class="line">openSUSE-Tumbleweed             openSUSE Tumbleweed</span><br></pre></td></tr></table></figure>
-
-<p>以安装<code>Ubuntu-24.04</code>为例，命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wsl.exe --install Ubuntu-22.04</span><br></pre></td></tr></table></figure>
-
-<p>输出如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ubuntu 22.04 LTS 已安装。</span><br><span class="line">正在启动 Ubuntu 22.04 LTS...</span><br><span class="line">Installing, this may take a few minutes...</span><br><span class="line">Please create a default UNIX user account. The username does not need to match your Windows username.</span><br><span class="line">For more information visit: https://aka.ms/wslusers</span><br><span class="line">Enter new UNIX username: bellamy</span><br><span class="line">New password:</span><br><span class="line">Retype new password:</span><br><span class="line">passwd: password updated successfully</span><br><span class="line">Installation successful!</span><br><span class="line">To run a <span class="built_in">command</span> as administrator (user <span class="string">&quot;root&quot;</span>), use <span class="string">&quot;sudo &lt;command&gt;&quot;</span>.</span><br><span class="line">See <span class="string">&quot;man sudo_root&quot;</span> <span class="keyword">for</span> details.</span><br><span class="line"></span><br><span class="line">Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)</span><br><span class="line"></span><br><span class="line"> * Documentation:  https://help.ubuntu.com</span><br><span class="line"> * Management:     https://landscape.canonical.com</span><br><span class="line"> * Support:        https://ubuntu.com/pro</span><br><span class="line"></span><br><span class="line"> System information as of Mon Jan  6 10:46:50 CST 2025</span><br><span class="line"></span><br><span class="line">  System load:  0.0                 Processes:             58</span><br><span class="line">  Usage of /:   0.1% of 1006.85GB   Users logged <span class="keyword">in</span>:       0</span><br><span class="line">  Memory usage: 5%                  IPv4 address <span class="keyword">for</span> eth0: 172.17.228.168</span><br><span class="line">  Swap usage:   0%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">This message is shown once a day. To <span class="built_in">disable</span> it please create the</span><br><span class="line">/home/bellamy/.hushlogin file.</span><br><span class="line">bellamy@Bellamy:~$</span><br></pre></td></tr></table></figure>
-
-<h3 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h3><h4 id="设置默认版本的wsl"><a href="#设置默认版本的wsl" class="headerlink" title="设置默认版本的wsl"></a>设置默认版本的wsl</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wsl --set-default &lt;DistributionName&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="启动特定版本的wsl"><a href="#启动特定版本的wsl" class="headerlink" title="启动特定版本的wsl"></a>启动特定版本的wsl</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wsl -d &lt;DistributionName&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    <title>Hexo 的常用指令</title>
+    <url>/posts/4a17b156/</url>
+    <content><![CDATA[<h4 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h4><p><code>hexo new page &quot;pageName&quot;</code> 新建分页<br><code>hexo new &quot;postName&quot;</code> 新建文章<br><code>hexo new draft &quot;draftName&quot;</code> 新建草稿<br><code>hexo publish &quot;postName&quot;</code> 草稿生成文章<br><code>hexo publish page &quot;pageName</code> 草稿生成分页</p>
+<h4 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h4><p><code>hexo clean</code> 清除缓存文件 (db.json) 和已生成的静态文件 (public)<br><code>hexo genarate</code> 生成静态页面至 public 目录<br><code>hexo server</code> 开启预览访问端口<br><code>hexo server --drafts</code> 预览草稿<br><code>hexo deploy</code> 部署到 GitHub<br><code>hexo help</code> 查看帮助<br><code>hexo version</code> 查看 Hexo 的版本</p>
+<h4 id="命令缩写"><a href="#命令缩写" class="headerlink" title="命令缩写"></a>命令缩写</h4><p><code>hexo new == hexo n</code><br><code>hexo genarate == hexo g</code><br><code>hexo server == hexo s</code><br><code>hexo deploy == hexo d</code></p>
+<h4 id="组合命令"><a href="#组合命令" class="headerlink" title="组合命令"></a>组合命令</h4><p><code>hexo s -g</code> 生成并本地预览<br><code>hexo d -g</code> 生成并上传</p>
+<h4 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h4><ul>
+<li>当修改了配置、更新了博文 或是更改了其它信息，<code>hexo g</code> 将根据更改生成新的网页，通过 <code>hexo s</code> 可以在本地 <code>localhost:4000</code> 端口检验网页是否与预期一致，若确认无误则可部署到远端，在部署前以防旧的网页与新生成的网页冲突先清除缓存 <code>hexo clean</code>，然后 <code>hexo d</code> 部署即可。</li>
+<li>值得注意的是，并不是每次更改了本地信息就需要关闭当前 4000 端口然后重新 <code>hexo g</code> 和 <code>hexo s</code> 查看更改，事实上除了修改站点配置文件 <code>\_config.yml</code> 外其它时候都可以实时更新到当前监听的端口。</li>
+<li>所以建议让本地 4000 端口处于后台开启状态，完成你的更改，实时在浏览器刷新，确认无误后即可愉快地推送到 GitHub 远端仓库啦。</li>
+</ul>
+]]></content>
       <categories>
-        <category>wsl</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>wsl</tag>
-        <tag>环境配置</tag>
+        <tag>Hexo</tag>
+        <tag>命令行</tag>
       </tags>
   </entry>
   <entry>
@@ -98,24 +90,171 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo 的常用指令</title>
-    <url>/posts/4a17b156/</url>
-    <content><![CDATA[<h4 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h4><p><code>hexo new page &quot;pageName&quot;</code> 新建分页<br><code>hexo new &quot;postName&quot;</code> 新建文章<br><code>hexo new draft &quot;draftName&quot;</code> 新建草稿<br><code>hexo publish &quot;postName&quot;</code> 草稿生成文章<br><code>hexo publish page &quot;pageName</code> 草稿生成分页</p>
-<h4 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h4><p><code>hexo clean</code> 清除缓存文件 (db.json) 和已生成的静态文件 (public)<br><code>hexo genarate</code> 生成静态页面至 public 目录<br><code>hexo server</code> 开启预览访问端口<br><code>hexo server --drafts</code> 预览草稿<br><code>hexo deploy</code> 部署到 GitHub<br><code>hexo help</code> 查看帮助<br><code>hexo version</code> 查看 Hexo 的版本</p>
-<h4 id="命令缩写"><a href="#命令缩写" class="headerlink" title="命令缩写"></a>命令缩写</h4><p><code>hexo new == hexo n</code><br><code>hexo genarate == hexo g</code><br><code>hexo server == hexo s</code><br><code>hexo deploy == hexo d</code></p>
-<h4 id="组合命令"><a href="#组合命令" class="headerlink" title="组合命令"></a>组合命令</h4><p><code>hexo s -g</code> 生成并本地预览<br><code>hexo d -g</code> 生成并上传</p>
-<h4 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h4><ul>
-<li>当修改了配置、更新了博文 或是更改了其它信息，<code>hexo g</code> 将根据更改生成新的网页，通过 <code>hexo s</code> 可以在本地 <code>localhost:4000</code> 端口检验网页是否与预期一致，若确认无误则可部署到远端，在部署前以防旧的网页与新生成的网页冲突先清除缓存 <code>hexo clean</code>，然后 <code>hexo d</code> 部署即可。</li>
-<li>值得注意的是，并不是每次更改了本地信息就需要关闭当前 4000 端口然后重新 <code>hexo g</code> 和 <code>hexo s</code> 查看更改，事实上除了修改站点配置文件 <code>\_config.yml</code> 外其它时候都可以实时更新到当前监听的端口。</li>
-<li>所以建议让本地 4000 端口处于后台开启状态，完成你的更改，实时在浏览器刷新，确认无误后即可愉快地推送到 GitHub 远端仓库啦。</li>
-</ul>
+    <title>Dify本地源码部署</title>
+    <url>/posts/b8aa49c0/</url>
+    <content><![CDATA[<h3 id="Clone-Dify-代码"><a href="#Clone-Dify-代码" class="headerlink" title="Clone Dify 代码"></a>Clone Dify 代码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/langgenius/dify.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="后端部署"><a href="#后端部署" class="headerlink" title="后端部署"></a>后端部署</h3><p>在启用业务服务之前，需要先部署 PostgreSQL &#x2F; Redis &#x2F; Weaviate（如果本地没有的话），可以通过以下命令启动：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> docker</span><br><span class="line"><span class="built_in">cp</span> middleware.env.example middleware.env</span><br><span class="line">docker compose -f docker-compose.middleware.yaml up -d</span><br></pre></td></tr></table></figure>
+
+<p>之后可以直接在<code>docker</code>启动以下容器：</p>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">sandbox-1</span><br><span class="line">ssrf_proxy-1</span><br><span class="line">weaviate-1</span><br><span class="line">redis-1</span><br><span class="line">db-1</span><br></pre></td></tr></table></figure>
+
+<p>使用<code>Python 3.11</code>或<code>3.12</code>，切换到指定<code>Python</code>环境后，</p>
+<ol>
+<li><p>进入<code>api</code>目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> api</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制环境变量配置文件(<code>Windows</code>系统需要使用<code>wsl</code>，<code>cp</code>是<code>Linux</code>命令)</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> .env.example .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生成随机密钥，并替换 <code>.env</code> 中 <code>SECRET_KEY</code> 的值（<code>awk</code>、<code>openssl</code>同样是<code>Linux</code>命令）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">awk -v key=<span class="string">&quot;<span class="subst">$(openssl rand -base64 42)</span>&quot;</span> <span class="string">&#x27;/^SECRET_KEY=/ &#123;sub(/=.*/, &quot;=&quot; key)&#125; 1&#x27;</span> .<span class="built_in">env</span> &gt; temp_env &amp;&amp; <span class="built_in">mv</span> temp_env .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装依赖包(先安装<code>Poetry</code>)</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> use &lt;3.11&gt;</span><br><span class="line">poetry install</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><code>&lt;3.11&gt;</code>替换为<code>python</code>版本为<code>3.11</code>虚拟环境的可执行<code>python.exe</code>路径</p>
+<ol start="5">
+<li>执行数据库迁移（建议直接使用<code>pgAdmin 4</code> + 命令行迁移）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">flask db upgrade</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>更新数据库命令只需要运行一次，之后用不到，但是启动服务需要使用<code>poetry shell</code></p>
+<p>api文件下的.env文件需要修改部分内容，<code>DB_USERNAME</code>和<code>DB_PASSWORD</code>需与数据库一致</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># PostgreSQL database configuration</span><br><span class="line">DB_USERNAME=postgres</span><br><span class="line">DB_PASSWORD=123456</span><br><span class="line">DB_HOST=localhost</span><br><span class="line">DB_PORT=5432</span><br><span class="line">DB_DATABASE=dify</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>启动 API 服务（在poetry shell中）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">flask run --host 0.0.0.0 --port=5001 --debug</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>正确输出：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">* Debug mode: on</span><br><span class="line">INFO:werkzeug:WARNING: This is a development server. Do not use it <span class="keyword">in</span> a production deployment. Use a production WSGI server instead.</span><br><span class="line"> * Running on all addresses (0.0.0.0)</span><br><span class="line"> * Running on http://127.0.0.1:5001</span><br><span class="line">INFO:werkzeug:Press CTRL+C to quit</span><br><span class="line">INFO:werkzeug: * Restarting with <span class="built_in">stat</span></span><br><span class="line">WARNING:werkzeug: * Debugger is active!</span><br><span class="line">INFO:werkzeug: * Debugger PIN: 695-801-919</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>启动 Worker 服务<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">celery -A app.celery worker -P solo --without-gossip --without-mingle -Q dataset,generation,mail,ops_trace --loglevel INFO</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="前端部署"><a href="#前端部署" class="headerlink" title="前端部署"></a>前端部署</h2><ol>
+<li><p>进入 web 目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> web</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装依赖包</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置环境变量。在当前目录下创建文件 <code>.env.local</code>，并复制<code>.env.example</code>中的内容。根据需求修改这些环境变量的值:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># For production release, change this to PRODUCTION</span><br><span class="line">NEXT_PUBLIC_DEPLOY_ENV=DEVELOPMENT</span><br><span class="line"># The deployment edition, SELF_HOSTED</span><br><span class="line">NEXT_PUBLIC_EDITION=SELF_HOSTED</span><br><span class="line"># The base URL of console application, refers to the Console base URL of WEB service if console domain is</span><br><span class="line"># different from api or web app domain.</span><br><span class="line"># example: http://cloud.dify.ai/console/api</span><br><span class="line">NEXT_PUBLIC_API_PREFIX=http://localhost:5001/console/api</span><br><span class="line"># The URL for Web APP, refers to the Web App base URL of WEB service if web app domain is different from</span><br><span class="line"># console or api domain.</span><br><span class="line"># example: http://udify.app/api</span><br><span class="line">NEXT_PUBLIC_PUBLIC_API_PREFIX=http://localhost:5001/api</span><br><span class="line"></span><br><span class="line"># SENTRY</span><br><span class="line">NEXT_PUBLIC_SENTRY_DSN=</span><br><span class="line">NEXT_PUBLIC_SENTRY_ORG=</span><br><span class="line">NEXT_PUBLIC_SENTRY_PROJECT=</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>正常启动后，终端会输出如下信息：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ready - started server on 0.0.0.0:3000, url: http://localhost:3000</span><br><span class="line">warn  - You have enabled experimental feature (appDir) <span class="keyword">in</span> next.config.js.</span><br><span class="line">warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.</span><br><span class="line">info  - Thank you <span class="keyword">for</span> testing `appDir` please leave your feedback at https://nextjs.link/app-feedback</span><br></pre></td></tr></table></figure>
+
+<h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><p>最后，访问 <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a> 即可使用本地部署的 Dify</p>
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>项目</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>命令行</tag>
+        <tag>Dify</tag>
+        <tag>项目部署</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows安装wsl——Ubuntu</title>
+    <url>/posts/554c5a5f/</url>
+    <content><![CDATA[<p>可以在 <code>Windows</code> 上安装多个 <code>Windows Subsystem for Linux (WSL)</code>发行版。<br>使用 <code>wsl --list --verbose</code> 查看已安装的发行版列表</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wsl --list --verbose</span><br><span class="line">  NAME              STATE           VERSION</span><br><span class="line">* Ubuntu-22.04      Stopped         2</span><br><span class="line">  docker-desktop    Stopped         2</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>wsl --list --online</code> 命令列出所有可以从 <code>Microsoft Store</code> 下载的 <code>WSL</code> 发行版，包括不同版本的 Ubuntu。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wsl --list --online</span><br></pre></td></tr></table></figure>
+
+<p>输出如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">以下是可安装的有效分发的列表。</span><br><span class="line">使用 <span class="string">&#x27;wsl.exe --install &lt;Distro&gt;&#x27;</span> 安装。</span><br><span class="line"></span><br><span class="line">NAME                            FRIENDLY NAME</span><br><span class="line">Ubuntu                          Ubuntu</span><br><span class="line">Debian                          Debian GNU/Linux</span><br><span class="line">kali-linux                      Kali Linux Rolling</span><br><span class="line">Ubuntu-18.04                    Ubuntu 18.04 LTS</span><br><span class="line">Ubuntu-20.04                    Ubuntu 20.04 LTS</span><br><span class="line">Ubuntu-22.04                    Ubuntu 22.04 LTS</span><br><span class="line">Ubuntu-24.04                    Ubuntu 24.04 LTS</span><br><span class="line">OracleLinux_7_9                 Oracle Linux 7.9</span><br><span class="line">OracleLinux_8_7                 Oracle Linux 8.7</span><br><span class="line">OracleLinux_9_1                 Oracle Linux 9.1</span><br><span class="line">openSUSE-Leap-15.6              openSUSE Leap 15.6</span><br><span class="line">SUSE-Linux-Enterprise-15-SP5    SUSE Linux Enterprise 15 SP5</span><br><span class="line">SUSE-Linux-Enterprise-15-SP6    SUSE Linux Enterprise 15 SP6</span><br><span class="line">openSUSE-Tumbleweed             openSUSE Tumbleweed</span><br></pre></td></tr></table></figure>
+
+<p>以安装<code>Ubuntu-24.04</code>为例，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wsl.exe --install Ubuntu-22.04</span><br></pre></td></tr></table></figure>
+
+<p>输出如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ubuntu 22.04 LTS 已安装。</span><br><span class="line">正在启动 Ubuntu 22.04 LTS...</span><br><span class="line">Installing, this may take a few minutes...</span><br><span class="line">Please create a default UNIX user account. The username does not need to match your Windows username.</span><br><span class="line">For more information visit: https://aka.ms/wslusers</span><br><span class="line">Enter new UNIX username: bellamy</span><br><span class="line">New password:</span><br><span class="line">Retype new password:</span><br><span class="line">passwd: password updated successfully</span><br><span class="line">Installation successful!</span><br><span class="line">To run a <span class="built_in">command</span> as administrator (user <span class="string">&quot;root&quot;</span>), use <span class="string">&quot;sudo &lt;command&gt;&quot;</span>.</span><br><span class="line">See <span class="string">&quot;man sudo_root&quot;</span> <span class="keyword">for</span> details.</span><br><span class="line"></span><br><span class="line">Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)</span><br><span class="line"></span><br><span class="line"> * Documentation:  https://help.ubuntu.com</span><br><span class="line"> * Management:     https://landscape.canonical.com</span><br><span class="line"> * Support:        https://ubuntu.com/pro</span><br><span class="line"></span><br><span class="line"> System information as of Mon Jan  6 10:46:50 CST 2025</span><br><span class="line"></span><br><span class="line">  System load:  0.0                 Processes:             58</span><br><span class="line">  Usage of /:   0.1% of 1006.85GB   Users logged <span class="keyword">in</span>:       0</span><br><span class="line">  Memory usage: 5%                  IPv4 address <span class="keyword">for</span> eth0: 172.17.228.168</span><br><span class="line">  Swap usage:   0%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">This message is shown once a day. To <span class="built_in">disable</span> it please create the</span><br><span class="line">/home/bellamy/.hushlogin file.</span><br><span class="line">bellamy@Bellamy:~$</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h3><h4 id="设置默认版本的wsl"><a href="#设置默认版本的wsl" class="headerlink" title="设置默认版本的wsl"></a>设置默认版本的wsl</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wsl --set-default &lt;DistributionName&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="启动特定版本的wsl"><a href="#启动特定版本的wsl" class="headerlink" title="启动特定版本的wsl"></a>启动特定版本的wsl</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wsl -d &lt;DistributionName&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>wsl</category>
+      </categories>
+      <tags>
+        <tag>环境配置</tag>
+        <tag>wsl</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用poetry管理虚拟环境</title>
+    <url>/posts/57607fa/</url>
+    <content><![CDATA[<h1 id="安装-poetry"><a href="#安装-poetry" class="headerlink" title="安装 poetry"></a>安装 poetry</h1><p>建议使用<code>Anaconda</code>的<code>base</code>环境执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install poetry</span><br></pre></td></tr></table></figure>
+
+<p>安装好后有一些配置建议，写在<a href="#02be37">配置建议</a></p>
+<h1 id="创建指定版本虚拟环境"><a href="#创建指定版本虚拟环境" class="headerlink" title="创建指定版本虚拟环境"></a>创建指定版本虚拟环境</h1><p>以<code>python</code>3.10版本为例，先创建<code>python</code>版本为3.10的<code>conda</code>虚拟环境：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n fastapi3.10 python=3.10</span><br></pre></td></tr></table></figure>
+
+<h1 id="初始化-poetry"><a href="#初始化-poetry" class="headerlink" title="初始化 poetry"></a>初始化 poetry</h1><p>在项目根目录下执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry init</span><br></pre></td></tr></table></figure>
+
+<p>执行后会有一些选项， 完成后生成<code>pyproject.toml</code>文件，文件内容如下：</p>
+<figure class="highlight toml"><table><tr><td class="code"><pre><span class="line"><span class="section">[tool.poetry]</span></span><br><span class="line"><span class="attr">name</span> = <span class="string">&quot;14-fastapi&quot;</span></span><br><span class="line"><span class="attr">version</span> = <span class="string">&quot;0.1.0&quot;</span></span><br><span class="line"><span class="attr">description</span> = <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="attr">authors</span> = [<span class="string">&quot;xxx&quot;</span>]</span><br><span class="line"><span class="attr">readme</span> = <span class="string">&quot;README.md&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[tool.poetry.dependencies]</span></span><br><span class="line"><span class="attr">python</span> = <span class="string">&quot;^3.10&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section">[build-system]</span></span><br><span class="line"><span class="attr">requires</span> = [<span class="string">&quot;poetry-core&quot;</span>]</span><br><span class="line"><span class="attr">build-backend</span> = <span class="string">&quot;poetry.core.masonry.api&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h1><p>接下来找到刚才创建的<code>conda</code>虚拟环境的<code>python.exe</code>路径，然后执行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> use D:\CodeApps\Anaconda\Anaconda3\envs\fastapi3.10\python.exe</span><br></pre></td></tr></table></figure>
+
+<p>执行后输出如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Creating virtualenv 14-fastapi <span class="keyword">in</span> D:\Code\Projects\14_fastapi\.venv</span><br><span class="line">Using virtualenv: D:\Code\Projects\14_fastapi\.venv</span><br></pre></td></tr></table></figure>
+
+<p>到此虚拟环境创建成功</p>
+<h2 id="删除虚拟环境"><a href="#删除虚拟环境" class="headerlink" title="删除虚拟环境"></a>删除虚拟环境</h2><p>在项目根目录下运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> remove python</span><br></pre></td></tr></table></figure>
+
+<h2 id="进入虚拟环境与退出"><a href="#进入虚拟环境与退出" class="headerlink" title="进入虚拟环境与退出"></a>进入虚拟环境与退出</h2><p>进入虚拟环境：<code>poetry shell</code><br>退出虚拟环境：<code>exit</code></p>
+<h1 id="poetry-指令"><a href="#poetry-指令" class="headerlink" title="poetry 指令"></a>poetry 指令</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry add &lt;package_name&gt;     <span class="comment"># 安装包</span></span><br><span class="line">poetry remove &lt;package_name&gt;  <span class="comment"># 移除包</span></span><br><span class="line">poetry update [package_name]  <span class="comment"># 更新包</span></span><br><span class="line">poetry show  <span class="comment"># 列出包 --tree参数控制是否显示树状依赖层级</span></span><br></pre></td></tr></table></figure>
+<p>注：<code>&lt;package_name&gt;</code>需要指定包名，<code>[package_name]</code>可以不指定包名</p>
+<p>树状依赖层级显示如下，以<code>fastapi</code>为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">fastapi 0.115.6 FastAPI framework, high performance, easy to learn, fast to code, ready <span class="keyword">for</span> production</span><br><span class="line">├── pydantic &gt;=1.7.4,&lt;1.8 || &gt;1.8,&lt;1.8.1 || &gt;1.8.1,&lt;2.0.0 || &gt;2.0.0,&lt;2.0.1 || &gt;2.0.1,&lt;2.1.0 || &gt;2.1.0,&lt;3.0.0</span><br><span class="line">│   ├── annotated-types &gt;=0.6.0</span><br><span class="line">│   ├── pydantic-core 2.27.2</span><br><span class="line">│   │   └── typing-extensions &gt;=4.6.0,&lt;4.7.0 || &gt;4.7.0</span><br><span class="line">│   └── typing-extensions &gt;=4.12.2 (circular dependency aborted here)</span><br><span class="line">├── starlette &gt;=0.40.0,&lt;0.42.0</span><br><span class="line">│   └── anyio &gt;=3.4.0,&lt;5</span><br><span class="line">│       ├── exceptiongroup &gt;=1.0.2</span><br><span class="line">│       ├── idna &gt;=2.8</span><br><span class="line">│       ├── sniffio &gt;=1.1</span><br><span class="line">│       └── typing-extensions &gt;=4.5</span><br><span class="line">└── typing-extensions &gt;=4.8.0</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装包到开发环境"><a href="#安装包到开发环境" class="headerlink" title="安装包到开发环境"></a>安装包到开发环境</h2><p>善用<code>--group dev</code>参数，有很多包在生产环境中用不善，属于开发时的检测工具，例如<code>pytest</code>，<code>flake8</code>，<code>black</code>等等</p>
+<h2 id="导出环境"><a href="#导出环境" class="headerlink" title="导出环境"></a>导出环境</h2><p>导出生产环境：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">export</span> -f requirements.txt -o requirements.txt --without-hashes</span><br></pre></td></tr></table></figure>
+
+<p>导出开发环境</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">export</span> -f requirements.txt -o requirements.txt --without-hashes --dev</span><br></pre></td></tr></table></figure>
+
+<p>导出的文件可以直接用<code>pip install</code>安装而不用安装<code>poetry</code></p>
+<h1 id="poetry-镜像源"><a href="#poetry-镜像源" class="headerlink" title="poetry 镜像源"></a>poetry 镜像源</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">source</span> add tsinghua https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+<h1 id="配置建议"><a href="#配置建议" class="headerlink" title="配置建议"></a>配置建议<a id="02be37"></a></h1><p>安装好<code>poetry</code>后，执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry config --list</span><br></pre></td></tr></table></figure>
+
+<p>输出如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cache-dir = <span class="string">&quot;D:\\Code\\Python\\pypoetry&quot;</span></span><br><span class="line">experimental.system-git-client = <span class="literal">false</span></span><br><span class="line">installer.max-workers = null</span><br><span class="line">installer.modern-installation = <span class="literal">true</span></span><br><span class="line">installer.no-binary = null</span><br><span class="line">installer.parallel = <span class="literal">true</span></span><br><span class="line">keyring.enabled = <span class="literal">true</span></span><br><span class="line">solver.lazy-wheel = <span class="literal">true</span></span><br><span class="line">virtualenvs.create = <span class="literal">true</span></span><br><span class="line">virtualenvs.in-project = <span class="literal">true</span></span><br><span class="line">virtualenvs.options.always-copy = <span class="literal">false</span></span><br><span class="line">virtualenvs.options.no-pip = <span class="literal">false</span></span><br><span class="line">virtualenvs.options.no-setuptools = <span class="literal">false</span></span><br><span class="line">virtualenvs.options.system-site-packages = <span class="literal">false</span></span><br><span class="line">virtualenvs.path = <span class="string">&quot;&#123;cache-dir&#125;\\virtualenvs&quot;</span>  <span class="comment"># D:\Code\Python\pypoetry\virtualenvs</span></span><br><span class="line">virtualenvs.prefer-active-python = <span class="literal">false</span></span><br><span class="line">virtualenvs.prompt = <span class="string">&quot;&#123;project_name&#125;-py&#123;python_version&#125;&quot;</span></span><br><span class="line">warnings.export = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>建议修改<code>cache-dir</code>和<code>virtualenvs.in-project</code><br><code>cache-dir</code>：缓存目录，修改后有助于节省C盘空间<br><code>virtualenvs.in-project</code>：设置为<code>true</code>可以让虚拟环境目录就保存在项目文件夹下</p>
+<p>修改命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry config cache-dir D:\\Code\\Python\\pypoetry</span><br><span class="line">poetry config virtualenvs.in-project <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>取消先前的修改：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry config cache-dir --<span class="built_in">unset</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h1><p><code>poetry.lock</code>文件的详细介绍，参考：<a href="https://blog.csdn.net/weixin_42871919/article/details/137125544">poetry 入门完全指南_poetry使用-CSDN博客</a><br>另外，更完整内容的参见：</p>
+<ol>
+<li><a href="https://blog.kyomind.tw/python-poetry/#Poetry-%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F">Python 套件管理器——Poetry 完全入門指南 - Code and Me (kyomind.tw)</a></li>
+<li><a href="https://python-poetry.org/">Poetry - Python dependency management and packaging made easy (python-poetry.org)</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>poetry</category>
+      </categories>
+      <tags>
+        <tag>命令行</tag>
+        <tag>poetry</tag>
+        <tag>虚拟环境</tag>
       </tags>
   </entry>
   <entry>
@@ -214,20 +353,6 @@
       </tags>
   </entry>
   <entry>
-    <title>git从远程仓库克隆</title>
-    <url>/posts/9af15ac6/</url>
-    <content><![CDATA[<h4 id="在-GitHub-创建或找到一个库用-git-clone-命令"><a href="#在-GitHub-创建或找到一个库用-git-clone-命令" class="headerlink" title="在 GitHub 创建或找到一个库用 git clone 命令"></a>在 GitHub 创建或找到一个库用 git clone 命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> 完整地址</span><br></pre></td></tr></table></figure>
-
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p><code>Git</code> 支持多种协议，包括 <code>https</code>，但 <code>ssh</code> 协议速度最快</p>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git修改内容查看</title>
     <url>/posts/ee64d9ac/</url>
     <content><![CDATA[<h4 id="使用-git-status-命令"><a href="#使用-git-status-命令" class="headerlink" title="使用 git status 命令"></a>使用 <code>git status</code> 命令</h4><p>举个例子：</p>
@@ -252,19 +377,11 @@
       </tags>
   </entry>
   <entry>
-    <title>git 配置 https 和 ssh 免密码登录</title>
-    <url>/posts/8a44e1d6/</url>
-    <content><![CDATA[<h4 id="区分-https-clone-和-ssh-clone"><a href="#区分-https-clone-和-ssh-clone" class="headerlink" title="区分 https clone 和 ssh clone"></a>区分 https clone 和 ssh clone</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">不同的克隆方式导致校验方式不同，对应的免秘方式也不一样。</span><br><span class="line">https通过记住账号密码免登，ssh通过校验生成的密钥免登。</span><br><span class="line">通常都用ssh校验。</span><br></pre></td></tr></table></figure>
+    <title>git从远程仓库克隆</title>
+    <url>/posts/9af15ac6/</url>
+    <content><![CDATA[<h4 id="在-GitHub-创建或找到一个库用-git-clone-命令"><a href="#在-GitHub-创建或找到一个库用-git-clone-命令" class="headerlink" title="在 GitHub 创建或找到一个库用 git clone 命令"></a>在 GitHub 创建或找到一个库用 git clone 命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> 完整地址</span><br></pre></td></tr></table></figure>
 
-<h4 id="https-免密配置方法"><a href="#https-免密配置方法" class="headerlink" title="https 免密配置方法"></a>https 免密配置方法</h4><h5 id="设置配置-git-x2F-config"><a href="#设置配置-git-x2F-config" class="headerlink" title="设置配置 .git &#x2F; config"></a>设置配置 .git &#x2F; config</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global credential.helper store</span><br><span class="line">[credential]</span><br><span class="line">    helper = store</span><br></pre></td></tr></table></figure>
-
-<h5 id="输入一次账号密码后第二次就会记住账号密码。"><a href="#输入一次账号密码后第二次就会记住账号密码。" class="headerlink" title="输入一次账号密码后第二次就会记住账号密码。"></a>输入一次账号密码后第二次就会记住账号密码。</h5><h4 id="ssh-免密配置方法"><a href="#ssh-免密配置方法" class="headerlink" title="ssh 免密配置方法"></a>ssh 免密配置方法</h4><h5 id="配置信息"><a href="#配置信息" class="headerlink" title="配置信息"></a>配置信息</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git init</span><br><span class="line"></span><br><span class="line">$ git config --global user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line"></span><br><span class="line">$ git config --global user.email <span class="string">&#x27;用户邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>注意 <code>git config</code> 命令的 <code>--global</code> 参数，用了这个参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和 Email 地址</p>
-<h5 id="执行生成公钥和私钥的命令"><a href="#执行生成公钥和私钥的命令" class="headerlink" title="执行生成公钥和私钥的命令"></a>执行生成公钥和私钥的命令</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
-
-<p>按回车 3 下 一般都是直接不写为空 直接回车</p>
-<h5 id="执行查看公钥的命令"><a href="#执行查看公钥的命令" class="headerlink" title="执行查看公钥的命令"></a>执行查看公钥的命令</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p><code>Git</code> 支持多种协议，包括 <code>https</code>，但 <code>ssh</code> 协议速度最快</p>
 ]]></content>
       <categories>
         <category>git</category>
@@ -341,6 +458,28 @@
 <p>关联一个远程库时必须给远程库指定一个名字，<code>origin</code> 是默认习惯命名；</p>
 <p>关联后，使用命令 <code>git push -u origin main</code> 第一次推送 <code>main</code> 分支的所有内容；</p>
 <p>此后，每次本地提交后，只要有必要，就可以使用命令 <code>git push origin main</code> 推送最新修改</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git 配置 https 和 ssh 免密码登录</title>
+    <url>/posts/8a44e1d6/</url>
+    <content><![CDATA[<h4 id="区分-https-clone-和-ssh-clone"><a href="#区分-https-clone-和-ssh-clone" class="headerlink" title="区分 https clone 和 ssh clone"></a>区分 https clone 和 ssh clone</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">不同的克隆方式导致校验方式不同，对应的免秘方式也不一样。</span><br><span class="line">https通过记住账号密码免登，ssh通过校验生成的密钥免登。</span><br><span class="line">通常都用ssh校验。</span><br></pre></td></tr></table></figure>
+
+<h4 id="https-免密配置方法"><a href="#https-免密配置方法" class="headerlink" title="https 免密配置方法"></a>https 免密配置方法</h4><h5 id="设置配置-git-x2F-config"><a href="#设置配置-git-x2F-config" class="headerlink" title="设置配置 .git &#x2F; config"></a>设置配置 .git &#x2F; config</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global credential.helper store</span><br><span class="line">[credential]</span><br><span class="line">    helper = store</span><br></pre></td></tr></table></figure>
+
+<h5 id="输入一次账号密码后第二次就会记住账号密码。"><a href="#输入一次账号密码后第二次就会记住账号密码。" class="headerlink" title="输入一次账号密码后第二次就会记住账号密码。"></a>输入一次账号密码后第二次就会记住账号密码。</h5><h4 id="ssh-免密配置方法"><a href="#ssh-免密配置方法" class="headerlink" title="ssh 免密配置方法"></a>ssh 免密配置方法</h4><h5 id="配置信息"><a href="#配置信息" class="headerlink" title="配置信息"></a>配置信息</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git init</span><br><span class="line"></span><br><span class="line">$ git config --global user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line"></span><br><span class="line">$ git config --global user.email <span class="string">&#x27;用户邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>注意 <code>git config</code> 命令的 <code>--global</code> 参数，用了这个参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和 Email 地址</p>
+<h5 id="执行生成公钥和私钥的命令"><a href="#执行生成公钥和私钥的命令" class="headerlink" title="执行生成公钥和私钥的命令"></a>执行生成公钥和私钥的命令</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+
+<p>按回车 3 下 一般都是直接不写为空 直接回车</p>
+<h5 id="执行查看公钥的命令"><a href="#执行查看公钥的命令" class="headerlink" title="执行查看公钥的命令"></a>执行查看公钥的命令</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>git</category>
@@ -509,6 +648,31 @@
       </tags>
   </entry>
   <entry>
+    <title>conda的常用指令</title>
+    <url>/posts/9bb6c8d3/</url>
+    <content><![CDATA[<h4 id="虚拟环境"><a href="#虚拟环境" class="headerlink" title="虚拟环境"></a>虚拟环境</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n env_name python=3.8           <span class="comment"># 创建虚拟环境</span></span><br><span class="line">conda create -n env_name package python=3.8   <span class="comment"># 创建虚拟环境的同时安装必要的包</span></span><br><span class="line">conda <span class="built_in">env</span> list</span><br><span class="line">conda info -e</span><br><span class="line">conda info --envs                             <span class="comment"># 查看有哪些虚拟环境</span></span><br><span class="line">conda activate env_name                       <span class="comment"># 激活虚拟环境</span></span><br><span class="line">conda deactivate                              <span class="comment"># 退出虚拟环境</span></span><br><span class="line">conda remove -n env_name --all                <span class="comment"># 删除虚拟环境</span></span><br><span class="line">conda remove -n env_name package              <span class="comment"># 只删除虚拟环境中的某个或者某些包</span></span><br><span class="line">conda <span class="built_in">env</span> <span class="built_in">export</span> -n <span class="built_in">env</span> &gt; env_name.yml        <span class="comment"># 导出环境为yml文件</span></span><br><span class="line">conda <span class="built_in">env</span> <span class="built_in">export</span> &gt; env_name.yml               <span class="comment"># 导出当前环境为yml文件</span></span><br><span class="line">conda <span class="built_in">env</span> create -f env_name.yml              <span class="comment"># 从yml文件导入环境</span></span><br></pre></td></tr></table></figure>
+<h4 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list                            <span class="comment"># 查询看当前环境中安装了哪些包</span></span><br><span class="line">conda search package                  <span class="comment"># 查询当前Anaconda repository中是否有你想要安装的包</span></span><br><span class="line">conda list package                    <span class="comment"># 查询是否有安装某个包</span></span><br><span class="line">conda list package*                   <span class="comment"># *通配模糊查找</span></span><br><span class="line">conda install package                 <span class="comment"># 安装包</span></span><br><span class="line">conda install package=version         <span class="comment"># 安装某个特定版本的包</span></span><br><span class="line">conda update package                  <span class="comment"># 将某个包更新到它的最新版本</span></span><br><span class="line">conda uninstall package_name          <span class="comment"># conda卸载包</span></span><br><span class="line">conda clean -p                        <span class="comment"># 删除没有用的包 --packages</span></span><br><span class="line">conda clean -t                        <span class="comment"># 删除tar打包 --tarballs</span></span><br><span class="line">conda clean -y -all                   <span class="comment"># 删除所有的安装包及cache(索引缓存、锁定文件、未使用过的包和tar包)</span></span><br></pre></td></tr></table></figure>
+<h4 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda --version                 <span class="comment"># 查看conda版本</span></span><br><span class="line">conda config --show             <span class="comment"># 查看conda的环境配置</span></span><br><span class="line">conda update conda              <span class="comment"># 检查更新conda</span></span><br><span class="line">conda install conda==version    <span class="comment"># 更新指定版本conda</span></span><br><span class="line">conda update Anaconda           <span class="comment"># 更新Anaconda</span></span><br><span class="line">conda update Anaconda-naviator  <span class="comment"># 更新navigator</span></span><br></pre></td></tr></table></figure>
+<h4 id="设置镜像"><a href="#设置镜像" class="headerlink" title="设置镜像"></a>设置镜像</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 设置清华镜像</span></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/</span><br><span class="line"><span class="comment"># 设置bioconda</span></span><br><span class="line">conda config --add channels bioconda</span><br><span class="line">conda config --add channels conda-forge</span><br><span class="line"><span class="comment"># 设置搜索时显示通道地址</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
+<p>参考：<a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">Anaconda 镜像使用帮助</a></p>
+<h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h4><ul>
+<li>注意：不建议<code>conda</code>和<code>pip</code>混用</li>
+<li>参考：<a href="https://blog.csdn.net/chenxy_bwave/article/details/119996001">Anaconda conda常用命令：从入门到精通</a></li>
+<li>我的<code>.condarc</code>配置文件：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">channels:</span><br><span class="line">  - defaults</span><br><span class="line">show_channel_urls: true</span><br><span class="line">default_channels:</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line">custom_channels:</span><br><span class="line">  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  deepmodeling: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/</span><br></pre></td></tr></table></figure>
+如果没有<code>.condarc</code>文件，在<code>Anaconda Prompt</code>中键入以下命令行：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
+会自动在当前用户文件夹下生成<code>.condarc</code>文件</li>
+</ul>
+]]></content>
+      <categories>
+        <category>conda</category>
+      </categories>
+      <tags>
+        <tag>命令行</tag>
+        <tag>虚拟环境</tag>
+        <tag>conda</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL中的主键</title>
     <url>/posts/d8f53a2/</url>
     <content><![CDATA[<h4 id="创建表时设置主键"><a href="#创建表时设置主键" class="headerlink" title="创建表时设置主键"></a>创建表时设置主键</h4><p>在创建表时设置主键：</p>
@@ -536,49 +700,6 @@
       </tags>
   </entry>
   <entry>
-    <title>conda的常用指令</title>
-    <url>/posts/9bb6c8d3/</url>
-    <content><![CDATA[<h4 id="虚拟环境"><a href="#虚拟环境" class="headerlink" title="虚拟环境"></a>虚拟环境</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n env_name python=3.8           <span class="comment"># 创建虚拟环境</span></span><br><span class="line">conda create -n env_name package python=3.8   <span class="comment"># 创建虚拟环境的同时安装必要的包</span></span><br><span class="line">conda <span class="built_in">env</span> list</span><br><span class="line">conda info -e</span><br><span class="line">conda info --envs                             <span class="comment"># 查看有哪些虚拟环境</span></span><br><span class="line">conda activate env_name                       <span class="comment"># 激活虚拟环境</span></span><br><span class="line">conda deactivate                              <span class="comment"># 退出虚拟环境</span></span><br><span class="line">conda remove -n env_name --all                <span class="comment"># 删除虚拟环境</span></span><br><span class="line">conda remove -n env_name package              <span class="comment"># 只删除虚拟环境中的某个或者某些包</span></span><br><span class="line">conda <span class="built_in">env</span> <span class="built_in">export</span> -n <span class="built_in">env</span> &gt; env_name.yml        <span class="comment"># 导出环境为yml文件</span></span><br><span class="line">conda <span class="built_in">env</span> <span class="built_in">export</span> &gt; env_name.yml               <span class="comment"># 导出当前环境为yml文件</span></span><br><span class="line">conda <span class="built_in">env</span> create -f env_name.yml              <span class="comment"># 从yml文件导入环境</span></span><br></pre></td></tr></table></figure>
-<h4 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list                            <span class="comment"># 查询看当前环境中安装了哪些包</span></span><br><span class="line">conda search package                  <span class="comment"># 查询当前Anaconda repository中是否有你想要安装的包</span></span><br><span class="line">conda list package                    <span class="comment"># 查询是否有安装某个包</span></span><br><span class="line">conda list package*                   <span class="comment"># *通配模糊查找</span></span><br><span class="line">conda install package                 <span class="comment"># 安装包</span></span><br><span class="line">conda install package=version         <span class="comment"># 安装某个特定版本的包</span></span><br><span class="line">conda update package                  <span class="comment"># 将某个包更新到它的最新版本</span></span><br><span class="line">conda uninstall package_name          <span class="comment"># conda卸载包</span></span><br><span class="line">conda clean -p                        <span class="comment"># 删除没有用的包 --packages</span></span><br><span class="line">conda clean -t                        <span class="comment"># 删除tar打包 --tarballs</span></span><br><span class="line">conda clean -y -all                   <span class="comment"># 删除所有的安装包及cache(索引缓存、锁定文件、未使用过的包和tar包)</span></span><br></pre></td></tr></table></figure>
-<h4 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda --version                 <span class="comment"># 查看conda版本</span></span><br><span class="line">conda config --show             <span class="comment"># 查看conda的环境配置</span></span><br><span class="line">conda update conda              <span class="comment"># 检查更新conda</span></span><br><span class="line">conda install conda==version    <span class="comment"># 更新指定版本conda</span></span><br><span class="line">conda update Anaconda           <span class="comment"># 更新Anaconda</span></span><br><span class="line">conda update Anaconda-naviator  <span class="comment"># 更新navigator</span></span><br></pre></td></tr></table></figure>
-<h4 id="设置镜像"><a href="#设置镜像" class="headerlink" title="设置镜像"></a>设置镜像</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 设置清华镜像</span></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/</span><br><span class="line"><span class="comment"># 设置bioconda</span></span><br><span class="line">conda config --add channels bioconda</span><br><span class="line">conda config --add channels conda-forge</span><br><span class="line"><span class="comment"># 设置搜索时显示通道地址</span></span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
-<p>参考：<a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">Anaconda 镜像使用帮助</a></p>
-<h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h4><ul>
-<li>注意：不建议<code>conda</code>和<code>pip</code>混用</li>
-<li>参考：<a href="https://blog.csdn.net/chenxy_bwave/article/details/119996001">Anaconda conda常用命令：从入门到精通</a></li>
-<li>我的<code>.condarc</code>配置文件：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">channels:</span><br><span class="line">  - defaults</span><br><span class="line">show_channel_urls: true</span><br><span class="line">default_channels:</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r</span><br><span class="line">  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2</span><br><span class="line">custom_channels:</span><br><span class="line">  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch-lts: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud</span><br><span class="line">  deepmodeling: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/</span><br></pre></td></tr></table></figure>
-如果没有<code>.condarc</code>文件，在<code>Anaconda Prompt</code>中键入以下命令行：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
-会自动在当前用户文件夹下生成<code>.condarc</code>文件</li>
-</ul>
-]]></content>
-      <categories>
-        <category>conda</category>
-      </categories>
-      <tags>
-        <tag>命令行</tag>
-        <tag>conda</tag>
-        <tag>虚拟环境</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git取消与远程仓库的连接</title>
-    <url>/posts/125274a0/</url>
-    <content><![CDATA[<h4 id="git取消与远程仓库的连接"><a href="#git取消与远程仓库的连接" class="headerlink" title="git取消与远程仓库的连接"></a>git取消与远程仓库的连接</h4><h5 id="连接远程仓库"><a href="#连接远程仓库" class="headerlink" title="连接远程仓库"></a>连接远程仓库</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin 仓库地址</span><br></pre></td></tr></table></figure>
-<h5 id="查看远程连接"><a href="#查看远程连接" class="headerlink" title="查看远程连接"></a>查看远程连接</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
-<h5 id="git取消与远程仓库的连接-1"><a href="#git取消与远程仓库的连接-1" class="headerlink" title="git取消与远程仓库的连接"></a>git取消与远程仓库的连接</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>
-<h4 id="安全删除Git仓库中的-git文件夹"><a href="#安全删除Git仓库中的-git文件夹" class="headerlink" title="安全删除Git仓库中的.git文件夹"></a>安全删除Git仓库中的.git文件夹</h4><h5 id="备份项目数据"><a href="#备份项目数据" class="headerlink" title="备份项目数据"></a>备份项目数据</h5><p>在删除<code>.git</code>文件夹之前，始终首先备份整个项目。这确保了在出现意外情况时，项目仍然拥有完整的本。可以选择将整个目录压缩为ZIP文件或复制到其他位置作为备份。</p>
-<h5 id="确保工作目录是干净的"><a href="#确保工作目录是干净的" class="headerlink" title="确保工作目录是干净的"></a>确保工作目录是干净的</h5><p>在删除前，确保工作目录中没有挂起的更改。可以使用<code>git status</code>命令来检查。这确保不会失去任何未提交的工作。</p>
-<h5 id="直接删除-git文件夹"><a href="#直接删除-git文件夹" class="headerlink" title="直接删除.git文件夹"></a>直接删除.git文件夹</h5><p>进入项目的根目录，然后删除<code>.git</code>文件夹。在命令行中，可以使用<code>rm -rf .git</code>（Linux或Mac）或<code>rmdir /s /q .git</code>（Windows）来完成。</p>
-<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>在删除<code>.git</code>文件夹后，所有以前的提交历史和版本控制信息都将丢失。确保始终保持备份。</p>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git升级到最新版本</title>
     <url>/posts/15d0aa15/</url>
     <content><![CDATA[<h4 id="Windows下的升级方法"><a href="#Windows下的升级方法" class="headerlink" title="Windows下的升级方法"></a>Windows下的升级方法</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git update-git-for-windows</span><br></pre></td></tr></table></figure>
@@ -593,6 +714,24 @@
 <li><p>接着更新一下软件列表，就可以直接升级安装了</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install -f</span><br><span class="line"><span class="built_in">sudo</span> apt upgrade</span><br></pre></td></tr></table></figure></li>
 </ul>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git取消与远程仓库的连接</title>
+    <url>/posts/125274a0/</url>
+    <content><![CDATA[<h4 id="git取消与远程仓库的连接"><a href="#git取消与远程仓库的连接" class="headerlink" title="git取消与远程仓库的连接"></a>git取消与远程仓库的连接</h4><h5 id="连接远程仓库"><a href="#连接远程仓库" class="headerlink" title="连接远程仓库"></a>连接远程仓库</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin 仓库地址</span><br></pre></td></tr></table></figure>
+<h5 id="查看远程连接"><a href="#查看远程连接" class="headerlink" title="查看远程连接"></a>查看远程连接</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+<h5 id="git取消与远程仓库的连接-1"><a href="#git取消与远程仓库的连接-1" class="headerlink" title="git取消与远程仓库的连接"></a>git取消与远程仓库的连接</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>
+<h4 id="安全删除Git仓库中的-git文件夹"><a href="#安全删除Git仓库中的-git文件夹" class="headerlink" title="安全删除Git仓库中的.git文件夹"></a>安全删除Git仓库中的.git文件夹</h4><h5 id="备份项目数据"><a href="#备份项目数据" class="headerlink" title="备份项目数据"></a>备份项目数据</h5><p>在删除<code>.git</code>文件夹之前，始终首先备份整个项目。这确保了在出现意外情况时，项目仍然拥有完整的本。可以选择将整个目录压缩为ZIP文件或复制到其他位置作为备份。</p>
+<h5 id="确保工作目录是干净的"><a href="#确保工作目录是干净的" class="headerlink" title="确保工作目录是干净的"></a>确保工作目录是干净的</h5><p>在删除前，确保工作目录中没有挂起的更改。可以使用<code>git status</code>命令来检查。这确保不会失去任何未提交的工作。</p>
+<h5 id="直接删除-git文件夹"><a href="#直接删除-git文件夹" class="headerlink" title="直接删除.git文件夹"></a>直接删除.git文件夹</h5><p>进入项目的根目录，然后删除<code>.git</code>文件夹。在命令行中，可以使用<code>rm -rf .git</code>（Linux或Mac）或<code>rmdir /s /q .git</code>（Windows）来完成。</p>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>在删除<code>.git</code>文件夹后，所有以前的提交历史和版本控制信息都将丢失。确保始终保持备份。</p>
 ]]></content>
       <categories>
         <category>git</category>
@@ -665,6 +804,36 @@
       </tags>
   </entry>
   <entry>
+    <title>pnpm的常用指令</title>
+    <url>/posts/5d60e758/</url>
+    <content><![CDATA[<h4 id="pnpm常用指令"><a href="#pnpm常用指令" class="headerlink" title="pnpm常用指令"></a>pnpm常用指令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm -v                       // 查看已安装的pnpm的版本</span><br><span class="line">pnpm install xxx/pnpm i xxx   // 安装依赖</span><br><span class="line">pnpm add &lt;package&gt;            // 安装依赖包到 dependencies</span><br><span class="line">pnpm add -D xxx               // 安装依赖包到devDependencies</span><br><span class="line">pnpm update xxx/pnpm up xxx   // 更新依赖包</span><br><span class="line">pnpm remove xxx               // 删除依赖包</span><br><span class="line">pnpm run xxx                  // 运行package.json中scripts脚本</span><br></pre></td></tr></table></figure>
+<h4 id="pnpm显示"><a href="#pnpm显示" class="headerlink" title="pnpm显示"></a>pnpm显示</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm list      // 以树形结构输出已安装的软件包的所有版本及其依赖</span><br></pre></td></tr></table></figure>
+<p>选项：<br><code>--global, -g</code>：列出全局安装目录中的包，而不是当前项目中的包<br><code>--depth &lt;number&gt;</code>：依赖树的最大显示深度<br><code>--json</code>：JSON 格式的日志输出<br><code>--dev, -D</code>：仅显示 devDependencies 中包的依赖图<br>参考：<a href="https://juejin.cn/post/7143215573378269198">快速掌握pnpm使用命令和实现原理</a></p>
+]]></content>
+      <categories>
+        <category>包管理工具</category>
+      </categories>
+      <tags>
+        <tag>命令行</tag>
+        <tag>pnpm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用nvm管理node.js</title>
+    <url>/posts/c89d12c6/</url>
+    <content><![CDATA[<h4 id="nvm常用命令"><a href="#nvm常用命令" class="headerlink" title="nvm常用命令"></a>nvm常用命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nvm v                               // 显示nvm版本</span><br><span class="line">nvm <span class="built_in">ls</span>                              // 显示所有安装的node.js版本</span><br><span class="line">nvm use &lt;version&gt;                   // 切换到使用指定的nodejs版本</span><br><span class="line">nvm list available                  // 显示可以安装的所有node.js的版本</span><br><span class="line">nvm install &lt;version&gt;               // 安装node.js的命名 version是版本号 例如：nvm install 8.12.0</span><br><span class="line">nvm uninstall &lt;version&gt;             // 卸载node.js是的命令，卸载指定版本的nodejs，当安装失败时卸载使用</span><br><span class="line">nvm install stable                  // 安装最新稳定版</span><br><span class="line">nvm reinstall-packages &lt;version&gt;    // 重新安装指定版本的Node.js，并将全局包重新安装到新版本中</span><br><span class="line">nvm off                             // 禁用node.js版本管理(不卸载任何东西)</span><br><span class="line">nvm on                              // 启用node.js版本管理</span><br></pre></td></tr></table></figure>
+
+<h4 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h4><p>墙裂建议使用<code>nvm install</code>来安装<code>node.js</code>，它会把所有版本都放在一个文件夹里。</p>
+]]></content>
+      <categories>
+        <category>工具包</category>
+      </categories>
+      <tags>
+        <tag>nvm</tag>
+        <tag>nodejs</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>yarn的常用指令</title>
     <url>/posts/88a8fad8/</url>
     <content><![CDATA[<h4 id="yarn常用指令"><a href="#yarn常用指令" class="headerlink" title="yarn常用指令"></a>yarn常用指令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn --version      // 查看版本</span><br><span class="line">yarn init           // 同npm init，执行输入信息后，会生成package.json文件</span><br><span class="line">yarn config list    // 显示所有配置项</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -683,21 +852,6 @@
       </tags>
   </entry>
   <entry>
-    <title>pnpm的常用指令</title>
-    <url>/posts/5d60e758/</url>
-    <content><![CDATA[<h4 id="pnpm常用指令"><a href="#pnpm常用指令" class="headerlink" title="pnpm常用指令"></a>pnpm常用指令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm -v                       // 查看已安装的pnpm的版本</span><br><span class="line">pnpm install xxx/pnpm i xxx   // 安装依赖</span><br><span class="line">pnpm add &lt;package&gt;            // 安装依赖包到 dependencies</span><br><span class="line">pnpm add -D xxx               // 安装依赖包到devDependencies</span><br><span class="line">pnpm update xxx/pnpm up xxx   // 更新依赖包</span><br><span class="line">pnpm remove xxx               // 删除依赖包</span><br><span class="line">pnpm run xxx                  // 运行package.json中scripts脚本</span><br></pre></td></tr></table></figure>
-<h4 id="pnpm显示"><a href="#pnpm显示" class="headerlink" title="pnpm显示"></a>pnpm显示</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm list      // 以树形结构输出已安装的软件包的所有版本及其依赖</span><br></pre></td></tr></table></figure>
-<p>选项：<br><code>--global, -g</code>：列出全局安装目录中的包，而不是当前项目中的包<br><code>--depth &lt;number&gt;</code>：依赖树的最大显示深度<br><code>--json</code>：JSON 格式的日志输出<br><code>--dev, -D</code>：仅显示 devDependencies 中包的依赖图<br>参考：<a href="https://juejin.cn/post/7143215573378269198">快速掌握pnpm使用命令和实现原理</a></p>
-]]></content>
-      <categories>
-        <category>包管理工具</category>
-      </categories>
-      <tags>
-        <tag>命令行</tag>
-        <tag>pnpm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用rimraf删除依赖</title>
     <url>/posts/ec5cb3a2/</url>
     <content><![CDATA[<h4 id="安装rimraf"><a href="#安装rimraf" class="headerlink" title="安装rimraf"></a>安装rimraf</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install rimraf -g</span><br></pre></td></tr></table></figure>
@@ -710,21 +864,6 @@
       <tags>
         <tag>环境配置</tag>
         <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用nvm管理node.js</title>
-    <url>/posts/c89d12c6/</url>
-    <content><![CDATA[<h4 id="nvm常用命令"><a href="#nvm常用命令" class="headerlink" title="nvm常用命令"></a>nvm常用命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nvm v                               // 显示nvm版本</span><br><span class="line">nvm <span class="built_in">ls</span>                              // 显示所有安装的node.js版本</span><br><span class="line">nvm use &lt;version&gt;                   // 切换到使用指定的nodejs版本</span><br><span class="line">nvm list available                  // 显示可以安装的所有node.js的版本</span><br><span class="line">nvm install &lt;version&gt;               // 安装node.js的命名 version是版本号 例如：nvm install 8.12.0</span><br><span class="line">nvm uninstall &lt;version&gt;             // 卸载node.js是的命令，卸载指定版本的nodejs，当安装失败时卸载使用</span><br><span class="line">nvm install stable                  // 安装最新稳定版</span><br><span class="line">nvm reinstall-packages &lt;version&gt;    // 重新安装指定版本的Node.js，并将全局包重新安装到新版本中</span><br><span class="line">nvm off                             // 禁用node.js版本管理(不卸载任何东西)</span><br><span class="line">nvm on                              // 启用node.js版本管理</span><br></pre></td></tr></table></figure>
-
-<h4 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h4><p>墙裂建议使用<code>nvm install</code>来安装<code>node.js</code>，它会把所有版本都放在一个文件夹里。</p>
-]]></content>
-      <categories>
-        <category>工具包</category>
-      </categories>
-      <tags>
-        <tag>nvm</tag>
-        <tag>nodejs</tag>
       </tags>
   </entry>
   <entry>
@@ -761,36 +900,6 @@
       <tags>
         <tag>Python</tag>
         <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何开始编写TypeScript</title>
-    <url>/posts/2cdbb915/</url>
-    <content><![CDATA[<h4 id="安装TypeScripit"><a href="#安装TypeScripit" class="headerlink" title="安装TypeScripit"></a>安装TypeScripit</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install -g typescript</span><br></pre></td></tr></table></figure>
-<p>使用以下命令行验证</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc -v</span><br></pre></td></tr></table></figure>
-<h4 id="运行TypeScript"><a href="#运行TypeScript" class="headerlink" title="运行TypeScript"></a>运行TypeScript</h4><p>首先初始化，生成<code>tsconfig.json</code>文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc --init</span><br></pre></td></tr></table></figure>
-<ul>
-<li>由于ts文件本身无法直接运行，所以需要先编译为js文件</li>
-<li>创建<code>&lt;filename&gt;.ts</code>文件，使用以下命令行生成随<code>&lt;filename&gt;.ts</code>文件改变而改变的<code>&lt;filename&gt;.js</code>文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc -w</span><br></pre></td></tr></table></figure>
-终端输出如下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[10:49:49] Starting compilation in watch mode...</span><br><span class="line">[10:49:50] Found 0 errors. Watching for file changes.</span><br></pre></td></tr></table></figure></li>
-<li>在<code>.js</code>文件所在文件夹下使用以下命令运行<code>node &lt;filename&gt;.js</code></li>
-<li>可以安装<code>nodemon</code>同时监听<code>.js</code>文件，这样就不用反复使用<code>node &lt;filename&gt;.js</code>命令运行<code>.js</code>文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i -g nodemon</span><br></pre></td></tr></table></figure>
-运行<code>.js</code>文件时不要关闭<code>tsc</code>的终端，同时再打开一个新的终端，使用<code>nodemon &lt;filename&gt;.js</code>运行<code>js</code>文件，运行时保持两个终端的运行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nodemon &lt;filename&gt;.js</span><br></pre></td></tr></table></figure>
-终端输出如下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[nodemon] 3.1.1</span><br><span class="line">[nodemon] to restart at any time, enter `rs`  </span><br><span class="line">[nodemon] watching path(s): *.*</span><br><span class="line">[nodemon] watching extensions: js,mjs,cjs,json</span><br><span class="line">[nodemon] starting `node index.js`</span><br><span class="line">[nodemon] clean exit - waiting for changes before restart</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="使用ts-node运行ts文件"><a href="#使用ts-node运行ts文件" class="headerlink" title="使用ts-node运行ts文件"></a>使用ts-node运行ts文件</h4><p>使用pnpm安装ts-node</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i -g ts-node</span><br></pre></td></tr></table></figure>
-<p>使用<code>ts-node &lt;filename&gt;.ts</code>可以直接运行ts文件</p>
-<h4 id="使用-types-x2F-node提供类型检查"><a href="#使用-types-x2F-node提供类型检查" class="headerlink" title="使用@types&#x2F;node提供类型检查"></a>使用@types&#x2F;node提供类型检查</h4><p>TypeScript编译器将能够识别并使用@types&#x2F;node中提供的类型定义文件，从而为Node.js的API提供类型检查和代码补全功能</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i @types/node -D</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>TypeScript</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>TypeScript</tag>
       </tags>
   </entry>
   <entry>
@@ -843,447 +952,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解决pnpm(ERR_PNPM_META_FETCH_FAIL)异常</title>
-    <url>/posts/9f72484f/</url>
-    <content><![CDATA[<h4 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h4><p>运行pnpm命令下的vite创建vue命令行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite my-vue-app --template vue</span><br></pre></td></tr></table></figure>
-<p>错误信息如下所示，</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">WARN  GET https://registry.npmmirror.com/create-vite error (ERR_INVALID_THIS). Will retry in 10 seconds. 2 retries left.</span><br><span class="line"> WARN  GET https://registry.npmmirror.com/create-vite error (ERR_INVALID_THIS). Will retry in 1 minute. 1 retries left.</span><br><span class="line">D:\CodeApps\nvs\pnpm\pnpm-store\v3\tmp\dlx-61520:</span><br><span class="line"> ERR_PNPM_META_FETCH_FAIL  GET https://registry.npmmirror.com/create-vite: Value of &quot;this&quot; must be of type URLSearchParams</span><br><span class="line"></span><br><span class="line">This error happened while installing a direct dependency of D:\CodeApps\nvs\pnpm\pnpm-store\v3\tmp\dlx-61520</span><br></pre></td></tr></table></figure>
-
-<h4 id="报错原因"><a href="#报错原因" class="headerlink" title="报错原因"></a>报错原因</h4><p>参考：<a href="https://www.wyr.me/post/746">解决pnpm (ERR_INVALID_THIS)异常 Node.js 20</a> <a href="https://www.wyr.me/">作者:轶哥</a></p>
-<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>重装pnpm</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall -g pnpm</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>bug</category>
-      </categories>
-      <tags>
-        <tag>bug</tag>
-        <tag>pnpm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Dify本地源码部署</title>
-    <url>/posts/b8aa49c0/</url>
-    <content><![CDATA[<h3 id="Clone-Dify-代码"><a href="#Clone-Dify-代码" class="headerlink" title="Clone Dify 代码"></a>Clone Dify 代码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/langgenius/dify.git</span><br></pre></td></tr></table></figure>
-
-<h3 id="后端部署"><a href="#后端部署" class="headerlink" title="后端部署"></a>后端部署</h3><p>在启用业务服务之前，需要先部署 PostgreSQL &#x2F; Redis &#x2F; Weaviate（如果本地没有的话），可以通过以下命令启动：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> docker</span><br><span class="line"><span class="built_in">cp</span> middleware.env.example middleware.env</span><br><span class="line">docker compose -f docker-compose.middleware.yaml up -d</span><br></pre></td></tr></table></figure>
-
-<p>之后可以直接在<code>docker</code>启动以下容器：</p>
-<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">sandbox-1</span><br><span class="line">ssrf_proxy-1</span><br><span class="line">weaviate-1</span><br><span class="line">redis-1</span><br><span class="line">db-1</span><br></pre></td></tr></table></figure>
-
-<p>使用<code>Python 3.11</code>或<code>3.12</code>，切换到指定<code>Python</code>环境后，</p>
-<ol>
-<li><p>进入<code>api</code>目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> api</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复制环境变量配置文件(<code>Windows</code>系统需要使用<code>wsl</code>，<code>cp</code>是<code>Linux</code>命令)</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> .env.example .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>生成随机密钥，并替换 <code>.env</code> 中 <code>SECRET_KEY</code> 的值（<code>awk</code>、<code>openssl</code>同样是<code>Linux</code>命令）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">awk -v key=<span class="string">&quot;<span class="subst">$(openssl rand -base64 42)</span>&quot;</span> <span class="string">&#x27;/^SECRET_KEY=/ &#123;sub(/=.*/, &quot;=&quot; key)&#125; 1&#x27;</span> .<span class="built_in">env</span> &gt; temp_env &amp;&amp; <span class="built_in">mv</span> temp_env .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装依赖包(先安装<code>Poetry</code>)</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> use &lt;3.11&gt;</span><br><span class="line">poetry install</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p><code>&lt;3.11&gt;</code>替换为<code>python</code>版本为<code>3.11</code>虚拟环境的可执行<code>python.exe</code>路径</p>
-<ol start="5">
-<li>执行数据库迁移（建议直接使用<code>pgAdmin 4</code> + 命令行迁移）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">flask db upgrade</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>更新数据库命令只需要运行一次，之后用不到，但是启动服务需要使用<code>poetry shell</code></p>
-<p>api文件下的.env文件需要修改部分内容，<code>DB_USERNAME</code>和<code>DB_PASSWORD</code>需与数据库一致</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># PostgreSQL database configuration</span><br><span class="line">DB_USERNAME=postgres</span><br><span class="line">DB_PASSWORD=123456</span><br><span class="line">DB_HOST=localhost</span><br><span class="line">DB_PORT=5432</span><br><span class="line">DB_DATABASE=dify</span><br></pre></td></tr></table></figure>
-
-<ol start="6">
-<li>启动 API 服务（在poetry shell中）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">flask run --host 0.0.0.0 --port=5001 --debug</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>正确输出：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">* Debug mode: on</span><br><span class="line">INFO:werkzeug:WARNING: This is a development server. Do not use it <span class="keyword">in</span> a production deployment. Use a production WSGI server instead.</span><br><span class="line"> * Running on all addresses (0.0.0.0)</span><br><span class="line"> * Running on http://127.0.0.1:5001</span><br><span class="line">INFO:werkzeug:Press CTRL+C to quit</span><br><span class="line">INFO:werkzeug: * Restarting with <span class="built_in">stat</span></span><br><span class="line">WARNING:werkzeug: * Debugger is active!</span><br><span class="line">INFO:werkzeug: * Debugger PIN: 695-801-919</span><br></pre></td></tr></table></figure>
-
-<ol start="7">
-<li>启动 Worker 服务<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">celery -A app.celery worker -P solo --without-gossip --without-mingle -Q dataset,generation,mail,ops_trace --loglevel INFO</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="前端部署"><a href="#前端部署" class="headerlink" title="前端部署"></a>前端部署</h2><ol>
-<li><p>进入 web 目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> web</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装依赖包</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置环境变量。在当前目录下创建文件 <code>.env.local</code>，并复制<code>.env.example</code>中的内容。根据需求修改这些环境变量的值:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># For production release, change this to PRODUCTION</span><br><span class="line">NEXT_PUBLIC_DEPLOY_ENV=DEVELOPMENT</span><br><span class="line"># The deployment edition, SELF_HOSTED</span><br><span class="line">NEXT_PUBLIC_EDITION=SELF_HOSTED</span><br><span class="line"># The base URL of console application, refers to the Console base URL of WEB service if console domain is</span><br><span class="line"># different from api or web app domain.</span><br><span class="line"># example: http://cloud.dify.ai/console/api</span><br><span class="line">NEXT_PUBLIC_API_PREFIX=http://localhost:5001/console/api</span><br><span class="line"># The URL for Web APP, refers to the Web App base URL of WEB service if web app domain is different from</span><br><span class="line"># console or api domain.</span><br><span class="line"># example: http://udify.app/api</span><br><span class="line">NEXT_PUBLIC_PUBLIC_API_PREFIX=http://localhost:5001/api</span><br><span class="line"></span><br><span class="line"># SENTRY</span><br><span class="line">NEXT_PUBLIC_SENTRY_DSN=</span><br><span class="line">NEXT_PUBLIC_SENTRY_ORG=</span><br><span class="line">NEXT_PUBLIC_SENTRY_PROJECT=</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>正常启动后，终端会输出如下信息：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ready - started server on 0.0.0.0:3000, url: http://localhost:3000</span><br><span class="line">warn  - You have enabled experimental feature (appDir) <span class="keyword">in</span> next.config.js.</span><br><span class="line">warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.</span><br><span class="line">info  - Thank you <span class="keyword">for</span> testing `appDir` please leave your feedback at https://nextjs.link/app-feedback</span><br></pre></td></tr></table></figure>
-
-<h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><p>最后，访问 <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000</a> 即可使用本地部署的 Dify</p>
-]]></content>
-      <categories>
-        <category>项目</category>
-      </categories>
-      <tags>
-        <tag>命令行</tag>
-        <tag>Dify</tag>
-        <tag>项目部署</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>快速搭建Vite+Vue项目</title>
-    <url>/posts/a63b7ddc/</url>
-    <content><![CDATA[<h4 id="安装pnpm"><a href="#安装pnpm" class="headerlink" title="安装pnpm"></a>安装pnpm</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
-<p>验证<code>pnpm -v</code></p>
-<h4 id="使用Vite自带命令行"><a href="#使用Vite自带命令行" class="headerlink" title="使用Vite自带命令行"></a>使用Vite自带命令行</h4><p>使用如下命令，按照提示操作即可</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite</span><br></pre></td></tr></table></figure>
-<p>接下来，安装所需包以及运行项目</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install</span><br><span class="line">pnpm run dev</span><br></pre></td></tr></table></figure>
-<p>即可打开默认Vite+Vue界面</p>
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>Vite运行时默认不自动打开浏览器，可以找到项目根目录下的<code>package.json</code>文件修改<code>script</code>中的<code>&quot;dev&quot;: &quot;vite&quot;</code>更改为<code>&quot;dev&quot;: &quot;vite --open&quot;</code>，更改后项目启动自动打开浏览器。</p>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://cn.vitejs.dev/guide/">Vite官网中文文档</a></p>
-]]></content>
-      <categories>
-        <category>Vue</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>Vite</tag>
-        <tag>Vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用poetry管理虚拟环境</title>
-    <url>/posts/57607fa/</url>
-    <content><![CDATA[<h1 id="安装-poetry"><a href="#安装-poetry" class="headerlink" title="安装 poetry"></a>安装 poetry</h1><p>建议使用<code>Anaconda</code>的<code>base</code>环境执行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install poetry</span><br></pre></td></tr></table></figure>
-
-<p>安装好后有一些配置建议，写在<a href="#02be37">配置建议</a></p>
-<h1 id="创建指定版本虚拟环境"><a href="#创建指定版本虚拟环境" class="headerlink" title="创建指定版本虚拟环境"></a>创建指定版本虚拟环境</h1><p>以<code>python</code>3.10版本为例，先创建<code>python</code>版本为3.10的<code>conda</code>虚拟环境：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n fastapi3.10 python=3.10</span><br></pre></td></tr></table></figure>
-
-<h1 id="初始化-poetry"><a href="#初始化-poetry" class="headerlink" title="初始化 poetry"></a>初始化 poetry</h1><p>在项目根目录下执行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry init</span><br></pre></td></tr></table></figure>
-
-<p>执行后会有一些选项， 完成后生成<code>pyproject.toml</code>文件，文件内容如下：</p>
-<figure class="highlight toml"><table><tr><td class="code"><pre><span class="line"><span class="section">[tool.poetry]</span></span><br><span class="line"><span class="attr">name</span> = <span class="string">&quot;14-fastapi&quot;</span></span><br><span class="line"><span class="attr">version</span> = <span class="string">&quot;0.1.0&quot;</span></span><br><span class="line"><span class="attr">description</span> = <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="attr">authors</span> = [<span class="string">&quot;xxx&quot;</span>]</span><br><span class="line"><span class="attr">readme</span> = <span class="string">&quot;README.md&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[tool.poetry.dependencies]</span></span><br><span class="line"><span class="attr">python</span> = <span class="string">&quot;^3.10&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section">[build-system]</span></span><br><span class="line"><span class="attr">requires</span> = [<span class="string">&quot;poetry-core&quot;</span>]</span><br><span class="line"><span class="attr">build-backend</span> = <span class="string">&quot;poetry.core.masonry.api&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h1><p>接下来找到刚才创建的<code>conda</code>虚拟环境的<code>python.exe</code>路径，然后执行以下命令</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> use D:\CodeApps\Anaconda\Anaconda3\envs\fastapi3.10\python.exe</span><br></pre></td></tr></table></figure>
-
-<p>执行后输出如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Creating virtualenv 14-fastapi <span class="keyword">in</span> D:\Code\Projects\14_fastapi\.venv</span><br><span class="line">Using virtualenv: D:\Code\Projects\14_fastapi\.venv</span><br></pre></td></tr></table></figure>
-
-<p>到此虚拟环境创建成功</p>
-<h2 id="删除虚拟环境"><a href="#删除虚拟环境" class="headerlink" title="删除虚拟环境"></a>删除虚拟环境</h2><p>在项目根目录下运行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> remove python</span><br></pre></td></tr></table></figure>
-
-<h2 id="进入虚拟环境与退出"><a href="#进入虚拟环境与退出" class="headerlink" title="进入虚拟环境与退出"></a>进入虚拟环境与退出</h2><p>进入虚拟环境：<code>poetry shell</code><br>退出虚拟环境：<code>exit</code></p>
-<h1 id="poetry-指令"><a href="#poetry-指令" class="headerlink" title="poetry 指令"></a>poetry 指令</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry add &lt;package_name&gt;     <span class="comment"># 安装包</span></span><br><span class="line">poetry remove &lt;package_name&gt;  <span class="comment"># 移除包</span></span><br><span class="line">poetry update [package_name]  <span class="comment"># 更新包</span></span><br><span class="line">poetry show  <span class="comment"># 列出包 --tree参数控制是否显示树状依赖层级</span></span><br></pre></td></tr></table></figure>
-<p>注：<code>&lt;package_name&gt;</code>需要指定包名，<code>[package_name]</code>可以不指定包名</p>
-<p>树状依赖层级显示如下，以<code>fastapi</code>为例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">fastapi 0.115.6 FastAPI framework, high performance, easy to learn, fast to code, ready <span class="keyword">for</span> production</span><br><span class="line">├── pydantic &gt;=1.7.4,&lt;1.8 || &gt;1.8,&lt;1.8.1 || &gt;1.8.1,&lt;2.0.0 || &gt;2.0.0,&lt;2.0.1 || &gt;2.0.1,&lt;2.1.0 || &gt;2.1.0,&lt;3.0.0</span><br><span class="line">│   ├── annotated-types &gt;=0.6.0</span><br><span class="line">│   ├── pydantic-core 2.27.2</span><br><span class="line">│   │   └── typing-extensions &gt;=4.6.0,&lt;4.7.0 || &gt;4.7.0</span><br><span class="line">│   └── typing-extensions &gt;=4.12.2 (circular dependency aborted here)</span><br><span class="line">├── starlette &gt;=0.40.0,&lt;0.42.0</span><br><span class="line">│   └── anyio &gt;=3.4.0,&lt;5</span><br><span class="line">│       ├── exceptiongroup &gt;=1.0.2</span><br><span class="line">│       ├── idna &gt;=2.8</span><br><span class="line">│       ├── sniffio &gt;=1.1</span><br><span class="line">│       └── typing-extensions &gt;=4.5</span><br><span class="line">└── typing-extensions &gt;=4.8.0</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装包到开发环境"><a href="#安装包到开发环境" class="headerlink" title="安装包到开发环境"></a>安装包到开发环境</h2><p>善用<code>--group dev</code>参数，有很多包在生产环境中用不善，属于开发时的检测工具，例如<code>pytest</code>，<code>flake8</code>，<code>black</code>等等</p>
-<h2 id="导出环境"><a href="#导出环境" class="headerlink" title="导出环境"></a>导出环境</h2><p>导出生产环境：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">export</span> -f requirements.txt -o requirements.txt --without-hashes</span><br></pre></td></tr></table></figure>
-
-<p>导出开发环境</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">export</span> -f requirements.txt -o requirements.txt --without-hashes --dev</span><br></pre></td></tr></table></figure>
-
-<p>导出的文件可以直接用<code>pip install</code>安装而不用安装<code>poetry</code></p>
-<h1 id="poetry-镜像源"><a href="#poetry-镜像源" class="headerlink" title="poetry 镜像源"></a>poetry 镜像源</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry <span class="built_in">source</span> add tsinghua https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-
-<h1 id="配置建议"><a href="#配置建议" class="headerlink" title="配置建议"></a>配置建议<a id="02be37"></a></h1><p>安装好<code>poetry</code>后，执行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry config --list</span><br></pre></td></tr></table></figure>
-
-<p>输出如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cache-dir = <span class="string">&quot;D:\\Code\\Python\\pypoetry&quot;</span></span><br><span class="line">experimental.system-git-client = <span class="literal">false</span></span><br><span class="line">installer.max-workers = null</span><br><span class="line">installer.modern-installation = <span class="literal">true</span></span><br><span class="line">installer.no-binary = null</span><br><span class="line">installer.parallel = <span class="literal">true</span></span><br><span class="line">keyring.enabled = <span class="literal">true</span></span><br><span class="line">solver.lazy-wheel = <span class="literal">true</span></span><br><span class="line">virtualenvs.create = <span class="literal">true</span></span><br><span class="line">virtualenvs.in-project = <span class="literal">true</span></span><br><span class="line">virtualenvs.options.always-copy = <span class="literal">false</span></span><br><span class="line">virtualenvs.options.no-pip = <span class="literal">false</span></span><br><span class="line">virtualenvs.options.no-setuptools = <span class="literal">false</span></span><br><span class="line">virtualenvs.options.system-site-packages = <span class="literal">false</span></span><br><span class="line">virtualenvs.path = <span class="string">&quot;&#123;cache-dir&#125;\\virtualenvs&quot;</span>  <span class="comment"># D:\Code\Python\pypoetry\virtualenvs</span></span><br><span class="line">virtualenvs.prefer-active-python = <span class="literal">false</span></span><br><span class="line">virtualenvs.prompt = <span class="string">&quot;&#123;project_name&#125;-py&#123;python_version&#125;&quot;</span></span><br><span class="line">warnings.export = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>建议修改<code>cache-dir</code>和<code>virtualenvs.in-project</code><br><code>cache-dir</code>：缓存目录，修改后有助于节省C盘空间<br><code>virtualenvs.in-project</code>：设置为<code>true</code>可以让虚拟环境目录就保存在项目文件夹下</p>
-<p>修改命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry config cache-dir D:\\Code\\Python\\pypoetry</span><br><span class="line">poetry config virtualenvs.in-project <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>取消先前的修改：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry config cache-dir --<span class="built_in">unset</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h1><p><code>poetry.lock</code>文件的详细介绍，参考：<a href="https://blog.csdn.net/weixin_42871919/article/details/137125544">poetry 入门完全指南_poetry使用-CSDN博客</a><br>另外，更完整内容的参见：</p>
-<ol>
-<li><a href="https://blog.kyomind.tw/python-poetry/#Poetry-%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F">Python 套件管理器——Poetry 完全入門指南 - Code and Me (kyomind.tw)</a></li>
-<li><a href="https://python-poetry.org/">Poetry - Python dependency management and packaging made easy (python-poetry.org)</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>poetry</category>
-      </categories>
-      <tags>
-        <tag>命令行</tag>
-        <tag>虚拟环境</tag>
-        <tag>poetry</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>markdown基础语法</title>
-    <url>/posts/4664ae19/</url>
-    <content><![CDATA[<p>参考：<a href="https://www.jianshu.com/p/65fa2c72c124">Markdown基础语法</a></p>
-]]></content>
-      <categories>
-        <category>markdown</category>
-      </categories>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LaTex数学公式</title>
-    <url>/posts/c57d1942/</url>
-    <content><![CDATA[<h3 id="公式收集"><a href="#公式收集" class="headerlink" title="公式收集"></a>公式收集</h3><p>$\mathbf{DTW(X,Y)&#x3D;min(\sum_{k&#x3D;1}^Kdist(x_{i_k}, y_{j_k}))}$</p>
-<p>$\mathbf{dist&#x3D;W_{GR}(x_{GR}-y_{GR})^2+W_{AC}(x_{AC}-y_{AC})^2+W_{RT}(x_{RT}-y_{RT})^2}$</p>
-<p>参考：</p>
-<ul>
-<li><a href="https://blog.csdn.net/ViatorSun/article/details/82826664">超详细 LaTex数学公式</a></li>
-<li><a href="https://www.jianshu.com/p/a04775fde077">Markdown与数学公式</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>markdown</category>
-      </categories>
-      <tags>
-        <tag>markdown</tag>
-        <tag>LateX</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vi/vim的使用</title>
-    <url>/posts/5c57039f/</url>
-    <content><![CDATA[<p>基本上 vi&#x2F;vim 共分为三种模式，命令模式（Command Mode）、输入模式（Insert Mode）和命令行模式（Command-Line Mode）。</p>
-<h5 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h5><p>用户刚刚启动 vi&#x2F;vim，便进入了命令模式。<br>此状态下敲击键盘动作会被 Vim 识别为命令，而非输入字符，比如我们此时按下 i，并不会输入一个字符，i 被当作了一个命令。<br>以下是普通模式常用的几个命令：<br><code>i</code> – 切换到输入模式，在光标当前位置开始输入文本。<br><code>x</code> – 删除当前光标所在处的字符。<br><code>:</code> – 切换到底线命令模式，以在最底一行输入命令。<br><code>a</code> – 进入插入模式，在光标下一个位置开始输入文本。<br><code>o</code> – 在当前行的下方插入一个新行，并进入插入模式。<br><code>O</code> – 在当前行的上方插入一个新行，并进入插入模式。<br><code>dd</code> – 剪切当前行。<br><code>yy</code> – 复制当前行。<br><code>p</code>（小写） – 粘贴剪贴板内容到光标下方。<br><code>P</code>（大写）– 粘贴剪贴板内容到光标上方。<br><code>u</code> – 撤销上一次操作。<br><strong>Ctrl + r</strong> – 重做上一次撤销的操作。<br><code>:w</code> – 保存文件。<br><code>:q</code> – 退出 Vim 编辑器。<br><code>:q!</code> – 强制退出Vim 编辑器，不保存修改。<br>若想要编辑文本，只需要启动 Vim，进入了命令模式，按下 i 切换到输入模式即可。<br>命令模式只有一些最基本的命令，因此仍要依靠底线命令行模式输入更多命令。</p>
-<h5 id="输入模式"><a href="#输入模式" class="headerlink" title="输入模式"></a>输入模式</h5><p>在命令模式下按下 i 就进入了输入模式，使用 Esc 键可以返回到普通模式。<br>在输入模式中，可以使用以下按键：<br>字符按键以及Shift组合，输入字符<br><strong>ENTER</strong>，回车键，换行<br><strong>BACK SPACE</strong>，退格键，删除光标前一个字符<br><strong>DEL</strong>，删除键，删除光标后一个字符<br><strong>方向键</strong>，在文本中移动光标<br><strong>HOME&#x2F;END</strong>，移动光标到行首&#x2F;行尾<br><strong>Page Up&#x2F;Page Down</strong>，上&#x2F;下翻页<br><strong>Insert</strong>，切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线<br><strong>ESC</strong>，退出输入模式，切换到命令模式</p>
-<h5 id="底线命令模式"><a href="#底线命令模式" class="headerlink" title="底线命令模式"></a>底线命令模式</h5><p>在命令模式下按下 :（英文冒号）就进入了底线命令模式。<br>底线命令模式可以输入单个或多个字符的命令，可用的命令非常多。<br>在底线命令模式中，基本的命令有（已经省略了冒号）：<br><code>:w</code>：保存文件。<br><code>:q</code>：退出 Vim 编辑器。<br><code>:wq</code>：保存文件并退出 Vim 编辑器。<br><code>:q!</code>：强制退出Vim编辑器，不保存修改。<br>按 ESC 键可随时退出底线命令模式。<br>参考：<a href="https://www.runoob.com/linux/linux-vim.html">Linux vi&#x2F;vim</a></p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何利用ssh命令访问远程服务器</title>
-    <url>/posts/59ee5c4/</url>
-    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C:\xxx\&gt;ssh -p 22 user@host</span><br></pre></td></tr></table></figure>
-<p>参数:<br>-p：指定端口号。<br>user：登录的用户名。<br>host：登录的主机。<br>默认端口号是22，所以可以省略，直接使用以下方式：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh user@host</span><br></pre></td></tr></table></figure>
-<p>成功后需要输入密码，然后即可使用远程服务器。<br>要想退出，直接输入exit即可。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">(base)root@xxx:~# <span class="built_in">exit</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>网络协议</category>
-      </categories>
-      <tags>
-        <tag>网络协议</tag>
-        <tag>ssh</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何把Notion安装到其他盘</title>
-    <url>/posts/604b675f/</url>
-    <content><![CDATA[<ol>
-<li><a href="https://www.notion.so/desktop">官网下载Notion最新版</a></li>
-<li>找到你下载的.exe安装包</li>
-<li>在地址栏输入cmd后回车</li>
-<li>（英文输入状态下）输入 “安装包名” &#x2F;D&#x3D;”你想要安装的路径”<br>比如我想安装到 D:\ImageText\Notion<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;Notion Setup 3.7.0.exe&quot;</span> /D=<span class="string">&quot;D:\Application\notion&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li>安装完成</li>
-</ol>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何运行Linux操作系统的.sh文件</title>
-    <url>/posts/9c0df2b2/</url>
-    <content><![CDATA[<p>运行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sh filename.sh</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常见测井方法以及储层参数</title>
-    <url>/posts/3ce6c508/</url>
-    <content><![CDATA[<h4 id="测井方法"><a href="#测井方法" class="headerlink" title="测井方法"></a>测井方法</h4><h5 id="声波（Acoustic-Logging）"><a href="#声波（Acoustic-Logging）" class="headerlink" title="声波（Acoustic Logging）"></a>声波（Acoustic Logging）</h5><p>测量岩石的声波传播速度，帮助确定岩石的密度和弹性模量，进而推断岩石的孔隙度和裂缝发育情况。</p>
-<h5 id="中子（Neutron-Logging）"><a href="#中子（Neutron-Logging）" class="headerlink" title="中子（Neutron Logging）"></a>中子（Neutron Logging）</h5><p>通过测量中子在地层中的散射和吸收情况来获取岩石的孔隙度信息。</p>
-<h5 id="密度（Density-Logging）"><a href="#密度（Density-Logging）" class="headerlink" title="密度（Density Logging）"></a>密度（Density Logging）</h5><p>通过测量地层的电子密度来推断岩石的密度，进而了解其孔隙度。</p>
-<h5 id="伽马（Gamma-Ray-Logging）"><a href="#伽马（Gamma-Ray-Logging）" class="headerlink" title="伽马（Gamma Ray Logging）"></a>伽马（Gamma Ray Logging）</h5><p>量地层岩石自然放射的伽马射线强度，帮助识别岩石的岩性和含泥量。</p>
-<h5 id="径向电阻率（Resistivity-Tool）"><a href="#径向电阻率（Resistivity-Tool）" class="headerlink" title="径向电阻率（Resistivity Tool）"></a>径向电阻率（Resistivity Tool）</h5><p>RT通常指的是电阻率测井工具，这是一种用于测量地层电阻率的工具。电阻率测井可以提供关于岩石的含水量、孔隙度和渗透性的信息，这对于评估油气藏的产能和可采性非常重要。电阻率测井工具可以测量不同的电阻率，包括径向电阻率（Rt）和侧向电阻率（Rxo）。</p>
-<h5 id="侧向电阻率（”RXO”-Logging-Tool）"><a href="#侧向电阻率（”RXO”-Logging-Tool）" class="headerlink" title="侧向电阻率（”RXO” Logging Tool）"></a>侧向电阻率（”RXO” Logging Tool）</h5><p>RXO是侧向电阻率测井的缩写，是一种电阻率测井技术，用于测量地层岩石的电阻率。侧向电阻率测井可以提供比常规电阻率测井更准确的地层电阻率图像，因为它减少了井壁附近泥浆滤液侵入的影响。RXO通常指的是侧向电阻率测井工具或测量结果。</p>
-<h4 id="三个重要储层参数"><a href="#三个重要储层参数" class="headerlink" title="三个重要储层参数"></a>三个重要储层参数</h4><h5 id="孔隙度（Porosity）"><a href="#孔隙度（Porosity）" class="headerlink" title="孔隙度（Porosity）"></a>孔隙度（Porosity）</h5><p>孔隙度表示岩石中空隙体积与总岩石体积的比例。通常是以百分比（%）或以小数形式表示<br>孔隙度的范围因岩石类型和地质环境而异，但通常在以下范围内：</p>
-<ul>
-<li>低孔隙度：0-5% 或 0.00-0.05<br>一般出现在非常致密的岩石中，例如某些致密砂岩或页岩。</li>
-<li>中等孔隙度：5-20% 或 0.05-0.20<br>常见于大部分储集层岩石，如普通砂岩、石灰岩等。</li>
-<li>高孔隙度：20-35% 或 0.20-0.35<br>通常出现在良好的储集层岩石中，如一些高孔隙度砂岩或某些含气岩层。</li>
-<li>非常高孔隙度：35%以上 或 0.35以上<br>一般不常见，可能出现在非常特殊的地质环境中。</li>
-</ul>
-<h5 id="渗透率（Permeability）"><a href="#渗透率（Permeability）" class="headerlink" title="渗透率（Permeability）"></a>渗透率（Permeability）</h5><p>渗透率反映了岩石中流体流动的能力，渗透率越高，表示岩石越容易让流体通过，反之则越难。渗透率的单位通常是达西（Darcy，符号为D），由于地层的渗透率往往较低，实际应用中更多使用毫达西（mD）。<br>渗透率的范围可以有很大的变化，具体数值取决于岩石的类型和结构：</p>
-<ul>
-<li>极低渗透率 (&lt; 0.1 mD)：致密砂岩、页岩等</li>
-<li>低渗透率 (0.1 mD - 10 mD)：一般砂岩、泥岩</li>
-<li>中等渗透率 (10 mD - 100 mD)：优质储层</li>
-<li>高渗透率 (100 mD - 1000 mD)：非常优质的储层</li>
-<li>极高渗透率 (&gt; 1000 mD)：如裂缝性储层或高度可渗透的砂岩</li>
-</ul>
-<h5 id="含水饱和度（Water-Saturation）"><a href="#含水饱和度（Water-Saturation）" class="headerlink" title="含水饱和度（Water Saturation）"></a>含水饱和度（Water Saturation）</h5><p>水饱和度表示岩石孔隙中被水填充的比例。通常是以百分比（%）或以小数形式表示<br>水饱和度的正常范围可以根据储层和流体性质有所变化，但一般来说：</p>
-<ul>
-<li>0% - 30%：低水饱和度，通常表示油气含量较高的储层。</li>
-<li>30% - 60%：中等水饱和度，储层中可能含有油气和水。</li>
-<li>60% - 100%：高水饱和度，表示储层中水含量较高，可能是含水层或油气层的含水部分。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>测井</category>
-      </categories>
-      <tags>
-        <tag>测井</tag>
-        <tag>地质知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>小层对比的划分</title>
-    <url>/posts/b9c1b045/</url>
-    <content><![CDATA[<p>使用测井曲线中的自然伽马(Gamma-ray, GR)和电阻率(Resistivity)来划分小层时，通常依据以下标准：</p>
-<ol>
-<li>自然伽马(GR)：自然伽马测井可以反映岩石的放射性含量，通常泥岩和粘土具有较高的放射性，而砂岩和碳酸盐岩等储集岩放射性较低。因此，自然伽马曲线可以用来识别泥岩夹层或页岩层，这些通常作为非储集层。自然伽马的突然增加往往标志着一个新的地层的开始。</li>
-<li>电阻率：电阻率测井可以反映岩石的导电性，通常用来区分含水的泥岩或砂岩（低电阻率）和含油的砂岩（高电阻率）。电阻率的突然变化可能指示着岩性的变化或流体含量的变化，从而可能是一个新的小层的开始。<br>划分小层的具体标准可能包括：</li>
-</ol>
-<ul>
-<li>GR和电阻率曲线的异常变化：如果GR和电阻率曲线在某个深度发生显著变化，这可能指示着岩性或流体性质的变化，从而可能是小层的边界。</li>
-<li>曲线的形态和趋势：曲线的形态和趋势（如平滑、突增、突减）可以提供有关小层连续性和变化的信息。</li>
-<li>交会图分析：使用GR和电阻率数据制作交会图，可以帮助识别不同的岩性或流体区域，从而辅助小层划分。</li>
-<li>与岩心和地震资料的对比：将测井曲线与岩心资料和地震资料进行对比，可以帮助确定小层的地质特征和空间分布。</li>
-<li>区域地质知识：了解区域地质背景和地层序列，可以帮助解释测井曲线的变化，并指导小层的划分。</li>
-<li>生产数据：生产数据（如产油、产气、产水情况）可以提供小层流体性质的实际信息，验证和调整小层划分。<br>在实际应用中，小层的划分通常需要综合考虑多种测井曲线和其他地质数据，结合地质学家的经验和专业知识。这个过程可能需要不断地迭代和修正，以确保小层划分的准确性和可靠性。<br>总结：重点考察GR和RT、RXO突变的点。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>测井</category>
-      </categories>
-      <tags>
-        <tag>测井</tag>
-        <tag>地质知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习的模型选择与评估</title>
-    <url>/posts/bee4e068/</url>
-    <content><![CDATA[<h3 id="经验误差与过拟合"><a href="#经验误差与过拟合" class="headerlink" title="经验误差与过拟合"></a>经验误差与过拟合</h3><h4 id="经验误差"><a href="#经验误差" class="headerlink" title="经验误差"></a>经验误差</h4><p>首先清楚两个概念：<br>错误率（error rate）：分类错误的样本占样本总数的比例，即如果在m个样本中有a个样本分类错误，则错误率是E&#x3D;a&#x2F;m<br>精度（accuracy）：精度&#x3D;1-a&#x2F;m<br>一般地，把学习器在训练集的误差称为“训练误差”（training error）或“经验误差”（empirical error），在新样本上的误差称为“泛化误差”（generalization error）<br>显然，最终想要得到的是泛化误差小的学习器。</p>
-<h4 id="过拟合"><a href="#过拟合" class="headerlink" title="过拟合"></a>过拟合</h4><p>为了得到在新样本上表现好的学习器，应该从训练样本中尽可能学出适用于所有潜在样本的“普遍规律”。当学习器把训练样本学习得“太好”的时候，这样会导致泛化性能下降。这种现象在机器学习中称为“过拟合”（overfitting），与其相对的是“欠拟合”（underfitting）。<br>有多种因素可能导致过拟合，其中最常见情况是由于学习能力过于强大，以至于把训练样本所包含的不太一般的特性都学到了，而欠拟合则通常是由于学习能力底下造成的。欠拟合比较容易客服，例如在决策树学习中扩展分支、在神经网络学习中增加训练轮数等，而过拟合则很麻烦，因为过拟合是不可避免的，能做的只是“缓解”，或者说减小其风险。<br>在现实任务中，理想的解决方法是对候选模型的泛化误差进行评估，然后选择泛化误差最小的那个模型。然而泛化误差是无法直接获得的，而训练误差又由于过拟合现象的存在不适合作为标准，那么，就需要思考如何对模型进行评估与选择。</p>
-<h3 id="评估方法"><a href="#评估方法" class="headerlink" title="评估方法"></a>评估方法</h3><h4 id="留出法（hold-out）"><a href="#留出法（hold-out）" class="headerlink" title="留出法（hold-out）"></a>留出法（hold-out）</h4><p>直接将数据集D划分为两个互斥的集合S和T，即D&#x3D;S∪T在S上训练出模型后，用T来评估其测试误差，作为对泛化误差的估计。<br>需要注意的是，训练&#x2F;测试集的划分要尽可能保持数据分布一致性。<br>另一个需要注意的是，一般要采用若干次划分、重复进行实验评估后取平均值作为留出法的评估结果。</p>
-<h4 id="交叉验证法（cross-validation）"><a href="#交叉验证法（cross-validation）" class="headerlink" title="交叉验证法（cross validation）"></a>交叉验证法（cross validation）</h4><p>先将数据集D划分为k个大小相似的互斥子集，即D&#x3D;D1∪D2∪…∪Dk，每个子集Di都尽可能保持数据分布的一致性，即从D中通过分层采样得到。然后，每次用k-1个子集的并集作为训练集，余下的那个子集作为测试；这样就可以获得k组训练&#x2F;测试集，从而可以进行k次训练和测试，最终返回的是这k个测试结果的均值。<br>交叉验证法评估结果的稳定性和保真性在很大程度上取决于k的取值，为强调这一点，通常把交叉验证法称为“k折交叉验证”（k-fold cross validation）。k最常用的取值是10，此时称10折交叉验证。</p>
-<h4 id="自助法（bootstrapping）"><a href="#自助法（bootstrapping）" class="headerlink" title="自助法（bootstrapping）"></a>自助法（bootstrapping）</h4><p>对包含m个样本的数据集D进行随机采样得到D’，执行m次采样，样本不会被采到的概率是0.368，所以由36.8%的样本不会出现在D’中，于是可以让D’用作训练集，D\D’用作测试集。这样的结果称为“包外估计”（out-of-bag estimate）<br>自助法在数据集小、难以有效划分训练&#x2F;测试集时很有用。<br>自助法产生的数据集改变了初始数据集的分布，会引入估计偏差。</p>
-<h4 id="调参与最终模型"><a href="#调参与最终模型" class="headerlink" title="调参与最终模型"></a>调参与最终模型</h4><p>在进行模型评估和选择时，除了要对适用学习算法进行选择，还需对算法参数进行设定，这就是调参（parameter stunning）<br>在模型评估与选择过程中需要留出一部分数据进行评估测试，但是当模型选择完成后学习算法和参数配置已选定，此时应该用完整数据集重新训练模型，这个模型是最终提交用户的模型。<br>需要注意的是，通常把学得模型在实际使用中遇到的数据称为测试数据，为了加以区分，模型评估与选择中用于评估测试的数据集常称为“验证集”（validation set）。所以模型选择和调参是基于验证集上的性能，实际使用时的泛化能力由测试集上的判别效果来估计。</p>
-]]></content>
-      <categories>
-        <category>机器学习</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>读书笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习的缩写和名词</title>
-    <url>/posts/40c8e92c/</url>
-    <content><![CDATA[<h4 id="深度学习的分支"><a href="#深度学习的分支" class="headerlink" title="深度学习的分支"></a>深度学习的分支</h4><h5 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h5><ul>
-<li><code>卷积神经网络（CNN）Convolutional Neural Network</code><br>主要用于图像和视频识别，也用于其他类型的数据，如文本和声音。</li>
-<li><code>循环神经网络（RNN）Recurrent Neural Network</code><br>特别是长短期记忆网络（LSTM:Long Short-Term Memory）和门控循环单元（GRU:Gate Recurrent Unit），用于处理序列数据，如文本、时间序列和语音。<br>是循环神经网络（RNN）的一种，可以解决RNN中不能长期记忆和反向传播中的梯度等问题，与LSTM的作用类似，不过比LSTM简单，容易进行训练。</li>
-<li><code>自编码器（Autoencoder）</code><br>用于无监督学习，尤其是特征学习和降维。</li>
-<li><code>生成对抗网络（GAN）Generative Adversarial Network</code><br>用于生成数据，如图像、音乐和文本，也可以用于图像修复和增强。</li>
-<li><code>变分自编码器（VAE）Variational Autoencoder</code><br>类似于自编码器，用于生成数据和无监督学习，特别擅长生成复杂的概率分布。</li>
-<li><code>图神经网络（GNN）Graph Neural Network</code><br>用于处理图数据，如社交网络、知识图谱和推荐系统。</li>
-<li><code>注意力机制（Attention Mechanisms）</code><br>用于提高模型的性能，特别是在处理长序列数据时，如机器翻译和文本摘要。</li>
-<li><code>强化学习（Reinforcement Learning）</code><br>涉及与环境的交互，用于决策制定和优化策略，如游戏、自动驾驶和机器人控制。</li>
-<li><code>Transformer模型</code><br>一种基于自注意力机制的深度神经网络架构，用于自然语言处理（NLP），如机器翻译和文本生成。</li>
-</ul>
-<h5 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h5><ul>
-<li>训练损失（Loss）<br>定义：训练损失是模型在训练数据集上的损失值。<br>计算方式：每个 epoch 后，通过模型在训练集上的预测结果和真实标签计算损失函数（如均方误差、交叉熵等）。<br>意义：训练损失反映了模型在训练数据上的拟合程度。如果训练损失下降，说明模型在训练数据上的性能在提升。</li>
-<li>验证损失（Validation Loss）<br>定义：验证损失是模型在验证数据集上的损失值。<br>计算方式：每个 epoch 后，通过模型在验证集上的预测结果和真实标签计算损失函数。<br>意义：验证损失反映了模型在未见过的数据（验证集）上的泛化能力。如果验证损失下降，说明模型在验证数据上的性能在提升，具有较好的泛化能力。</li>
-<li>梯度爆炸（Gradient Explosion）<br>梯度（Gradient）是一个数学概念，用于描述函数在某一点上的局部变化率。在神经网络的背景下，梯度通常指的是损失函数相对于其参数的偏导数。<br>参考：<a href="https://www.bilibili.com/video/BV18P4y1j7uH/?spm_id_from=333.337.search-card.all.click&vd_source=251b9f270c90a8149c74eb986759892c">【梯度下降】3D可视化讲解通俗易懂</a><br>梯度爆炸指在反向传播过程中，梯度的值变得非常大，以至于无法正常训练模型。梯度爆炸通常发生在网络层数较多或网络结构复杂的情况下，特别是在使用ReLU（Rectified Linear Unit）激活函数时。</li>
-<li>梯度消失（Gradient Vanishing）<br>梯度消失指的是在网络的反向传播过程中，用于更新网络权重的梯度变得非常小，以至于几乎不对权重产生任何显著的更新。这种现象通常发生在深层网络的较低层（靠近输入层的层）。</li>
-<li>残差（Residual Error）<br>定义：指估计值与实际值直接的差，如果存在一个映射f(x)&#x3D;b，x&#x3D;x0时，则b-f(x0)则为残差，x-x0为误差。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习的超参数</title>
-    <url>/posts/6199195b/</url>
-    <content><![CDATA[<ol>
-<li>learning rate：决定了模型在训练过程中每个参数更新的幅度</li>
-</ol>
-<ul>
-<li>影响收敛速度：<br>学习率过大会导致模型在训练过程中振荡，难以收敛。<br>学习率过小则可能导致训练过程缓慢，收敛速度慢。</li>
-<li>影响过拟合：<br>学习率过大可能会导致模型在训练数据上过度拟合，而在测试数据上表现不佳。<br>学习率过小可能有助于减少过拟合，但可能会降低模型的泛化能力。</li>
-<li>影响训练稳定性：<br>学习率的选择会影响训练过程的稳定性。<br>过大的学习率可能导致训练过程中的梯度消失或爆炸，影响训练稳定性。</li>
-<li>影响模型的复杂度：<br>学习率的大小也间接影响了模型的复杂度。<br>学习率较小时，模型可能需要更多的训练迭代才能收敛，这意味着模型可能更复杂。<br>因此，选择合适的学习率对于深度学习模型的训练至关重要。在实践中，通常需要通过实验来调整学习率，以找到最佳的训练效果。常见的做法包括使用学习率衰减策略、学习率预热（Learning Rate Warmup）和调整学习率搜索（如使用学习率衰减、学习率搜索等方法）。</li>
-</ul>
-<ol start="2">
-<li>epoch：它决定了模型在训练数据集上训练的完整遍数。一个完整的遍历（epoch）意味着模型会查看训练数据集中的每个样本一次，并对所有样本进行一次前向传播和相应的反向传播。</li>
-</ol>
-<ul>
-<li>训练时间：<br>epoch 直接影响训练过程所需的时间。<br>较大的 epoch 需要更长的训练时间。</li>
-<li>模型性能：<br>足够的 epoch 通常有助于模型在训练数据上达到更好的性能。<br>然而，过多的 epoch 可能导致过拟合，从而降低模型在未见过的数据上的表现。</li>
-<li>收敛速度：<br>epoch 也影响模型的收敛速度。<br>较小的 epoch 可能导致收敛速度慢，而较大的 epoch 可能会使模型更快地收敛。</li>
-<li>数据利用：<br>epoch 决定了数据集被利用的次数。<br>较高的 epoch 意味着数据集会被重复利用，这有助于模型更好地理解数据。<br>在实践中，通常需要通过实验来确定最佳的 epoch 值。这通常涉及到尝试不同的 epoch 值，并观察模型在验证集上的性能。通常，我们会在性能开始下降之前停止训练，以避免过拟合。</li>
-</ul>
-<ol start="3">
-<li>dropout：一种在深度神经网络中常用的正则化技术，其目的是减少过拟合并提高模型的泛化能力</li>
-</ol>
-<ul>
-<li>减少过拟合：<br>Dropout通过在训练过程中随机“关闭”一部分神经元，从而减少模型对特定神经元的依赖。<br>这有助于模型学习到更加鲁棒的特征表示，从而减少过拟合。</li>
-<li>提高泛化能力：<br>通过减少模型对特定神经元的依赖，Dropout有助于提高模型在未见过的数据上的表现。<br>这使得模型在测试集或实际应用中的性能更佳。</li>
-<li>训练效率：<br>Dropout可以加快训练速度，因为模型需要处理较少的参数。<br>同时，它还可以减少计算资源的需求。</li>
-<li>网络结构：<br>Dropout可以作为网络架构的一部分，用于预训练或微调模型。<br>它可以在不同的层中应用，也可以根据需要调整保留的神经元比例。</li>
-<li>正则化效果：<br>Dropout与L1、L2正则化等技术结合使用，可以进一步增强模型的正则化效果。<br>在实际应用中，Dropout的保留率（即在每次前向传播中保留的神经元比例）通常在0.1到0.5之间调整。这个比例的选择需要根据具体的任务和数据集进行实验确定。Dropout是一种非常有效的技术，被广泛应用于各种深度学习模型中。</li>
-</ul>
-<ol start="4">
-<li>batch_size：指的是在一次梯度更新中使用的训练样本数量</li>
-</ol>
-<ul>
-<li>训练速度：<br>较小的 batch_size 会增加训练的迭代次数，导致训练速度较慢。较大的 batch_size 则可以减少迭代次数，提高训练速度。</li>
-<li>模型性能：<br>batch_size 的选择会影响模型的性能。较大的 batch_size 可能会导致模型在训练数据上的过拟合，而较小的 batch_size 有助于模型学习更细致的特征。</li>
-<li>数值稳定性：<br>较大的 batch_size 可以减少数值稳定性问题，如梯度消失或爆炸。</li>
-<li>经验法则：<br>对于图像分类任务，常见的 batch_size 值范围在32到256之间。对于自然语言处理（NLP）任务，batch_size 通常较小，例如32或64。<br>总之，batch_size 的选择需要平衡训练速度、模型性能和计算资源。通常，通过实验和调整，可以找到适合特定数据集和任务的最佳 batch_size。</li>
-</ul>
-<ol start="5">
-<li>shuffle</li>
-</ol>
-<ul>
-<li>Shuffle可以防止<strong>训练过程</strong>中的模型抖动，有利于模型的健壮性<br>假设训练数据分为两类，在未经过Shuffle的训练时，首先模型的参数会去拟合第一类数据，当大量的连续数据（第一类）输入训练时，会造成模型在第一类数据上的过拟合。当第一类数据学习结束后模型又开始对大量的第二类数据进行学习，这样会使模型尽力去逼近第二类数据，造成新的过拟合现象。这样反复的训练模型会在两种过拟合之间徘徊，造成模型的抖动，也不利于模型的收敛和训练的快速收敛</li>
-<li>Shuffle可以防止过拟合，并且使得模型学到更加正确的特征<br>NN网络的学习能力很强，如果数据未经过打乱，则模型反复依次序学习数据的特征，很快就会达到过拟合状态，并且有可能学会的只是数据的次序特征。模型的缺乏泛化能力。<br>如：100条数据中前50条为A类剩余50条为B类，模型在很短的学习过程中就学会了50位分界点，且前半部分为A后半部分为B。则并没有学会真正的类别特征。</li>
-<li>为使得训练集，验证集，测试集中数据分布类似</li>
-</ul>
-<p>参考：<a href="https://blog.csdn.net/xian0710830114/article/details/122856047?spm=1001.2014.3001.5502">深度学习调参tricks总结</a></p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Epoch, Batch, Iteration</title>
     <url>/posts/d0538df1/</url>
     <content><![CDATA[<ol>
@@ -1317,78 +985,6 @@
       </tags>
   </entry>
   <entry>
-    <title>自然伽马与电阻率的关系</title>
-    <url>/posts/e9c712a2/</url>
-    <content><![CDATA[<p>在测井数据中，自然伽马(Gamma-ray, GR)和电阻率通常呈现一种反比关系，这是因为自然伽马测量的是岩石的放射性，而电阻率测量的是岩石的导电性。以下是一些解释这种关系的因素：</p>
-<ol>
-<li>岩石成分：自然伽马读数高通常表示岩石中含有更多的放射性元素，如粘土矿物，这些通常具有较低的电阻率。相反，自然伽马读数低通常表示岩石中含有更多的石英或碳酸盐矿物，这些通常具有较高的电阻率。</li>
-<li>流体类型：含水的岩石通常具有较低的电阻率，因为水是良好的导电介质。而含油的岩石通常具有较高的电阻率，因为石油是电的不良导体。因此，含油砂岩通常具有低自然伽马和高电阻率的特点。</li>
-<li>孔隙度：孔隙度高的岩石通常具有较低的电阻率，因为孔隙中的流体（水或油）有助于电流的流动。而孔隙度低的岩石通常具有较高的电阻率。</li>
-<li>矿化度：岩石中的盐分（矿化度）也会影响电阻率。矿化度高的水具有较低的电阻率，因此含有高矿化度水的岩石也会显示出低电阻率。<br>需要注意的是，虽然自然伽马和电阻率之间通常存在反比关系，但这并不是绝对的。其他因素，如岩石的裂缝、矿化度、地层压力等，也可能影响这种关系。因此，在解释测井数据时，应该综合考虑所有可用的测井曲线和地质信息，以获得最准确的地层解释。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>测井</category>
-      </categories>
-      <tags>
-        <tag>测井</tag>
-        <tag>地质知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>神经网络中的激活函数</title>
-    <url>/posts/93738823/</url>
-    <content><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>激活函数（Activation Function），就是在人工神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端，旨在帮助网络学习数据中的复杂模式。</p>
-<h3 id="为什么要使用激活函数"><a href="#为什么要使用激活函数" class="headerlink" title="为什么要使用激活函数"></a>为什么要使用激活函数</h3><p>如果不用激活函数，每一层输出都是上层输入的线性函数，无论神经网络有多少层，输出都是输入的线性组合，这种情况就是最原始的感知机（Perceptron）。<br>使用激活函数能够给神经元引入非线性因素，使得神经网络可以任意逼近任何非线性函数，使深层神经网络表达能力更加强大，这样神经网络就可以应用到众多的非线性模型中。  </p>
-<h3 id="激活函数的分类"><a href="#激活函数的分类" class="headerlink" title="激活函数的分类"></a>激活函数的分类</h3><ul>
-<li>饱和激活函数： sigmoid、tanh…</li>
-<li>非饱和激活函数:  ReLU、Leaky Relu、ELU、PReLU、RReLU…</li>
-</ul>
-<p>Sigmoid函数需要一个实值输入压缩至[0,1]的范围<br>tanh函数需要讲一个实值输入压缩至[-1,1]的范围</p>
-<p>相对于饱和激活函数，使用非饱和激活函数的优势在于两点：</p>
-<ol>
-<li>非饱和激活函数能解决深度神经网络（层数非常多）带来的梯度消失问题</li>
-<li>使用非饱和激活函数能加快收敛速度。</li>
-</ol>
-<h3 id="常见的几种激活函数"><a href="#常见的几种激活函数" class="headerlink" title="常见的几种激活函数"></a>常见的几种激活函数</h3><h4 id="Sigmoid"><a href="#Sigmoid" class="headerlink" title="Sigmoid"></a>Sigmoid</h4><p>数学表达式：<br>$$<br>f(x)&#x3D;\dfrac{1}{1+e^{-x}}<br>$$<br>导数表达式：<br>$$<br>f’(x)&#x3D;f(x)(1-f(x))<br>$$<br>Sigmoid函数在历史上曾非常常用，输出值范围为[0,1]之间的实数。但是现在它已经不太受欢迎，实际中很少使用。</p>
-<h5 id="什么情况下适合使用Sigmoid"><a href="#什么情况下适合使用Sigmoid" class="headerlink" title="什么情况下适合使用Sigmoid"></a>什么情况下适合使用Sigmoid</h5><ul>
-<li>Sigmoid 函数的输出范围是 0 到 1。非常适合作为模型的输出函数用于输出一个0~1范围内的概率值，比如用于表示二分类的类别或者用于表示置信度。</li>
-<li>梯度平滑，便于求导，也防止模型训练过程中出现突变的梯度</li>
-</ul>
-<h5 id="Sigmoid的缺点"><a href="#Sigmoid的缺点" class="headerlink" title="Sigmoid的缺点"></a>Sigmoid的缺点</h5><ul>
-<li>容易造成梯度消失。我们从导函数图像中了解到sigmoid的导数都是小于0.25的，那么在进行反向传播的时候，梯度相乘结果会慢慢的趋向于0。这样几乎就没有梯度信号通过神经元传递到前面层的梯度更新中，因此这时前面层的权值几乎没有更新，这就叫梯度消失。除此之外，为了防止饱和，必须对于权重矩阵的初始化特别留意。如果初始化权重过大，可能很多神经元得到一个比较小的梯度，致使神经元不能很好的更新权重提前饱和，神经网络就几乎不学习。</li>
-<li>函数输出不是以 0 为中心的，梯度可能就会向特定方向移动，从而降低权重更新的效率</li>
-<li>Sigmoid 函数执行指数运算，计算机运行得较慢，比较消耗计算资源。</li>
-</ul>
-<h4 id="Tanh"><a href="#Tanh" class="headerlink" title="Tanh"></a>Tanh</h4><p>实际上，Tanh函数是 sigmoid 的变形：<br>$$<br>tanh(x)&#x3D;2sigmoid(2x)-1<br>$$<br>与sigmoid不同的是，tanh是“零为中心”的。因此在实际应用中，tanh会比sigmoid更好一些。但是在饱和神经元的情况下，tanh还是没有解决梯度消失问题。</p>
-<h5 id="什么情况下适合用Tanh"><a href="#什么情况下适合用Tanh" class="headerlink" title="什么情况下适合用Tanh"></a>什么情况下适合用Tanh</h5><ul>
-<li>tanh 的输出间隔为 1，并且整个函数以 0 为中心，比 sigmoid 函数更好；</li>
-<li>在 tanh 图中，负输入将被强映射为负，而零输入被映射为接近零。</li>
-</ul>
-<h5 id="tanh有哪些缺点"><a href="#tanh有哪些缺点" class="headerlink" title="tanh有哪些缺点"></a>tanh有哪些缺点</h5><ul>
-<li>仍然存在梯度饱和的问题</li>
-<li>依然进行的是指数运算</li>
-</ul>
-<h4 id="RELU"><a href="#RELU" class="headerlink" title="RELU"></a>RELU</h4><p>数学表达式：<br>$$<br>f(x)&#x3D;max(0,x)<br>$$</p>
-<h5 id="什么情况下适合用RELU"><a href="#什么情况下适合用RELU" class="headerlink" title="什么情况下适合用RELU"></a>什么情况下适合用RELU</h5><ul>
-<li>ReLU解决了梯度消失的问题，当输入值为正时，神经元不会饱和</li>
-<li>由于ReLU线性、非饱和的性质，在SGD中能够快速收敛</li>
-<li>计算复杂度低，不需要进行指数运算</li>
-</ul>
-<h5 id="RELU有哪些缺点"><a href="#RELU有哪些缺点" class="headerlink" title="RELU有哪些缺点"></a>RELU有哪些缺点</h5><ul>
-<li>与Sigmoid一样，其输出不是以0为中心的</li>
-<li>Dead ReLU 问题。当输入为负时，梯度为0。这个神经元及之后的神经元梯度永远为0，不再对任何数据有所响应，导致相应参数永远不会被更新<br>训练神经网络的时候，一旦学习率没有设置好，第一次更新权重的时候，输入是负值，那么这个含有ReLU的神经节点就会死亡，再也不会被激活。所以，要设置一个合适的较小的学习率，来降低这种情况的发生</li>
-</ul>
-<h4 id="Leaky-RELU"><a href="#Leaky-RELU" class="headerlink" title="Leaky RELU"></a>Leaky RELU</h4><h4 id="PRELU"><a href="#PRELU" class="headerlink" title="PRELU"></a>PRELU</h4><h4 id="ELU"><a href="#ELU" class="headerlink" title="ELU"></a>ELU</h4><h4 id="SELU"><a href="#SELU" class="headerlink" title="SELU"></a>SELU</h4><h4 id="Swish"><a href="#Swish" class="headerlink" title="Swish"></a>Swish</h4><h4 id="Mish"><a href="#Mish" class="headerlink" title="Mish"></a>Mish</h4><h4 id="Softmax"><a href="#Softmax" class="headerlink" title="Softmax"></a>Softmax</h4><p>参考：<a href="https://blog.csdn.net/qq_42691298/article/details/126590726">深度学习中常见的10种激活函数（Activation Function）总结</a></p>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>神经网络</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python常见特殊注释标记</title>
     <url>/posts/ed0c79e/</url>
     <content><![CDATA[<ol>
@@ -1408,6 +1004,56 @@
       </tags>
   </entry>
   <entry>
+    <title>如何开始编写TypeScript</title>
+    <url>/posts/2cdbb915/</url>
+    <content><![CDATA[<h4 id="安装TypeScripit"><a href="#安装TypeScripit" class="headerlink" title="安装TypeScripit"></a>安装TypeScripit</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install -g typescript</span><br></pre></td></tr></table></figure>
+<p>使用以下命令行验证</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc -v</span><br></pre></td></tr></table></figure>
+<h4 id="运行TypeScript"><a href="#运行TypeScript" class="headerlink" title="运行TypeScript"></a>运行TypeScript</h4><p>首先初始化，生成<code>tsconfig.json</code>文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc --init</span><br></pre></td></tr></table></figure>
+<ul>
+<li>由于ts文件本身无法直接运行，所以需要先编译为js文件</li>
+<li>创建<code>&lt;filename&gt;.ts</code>文件，使用以下命令行生成随<code>&lt;filename&gt;.ts</code>文件改变而改变的<code>&lt;filename&gt;.js</code>文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tsc -w</span><br></pre></td></tr></table></figure>
+终端输出如下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[10:49:49] Starting compilation in watch mode...</span><br><span class="line">[10:49:50] Found 0 errors. Watching for file changes.</span><br></pre></td></tr></table></figure></li>
+<li>在<code>.js</code>文件所在文件夹下使用以下命令运行<code>node &lt;filename&gt;.js</code></li>
+<li>可以安装<code>nodemon</code>同时监听<code>.js</code>文件，这样就不用反复使用<code>node &lt;filename&gt;.js</code>命令运行<code>.js</code>文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i -g nodemon</span><br></pre></td></tr></table></figure>
+运行<code>.js</code>文件时不要关闭<code>tsc</code>的终端，同时再打开一个新的终端，使用<code>nodemon &lt;filename&gt;.js</code>运行<code>js</code>文件，运行时保持两个终端的运行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nodemon &lt;filename&gt;.js</span><br></pre></td></tr></table></figure>
+终端输出如下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[nodemon] 3.1.1</span><br><span class="line">[nodemon] to restart at any time, enter `rs`  </span><br><span class="line">[nodemon] watching path(s): *.*</span><br><span class="line">[nodemon] watching extensions: js,mjs,cjs,json</span><br><span class="line">[nodemon] starting `node index.js`</span><br><span class="line">[nodemon] clean exit - waiting for changes before restart</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="使用ts-node运行ts文件"><a href="#使用ts-node运行ts文件" class="headerlink" title="使用ts-node运行ts文件"></a>使用ts-node运行ts文件</h4><p>使用pnpm安装ts-node</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i -g ts-node</span><br></pre></td></tr></table></figure>
+<p>使用<code>ts-node &lt;filename&gt;.ts</code>可以直接运行ts文件</p>
+<h4 id="使用-types-x2F-node提供类型检查"><a href="#使用-types-x2F-node提供类型检查" class="headerlink" title="使用@types&#x2F;node提供类型检查"></a>使用@types&#x2F;node提供类型检查</h4><p>TypeScript编译器将能够识别并使用@types&#x2F;node中提供的类型定义文件，从而为Node.js的API提供类型检查和代码补全功能</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm i @types/node -D</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>TypeScript</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>TypeScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决pnpm(ERR_PNPM_META_FETCH_FAIL)异常</title>
+    <url>/posts/9f72484f/</url>
+    <content><![CDATA[<h4 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h4><p>运行pnpm命令下的vite创建vue命令行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite my-vue-app --template vue</span><br></pre></td></tr></table></figure>
+<p>错误信息如下所示，</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">WARN  GET https://registry.npmmirror.com/create-vite error (ERR_INVALID_THIS). Will retry in 10 seconds. 2 retries left.</span><br><span class="line"> WARN  GET https://registry.npmmirror.com/create-vite error (ERR_INVALID_THIS). Will retry in 1 minute. 1 retries left.</span><br><span class="line">D:\CodeApps\nvs\pnpm\pnpm-store\v3\tmp\dlx-61520:</span><br><span class="line"> ERR_PNPM_META_FETCH_FAIL  GET https://registry.npmmirror.com/create-vite: Value of &quot;this&quot; must be of type URLSearchParams</span><br><span class="line"></span><br><span class="line">This error happened while installing a direct dependency of D:\CodeApps\nvs\pnpm\pnpm-store\v3\tmp\dlx-61520</span><br></pre></td></tr></table></figure>
+
+<h4 id="报错原因"><a href="#报错原因" class="headerlink" title="报错原因"></a>报错原因</h4><p>参考：<a href="https://www.wyr.me/post/746">解决pnpm (ERR_INVALID_THIS)异常 Node.js 20</a> <a href="https://www.wyr.me/">作者:轶哥</a></p>
+<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>重装pnpm</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall -g pnpm</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>bug</category>
+      </categories>
+      <tags>
+        <tag>bug</tag>
+        <tag>pnpm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python爬虫</title>
     <url>/posts/dbb714e3/</url>
     <content><![CDATA[<p>参考：</p>
@@ -1423,6 +1069,28 @@
       <tags>
         <tag>Python</tag>
         <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快速搭建Vite+Vue项目</title>
+    <url>/posts/a63b7ddc/</url>
+    <content><![CDATA[<h4 id="安装pnpm"><a href="#安装pnpm" class="headerlink" title="安装pnpm"></a>安装pnpm</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
+<p>验证<code>pnpm -v</code></p>
+<h4 id="使用Vite自带命令行"><a href="#使用Vite自带命令行" class="headerlink" title="使用Vite自带命令行"></a>使用Vite自带命令行</h4><p>使用如下命令，按照提示操作即可</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm create vite</span><br></pre></td></tr></table></figure>
+<p>接下来，安装所需包以及运行项目</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pnpm install</span><br><span class="line">pnpm run dev</span><br></pre></td></tr></table></figure>
+<p>即可打开默认Vite+Vue界面</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>Vite运行时默认不自动打开浏览器，可以找到项目根目录下的<code>package.json</code>文件修改<code>script</code>中的<code>&quot;dev&quot;: &quot;vite&quot;</code>更改为<code>&quot;dev&quot;: &quot;vite --open&quot;</code>，更改后项目启动自动打开浏览器。</p>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://cn.vitejs.dev/guide/">Vite官网中文文档</a></p>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>Vite</tag>
+        <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
@@ -1491,18 +1159,6 @@
       </tags>
   </entry>
   <entry>
-    <title>python中print的end和sep用法</title>
-    <url>/posts/dd1510ad/</url>
-    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/fox_kang/article/details/134670586?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172007704116800226544445%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=172007704116800226544445&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-134670586-null-null.142%5Ev100%5Epc_search_result_base1&utm_term=print%E7%9A%84sep&spm=1018.2226.3001.4187">python：print函数中end、sep参数的作用解释带解释实例（让你一看就明白，一看就会使用）</a></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>huggingface修改cache存放位置</title>
     <url>/posts/1d86426c/</url>
     <content><![CDATA[<h4 id="更改python文件（以conda为例）"><a href="#更改python文件（以conda为例）" class="headerlink" title="更改python文件（以conda为例）"></a>更改python文件（以conda为例）</h4><p>在放环境的<code>envs</code>中找到使用huggingface的环境，在<code>\Lib\site-packages\huggingface_hub</code>文件夹中找到<code>constants.py</code>。<strong>备份</strong>后做如下修改：</p>
@@ -1518,6 +1174,43 @@
       <tags>
         <tag>环境配置</tag>
         <tag>huggingface</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python中print的end和sep用法</title>
+    <url>/posts/dd1510ad/</url>
+    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/fox_kang/article/details/134670586?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172007704116800226544445%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=172007704116800226544445&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-134670586-null-null.142%5Ev100%5Epc_search_result_base1&utm_term=print%E7%9A%84sep&spm=1018.2226.3001.4187">python：print函数中end、sep参数的作用解释带解释实例（让你一看就明白，一看就会使用）</a></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python中glob.glob()的用法</title>
+    <url>/posts/5757d1a1/</url>
+    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/liulanba/article/details/121802892?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172007720916800225544348%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=172007720916800225544348&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-5-121802892-null-null.142%5Ev100%5Epc_search_result_base1&utm_term=python%E7%9A%84glob.glob&spm=1018.2226.3001.4187">python glob.glob()</a></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习率调度器</title>
+    <url>/posts/175df8fb/</url>
+    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/qq_40206371/article/details/119910592">pytorch笔记：调整学习率（torch.optim.lr_scheduler）</a></p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>PyTorch</tag>
       </tags>
   </entry>
   <entry>
@@ -1550,29 +1243,16 @@
       </tags>
   </entry>
   <entry>
-    <title>学习率调度器</title>
-    <url>/posts/175df8fb/</url>
-    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/qq_40206371/article/details/119910592">pytorch笔记：调整学习率（torch.optim.lr_scheduler）</a></p>
+    <title>快速开始PyTorch</title>
+    <url>/posts/4b503ff2/</url>
+    <content><![CDATA[<p>教程：<a href="https://bohrium.dp.tech/notebooks/4914094074?utm_source=bilibili001">快速开始 PyTorch｜使用 Python 建立深度学习模型</a></p>
 ]]></content>
       <categories>
-        <category>深度学习</category>
+        <category>PyTorch</category>
       </categories>
       <tags>
         <tag>深度学习</tag>
         <tag>PyTorch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习中常见距离公式</title>
-    <url>/posts/5ad85a79/</url>
-    <content><![CDATA[<h4 id="1-欧氏距离"><a href="#1-欧氏距离" class="headerlink" title="1.欧氏距离"></a>1.欧氏距离</h4><p>欧几里得度量（euclidean metric）（也称欧氏距离）是一个通常采用的距离定义，指在m维空间中两个点之间的真实距离，或者向量的自然长度（即该点到原点的距离）。在二维和三维空间中的欧氏距离就是两点之间的实际距离。<br>二维空间公式：<br>$$<br>\rho&#x3D;\sqrt{(x_2-x_1)^2+(y_2-y_1)^2},<br>|X|&#x3D;\sqrt{x_2^2+y_2^2}<br>$$<br>其中\rho为点(x2,y2)与点(x1,y1)之间的欧氏距离；|X|为点(x2,y2)到远点的欧氏距离。<br>三维空间公式：<br>$$<br>\rho&#x3D;\sqrt{(x2-x1)^2+(y2-y1)^2+(z2-z1)^2},<br>|X|&#x3D;\sqrt{x_2^2+y_2^2+z_2^2}<br>$$<br>n维空间的公式：<br>$$<br>d(x,y)&#x3D;\sqrt{(x1-y1)^2+(x2-y2)^2+\cdots+(x_n-y_n)^2}&#x3D;\sqrt{\sum_{i&#x3D;1}^n{(x_i-y_i)^2}}<br>$$</p>
-<p>参考：<a href="https://blog.csdn.net/weixin_43961909/article/details/132388832">机器学习—常见的距离公式</a></p>
-]]></content>
-      <categories>
-        <category>机器学习</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -1602,26 +1282,6 @@
       </tags>
   </entry>
   <entry>
-    <title>深度学习的优化器</title>
-    <url>/posts/3520d892/</url>
-    <content><![CDATA[<p>参考：</p>
-<ul>
-<li>优化器公式<a href="https://blog.csdn.net/weixin_42045968/article/details/132917401">常见优化器总结</a></li>
-<li><a href="https://blog.csdn.net/xian0710830114/article/details/126551268">Pytorch优化器全总结（一）SGD、ASGD、Rprop、Adagrad</a></li>
-<li><a href="https://blog.csdn.net/xian0710830114/article/details/126882921">Pytorch优化器全总结（二）Adadelta、RMSprop、Adam、Adamax、AdamW、NAdam、SparseAdam（重置版）</a></li>
-<li><a href="https://blog.csdn.net/xian0710830114/article/details/128419401">Pytorch优化器全总结（三）牛顿法、BFGS、L-BFGS 含代码</a></li>
-<li><a href="https://blog.csdn.net/xian0710830114/article/details/128658682">Pytorch优化器全总结（四）常用优化器性能对比 含代码</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>深度学习</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-        <tag>PyTorch</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决Git报错fatal：unable to connect to github.com</title>
     <url>/posts/495efddd/</url>
     <content><![CDATA[<p>运行<code>git clone git://github.com/scikit-learn-contrib/py-earth.git</code><br>报错信息如下：</p>
@@ -1642,44 +1302,23 @@
       </tags>
   </entry>
   <entry>
-    <title>解决PermissionError：[WinError 5] 拒绝访问</title>
-    <url>/posts/88f85624/</url>
-    <content><![CDATA[<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>报错的代码：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">dataset = Dataset.from_csv(<span class="string">&#x27;./ChnSentiCorp_htl_all.csv&#x27;</span>)</span><br><span class="line">dataset</span><br></pre></td></tr></table></figure>
-<p>报错信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">PermissionError                           Traceback (most recent call last)</span><br><span class="line">Cell In[34], line 1</span><br><span class="line">----&gt; 1 dataset = Dataset.from_csv(<span class="string">&#x27;./ChnSentiCorp_htl_all.csv&#x27;</span>)</span><br><span class="line">      2 dataset</span><br><span class="line"></span><br><span class="line">File d:\CodeApps\Anaconda\Anaconda3\envs\transformers39\lib\site-packages\datasets\arrow_dataset.py:1053, <span class="keyword">in</span> Dataset.from_csv(path_or_paths, <span class="built_in">split</span>, features, cache_dir, keep_in_memory, num_proc, **kwargs)</span><br><span class="line">   1050 <span class="comment"># Dynamic import to avoid circular dependency</span></span><br><span class="line">   1051 from .io.csv import CsvDatasetReader</span><br><span class="line">-&gt; 1053 <span class="built_in">return</span> CsvDatasetReader(</span><br><span class="line">   1054     path_or_paths,</span><br><span class="line">   1055     <span class="built_in">split</span>=<span class="built_in">split</span>,</span><br><span class="line">   1056     features=features,</span><br><span class="line">   1057     cache_dir=cache_dir,</span><br><span class="line">   1058     keep_in_memory=keep_in_memory,</span><br><span class="line">   1059     num_proc=num_proc,</span><br><span class="line">   1060     **kwargs,</span><br><span class="line">   1061 ).<span class="built_in">read</span>()</span><br><span class="line"></span><br><span class="line">File d:\CodeApps\Anaconda\Anaconda3\envs\transformers39\lib\site-packages\datasets\io\csv.py:56, <span class="keyword">in</span> CsvDatasetReader.<span class="built_in">read</span>(self)</span><br><span class="line">     53     verification_mode = None</span><br><span class="line">     54     base_path = None</span><br><span class="line">---&gt; 56     self.builder.download_and_prepare(</span><br><span class="line">     57         download_config=download_config,</span><br><span class="line">     58         download_mode=download_mode,</span><br><span class="line">...</span><br><span class="line">--&gt; 627         os.unlink(fullname)</span><br><span class="line">    628     except OSError:</span><br><span class="line">    629         onerror(os.unlink, fullname, sys.exc_info())</span><br><span class="line"></span><br><span class="line">PermissionError: [WinError 5] 拒绝访问。: <span class="string">&#x27;D:/CodeApps/HuggingFace/datasets/csv/default-ae3422bbb67fa398/0.0.0\\9ea1179385ff7ad1e756d327ffccaa3b801175702a2d91528226ba2c66873f52\\csv-train.arrow&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h4><p>将from_csv的路径参数改为绝对（完整）路径，如果路径有中文，在引号前加r，表示这是一个原始字符串（raw string）。原始字符串告诉Python解释器忽略字符串中的转义字符（例如\n表示换行，\t表示制表符等）。<br>更改后代码：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">dataset = Dataset.from_csv(<span class="string">r&#x27;D:\Code\Python\Transformers\04-datasets\ChnSentiCorp_htl_all.csv&#x27;</span>)</span><br><span class="line">dataset</span><br></pre></td></tr></table></figure>
-<p>另外，如果不使用原始字符串标识符，也可以采用给路径加双斜杠的方式：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">dataset = Dataset.from_csv(<span class="string">&#x27;D:\\Code\\Python\\Transformers\\04-datasets\\ChnSentiCorp_htl_all.csv&#x27;</span>)</span><br><span class="line">dataset</span><br></pre></td></tr></table></figure>
+    <title>深度学习的优化器</title>
+    <url>/posts/3520d892/</url>
+    <content><![CDATA[<p>参考：</p>
+<ul>
+<li>优化器公式<a href="https://blog.csdn.net/weixin_42045968/article/details/132917401">常见优化器总结</a></li>
+<li><a href="https://blog.csdn.net/xian0710830114/article/details/126551268">Pytorch优化器全总结（一）SGD、ASGD、Rprop、Adagrad</a></li>
+<li><a href="https://blog.csdn.net/xian0710830114/article/details/126882921">Pytorch优化器全总结（二）Adadelta、RMSprop、Adam、Adamax、AdamW、NAdam、SparseAdam（重置版）</a></li>
+<li><a href="https://blog.csdn.net/xian0710830114/article/details/128419401">Pytorch优化器全总结（三）牛顿法、BFGS、L-BFGS 含代码</a></li>
+<li><a href="https://blog.csdn.net/xian0710830114/article/details/128658682">Pytorch优化器全总结（四）常用优化器性能对比 含代码</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>bug</category>
+        <category>深度学习</category>
       </categories>
       <tags>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决ValueError：object too deep for desired array</title>
-    <url>/posts/bde838a1/</url>
-    <content><![CDATA[<p>报错信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---------------------------------------------------------------------------</span><br><span class="line">IndexError                                Traceback (most recent call last)</span><br><span class="line">Cell In[81], line 8</span><br><span class="line">      2 X1 = data[[<span class="string">&#x27;GR&#x27;</span>]].values</span><br><span class="line">      3 X2 = data[[<span class="string">&#x27;AC&#x27;</span>]].values</span><br><span class="line">----&gt; 8 <span class="built_in">print</span>(<span class="string">&quot;X1 F(15,30)分布检验：\n&quot;</span>, stats.kstest(X1, cdf=<span class="string">&quot;f&quot;</span>, args=(15,30)))</span><br><span class="line"></span><br><span class="line">File c:\Users\Xian04\.conda\envs\zrf38\lib\site-packages\scipy\_lib\_util.py:700, <span class="keyword">in</span> _rename_parameter.&lt;locals&gt;.decorator.&lt;locals&gt;.wrapper(*args, **kwargs)</span><br><span class="line">    698         raise TypeError(message)</span><br><span class="line">    699     kwargs[new_name] = kwargs.pop(old_name)</span><br><span class="line">--&gt; 700 <span class="built_in">return</span> fun(*args, **kwargs)</span><br><span class="line"></span><br><span class="line">File c:\Users\Xian04\.conda\envs\zrf38\lib\site-packages\scipy\stats\_stats_py.py:8378, <span class="keyword">in</span> kstest(rvs, cdf, args, N, alternative, method)</span><br><span class="line">   8376 xvals, yvals, cdf = _parse_kstest_args(rvs, cdf, args, N)</span><br><span class="line">   8377 <span class="keyword">if</span> cdf:</span><br><span class="line">-&gt; 8378     <span class="built_in">return</span> ks_1samp(xvals, cdf, args=args, alternative=alternative,</span><br><span class="line">   8379                     method=method)</span><br><span class="line">   8380 <span class="built_in">return</span> ks_2samp(xvals, yvals, alternative=alternative, method=method)</span><br><span class="line"></span><br><span class="line">File c:\Users\Xian04\.conda\envs\zrf38\lib\site-packages\scipy\_lib\_util.py:700, <span class="keyword">in</span> _rename_parameter.&lt;locals&gt;.decorator.&lt;locals&gt;.wrapper(*args, **kwargs)</span><br><span class="line">    698         raise TypeError(message)</span><br><span class="line">    699     kwargs[new_name] = kwargs.pop(old_name)</span><br><span class="line">--&gt; 700 <span class="built_in">return</span> fun(*args, **kwargs)</span><br><span class="line">...</span><br><span class="line">   7580 amax = dplus.argmax()</span><br><span class="line">-&gt; 7581 loc_max = x[amax]</span><br><span class="line">   7582 <span class="built_in">return</span> (dplus[amax], loc_max)</span><br><span class="line"></span><br><span class="line">IndexError: index 378863 is out of bounds <span class="keyword">for</span> axis 0 with size 1754</span><br></pre></td></tr></table></figure>
-
-<p>原因：输入<code>stats.kstest</code>函数的数据形状不对，<code>stats.kstest</code>期望接收一维数组。<br>打印从Dataframe获取的X1输出如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">array([[52.81700134],</span><br><span class="line">       [50.24700165],</span><br><span class="line">       [46.37599945],</span><br><span class="line">       ...,</span><br><span class="line">       [27.92700005],</span><br><span class="line">       [26.19400024],</span><br><span class="line">       [25.26199913]])</span><br></pre></td></tr></table></figure>
-<p>使用<code>ravel()</code>函数再输出X1，结果如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">array([52.81700134, 50.24700165, 46.37599945, ..., 27.92700005,</span><br><span class="line">       26.19400024, 25.26199913])</span><br></pre></td></tr></table></figure>
-<p>分别对两个X1使用<code>type()</code>均为<code>numpy.ndarray</code>；而分别对两个X1使用<code>X1.shape</code>，结果分别为(1754,1)和(1754,)；因此<code>ravel()</code>的作用是将二维数组转换为一维数组。</p>
-<p>补充：<code>shape</code>是<code>numpy</code>的一个属性，同时也是<code>Dataframe</code>的一个属性，因为它是属性而不是方法，因此在使用时不需要在<code>shape</code>后面加上括号<code>()</code></p>
-]]></content>
-      <categories>
-        <category>bug</category>
-      </categories>
-      <tags>
-        <tag>bug</tag>
-        <tag>Python</tag>
+        <tag>深度学习</tag>
+        <tag>PyTorch</tag>
       </tags>
   </entry>
   <entry>
@@ -1705,6 +1344,58 @@
       </tags>
   </entry>
   <entry>
+    <title>机器学习中常见距离公式</title>
+    <url>/posts/5ad85a79/</url>
+    <content><![CDATA[<h4 id="1-欧氏距离"><a href="#1-欧氏距离" class="headerlink" title="1.欧氏距离"></a>1.欧氏距离</h4><p>欧几里得度量（euclidean metric）（也称欧氏距离）是一个通常采用的距离定义，指在m维空间中两个点之间的真实距离，或者向量的自然长度（即该点到原点的距离）。在二维和三维空间中的欧氏距离就是两点之间的实际距离。<br>二维空间公式：<br>$$<br>\rho&#x3D;\sqrt{(x_2-x_1)^2+(y_2-y_1)^2},<br>|X|&#x3D;\sqrt{x_2^2+y_2^2}<br>$$<br>其中\rho为点(x2,y2)与点(x1,y1)之间的欧氏距离；|X|为点(x2,y2)到远点的欧氏距离。<br>三维空间公式：<br>$$<br>\rho&#x3D;\sqrt{(x2-x1)^2+(y2-y1)^2+(z2-z1)^2},<br>|X|&#x3D;\sqrt{x_2^2+y_2^2+z_2^2}<br>$$<br>n维空间的公式：<br>$$<br>d(x,y)&#x3D;\sqrt{(x1-y1)^2+(x2-y2)^2+\cdots+(x_n-y_n)^2}&#x3D;\sqrt{\sum_{i&#x3D;1}^n{(x_i-y_i)^2}}<br>$$</p>
+<p>参考：<a href="https://blog.csdn.net/weixin_43961909/article/details/132388832">机器学习—常见的距离公式</a></p>
+]]></content>
+      <categories>
+        <category>机器学习</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决PermissionError：[WinError 5] 拒绝访问</title>
+    <url>/posts/88f85624/</url>
+    <content><![CDATA[<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>报错的代码：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">dataset = Dataset.from_csv(<span class="string">&#x27;./ChnSentiCorp_htl_all.csv&#x27;</span>)</span><br><span class="line">dataset</span><br></pre></td></tr></table></figure>
+<p>报错信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">PermissionError                           Traceback (most recent call last)</span><br><span class="line">Cell In[34], line 1</span><br><span class="line">----&gt; 1 dataset = Dataset.from_csv(<span class="string">&#x27;./ChnSentiCorp_htl_all.csv&#x27;</span>)</span><br><span class="line">      2 dataset</span><br><span class="line"></span><br><span class="line">File d:\CodeApps\Anaconda\Anaconda3\envs\transformers39\lib\site-packages\datasets\arrow_dataset.py:1053, <span class="keyword">in</span> Dataset.from_csv(path_or_paths, <span class="built_in">split</span>, features, cache_dir, keep_in_memory, num_proc, **kwargs)</span><br><span class="line">   1050 <span class="comment"># Dynamic import to avoid circular dependency</span></span><br><span class="line">   1051 from .io.csv import CsvDatasetReader</span><br><span class="line">-&gt; 1053 <span class="built_in">return</span> CsvDatasetReader(</span><br><span class="line">   1054     path_or_paths,</span><br><span class="line">   1055     <span class="built_in">split</span>=<span class="built_in">split</span>,</span><br><span class="line">   1056     features=features,</span><br><span class="line">   1057     cache_dir=cache_dir,</span><br><span class="line">   1058     keep_in_memory=keep_in_memory,</span><br><span class="line">   1059     num_proc=num_proc,</span><br><span class="line">   1060     **kwargs,</span><br><span class="line">   1061 ).<span class="built_in">read</span>()</span><br><span class="line"></span><br><span class="line">File d:\CodeApps\Anaconda\Anaconda3\envs\transformers39\lib\site-packages\datasets\io\csv.py:56, <span class="keyword">in</span> CsvDatasetReader.<span class="built_in">read</span>(self)</span><br><span class="line">     53     verification_mode = None</span><br><span class="line">     54     base_path = None</span><br><span class="line">---&gt; 56     self.builder.download_and_prepare(</span><br><span class="line">     57         download_config=download_config,</span><br><span class="line">     58         download_mode=download_mode,</span><br><span class="line">...</span><br><span class="line">--&gt; 627         os.unlink(fullname)</span><br><span class="line">    628     except OSError:</span><br><span class="line">    629         onerror(os.unlink, fullname, sys.exc_info())</span><br><span class="line"></span><br><span class="line">PermissionError: [WinError 5] 拒绝访问。: <span class="string">&#x27;D:/CodeApps/HuggingFace/datasets/csv/default-ae3422bbb67fa398/0.0.0\\9ea1179385ff7ad1e756d327ffccaa3b801175702a2d91528226ba2c66873f52\\csv-train.arrow&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h4><p>将from_csv的路径参数改为绝对（完整）路径，如果路径有中文，在引号前加r，表示这是一个原始字符串（raw string）。原始字符串告诉Python解释器忽略字符串中的转义字符（例如\n表示换行，\t表示制表符等）。<br>更改后代码：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">dataset = Dataset.from_csv(<span class="string">r&#x27;D:\Code\Python\Transformers\04-datasets\ChnSentiCorp_htl_all.csv&#x27;</span>)</span><br><span class="line">dataset</span><br></pre></td></tr></table></figure>
+<p>另外，如果不使用原始字符串标识符，也可以采用给路径加双斜杠的方式：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">dataset = Dataset.from_csv(<span class="string">&#x27;D:\\Code\\Python\\Transformers\\04-datasets\\ChnSentiCorp_htl_all.csv&#x27;</span>)</span><br><span class="line">dataset</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>bug</category>
+      </categories>
+      <tags>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTex数学公式</title>
+    <url>/posts/c57d1942/</url>
+    <content><![CDATA[<h3 id="公式收集"><a href="#公式收集" class="headerlink" title="公式收集"></a>公式收集</h3><p>$\mathbf{DTW(X,Y)&#x3D;min(\sum_{k&#x3D;1}^Kdist(x_{i_k}, y_{j_k}))}$</p>
+<p>$\mathbf{dist&#x3D;W_{GR}(x_{GR}-y_{GR})^2+W_{AC}(x_{AC}-y_{AC})^2+W_{RT}(x_{RT}-y_{RT})^2}$</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/ViatorSun/article/details/82826664">超详细 LaTex数学公式</a></li>
+<li><a href="https://www.jianshu.com/p/a04775fde077">Markdown与数学公式</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>LateX</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>解决用梯子时git报错问题</title>
     <url>/posts/748419fb/</url>
     <content><![CDATA[<h4 id="取消代理设置"><a href="#取消代理设置" class="headerlink" title="取消代理设置"></a>取消代理设置</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> http.proxy </span><br></pre></td></tr></table></figure>
@@ -1726,14 +1417,23 @@
       </tags>
   </entry>
   <entry>
-    <title>python中glob.glob()的用法</title>
-    <url>/posts/5757d1a1/</url>
-    <content><![CDATA[<p>参考：<a href="https://blog.csdn.net/liulanba/article/details/121802892?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172007720916800225544348%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=172007720916800225544348&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-5-121802892-null-null.142%5Ev100%5Epc_search_result_base1&utm_term=python%E7%9A%84glob.glob&spm=1018.2226.3001.4187">python glob.glob()</a></p>
+    <title>解决ValueError：object too deep for desired array</title>
+    <url>/posts/bde838a1/</url>
+    <content><![CDATA[<p>报错信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---------------------------------------------------------------------------</span><br><span class="line">IndexError                                Traceback (most recent call last)</span><br><span class="line">Cell In[81], line 8</span><br><span class="line">      2 X1 = data[[<span class="string">&#x27;GR&#x27;</span>]].values</span><br><span class="line">      3 X2 = data[[<span class="string">&#x27;AC&#x27;</span>]].values</span><br><span class="line">----&gt; 8 <span class="built_in">print</span>(<span class="string">&quot;X1 F(15,30)分布检验：\n&quot;</span>, stats.kstest(X1, cdf=<span class="string">&quot;f&quot;</span>, args=(15,30)))</span><br><span class="line"></span><br><span class="line">File c:\Users\Xian04\.conda\envs\zrf38\lib\site-packages\scipy\_lib\_util.py:700, <span class="keyword">in</span> _rename_parameter.&lt;locals&gt;.decorator.&lt;locals&gt;.wrapper(*args, **kwargs)</span><br><span class="line">    698         raise TypeError(message)</span><br><span class="line">    699     kwargs[new_name] = kwargs.pop(old_name)</span><br><span class="line">--&gt; 700 <span class="built_in">return</span> fun(*args, **kwargs)</span><br><span class="line"></span><br><span class="line">File c:\Users\Xian04\.conda\envs\zrf38\lib\site-packages\scipy\stats\_stats_py.py:8378, <span class="keyword">in</span> kstest(rvs, cdf, args, N, alternative, method)</span><br><span class="line">   8376 xvals, yvals, cdf = _parse_kstest_args(rvs, cdf, args, N)</span><br><span class="line">   8377 <span class="keyword">if</span> cdf:</span><br><span class="line">-&gt; 8378     <span class="built_in">return</span> ks_1samp(xvals, cdf, args=args, alternative=alternative,</span><br><span class="line">   8379                     method=method)</span><br><span class="line">   8380 <span class="built_in">return</span> ks_2samp(xvals, yvals, alternative=alternative, method=method)</span><br><span class="line"></span><br><span class="line">File c:\Users\Xian04\.conda\envs\zrf38\lib\site-packages\scipy\_lib\_util.py:700, <span class="keyword">in</span> _rename_parameter.&lt;locals&gt;.decorator.&lt;locals&gt;.wrapper(*args, **kwargs)</span><br><span class="line">    698         raise TypeError(message)</span><br><span class="line">    699     kwargs[new_name] = kwargs.pop(old_name)</span><br><span class="line">--&gt; 700 <span class="built_in">return</span> fun(*args, **kwargs)</span><br><span class="line">...</span><br><span class="line">   7580 amax = dplus.argmax()</span><br><span class="line">-&gt; 7581 loc_max = x[amax]</span><br><span class="line">   7582 <span class="built_in">return</span> (dplus[amax], loc_max)</span><br><span class="line"></span><br><span class="line">IndexError: index 378863 is out of bounds <span class="keyword">for</span> axis 0 with size 1754</span><br></pre></td></tr></table></figure>
+
+<p>原因：输入<code>stats.kstest</code>函数的数据形状不对，<code>stats.kstest</code>期望接收一维数组。<br>打印从Dataframe获取的X1输出如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">array([[52.81700134],</span><br><span class="line">       [50.24700165],</span><br><span class="line">       [46.37599945],</span><br><span class="line">       ...,</span><br><span class="line">       [27.92700005],</span><br><span class="line">       [26.19400024],</span><br><span class="line">       [25.26199913]])</span><br></pre></td></tr></table></figure>
+<p>使用<code>ravel()</code>函数再输出X1，结果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">array([52.81700134, 50.24700165, 46.37599945, ..., 27.92700005,</span><br><span class="line">       26.19400024, 25.26199913])</span><br></pre></td></tr></table></figure>
+<p>分别对两个X1使用<code>type()</code>均为<code>numpy.ndarray</code>；而分别对两个X1使用<code>X1.shape</code>，结果分别为(1754,1)和(1754,)；因此<code>ravel()</code>的作用是将二维数组转换为一维数组。</p>
+<p>补充：<code>shape</code>是<code>numpy</code>的一个属性，同时也是<code>Dataframe</code>的一个属性，因为它是属性而不是方法，因此在使用时不需要在<code>shape</code>后面加上括号<code>()</code></p>
 ]]></content>
       <categories>
-        <category>Python</category>
+        <category>bug</category>
       </categories>
       <tags>
+        <tag>bug</tag>
         <tag>Python</tag>
       </tags>
   </entry>
@@ -1748,6 +1448,385 @@
       <tags>
         <tag>PyTorch</tag>
         <tag>CUDA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>markdown基础语法</title>
+    <url>/posts/4664ae19/</url>
+    <content><![CDATA[<p>参考：<a href="https://www.jianshu.com/p/65fa2c72c124">Markdown基础语法</a></p>
+]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vi/vim的使用</title>
+    <url>/posts/5c57039f/</url>
+    <content><![CDATA[<p>基本上 vi&#x2F;vim 共分为三种模式，命令模式（Command Mode）、输入模式（Insert Mode）和命令行模式（Command-Line Mode）。</p>
+<h5 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h5><p>用户刚刚启动 vi&#x2F;vim，便进入了命令模式。<br>此状态下敲击键盘动作会被 Vim 识别为命令，而非输入字符，比如我们此时按下 i，并不会输入一个字符，i 被当作了一个命令。<br>以下是普通模式常用的几个命令：<br><code>i</code> – 切换到输入模式，在光标当前位置开始输入文本。<br><code>x</code> – 删除当前光标所在处的字符。<br><code>:</code> – 切换到底线命令模式，以在最底一行输入命令。<br><code>a</code> – 进入插入模式，在光标下一个位置开始输入文本。<br><code>o</code> – 在当前行的下方插入一个新行，并进入插入模式。<br><code>O</code> – 在当前行的上方插入一个新行，并进入插入模式。<br><code>dd</code> – 剪切当前行。<br><code>yy</code> – 复制当前行。<br><code>p</code>（小写） – 粘贴剪贴板内容到光标下方。<br><code>P</code>（大写）– 粘贴剪贴板内容到光标上方。<br><code>u</code> – 撤销上一次操作。<br><strong>Ctrl + r</strong> – 重做上一次撤销的操作。<br><code>:w</code> – 保存文件。<br><code>:q</code> – 退出 Vim 编辑器。<br><code>:q!</code> – 强制退出Vim 编辑器，不保存修改。<br>若想要编辑文本，只需要启动 Vim，进入了命令模式，按下 i 切换到输入模式即可。<br>命令模式只有一些最基本的命令，因此仍要依靠底线命令行模式输入更多命令。</p>
+<h5 id="输入模式"><a href="#输入模式" class="headerlink" title="输入模式"></a>输入模式</h5><p>在命令模式下按下 i 就进入了输入模式，使用 Esc 键可以返回到普通模式。<br>在输入模式中，可以使用以下按键：<br>字符按键以及Shift组合，输入字符<br><strong>ENTER</strong>，回车键，换行<br><strong>BACK SPACE</strong>，退格键，删除光标前一个字符<br><strong>DEL</strong>，删除键，删除光标后一个字符<br><strong>方向键</strong>，在文本中移动光标<br><strong>HOME&#x2F;END</strong>，移动光标到行首&#x2F;行尾<br><strong>Page Up&#x2F;Page Down</strong>，上&#x2F;下翻页<br><strong>Insert</strong>，切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线<br><strong>ESC</strong>，退出输入模式，切换到命令模式</p>
+<h5 id="底线命令模式"><a href="#底线命令模式" class="headerlink" title="底线命令模式"></a>底线命令模式</h5><p>在命令模式下按下 :（英文冒号）就进入了底线命令模式。<br>底线命令模式可以输入单个或多个字符的命令，可用的命令非常多。<br>在底线命令模式中，基本的命令有（已经省略了冒号）：<br><code>:w</code>：保存文件。<br><code>:q</code>：退出 Vim 编辑器。<br><code>:wq</code>：保存文件并退出 Vim 编辑器。<br><code>:q!</code>：强制退出Vim编辑器，不保存修改。<br>按 ESC 键可随时退出底线命令模式。<br>参考：<a href="https://www.runoob.com/linux/linux-vim.html">Linux vi&#x2F;vim</a></p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何运行Linux操作系统的.sh文件</title>
+    <url>/posts/9c0df2b2/</url>
+    <content><![CDATA[<p>运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sh filename.sh</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何把Notion安装到其他盘</title>
+    <url>/posts/604b675f/</url>
+    <content><![CDATA[<ol>
+<li><a href="https://www.notion.so/desktop">官网下载Notion最新版</a></li>
+<li>找到你下载的.exe安装包</li>
+<li>在地址栏输入cmd后回车</li>
+<li>（英文输入状态下）输入 “安装包名” &#x2F;D&#x3D;”你想要安装的路径”<br>比如我想安装到 D:\ImageText\Notion<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;Notion Setup 3.7.0.exe&quot;</span> /D=<span class="string">&quot;D:\Application\notion&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>安装完成</li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小层对比的划分</title>
+    <url>/posts/b9c1b045/</url>
+    <content><![CDATA[<p>使用测井曲线中的自然伽马(Gamma-ray, GR)和电阻率(Resistivity)来划分小层时，通常依据以下标准：</p>
+<ol>
+<li>自然伽马(GR)：自然伽马测井可以反映岩石的放射性含量，通常泥岩和粘土具有较高的放射性，而砂岩和碳酸盐岩等储集岩放射性较低。因此，自然伽马曲线可以用来识别泥岩夹层或页岩层，这些通常作为非储集层。自然伽马的突然增加往往标志着一个新的地层的开始。</li>
+<li>电阻率：电阻率测井可以反映岩石的导电性，通常用来区分含水的泥岩或砂岩（低电阻率）和含油的砂岩（高电阻率）。电阻率的突然变化可能指示着岩性的变化或流体含量的变化，从而可能是一个新的小层的开始。<br>划分小层的具体标准可能包括：</li>
+</ol>
+<ul>
+<li>GR和电阻率曲线的异常变化：如果GR和电阻率曲线在某个深度发生显著变化，这可能指示着岩性或流体性质的变化，从而可能是小层的边界。</li>
+<li>曲线的形态和趋势：曲线的形态和趋势（如平滑、突增、突减）可以提供有关小层连续性和变化的信息。</li>
+<li>交会图分析：使用GR和电阻率数据制作交会图，可以帮助识别不同的岩性或流体区域，从而辅助小层划分。</li>
+<li>与岩心和地震资料的对比：将测井曲线与岩心资料和地震资料进行对比，可以帮助确定小层的地质特征和空间分布。</li>
+<li>区域地质知识：了解区域地质背景和地层序列，可以帮助解释测井曲线的变化，并指导小层的划分。</li>
+<li>生产数据：生产数据（如产油、产气、产水情况）可以提供小层流体性质的实际信息，验证和调整小层划分。<br>在实际应用中，小层的划分通常需要综合考虑多种测井曲线和其他地质数据，结合地质学家的经验和专业知识。这个过程可能需要不断地迭代和修正，以确保小层划分的准确性和可靠性。<br>总结：重点考察GR和RT、RXO突变的点。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>测井</category>
+      </categories>
+      <tags>
+        <tag>测井</tag>
+        <tag>地质知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何利用ssh命令访问远程服务器</title>
+    <url>/posts/59ee5c4/</url>
+    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C:\xxx\&gt;ssh -p 22 user@host</span><br></pre></td></tr></table></figure>
+<p>参数:<br>-p：指定端口号。<br>user：登录的用户名。<br>host：登录的主机。<br>默认端口号是22，所以可以省略，直接使用以下方式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh user@host</span><br></pre></td></tr></table></figure>
+<p>成功后需要输入密码，然后即可使用远程服务器。<br>要想退出，直接输入exit即可。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">(base)root@xxx:~# <span class="built_in">exit</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>网络协议</category>
+      </categories>
+      <tags>
+        <tag>网络协议</tag>
+        <tag>ssh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常见测井方法以及储层参数</title>
+    <url>/posts/3ce6c508/</url>
+    <content><![CDATA[<h4 id="测井方法"><a href="#测井方法" class="headerlink" title="测井方法"></a>测井方法</h4><h5 id="声波（Acoustic-Logging）"><a href="#声波（Acoustic-Logging）" class="headerlink" title="声波（Acoustic Logging）"></a>声波（Acoustic Logging）</h5><p>测量岩石的声波传播速度，帮助确定岩石的密度和弹性模量，进而推断岩石的孔隙度和裂缝发育情况。</p>
+<h5 id="中子（Neutron-Logging）"><a href="#中子（Neutron-Logging）" class="headerlink" title="中子（Neutron Logging）"></a>中子（Neutron Logging）</h5><p>通过测量中子在地层中的散射和吸收情况来获取岩石的孔隙度信息。</p>
+<h5 id="密度（Density-Logging）"><a href="#密度（Density-Logging）" class="headerlink" title="密度（Density Logging）"></a>密度（Density Logging）</h5><p>通过测量地层的电子密度来推断岩石的密度，进而了解其孔隙度。</p>
+<h5 id="伽马（Gamma-Ray-Logging）"><a href="#伽马（Gamma-Ray-Logging）" class="headerlink" title="伽马（Gamma Ray Logging）"></a>伽马（Gamma Ray Logging）</h5><p>量地层岩石自然放射的伽马射线强度，帮助识别岩石的岩性和含泥量。</p>
+<h5 id="径向电阻率（Resistivity-Tool）"><a href="#径向电阻率（Resistivity-Tool）" class="headerlink" title="径向电阻率（Resistivity Tool）"></a>径向电阻率（Resistivity Tool）</h5><p>RT通常指的是电阻率测井工具，这是一种用于测量地层电阻率的工具。电阻率测井可以提供关于岩石的含水量、孔隙度和渗透性的信息，这对于评估油气藏的产能和可采性非常重要。电阻率测井工具可以测量不同的电阻率，包括径向电阻率（Rt）和侧向电阻率（Rxo）。</p>
+<h5 id="侧向电阻率（”RXO”-Logging-Tool）"><a href="#侧向电阻率（”RXO”-Logging-Tool）" class="headerlink" title="侧向电阻率（”RXO” Logging Tool）"></a>侧向电阻率（”RXO” Logging Tool）</h5><p>RXO是侧向电阻率测井的缩写，是一种电阻率测井技术，用于测量地层岩石的电阻率。侧向电阻率测井可以提供比常规电阻率测井更准确的地层电阻率图像，因为它减少了井壁附近泥浆滤液侵入的影响。RXO通常指的是侧向电阻率测井工具或测量结果。</p>
+<h4 id="三个重要储层参数"><a href="#三个重要储层参数" class="headerlink" title="三个重要储层参数"></a>三个重要储层参数</h4><h5 id="孔隙度（Porosity）"><a href="#孔隙度（Porosity）" class="headerlink" title="孔隙度（Porosity）"></a>孔隙度（Porosity）</h5><p>孔隙度表示岩石中空隙体积与总岩石体积的比例。通常是以百分比（%）或以小数形式表示<br>孔隙度的范围因岩石类型和地质环境而异，但通常在以下范围内：</p>
+<ul>
+<li>低孔隙度：0-5% 或 0.00-0.05<br>一般出现在非常致密的岩石中，例如某些致密砂岩或页岩。</li>
+<li>中等孔隙度：5-20% 或 0.05-0.20<br>常见于大部分储集层岩石，如普通砂岩、石灰岩等。</li>
+<li>高孔隙度：20-35% 或 0.20-0.35<br>通常出现在良好的储集层岩石中，如一些高孔隙度砂岩或某些含气岩层。</li>
+<li>非常高孔隙度：35%以上 或 0.35以上<br>一般不常见，可能出现在非常特殊的地质环境中。</li>
+</ul>
+<h5 id="渗透率（Permeability）"><a href="#渗透率（Permeability）" class="headerlink" title="渗透率（Permeability）"></a>渗透率（Permeability）</h5><p>渗透率反映了岩石中流体流动的能力，渗透率越高，表示岩石越容易让流体通过，反之则越难。渗透率的单位通常是达西（Darcy，符号为D），由于地层的渗透率往往较低，实际应用中更多使用毫达西（mD）。<br>渗透率的范围可以有很大的变化，具体数值取决于岩石的类型和结构：</p>
+<ul>
+<li>极低渗透率 (&lt; 0.1 mD)：致密砂岩、页岩等</li>
+<li>低渗透率 (0.1 mD - 10 mD)：一般砂岩、泥岩</li>
+<li>中等渗透率 (10 mD - 100 mD)：优质储层</li>
+<li>高渗透率 (100 mD - 1000 mD)：非常优质的储层</li>
+<li>极高渗透率 (&gt; 1000 mD)：如裂缝性储层或高度可渗透的砂岩</li>
+</ul>
+<h5 id="含水饱和度（Water-Saturation）"><a href="#含水饱和度（Water-Saturation）" class="headerlink" title="含水饱和度（Water Saturation）"></a>含水饱和度（Water Saturation）</h5><p>水饱和度表示岩石孔隙中被水填充的比例。通常是以百分比（%）或以小数形式表示<br>水饱和度的正常范围可以根据储层和流体性质有所变化，但一般来说：</p>
+<ul>
+<li>0% - 30%：低水饱和度，通常表示油气含量较高的储层。</li>
+<li>30% - 60%：中等水饱和度，储层中可能含有油气和水。</li>
+<li>60% - 100%：高水饱和度，表示储层中水含量较高，可能是含水层或油气层的含水部分。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>测井</category>
+      </categories>
+      <tags>
+        <tag>测井</tag>
+        <tag>地质知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习的缩写和名词</title>
+    <url>/posts/40c8e92c/</url>
+    <content><![CDATA[<h4 id="深度学习的分支"><a href="#深度学习的分支" class="headerlink" title="深度学习的分支"></a>深度学习的分支</h4><h5 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h5><ul>
+<li><code>卷积神经网络（CNN）Convolutional Neural Network</code><br>主要用于图像和视频识别，也用于其他类型的数据，如文本和声音。</li>
+<li><code>循环神经网络（RNN）Recurrent Neural Network</code><br>特别是长短期记忆网络（LSTM:Long Short-Term Memory）和门控循环单元（GRU:Gate Recurrent Unit），用于处理序列数据，如文本、时间序列和语音。<br>是循环神经网络（RNN）的一种，可以解决RNN中不能长期记忆和反向传播中的梯度等问题，与LSTM的作用类似，不过比LSTM简单，容易进行训练。</li>
+<li><code>自编码器（Autoencoder）</code><br>用于无监督学习，尤其是特征学习和降维。</li>
+<li><code>生成对抗网络（GAN）Generative Adversarial Network</code><br>用于生成数据，如图像、音乐和文本，也可以用于图像修复和增强。</li>
+<li><code>变分自编码器（VAE）Variational Autoencoder</code><br>类似于自编码器，用于生成数据和无监督学习，特别擅长生成复杂的概率分布。</li>
+<li><code>图神经网络（GNN）Graph Neural Network</code><br>用于处理图数据，如社交网络、知识图谱和推荐系统。</li>
+<li><code>注意力机制（Attention Mechanisms）</code><br>用于提高模型的性能，特别是在处理长序列数据时，如机器翻译和文本摘要。</li>
+<li><code>强化学习（Reinforcement Learning）</code><br>涉及与环境的交互，用于决策制定和优化策略，如游戏、自动驾驶和机器人控制。</li>
+<li><code>Transformer模型</code><br>一种基于自注意力机制的深度神经网络架构，用于自然语言处理（NLP），如机器翻译和文本生成。</li>
+</ul>
+<h5 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h5><ul>
+<li>训练损失（Loss）<br>定义：训练损失是模型在训练数据集上的损失值。<br>计算方式：每个 epoch 后，通过模型在训练集上的预测结果和真实标签计算损失函数（如均方误差、交叉熵等）。<br>意义：训练损失反映了模型在训练数据上的拟合程度。如果训练损失下降，说明模型在训练数据上的性能在提升。</li>
+<li>验证损失（Validation Loss）<br>定义：验证损失是模型在验证数据集上的损失值。<br>计算方式：每个 epoch 后，通过模型在验证集上的预测结果和真实标签计算损失函数。<br>意义：验证损失反映了模型在未见过的数据（验证集）上的泛化能力。如果验证损失下降，说明模型在验证数据上的性能在提升，具有较好的泛化能力。</li>
+<li>梯度爆炸（Gradient Explosion）<br>梯度（Gradient）是一个数学概念，用于描述函数在某一点上的局部变化率。在神经网络的背景下，梯度通常指的是损失函数相对于其参数的偏导数。<br>参考：<a href="https://www.bilibili.com/video/BV18P4y1j7uH/?spm_id_from=333.337.search-card.all.click&vd_source=251b9f270c90a8149c74eb986759892c">【梯度下降】3D可视化讲解通俗易懂</a><br>梯度爆炸指在反向传播过程中，梯度的值变得非常大，以至于无法正常训练模型。梯度爆炸通常发生在网络层数较多或网络结构复杂的情况下，特别是在使用ReLU（Rectified Linear Unit）激活函数时。</li>
+<li>梯度消失（Gradient Vanishing）<br>梯度消失指的是在网络的反向传播过程中，用于更新网络权重的梯度变得非常小，以至于几乎不对权重产生任何显著的更新。这种现象通常发生在深层网络的较低层（靠近输入层的层）。</li>
+<li>残差（Residual Error）<br>定义：指估计值与实际值直接的差，如果存在一个映射f(x)&#x3D;b，x&#x3D;x0时，则b-f(x0)则为残差，x-x0为误差。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习的模型选择与评估</title>
+    <url>/posts/bee4e068/</url>
+    <content><![CDATA[<h3 id="经验误差与过拟合"><a href="#经验误差与过拟合" class="headerlink" title="经验误差与过拟合"></a>经验误差与过拟合</h3><h4 id="经验误差"><a href="#经验误差" class="headerlink" title="经验误差"></a>经验误差</h4><p>首先清楚两个概念：<br>错误率（error rate）：分类错误的样本占样本总数的比例，即如果在m个样本中有a个样本分类错误，则错误率是E&#x3D;a&#x2F;m<br>精度（accuracy）：精度&#x3D;1-a&#x2F;m<br>一般地，把学习器在训练集的误差称为“训练误差”（training error）或“经验误差”（empirical error），在新样本上的误差称为“泛化误差”（generalization error）<br>显然，最终想要得到的是泛化误差小的学习器。</p>
+<h4 id="过拟合"><a href="#过拟合" class="headerlink" title="过拟合"></a>过拟合</h4><p>为了得到在新样本上表现好的学习器，应该从训练样本中尽可能学出适用于所有潜在样本的“普遍规律”。当学习器把训练样本学习得“太好”的时候，这样会导致泛化性能下降。这种现象在机器学习中称为“过拟合”（overfitting），与其相对的是“欠拟合”（underfitting）。<br>有多种因素可能导致过拟合，其中最常见情况是由于学习能力过于强大，以至于把训练样本所包含的不太一般的特性都学到了，而欠拟合则通常是由于学习能力底下造成的。欠拟合比较容易客服，例如在决策树学习中扩展分支、在神经网络学习中增加训练轮数等，而过拟合则很麻烦，因为过拟合是不可避免的，能做的只是“缓解”，或者说减小其风险。<br>在现实任务中，理想的解决方法是对候选模型的泛化误差进行评估，然后选择泛化误差最小的那个模型。然而泛化误差是无法直接获得的，而训练误差又由于过拟合现象的存在不适合作为标准，那么，就需要思考如何对模型进行评估与选择。</p>
+<h3 id="评估方法"><a href="#评估方法" class="headerlink" title="评估方法"></a>评估方法</h3><h4 id="留出法（hold-out）"><a href="#留出法（hold-out）" class="headerlink" title="留出法（hold-out）"></a>留出法（hold-out）</h4><p>直接将数据集D划分为两个互斥的集合S和T，即D&#x3D;S∪T在S上训练出模型后，用T来评估其测试误差，作为对泛化误差的估计。<br>需要注意的是，训练&#x2F;测试集的划分要尽可能保持数据分布一致性。<br>另一个需要注意的是，一般要采用若干次划分、重复进行实验评估后取平均值作为留出法的评估结果。</p>
+<h4 id="交叉验证法（cross-validation）"><a href="#交叉验证法（cross-validation）" class="headerlink" title="交叉验证法（cross validation）"></a>交叉验证法（cross validation）</h4><p>先将数据集D划分为k个大小相似的互斥子集，即D&#x3D;D1∪D2∪…∪Dk，每个子集Di都尽可能保持数据分布的一致性，即从D中通过分层采样得到。然后，每次用k-1个子集的并集作为训练集，余下的那个子集作为测试；这样就可以获得k组训练&#x2F;测试集，从而可以进行k次训练和测试，最终返回的是这k个测试结果的均值。<br>交叉验证法评估结果的稳定性和保真性在很大程度上取决于k的取值，为强调这一点，通常把交叉验证法称为“k折交叉验证”（k-fold cross validation）。k最常用的取值是10，此时称10折交叉验证。</p>
+<h4 id="自助法（bootstrapping）"><a href="#自助法（bootstrapping）" class="headerlink" title="自助法（bootstrapping）"></a>自助法（bootstrapping）</h4><p>对包含m个样本的数据集D进行随机采样得到D’，执行m次采样，样本不会被采到的概率是0.368，所以由36.8%的样本不会出现在D’中，于是可以让D’用作训练集，D\D’用作测试集。这样的结果称为“包外估计”（out-of-bag estimate）<br>自助法在数据集小、难以有效划分训练&#x2F;测试集时很有用。<br>自助法产生的数据集改变了初始数据集的分布，会引入估计偏差。</p>
+<h4 id="调参与最终模型"><a href="#调参与最终模型" class="headerlink" title="调参与最终模型"></a>调参与最终模型</h4><p>在进行模型评估和选择时，除了要对适用学习算法进行选择，还需对算法参数进行设定，这就是调参（parameter stunning）<br>在模型评估与选择过程中需要留出一部分数据进行评估测试，但是当模型选择完成后学习算法和参数配置已选定，此时应该用完整数据集重新训练模型，这个模型是最终提交用户的模型。<br>需要注意的是，通常把学得模型在实际使用中遇到的数据称为测试数据，为了加以区分，模型评估与选择中用于评估测试的数据集常称为“验证集”（validation set）。所以模型选择和调参是基于验证集上的性能，实际使用时的泛化能力由测试集上的判别效果来估计。</p>
+]]></content>
+      <categories>
+        <category>机器学习</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git向远程仓库上传文件</title>
+    <url>/posts/8e59f4b4/</url>
+    <content><![CDATA[<h4 id="确保本地仓库是最新的"><a href="#确保本地仓库是最新的" class="headerlink" title="确保本地仓库是最新的"></a>确保本地仓库是最新的</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;repository&gt;</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加文件到暂存区"><a href="#添加文件到暂存区" class="headerlink" title="添加文件到暂存区"></a>添加文件到暂存区</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<p>或者指定文件路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;file_path&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="提交更改"><a href="#提交更改" class="headerlink" title="提交更改"></a>提交更改</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息：描述你所做的更改&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="推送更改到远程仓库"><a href="#推送更改到远程仓库" class="headerlink" title="推送更改到远程仓库"></a>推送更改到远程仓库</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin main</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习的超参数</title>
+    <url>/posts/6199195b/</url>
+    <content><![CDATA[<ol>
+<li>learning rate：决定了模型在训练过程中每个参数更新的幅度</li>
+</ol>
+<ul>
+<li>影响收敛速度：<br>学习率过大会导致模型在训练过程中振荡，难以收敛。<br>学习率过小则可能导致训练过程缓慢，收敛速度慢。</li>
+<li>影响过拟合：<br>学习率过大可能会导致模型在训练数据上过度拟合，而在测试数据上表现不佳。<br>学习率过小可能有助于减少过拟合，但可能会降低模型的泛化能力。</li>
+<li>影响训练稳定性：<br>学习率的选择会影响训练过程的稳定性。<br>过大的学习率可能导致训练过程中的梯度消失或爆炸，影响训练稳定性。</li>
+<li>影响模型的复杂度：<br>学习率的大小也间接影响了模型的复杂度。<br>学习率较小时，模型可能需要更多的训练迭代才能收敛，这意味着模型可能更复杂。<br>因此，选择合适的学习率对于深度学习模型的训练至关重要。在实践中，通常需要通过实验来调整学习率，以找到最佳的训练效果。常见的做法包括使用学习率衰减策略、学习率预热（Learning Rate Warmup）和调整学习率搜索（如使用学习率衰减、学习率搜索等方法）。</li>
+</ul>
+<ol start="2">
+<li>epoch：它决定了模型在训练数据集上训练的完整遍数。一个完整的遍历（epoch）意味着模型会查看训练数据集中的每个样本一次，并对所有样本进行一次前向传播和相应的反向传播。</li>
+</ol>
+<ul>
+<li>训练时间：<br>epoch 直接影响训练过程所需的时间。<br>较大的 epoch 需要更长的训练时间。</li>
+<li>模型性能：<br>足够的 epoch 通常有助于模型在训练数据上达到更好的性能。<br>然而，过多的 epoch 可能导致过拟合，从而降低模型在未见过的数据上的表现。</li>
+<li>收敛速度：<br>epoch 也影响模型的收敛速度。<br>较小的 epoch 可能导致收敛速度慢，而较大的 epoch 可能会使模型更快地收敛。</li>
+<li>数据利用：<br>epoch 决定了数据集被利用的次数。<br>较高的 epoch 意味着数据集会被重复利用，这有助于模型更好地理解数据。<br>在实践中，通常需要通过实验来确定最佳的 epoch 值。这通常涉及到尝试不同的 epoch 值，并观察模型在验证集上的性能。通常，我们会在性能开始下降之前停止训练，以避免过拟合。</li>
+</ul>
+<ol start="3">
+<li>dropout：一种在深度神经网络中常用的正则化技术，其目的是减少过拟合并提高模型的泛化能力</li>
+</ol>
+<ul>
+<li>减少过拟合：<br>Dropout通过在训练过程中随机“关闭”一部分神经元，从而减少模型对特定神经元的依赖。<br>这有助于模型学习到更加鲁棒的特征表示，从而减少过拟合。</li>
+<li>提高泛化能力：<br>通过减少模型对特定神经元的依赖，Dropout有助于提高模型在未见过的数据上的表现。<br>这使得模型在测试集或实际应用中的性能更佳。</li>
+<li>训练效率：<br>Dropout可以加快训练速度，因为模型需要处理较少的参数。<br>同时，它还可以减少计算资源的需求。</li>
+<li>网络结构：<br>Dropout可以作为网络架构的一部分，用于预训练或微调模型。<br>它可以在不同的层中应用，也可以根据需要调整保留的神经元比例。</li>
+<li>正则化效果：<br>Dropout与L1、L2正则化等技术结合使用，可以进一步增强模型的正则化效果。<br>在实际应用中，Dropout的保留率（即在每次前向传播中保留的神经元比例）通常在0.1到0.5之间调整。这个比例的选择需要根据具体的任务和数据集进行实验确定。Dropout是一种非常有效的技术，被广泛应用于各种深度学习模型中。</li>
+</ul>
+<ol start="4">
+<li>batch_size：指的是在一次梯度更新中使用的训练样本数量</li>
+</ol>
+<ul>
+<li>训练速度：<br>较小的 batch_size 会增加训练的迭代次数，导致训练速度较慢。较大的 batch_size 则可以减少迭代次数，提高训练速度。</li>
+<li>模型性能：<br>batch_size 的选择会影响模型的性能。较大的 batch_size 可能会导致模型在训练数据上的过拟合，而较小的 batch_size 有助于模型学习更细致的特征。</li>
+<li>数值稳定性：<br>较大的 batch_size 可以减少数值稳定性问题，如梯度消失或爆炸。</li>
+<li>经验法则：<br>对于图像分类任务，常见的 batch_size 值范围在32到256之间。对于自然语言处理（NLP）任务，batch_size 通常较小，例如32或64。<br>总之，batch_size 的选择需要平衡训练速度、模型性能和计算资源。通常，通过实验和调整，可以找到适合特定数据集和任务的最佳 batch_size。</li>
+</ul>
+<ol start="5">
+<li>shuffle</li>
+</ol>
+<ul>
+<li>Shuffle可以防止<strong>训练过程</strong>中的模型抖动，有利于模型的健壮性<br>假设训练数据分为两类，在未经过Shuffle的训练时，首先模型的参数会去拟合第一类数据，当大量的连续数据（第一类）输入训练时，会造成模型在第一类数据上的过拟合。当第一类数据学习结束后模型又开始对大量的第二类数据进行学习，这样会使模型尽力去逼近第二类数据，造成新的过拟合现象。这样反复的训练模型会在两种过拟合之间徘徊，造成模型的抖动，也不利于模型的收敛和训练的快速收敛</li>
+<li>Shuffle可以防止过拟合，并且使得模型学到更加正确的特征<br>NN网络的学习能力很强，如果数据未经过打乱，则模型反复依次序学习数据的特征，很快就会达到过拟合状态，并且有可能学会的只是数据的次序特征。模型的缺乏泛化能力。<br>如：100条数据中前50条为A类剩余50条为B类，模型在很短的学习过程中就学会了50位分界点，且前半部分为A后半部分为B。则并没有学会真正的类别特征。</li>
+<li>为使得训练集，验证集，测试集中数据分布类似</li>
+</ul>
+<p>参考：<a href="https://blog.csdn.net/xian0710830114/article/details/122856047?spm=1001.2014.3001.5502">深度学习调参tricks总结</a></p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>神经网络中的激活函数</title>
+    <url>/posts/93738823/</url>
+    <content><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>激活函数（Activation Function），就是在人工神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端，旨在帮助网络学习数据中的复杂模式。</p>
+<h3 id="为什么要使用激活函数"><a href="#为什么要使用激活函数" class="headerlink" title="为什么要使用激活函数"></a>为什么要使用激活函数</h3><p>如果不用激活函数，每一层输出都是上层输入的线性函数，无论神经网络有多少层，输出都是输入的线性组合，这种情况就是最原始的感知机（Perceptron）。<br>使用激活函数能够给神经元引入非线性因素，使得神经网络可以任意逼近任何非线性函数，使深层神经网络表达能力更加强大，这样神经网络就可以应用到众多的非线性模型中。  </p>
+<h3 id="激活函数的分类"><a href="#激活函数的分类" class="headerlink" title="激活函数的分类"></a>激活函数的分类</h3><ul>
+<li>饱和激活函数： sigmoid、tanh…</li>
+<li>非饱和激活函数:  ReLU、Leaky Relu、ELU、PReLU、RReLU…</li>
+</ul>
+<p>Sigmoid函数需要一个实值输入压缩至[0,1]的范围<br>tanh函数需要讲一个实值输入压缩至[-1,1]的范围</p>
+<p>相对于饱和激活函数，使用非饱和激活函数的优势在于两点：</p>
+<ol>
+<li>非饱和激活函数能解决深度神经网络（层数非常多）带来的梯度消失问题</li>
+<li>使用非饱和激活函数能加快收敛速度。</li>
+</ol>
+<h3 id="常见的几种激活函数"><a href="#常见的几种激活函数" class="headerlink" title="常见的几种激活函数"></a>常见的几种激活函数</h3><h4 id="Sigmoid"><a href="#Sigmoid" class="headerlink" title="Sigmoid"></a>Sigmoid</h4><p>数学表达式：<br>$$<br>f(x)&#x3D;\dfrac{1}{1+e^{-x}}<br>$$<br>导数表达式：<br>$$<br>f’(x)&#x3D;f(x)(1-f(x))<br>$$<br>Sigmoid函数在历史上曾非常常用，输出值范围为[0,1]之间的实数。但是现在它已经不太受欢迎，实际中很少使用。</p>
+<h5 id="什么情况下适合使用Sigmoid"><a href="#什么情况下适合使用Sigmoid" class="headerlink" title="什么情况下适合使用Sigmoid"></a>什么情况下适合使用Sigmoid</h5><ul>
+<li>Sigmoid 函数的输出范围是 0 到 1。非常适合作为模型的输出函数用于输出一个0~1范围内的概率值，比如用于表示二分类的类别或者用于表示置信度。</li>
+<li>梯度平滑，便于求导，也防止模型训练过程中出现突变的梯度</li>
+</ul>
+<h5 id="Sigmoid的缺点"><a href="#Sigmoid的缺点" class="headerlink" title="Sigmoid的缺点"></a>Sigmoid的缺点</h5><ul>
+<li>容易造成梯度消失。我们从导函数图像中了解到sigmoid的导数都是小于0.25的，那么在进行反向传播的时候，梯度相乘结果会慢慢的趋向于0。这样几乎就没有梯度信号通过神经元传递到前面层的梯度更新中，因此这时前面层的权值几乎没有更新，这就叫梯度消失。除此之外，为了防止饱和，必须对于权重矩阵的初始化特别留意。如果初始化权重过大，可能很多神经元得到一个比较小的梯度，致使神经元不能很好的更新权重提前饱和，神经网络就几乎不学习。</li>
+<li>函数输出不是以 0 为中心的，梯度可能就会向特定方向移动，从而降低权重更新的效率</li>
+<li>Sigmoid 函数执行指数运算，计算机运行得较慢，比较消耗计算资源。</li>
+</ul>
+<h4 id="Tanh"><a href="#Tanh" class="headerlink" title="Tanh"></a>Tanh</h4><p>实际上，Tanh函数是 sigmoid 的变形：<br>$$<br>tanh(x)&#x3D;2sigmoid(2x)-1<br>$$<br>与sigmoid不同的是，tanh是“零为中心”的。因此在实际应用中，tanh会比sigmoid更好一些。但是在饱和神经元的情况下，tanh还是没有解决梯度消失问题。</p>
+<h5 id="什么情况下适合用Tanh"><a href="#什么情况下适合用Tanh" class="headerlink" title="什么情况下适合用Tanh"></a>什么情况下适合用Tanh</h5><ul>
+<li>tanh 的输出间隔为 1，并且整个函数以 0 为中心，比 sigmoid 函数更好；</li>
+<li>在 tanh 图中，负输入将被强映射为负，而零输入被映射为接近零。</li>
+</ul>
+<h5 id="tanh有哪些缺点"><a href="#tanh有哪些缺点" class="headerlink" title="tanh有哪些缺点"></a>tanh有哪些缺点</h5><ul>
+<li>仍然存在梯度饱和的问题</li>
+<li>依然进行的是指数运算</li>
+</ul>
+<h4 id="RELU"><a href="#RELU" class="headerlink" title="RELU"></a>RELU</h4><p>数学表达式：<br>$$<br>f(x)&#x3D;max(0,x)<br>$$</p>
+<h5 id="什么情况下适合用RELU"><a href="#什么情况下适合用RELU" class="headerlink" title="什么情况下适合用RELU"></a>什么情况下适合用RELU</h5><ul>
+<li>ReLU解决了梯度消失的问题，当输入值为正时，神经元不会饱和</li>
+<li>由于ReLU线性、非饱和的性质，在SGD中能够快速收敛</li>
+<li>计算复杂度低，不需要进行指数运算</li>
+</ul>
+<h5 id="RELU有哪些缺点"><a href="#RELU有哪些缺点" class="headerlink" title="RELU有哪些缺点"></a>RELU有哪些缺点</h5><ul>
+<li>与Sigmoid一样，其输出不是以0为中心的</li>
+<li>Dead ReLU 问题。当输入为负时，梯度为0。这个神经元及之后的神经元梯度永远为0，不再对任何数据有所响应，导致相应参数永远不会被更新<br>训练神经网络的时候，一旦学习率没有设置好，第一次更新权重的时候，输入是负值，那么这个含有ReLU的神经节点就会死亡，再也不会被激活。所以，要设置一个合适的较小的学习率，来降低这种情况的发生</li>
+</ul>
+<h4 id="Leaky-RELU"><a href="#Leaky-RELU" class="headerlink" title="Leaky RELU"></a>Leaky RELU</h4><h4 id="PRELU"><a href="#PRELU" class="headerlink" title="PRELU"></a>PRELU</h4><h4 id="ELU"><a href="#ELU" class="headerlink" title="ELU"></a>ELU</h4><h4 id="SELU"><a href="#SELU" class="headerlink" title="SELU"></a>SELU</h4><h4 id="Swish"><a href="#Swish" class="headerlink" title="Swish"></a>Swish</h4><h4 id="Mish"><a href="#Mish" class="headerlink" title="Mish"></a>Mish</h4><h4 id="Softmax"><a href="#Softmax" class="headerlink" title="Softmax"></a>Softmax</h4><p>参考：<a href="https://blog.csdn.net/qq_42691298/article/details/126590726">深度学习中常见的10种激活函数（Activation Function）总结</a></p>
+]]></content>
+      <categories>
+        <category>深度学习</category>
+      </categories>
+      <tags>
+        <tag>神经网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决PyCharm出现sdk is not defined for run configuration报错</title>
+    <url>/posts/8a90b461/</url>
+    <content><![CDATA[<p>选择<code>Edit Configurations</code>，找到<code>Python interpreter</code>，把<code>Project Default</code>更改为本地有的虚拟环境。</p>
+]]></content>
+      <categories>
+        <category>BUG</category>
+      </categories>
+      <tags>
+        <tag>BUG</tag>
+        <tag>PyCharm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自然伽马与电阻率的关系</title>
+    <url>/posts/e9c712a2/</url>
+    <content><![CDATA[<p>在测井数据中，自然伽马(Gamma-ray, GR)和电阻率通常呈现一种反比关系，这是因为自然伽马测量的是岩石的放射性，而电阻率测量的是岩石的导电性。以下是一些解释这种关系的因素：</p>
+<ol>
+<li>岩石成分：自然伽马读数高通常表示岩石中含有更多的放射性元素，如粘土矿物，这些通常具有较低的电阻率。相反，自然伽马读数低通常表示岩石中含有更多的石英或碳酸盐矿物，这些通常具有较高的电阻率。</li>
+<li>流体类型：含水的岩石通常具有较低的电阻率，因为水是良好的导电介质。而含油的岩石通常具有较高的电阻率，因为石油是电的不良导体。因此，含油砂岩通常具有低自然伽马和高电阻率的特点。</li>
+<li>孔隙度：孔隙度高的岩石通常具有较低的电阻率，因为孔隙中的流体（水或油）有助于电流的流动。而孔隙度低的岩石通常具有较高的电阻率。</li>
+<li>矿化度：岩石中的盐分（矿化度）也会影响电阻率。矿化度高的水具有较低的电阻率，因此含有高矿化度水的岩石也会显示出低电阻率。<br>需要注意的是，虽然自然伽马和电阻率之间通常存在反比关系，但这并不是绝对的。其他因素，如岩石的裂缝、矿化度、地层压力等，也可能影响这种关系。因此，在解释测井数据时，应该综合考虑所有可用的测井曲线和地质信息，以获得最准确的地层解释。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>测井</category>
+      </categories>
+      <tags>
+        <tag>测井</tag>
+        <tag>地质知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决使用GraphViz报错问题</title>
+    <url>/posts/9e8bf13/</url>
+    <content><![CDATA[<p>一开始我并没有使用<code>import graphviz</code>，<code>jupyter</code>报错错误二，这并不奇怪，因为我的代码块如下：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pydotplus</span><br><span class="line"><span class="keyword">from</span> IPython.display <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将获得的决策树结构可视化</span></span><br><span class="line">dot_data = StringIO()</span><br><span class="line">export_graphviz(dtc1, out_file=dot_data,</span><br><span class="line">                feature_names=X_train.columns,</span><br><span class="line">                filled=<span class="literal">True</span>, rounded=<span class="literal">True</span>, special_characters=<span class="literal">True</span>)</span><br><span class="line">graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  </span><br><span class="line">Image(graph.create_png())</span><br></pre></td></tr></table></figure>
+<p>如上所见，并没有直接使用到graphviz，所以导入也没用，但是看到错误二，根据查询的资料，我加上了<code>import graphviz</code>，于是报错了错误一</p>
+<h3 id="错误一：No-module-named-‘graphviz‘"><a href="#错误一：No-module-named-‘graphviz‘" class="headerlink" title="错误一：No module named ‘graphviz‘"></a>错误一：No module named ‘graphviz‘</h3><p>解决方法，根据参考信息得知，该博主安装了几个有关于graphviz的包，分别是<code>graphviz</code>、<code>pygraphviz</code>、<code>python-graphviz</code>、<code>pydot</code>、<code>pydotplus</code>，在检查了我自己当前的包后，我发现我并没有安装<code>pygraphviz</code>、<code>python-graphviz</code>、<code>pydot</code>，但是我仔细看了下<code>pydot</code>，并没有选择安装这个包</p>
+<h3 id="错误二：InvocationException-GraphViz‘s-executables-not-found"><a href="#错误二：InvocationException-GraphViz‘s-executables-not-found" class="headerlink" title="错误二：InvocationException: GraphViz‘s executables not found"></a>错误二：InvocationException: GraphViz‘s executables not found</h3><p>此外，我进入了<a href="https://www.graphviz.org/download/">graphviz官网下载页面</a>下载了与<code>conda</code>安装同版本的<code>graphviz-2.50.0</code>，至于为什么是这个版本，因为我使用<code>conda search graphviz</code>命令出来的列表只有这一个版本，下面是我几个相关包的版本</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Name                    Version                   Build  Channel</span></span><br><span class="line">graphite2                 1.3.14               hd77b12b_1    defaults</span><br><span class="line">graphviz                  2.50.0               h7eca76f_1    defaults</span><br><span class="line">pygraphviz                1.9              py38h2bbff1b_1    defaults</span><br><span class="line">python-graphviz           0.20.1           py38haa95532_0    defaults</span><br><span class="line">pydotplus                 2.0.2                      py_3    defaults</span><br></pre></td></tr></table></figure>
+<p>在安装完成后，<code>2.50.0</code>版本的<code>graphviz</code>采用的是<code>.exe</code>文件安装，此前我还下载了最新版的<code>graphviz-12.1.0</code>，但是并没有生效（也有可能是当时并没有重启IDE导致的，这是我从几处都见过的说法）<br>最后重启IDE，代码分别在<code>PyCharm</code>和<code>VSCode</code>均可成功运行并生成图片<br>参考：<a href="https://blog.csdn.net/csdnypp/article/details/126420715?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-126420715-blog-139224511.235%5Ev43%5Epc_blog_bottom_relevance_base8&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-126420715-blog-139224511.235%5Ev43%5Epc_blog_bottom_relevance_base8">No module named ‘graphviz‘（解决）</a></p>
+]]></content>
+      <categories>
+        <category>bug</category>
+      </categories>
+      <tags>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决启动前端项目报错errno:-4058</title>
+    <url>/posts/75d528db/</url>
+    <content><![CDATA[<h4 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">events.js:292</span><br><span class="line">      throw er; // Unhandled <span class="string">&#x27;error&#x27;</span> event</span><br><span class="line">      ^</span><br><span class="line"></span><br><span class="line">Error: spawn cmd ENOENT</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)</span><br><span class="line">    at onErrorNT (internal/child_process.js:465:16)</span><br><span class="line">    at processTicksAndRejections (internal/process/task_queues.js:80:21)</span><br><span class="line">Emitted <span class="string">&#x27;error&#x27;</span> event on ChildProcess instance at:</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:275:12)</span><br><span class="line">    at onErrorNT (internal/child_process.js:465:16)</span><br><span class="line">    at processTicksAndRejections (internal/process/task_queues.js:80:21) &#123;</span><br><span class="line">  errno: -4058,</span><br><span class="line">  code: <span class="string">&#x27;ENOENT&#x27;</span>,</span><br><span class="line">  syscall: <span class="string">&#x27;spawn cmd&#x27;</span>,</span><br><span class="line">  path: <span class="string">&#x27;cmd&#x27;</span>,</span><br><span class="line">  spawnargs: <span class="string">&#x27;/c&#x27;</span>, <span class="string">&#x27;start&#x27;</span>, <span class="string">&#x27;&quot;&quot;&#x27;</span>, <span class="string">&#x27;/b&#x27;</span>, <span class="string">&#x27;http://localhost:8080/&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="报错原因"><a href="#报错原因" class="headerlink" title="报错原因"></a>报错原因</h4><p>电脑缺少cmd运行程序的环境变量</p>
+<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>环境变量配置在系统变量<code>path</code>中添加<code>C:\windows\system32</code>，spawn xxx ENOENT 其实就是缺少，对应的运行程序的环境变量。</p>
+]]></content>
+      <categories>
+        <category>bug</category>
+      </categories>
+      <tags>
+        <tag>bug</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -1803,85 +1882,6 @@
       <tags>
         <tag>机器学习</tag>
         <tag>scikit-learn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决使用GraphViz报错问题</title>
-    <url>/posts/9e8bf13/</url>
-    <content><![CDATA[<p>一开始我并没有使用<code>import graphviz</code>，<code>jupyter</code>报错错误二，这并不奇怪，因为我的代码块如下：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pydotplus</span><br><span class="line"><span class="keyword">from</span> IPython.display <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将获得的决策树结构可视化</span></span><br><span class="line">dot_data = StringIO()</span><br><span class="line">export_graphviz(dtc1, out_file=dot_data,</span><br><span class="line">                feature_names=X_train.columns,</span><br><span class="line">                filled=<span class="literal">True</span>, rounded=<span class="literal">True</span>, special_characters=<span class="literal">True</span>)</span><br><span class="line">graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  </span><br><span class="line">Image(graph.create_png())</span><br></pre></td></tr></table></figure>
-<p>如上所见，并没有直接使用到graphviz，所以导入也没用，但是看到错误二，根据查询的资料，我加上了<code>import graphviz</code>，于是报错了错误一</p>
-<h3 id="错误一：No-module-named-‘graphviz‘"><a href="#错误一：No-module-named-‘graphviz‘" class="headerlink" title="错误一：No module named ‘graphviz‘"></a>错误一：No module named ‘graphviz‘</h3><p>解决方法，根据参考信息得知，该博主安装了几个有关于graphviz的包，分别是<code>graphviz</code>、<code>pygraphviz</code>、<code>python-graphviz</code>、<code>pydot</code>、<code>pydotplus</code>，在检查了我自己当前的包后，我发现我并没有安装<code>pygraphviz</code>、<code>python-graphviz</code>、<code>pydot</code>，但是我仔细看了下<code>pydot</code>，并没有选择安装这个包</p>
-<h3 id="错误二：InvocationException-GraphViz‘s-executables-not-found"><a href="#错误二：InvocationException-GraphViz‘s-executables-not-found" class="headerlink" title="错误二：InvocationException: GraphViz‘s executables not found"></a>错误二：InvocationException: GraphViz‘s executables not found</h3><p>此外，我进入了<a href="https://www.graphviz.org/download/">graphviz官网下载页面</a>下载了与<code>conda</code>安装同版本的<code>graphviz-2.50.0</code>，至于为什么是这个版本，因为我使用<code>conda search graphviz</code>命令出来的列表只有这一个版本，下面是我几个相关包的版本</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Name                    Version                   Build  Channel</span></span><br><span class="line">graphite2                 1.3.14               hd77b12b_1    defaults</span><br><span class="line">graphviz                  2.50.0               h7eca76f_1    defaults</span><br><span class="line">pygraphviz                1.9              py38h2bbff1b_1    defaults</span><br><span class="line">python-graphviz           0.20.1           py38haa95532_0    defaults</span><br><span class="line">pydotplus                 2.0.2                      py_3    defaults</span><br></pre></td></tr></table></figure>
-<p>在安装完成后，<code>2.50.0</code>版本的<code>graphviz</code>采用的是<code>.exe</code>文件安装，此前我还下载了最新版的<code>graphviz-12.1.0</code>，但是并没有生效（也有可能是当时并没有重启IDE导致的，这是我从几处都见过的说法）<br>最后重启IDE，代码分别在<code>PyCharm</code>和<code>VSCode</code>均可成功运行并生成图片<br>参考：<a href="https://blog.csdn.net/csdnypp/article/details/126420715?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-126420715-blog-139224511.235%5Ev43%5Epc_blog_bottom_relevance_base8&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-5-126420715-blog-139224511.235%5Ev43%5Epc_blog_bottom_relevance_base8">No module named ‘graphviz‘（解决）</a></p>
-]]></content>
-      <categories>
-        <category>bug</category>
-      </categories>
-      <tags>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git向远程仓库上传文件</title>
-    <url>/posts/8e59f4b4/</url>
-    <content><![CDATA[<h4 id="确保本地仓库是最新的"><a href="#确保本地仓库是最新的" class="headerlink" title="确保本地仓库是最新的"></a>确保本地仓库是最新的</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;repository&gt;</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
-
-<h4 id="添加文件到暂存区"><a href="#添加文件到暂存区" class="headerlink" title="添加文件到暂存区"></a>添加文件到暂存区</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-<p>或者指定文件路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;file_path&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="提交更改"><a href="#提交更改" class="headerlink" title="提交更改"></a>提交更改</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息：描述你所做的更改&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="推送更改到远程仓库"><a href="#推送更改到远程仓库" class="headerlink" title="推送更改到远程仓库"></a>推送更改到远程仓库</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin main</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决启动前端项目报错errno:-4058</title>
-    <url>/posts/75d528db/</url>
-    <content><![CDATA[<h4 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">events.js:292</span><br><span class="line">      throw er; // Unhandled <span class="string">&#x27;error&#x27;</span> event</span><br><span class="line">      ^</span><br><span class="line"></span><br><span class="line">Error: spawn cmd ENOENT</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)</span><br><span class="line">    at onErrorNT (internal/child_process.js:465:16)</span><br><span class="line">    at processTicksAndRejections (internal/process/task_queues.js:80:21)</span><br><span class="line">Emitted <span class="string">&#x27;error&#x27;</span> event on ChildProcess instance at:</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:275:12)</span><br><span class="line">    at onErrorNT (internal/child_process.js:465:16)</span><br><span class="line">    at processTicksAndRejections (internal/process/task_queues.js:80:21) &#123;</span><br><span class="line">  errno: -4058,</span><br><span class="line">  code: <span class="string">&#x27;ENOENT&#x27;</span>,</span><br><span class="line">  syscall: <span class="string">&#x27;spawn cmd&#x27;</span>,</span><br><span class="line">  path: <span class="string">&#x27;cmd&#x27;</span>,</span><br><span class="line">  spawnargs: <span class="string">&#x27;/c&#x27;</span>, <span class="string">&#x27;start&#x27;</span>, <span class="string">&#x27;&quot;&quot;&#x27;</span>, <span class="string">&#x27;/b&#x27;</span>, <span class="string">&#x27;http://localhost:8080/&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="报错原因"><a href="#报错原因" class="headerlink" title="报错原因"></a>报错原因</h4><p>电脑缺少cmd运行程序的环境变量</p>
-<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><p>环境变量配置在系统变量<code>path</code>中添加<code>C:\windows\system32</code>，spawn xxx ENOENT 其实就是缺少，对应的运行程序的环境变量。</p>
-]]></content>
-      <categories>
-        <category>bug</category>
-      </categories>
-      <tags>
-        <tag>bug</tag>
-        <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>快速开始PyTorch</title>
-    <url>/posts/4b503ff2/</url>
-    <content><![CDATA[<p>教程：<a href="https://bohrium.dp.tech/notebooks/4914094074?utm_source=bilibili001">快速开始 PyTorch｜使用 Python 建立深度学习模型</a></p>
-]]></content>
-      <categories>
-        <category>PyTorch</category>
-      </categories>
-      <tags>
-        <tag>深度学习</tag>
-        <tag>PyTorch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决PyCharm出现sdk is not defined for run configuration报错</title>
-    <url>/posts/8a90b461/</url>
-    <content><![CDATA[<p>选择<code>Edit Configurations</code>，找到<code>Python interpreter</code>，把<code>Project Default</code>更改为本地有的虚拟环境。</p>
-]]></content>
-      <categories>
-        <category>BUG</category>
-      </categories>
-      <tags>
-        <tag>BUG</tag>
-        <tag>PyCharm</tag>
       </tags>
   </entry>
 </search>
