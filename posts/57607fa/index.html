@@ -28,11 +28,11 @@
 <meta property="og:description" content="本文介绍在有 conda 管理环境的情况下如何使用 poetry">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-01-05T07:36:24.000Z">
-<meta property="article:modified_time" content="2025-01-05T07:55:40.438Z">
+<meta property="article:modified_time" content="2025-01-07T11:08:05.889Z">
 <meta property="article:author" content="Be11amy">
 <meta property="article:tag" content="命令行">
-<meta property="article:tag" content="poetry">
 <meta property="article:tag" content="虚拟环境">
+<meta property="article:tag" content="poetry">
 <meta name="twitter:card" content="summary">
 
 
@@ -264,9 +264,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2025-01-05 15:36:24 / 修改时间：15:55:40" itemprop="dateCreated datePublished" datetime="2025-01-05T15:36:24+08:00">2025-01-05</time>
+      <time title="创建时间：2025-01-05 15:36:24" itemprop="dateCreated datePublished" datetime="2025-01-05T15:36:24+08:00">2025-01-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-01-07 19:08:05" itemprop="dateModified" datetime="2025-01-07T19:08:05+08:00">2025-01-07</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -301,7 +307,7 @@
 
 <p>安装好后有一些配置建议，写在<a href="#02be37">配置建议</a></p>
 <h1 id="创建指定版本虚拟环境"><a href="#创建指定版本虚拟环境" class="headerlink" title="创建指定版本虚拟环境"></a>创建指定版本虚拟环境</h1><p>以<code>python</code>3.10版本为例，先创建<code>python</code>版本为3.10的<code>conda</code>虚拟环境：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n fastapi3.10 python=3.10</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n fastapi310 python=3.10</span><br></pre></td></tr></table></figure>
 
 <h1 id="初始化-poetry"><a href="#初始化-poetry" class="headerlink" title="初始化 poetry"></a>初始化 poetry</h1><p>在项目根目录下执行以下命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry init</span><br></pre></td></tr></table></figure>
@@ -310,7 +316,7 @@
 <figure class="highlight toml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[tool.poetry]</span></span><br><span class="line"><span class="attr">name</span> = <span class="string">&quot;14-fastapi&quot;</span></span><br><span class="line"><span class="attr">version</span> = <span class="string">&quot;0.1.0&quot;</span></span><br><span class="line"><span class="attr">description</span> = <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="attr">authors</span> = [<span class="string">&quot;xxx&quot;</span>]</span><br><span class="line"><span class="attr">readme</span> = <span class="string">&quot;README.md&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[tool.poetry.dependencies]</span></span><br><span class="line"><span class="attr">python</span> = <span class="string">&quot;^3.10&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section">[build-system]</span></span><br><span class="line"><span class="attr">requires</span> = [<span class="string">&quot;poetry-core&quot;</span>]</span><br><span class="line"><span class="attr">build-backend</span> = <span class="string">&quot;poetry.core.masonry.api&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h1 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h1><p>接下来找到刚才创建的<code>conda</code>虚拟环境的<code>python.exe</code>路径，然后执行以下命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> use D:\CodeApps\Anaconda\Anaconda3\envs\fastapi3.10\python.exe</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> use D:\CodeApps\Anaconda\Anaconda3\envs\fastapi310\python.exe</span><br></pre></td></tr></table></figure>
 
 <p>执行后输出如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Creating virtualenv 14-fastapi <span class="keyword">in</span> D:\Code\Projects\14_fastapi\.venv</span><br><span class="line">Using virtualenv: D:\Code\Projects\14_fastapi\.venv</span><br></pre></td></tr></table></figure>
@@ -363,8 +369,8 @@
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="tag"># 命令行</a>
-              <a href="/tags/poetry/" rel="tag"># poetry</a>
               <a href="/tags/%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" rel="tag"># 虚拟环境</a>
+              <a href="/tags/poetry/" rel="tag"># poetry</a>
           </div>
 
         
