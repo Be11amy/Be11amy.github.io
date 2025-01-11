@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"be11amy.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null,"show_result":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="本文介绍如何在本地部署Dify">
+    <meta name="description" content="本文介绍如何在Windows本地部署Dify">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Dify本地源码部署">
+<meta property="og:title" content="Windows通过本地源码部署Dify">
 <meta property="og:url" content="https://be11amy.github.io/posts/b8aa49c0/index.html">
 <meta property="og:site_name" content="Be11amy&#39;s Blog">
-<meta property="og:description" content="本文介绍如何在本地部署Dify">
+<meta property="og:description" content="本文介绍如何在Windows本地部署Dify">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-01-06T12:48:53.000Z">
-<meta property="article:modified_time" content="2025-01-07T02:04:50.810Z">
+<meta property="article:modified_time" content="2025-01-11T02:51:19.820Z">
 <meta property="article:author" content="Be11amy">
 <meta property="article:tag" content="命令行">
 <meta property="article:tag" content="Dify">
@@ -40,10 +40,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://be11amy.github.io/posts/b8aa49c0/","path":"posts/b8aa49c0/","title":"Dify本地源码部署"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://be11amy.github.io/posts/b8aa49c0/","path":"posts/b8aa49c0/","title":"Windows通过本地源码部署Dify"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Dify本地源码部署 | Be11amy's Blog</title>
+<title>Windows通过本地源码部署Dify | Be11amy's Blog</title>
   
 
 
@@ -249,12 +249,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Dify本地源码部署 | Be11amy's Blog">
-      <meta itemprop="description" content="本文介绍如何在本地部署Dify">
+      <meta itemprop="name" content="Windows通过本地源码部署Dify | Be11amy's Blog">
+      <meta itemprop="description" content="本文介绍如何在Windows本地部署Dify">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Dify本地源码部署
+          Windows通过本地源码部署Dify
         </h1>
 
         <div class="post-meta-container">
@@ -272,7 +272,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-01-07 10:04:50" itemprop="dateModified" datetime="2025-01-07T10:04:50+08:00">2025-01-07</time>
+      <time title="修改时间：2025-01-11 10:51:19" itemprop="dateModified" datetime="2025-01-11T10:51:19+08:00">2025-01-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -294,7 +294,7 @@
     </span>
 </div>
 
-            <div class="post-description">本文介绍如何在本地部署Dify</div>
+            <div class="post-description">本文介绍如何在Windows本地部署Dify</div>
         </div>
       </header>
 
@@ -302,56 +302,62 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="Clone-Dify-代码"><a href="#Clone-Dify-代码" class="headerlink" title="Clone Dify 代码"></a>Clone Dify 代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/langgenius/dify.git</span><br></pre></td></tr></table></figure>
+        <p>在Windows本地部署Dify，需要先安装wsl，可以参考：<a href="https://be11amy.github.io/posts/554c5a5f/">Windows安装wsl——Ubuntu</a></p>
+<h3 id="Clone-Dify-代码"><a href="#Clone-Dify-代码" class="headerlink" title="Clone Dify 代码"></a>Clone Dify 代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/langgenius/dify.git</span><br></pre></td></tr></table></figure>
 
-<h3 id="后端部署"><a href="#后端部署" class="headerlink" title="后端部署"></a>后端部署</h3><p>在启用业务服务之前，需要先部署 PostgreSQL &#x2F; Redis &#x2F; Weaviate（如果本地没有的话），可以通过以下命令启动：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> docker</span><br><span class="line"><span class="built_in">cp</span> middleware.env.example middleware.env</span><br><span class="line">docker compose -f docker-compose.middleware.yaml up -d</span><br></pre></td></tr></table></figure>
+<h3 id="后端部署"><a href="#后端部署" class="headerlink" title="后端部署"></a>后端部署</h3><p>第一次部署，在启用业务服务之前，需要先部署 PostgreSQL &#x2F; Redis &#x2F; Weaviate（如果本地没有的话），可以通过以下命令启动：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> docker <span class="comment"># 进入docker目录</span></span><br><span class="line"><span class="built_in">cp</span> middleware.env.example middleware.env  <span class="comment"># 进入Linux环境使用该命令行</span></span><br><span class="line">docker compose -f docker-compose.middleware.yaml up -d  <span class="comment"># 退出Linux环境使用该命令行</span></span><br></pre></td></tr></table></figure>
 
-<p>之后可以直接在<code>docker</code>启动以下容器：</p>
+<p>之后的部署可以直接在<code>docker-desktop</code>启动以下名称的容器：</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sandbox-1</span><br><span class="line">ssrf_proxy-1</span><br><span class="line">weaviate-1</span><br><span class="line">redis-1</span><br><span class="line">db-1</span><br></pre></td></tr></table></figure>
 
 <p>使用<code>Python 3.11</code>或<code>3.12</code>，切换到指定<code>Python</code>环境后，</p>
 <ol>
 <li><p>进入<code>api</code>目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> api</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> api  <span class="comment"># 进入Linux环境使用该命令行</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>复制环境变量配置文件(<code>Windows</code>系统需要使用<code>wsl</code>，<code>cp</code>是<code>Linux</code>命令)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> .env.example .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
+<li><p>复制环境变量配置文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> .env.example .<span class="built_in">env</span>  <span class="comment"># 进入Linux环境使用该命令行</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>生成随机密钥，并替换 <code>.env</code> 中 <code>SECRET_KEY</code> 的值（<code>awk</code>、<code>openssl</code>同样是<code>Linux</code>命令）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">awk -v key=<span class="string">&quot;<span class="subst">$(openssl rand -base64 42)</span>&quot;</span> <span class="string">&#x27;/^SECRET_KEY=/ &#123;sub(/=.*/, &quot;=&quot; key)&#125; 1&#x27;</span> .<span class="built_in">env</span> &gt; temp_env &amp;&amp; <span class="built_in">mv</span> temp_env .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入Linux环境使用该命令行</span></span><br><span class="line">awk -v key=<span class="string">&quot;<span class="subst">$(openssl rand -base64 42)</span>&quot;</span> <span class="string">&#x27;/^SECRET_KEY=/ &#123;sub(/=.*/, &quot;=&quot; key)&#125; 1&#x27;</span> .<span class="built_in">env</span> &gt; temp_env &amp;&amp; <span class="built_in">mv</span> temp_env .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>安装依赖包(先安装<code>Poetry</code>)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> use &lt;3.11&gt;</span><br><span class="line">poetry install</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">poetry <span class="built_in">env</span> use &lt;3.11&gt;</span><br><span class="line">poetry install</span><br></pre></td></tr></table></figure>
+<p>注：<code>&lt;3.11&gt;</code>替换为<code>python</code>版本为<code>3.11</code>虚拟环境的可执行<code>python.exe</code>路径</p>
+</li>
+<li><p>执行数据库迁移（建议直接使用<code>pgAdmin 4</code> + 命令行迁移）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">flask db upgrade</span><br></pre></td></tr></table></figure></li>
 </ol>
-<p><code>&lt;3.11&gt;</code>替换为<code>python</code>版本为<code>3.11</code>虚拟环境的可执行<code>python.exe</code>路径</p>
-<ol start="5">
-<li>执行数据库迁移（建议直接使用<code>pgAdmin 4</code> + 命令行迁移）<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">flask db upgrade</span><br></pre></td></tr></table></figure></li>
+<p>注：</p>
+<ol>
+<li><code>pgAdmin 4</code>创建名为<code>dify</code>的数据库，初始化的<code>.sql</code>文件联系本人获取</li>
+<li>更新数据库命令只需要运行一次，之后用不到，但是每次启动后端服务之前需要在poetry环境，要使用<code>poetry shell</code></li>
 </ol>
-<p>更新数据库命令只需要运行一次，之后用不到，但是启动服务需要使用<code>poetry shell</code></p>
 <p>api文件下的.env文件需要修改部分内容，<code>DB_USERNAME</code>和<code>DB_PASSWORD</code>需与数据库一致</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># PostgreSQL database configuration</span><br><span class="line">DB_USERNAME=postgres</span><br><span class="line">DB_PASSWORD=123456</span><br><span class="line">DB_HOST=localhost</span><br><span class="line">DB_PORT=5432</span><br><span class="line">DB_DATABASE=dify</span><br></pre></td></tr></table></figure>
 
 <ol start="6">
-<li>启动 API 服务（在poetry shell中）<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">flask run --host 0.0.0.0 --port=5001 --debug</span><br></pre></td></tr></table></figure></li>
-</ol>
+<li><p>启动后端</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">flask run --host 0.0.0.0 --port=5001 --debug</span><br></pre></td></tr></table></figure>
 <p>正确输出：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">* Debug mode: on</span><br><span class="line">INFO:werkzeug:WARNING: This is a development server. Do not use it <span class="keyword">in</span> a production deployment. Use a production WSGI server instead.</span><br><span class="line"> * Running on all addresses (0.0.0.0)</span><br><span class="line"> * Running on http://127.0.0.1:5001</span><br><span class="line">INFO:werkzeug:Press CTRL+C to quit</span><br><span class="line">INFO:werkzeug: * Restarting with <span class="built_in">stat</span></span><br><span class="line">WARNING:werkzeug: * Debugger is active!</span><br><span class="line">INFO:werkzeug: * Debugger PIN: 695-801-919</span><br></pre></td></tr></table></figure>
-
-<ol start="7">
-<li>启动 Worker 服务<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">celery -A app.celery worker -P solo --without-gossip --without-mingle -Q dataset,generation,mail,ops_trace --loglevel INFO</span><br></pre></td></tr></table></figure></li>
+</li>
+<li><p>启动<code>Worker</code>服务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">celery -A app.celery worker -P solo --without-gossip --without-mingle -Q dataset,generation,mail,ops_trace --loglevel INFO  <span class="comment"># 进入Linux环境使用该命令行</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="前端部署"><a href="#前端部署" class="headerlink" title="前端部署"></a>前端部署</h3><ol>
-<li><p>进入 web 目录</p>
+<li><p>进入<code>web</code>目录</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> web</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>安装依赖包</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>注：这里不建议使用<code>pnpm</code>，会有一些错误</p>
 </li>
 <li><p>配置环境变量。在当前目录下创建文件 <code>.env.local</code>，并复制<code>.env.example</code>中的内容。根据需求修改这些环境变量的值:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># For production release, change this to PRODUCTION</span><br><span class="line">NEXT_PUBLIC_DEPLOY_ENV=DEVELOPMENT</span><br><span class="line"># The deployment edition, SELF_HOSTED</span><br><span class="line">NEXT_PUBLIC_EDITION=SELF_HOSTED</span><br><span class="line"># The base URL of console application, refers to the Console base URL of WEB service if console domain is</span><br><span class="line"># different from api or web app domain.</span><br><span class="line"># example: http://cloud.dify.ai/console/api</span><br><span class="line">NEXT_PUBLIC_API_PREFIX=http://localhost:5001/console/api</span><br><span class="line"># The URL for Web APP, refers to the Web App base URL of WEB service if web app domain is different from</span><br><span class="line"># console or api domain.</span><br><span class="line"># example: http://udify.app/api</span><br><span class="line">NEXT_PUBLIC_PUBLIC_API_PREFIX=http://localhost:5001/api</span><br><span class="line"></span><br><span class="line"># SENTRY</span><br><span class="line">NEXT_PUBLIC_SENTRY_DSN=</span><br><span class="line">NEXT_PUBLIC_SENTRY_ORG=</span><br><span class="line">NEXT_PUBLIC_SENTRY_PROJECT=</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动</p>
+<li><p>启动前端</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure></li>
 </ol>
 <p>正常启动后，终端会输出如下信息：</p>
