@@ -20,26 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"be11amy.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null,"show_result":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Be11amy&#39;s Blog">
-<meta property="og:url" content="https://be11amy.github.io/categories/%E5%B7%A5%E5%85%B7/index.html">
+    <meta name="description" content="配置系统环境变量把postgres的bin文件路径加入系统环境的path中 验证使用以下命令测试连接： 1psql -U postgres  如果提示输入密码，则表示之前设置过密码 12345用户 postgres 的口令：psql (17.2)输入 &quot;help&quot; 来获取帮助信息.postgres&#x3D;#  修改密码在PostgreSQL命令行界面，使用SQL命令修改密码： 1AL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="验证postgreSQL用户名和密码">
+<meta property="og:url" content="https://be11amy.github.io/posts/eb5ab3f6/index.html">
 <meta property="og:site_name" content="Be11amy&#39;s Blog">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="配置系统环境变量把postgres的bin文件路径加入系统环境的path中 验证使用以下命令测试连接： 1psql -U postgres  如果提示输入密码，则表示之前设置过密码 12345用户 postgres 的口令：psql (17.2)输入 &quot;help&quot; 来获取帮助信息.postgres&#x3D;#  修改密码在PostgreSQL命令行界面，使用SQL命令修改密码： 1AL">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-01-21T02:29:30.000Z">
+<meta property="article:modified_time" content="2025-01-21T02:38:04.090Z">
 <meta property="article:author" content="Be11amy">
-<meta property="article:tag" content="个人博客">
+<meta property="article:tag" content="postgreSQL">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://be11amy.github.io/categories/%E5%B7%A5%E5%85%B7/">
+<link rel="canonical" href="https://be11amy.github.io/posts/eb5ab3f6/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"categories/工具/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://be11amy.github.io/posts/eb5ab3f6/","path":"posts/eb5ab3f6/","title":"验证postgreSQL用户名和密码"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分类: 工具 | Be11amy's Blog</title>
+<title>验证postgreSQL用户名和密码 | Be11amy's Blog</title>
   
 
 
@@ -130,7 +132,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -143,6 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">1.</span> <span class="nav-text">配置系统环境变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81"><span class="nav-number">2.</span> <span class="nav-text">验证</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text">修改密码</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -157,13 +160,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">74</span>
+          <span class="site-state-item-count">75</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">31</span>
+        <span class="site-state-item-count">30</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -220,50 +223,116 @@
 </noscript>
 
 
-    <div class="main-inner category posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">工具
-          <small>分类</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://be11amy.github.io/posts/eb5ab3f6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/assets/avatar.jpg">
+      <meta itemprop="name" content="Be11amy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Be11amy's Blog">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="验证postgreSQL用户名和密码 | Be11amy's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          验证postgreSQL用户名和密码
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2024</span>
+
+      <time title="创建时间：2025-01-21 10:29:30 / 修改时间：10:38:04" itemprop="dateCreated datePublished" datetime="2025-01-21T10:29:30+08:00">2025-01-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="配置系统环境变量"><a href="#配置系统环境变量" class="headerlink" title="配置系统环境变量"></a>配置系统环境变量</h1><p>把<code>postgres</code>的<code>bin</code>文件路径加入系统环境的<code>path</code>中</p>
+<h1 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h1><p>使用以下命令测试连接：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">psql -U postgres</span><br></pre></td></tr></table></figure>
+
+<p>如果提示输入密码，则表示之前设置过密码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">用户 postgres 的口令：</span><br><span class="line">psql (17.2)</span><br><span class="line">输入 <span class="string">&quot;help&quot;</span> 来获取帮助信息.</span><br><span class="line"></span><br><span class="line">postgres=#</span><br></pre></td></tr></table></figure>
+
+<h1 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h1><p>在<code>PostgreSQL</code>命令行界面，使用<code>SQL</code>命令修改密码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER postgres PASSWORD <span class="string">&#x27;new_password&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-06-22T15:19:25+08:00"
-              content="2024-06-22">
-          06-22
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/5c57039f/" itemprop="url">
-            <span itemprop="name">vi/vim的使用</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/postgreSQL/" rel="tag"># postgreSQL</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/e88e0775/" rel="prev" title="解决docker启动容器报错HTTP code 500 server error">
+                  <i class="fa fa-chevron-left"></i> 解决docker启动容器报错HTTP code 500 server error
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
+
 
 </div>
   </main>

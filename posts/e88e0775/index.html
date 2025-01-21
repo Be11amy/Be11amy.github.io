@@ -20,26 +20,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"be11amy.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null,"show_result":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Be11amy&#39;s Blog">
-<meta property="og:url" content="https://be11amy.github.io/tags/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/index.html">
+    <meta name="description" content="在使用docker启动Dify时遇到报错，Nginx无法启动">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决docker启动容器报错HTTP code 500 server error">
+<meta property="og:url" content="https://be11amy.github.io/posts/e88e0775/index.html">
 <meta property="og:site_name" content="Be11amy&#39;s Blog">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="在使用docker启动Dify时遇到报错，Nginx无法启动">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-01-21T02:26:36.000Z">
+<meta property="article:modified_time" content="2025-01-21T02:40:17.288Z">
 <meta property="article:author" content="Be11amy">
-<meta property="article:tag" content="个人博客">
+<meta property="article:tag" content="bug">
+<meta property="article:tag" content="docker">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://be11amy.github.io/tags/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/">
+<link rel="canonical" href="https://be11amy.github.io/posts/e88e0775/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/项目部署/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://be11amy.github.io/posts/e88e0775/","path":"posts/e88e0775/","title":"解决docker启动容器报错HTTP code 500 server error"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: 项目部署 | Be11amy's Blog</title>
+<title>解决docker启动容器报错HTTP code 500 server error | Be11amy's Blog</title>
   
 
 
@@ -130,7 +133,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -143,6 +146,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">解决办法</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -157,13 +161,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">74</span>
+          <span class="site-state-item-count">75</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">31</span>
+        <span class="site-state-item-count">30</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -220,50 +224,134 @@
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">项目部署
-          <small>标签</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://be11amy.github.io/posts/e88e0775/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/assets/avatar.jpg">
+      <meta itemprop="name" content="Be11amy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Be11amy's Blog">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="解决docker启动容器报错HTTP code 500 server error | Be11amy's Blog">
+      <meta itemprop="description" content="在使用docker启动Dify时遇到报错，Nginx无法启动">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          解决docker启动容器报错HTTP code 500 server error
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2025</span>
+
+      <time title="创建时间：2025-01-21 10:26:36 / 修改时间：10:40:17" itemprop="dateCreated datePublished" datetime="2025-01-21T10:26:36+08:00">2025-01-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/bug/" itemprop="url" rel="index"><span itemprop="name">bug</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description">在使用docker启动Dify时遇到报错，Nginx无法启动</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>在使用docker启动Dify时遇到报错，信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(HTTP code 500) server error - Ports are not available: exposing port TCP 0.0.0.0:80 -&gt; 0.0.0.0:0: listen tcp 0.0.0.0:80: <span class="built_in">bind</span>: An attempt was made to access a socket <span class="keyword">in</span> a way forbidden by its access permissions.</span><br></pre></td></tr></table></figure>
+
+<p>根据信息发现是80端口被占用，<code>Windows</code>系统使用管理员cmd，输入<code>netstat -ano | findstr :80</code>，输出如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">netstat -ano | findstr :80</span><br><span class="line">TCP 0.0.0.0:80 0.0.0.0:0 LISTENING 4</span><br><span class="line">TCP 10.16.4.250:63009 221.238.41.89:8080 ESTABLISHED 2860</span><br><span class="line">TCP 10.16.4.250:64078 171.43.201.241:80 CLOSE_WAIT 10472</span><br><span class="line">TCP 10.16.4.250:64080 171.43.201.241:80 CLOSE_WAIT 10472</span><br><span class="line">TCP 10.16.4.250:64445 14.17.5.193:8081 TIME_WAIT 0</span><br><span class="line">TCP 10.16.4.250:64446 14.17.5.193:8081 TIME_WAIT 0</span><br><span class="line">TCP 10.16.4.250:64483 180.163.151.161:80 ESTABLISHED 9784</span><br><span class="line">TCP 10.16.4.250:64484 220.181.174.68:80 ESTABLISHED 9784</span><br><span class="line">TCP 10.16.4.250:64494 220.181.174.5:80 ESTABLISHED 9784</span><br><span class="line">TCP [::]:80 [::]:0 LISTENING 4</span><br></pre></td></tr></table></figure>
+<p>根据输出可以发现端口80正在被PID为4的进程监听</p>
+<p>查询端口PID为4的程序名：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tasklist /FI <span class="string">&quot;PID eq 4&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>输出如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">映像名称 PID 会话名 会话# 内存使用 </span><br><span class="line">========================= ======== ================ =========== ============ </span><br><span class="line">System 4 Services 0 6,612 K</span><br></pre></td></tr></table></figure>
+
+<p>可以看到端口80是被<code>System</code>进程占用的，常见的可能占用端口80的服务包括：</p>
+<ul>
+<li>IIS (Internet Information Services)</li>
+<li>SQL Server Reporting Services</li>
+<li>World Wide Web Publishing Service</li>
+</ul>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>停止http服务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net stop http</span><br></pre></td></tr></table></figure>
+
+<p>在<code>Docker Desktop</code>或命令行<code>docker compose</code>启动nginx，启动http服务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net start http</span><br></pre></td></tr></table></figure>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-01-06T20:48:53+08:00"
-              content="2025-01-06">
-          01-06
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/posts/b8aa49c0/" itemprop="url">
-            <span itemprop="name">Windows通过本地源码部署Dify</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/bug/" rel="tag"># bug</a>
+              <a href="/tags/docker/" rel="tag"># docker</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/554c5a5f/" rel="prev" title="Windows安装wsl——Ubuntu">
+                  <i class="fa fa-chevron-left"></i> Windows安装wsl——Ubuntu
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/eb5ab3f6/" rel="next" title="验证postgreSQL用户名和密码">
+                  验证postgreSQL用户名和密码 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
+
 
 </div>
   </main>
